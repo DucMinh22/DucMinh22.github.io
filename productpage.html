@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Azzara Bootstrap 4 Admin Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <meta charset="utf-8">
+    <link rel="icon" href="assets/img/icon.ico" type="image/x-icon"/>
+    
+    <!-- Fonts and icons -->
+    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+        WebFont.load({
+            google: {"families":["Open+Sans:300,400,600,700"]},
+            custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands"], urls: ['assets/css/fonts.css']},
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/azzara.min.css">
+    
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="assets/css/demo.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!--
+            Tip 1: You can change the background color of the main header using: data-background-color="blue | purple | light-blue | green | orange | red"
+        -->
+        
+        <!-- Logo Header -->
+        
+        <!-- End Logo Header -->
+        
+        <!-- Navbar Header -->
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary"> 
+            <!-- Navbar content -->
+            <div class="container">
+                <a  class="navbar-brand" href="index.html">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <form class="navbar-left navbar-form nav-search" action="resultbysearch.html">
+                        <div class="input-group">
+                            <input type="text" placeholder="Search ..." class="form-control">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <a href="resultbysearch.html"><i class="fa fa-search search-icon"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                <ul class="navbar-nav navbar-brand">
+                    <li class="nav-item">
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        
+        <!-- End Navbar -->
+        
+        
+        <!-- Sidebar -->
+        
+        <!-- End Sidebar -->
+        
+        <div class="container-fluid">
+            <div class="content">
+                <div class="page-inner">
+                    <div class="page-header">
+                        <div class="card">
+                            <div class="card-body" >
+                                <div class="container" style="border-bottom: 3px solid #666699;">
+                                    <div class="row" style="border-bottom: 3px solid #666699;"> 
+                                        <h4 class="page-title">Icons</h4>
+                                        <ul class="breadcrumbs">
+                                            <li class="nav-home">
+                                                <a href="#">
+                                                    <a href="index.html"><i class="flaticon-home"></i></a>
+                                                </a>
+                                            </li>
+                                            <li class="separator">
+                                                <i class="flaticon-right-arrow"></i>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#">Kỹ thuật số</a>
+                                            </li>
+                                            <li class="separator">
+                                                <i class="flaticon-right-arrow"></i>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#">Máy ảnh Sony</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="card-body">
+                                                    <img src="assets/img/NATURE.jpg" class="card-img" alt="...">
+                                                </div>
+                                                <div class="card-body">
+                                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="assets/img/blogpost.jpg" height="150px"  class="d-block w-100" alt="...">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="assets/img/beauty.jpg" height="150px"  class="d-block w-100" alt="...">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="assets/img/NATURE.jpg" height="150px"  class="d-block w-100" alt="...">
+                                                            </div>
+                                                        </div>
+                                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="sr-only">Previous</span>
+                                                        </a>
+                                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="sr-only">Next</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                
+                                                <div class="card-body">
+                                                    <h2><b>Máy ảnh Sony A6000 + Ống kính 16-50mm F/3.5-5.6 OSS</b> </h2>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            Mã sản phẩm: A61062
+                                                        </div>
+                                                        <div class="col-6">
+                                                            Tình trạng: New Arrival
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="card-body" style="border-bottom: 1px solid #666699;">
+                                                    <h2 style="color:orange;">5.010.000 VND </h2>
+                                                </div>
+                                                <div class="card-body" style="border-bottom: 1px solid #666699;">
+                                                    <p>
+                                                        Phá cách bằng những phối màu đảo nghịch đầy độc đáo, tươi vui, Urbas "Inversion" là một pack giày đầy thú vị cho những ai muốn có thêm sắc màu cho cuộc sống
+                                                    </p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-5">
+                                                            <h2><b>Số lượng</b> </h2>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <select class="custom-select" id="inputGroupSelect01">
+                                                                <option selected>Choose...</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <button type="button" class="btn btn-dark btn-lg" style="background-color:#666699;">THÊM VÀO GIỎ HÀNG</button>
+                                                </div>
+                                                <div class="card-body">
+                                                        <a href="cart.html">  <button type="button" class="btn btn-dark btn-lg btn-block" style=" background-color: orangered;">THANH TOÁN</button></a>
+                                                 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body" style="border-bottom: 3px solid #666699;">
+                                    
+                                    <div class="card-header">
+                                        <h2>Sản phẩm liên quan</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="card-body">
+                                                <div class="card-deck">
+                                                    <div class="col md-3">
+                                                        <div class="card">
+                                                            <img src="assets/img/skincare.jpg" class="card-img-top" alt="..." style="height: 146px;">
+                                                            <div class="card-body">
+                                                                    <a  class="card-title" href="productpage.html">Serum vitamin c giúp ngăn ngừa lão hóa...</a>
+                                                                <p class="card-text" style="color: tomato;">738,000đ</p>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <div class="text-muted">
+                                                                    <div class="row">
+                                                                            <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                            
+                                                                            <a href="productpage.html"><div class="ml-4" style="color: tomato;"><i class="fas fa-cart-plus"></i></div></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col md-3">
+                                                        <div class="card">
+                                                            <img src="assets/img/mayanh.jpg" class="card-img-top" alt="...">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Máy ảnh kỹ thuật số Sony...</h5>
+                                                                <p class="card-text" style="color: tomato">1,600,000đ</p>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <div class="text-muted">
+                                                                    <div class="row">
+                                                                        <div class="col" style="color: blue;">Xem chi tiết</div>
+                                                                        <div class="col text-center" style="color: tomato;"><i class="fas fa-cart-plus"></i></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col md-3">
+                                                        <div class="card">
+                                                            <img src="assets/img/sport.jpg" class="card-img-top" alt="..." style="height: 145px;">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Bộ quần áo thể thao co giãn 4 chiều...</h5>
+                                                                <p class="card-text" style="color: tomato">199,000đ </p>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <div class="text-muted">
+                                                                    <div class="row">
+                                                                        <div class="col" style="color: blue;">Xem chi tiết</div>
+                                                                        <div class="col text-center" style="color: tomato;"><i class="fas fa-cart-plus"></i></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col md-3">
+                                                        <div class="card">
+                                                            <img src="assets/img/tulanh.jpg" class="card-img-top" alt="..." style="height: 145px;">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Tủ lạnh tiết kiệm điện năng Toshiba</h5>
+                                                                <p class="card-text" style="color: tomato">4.990,000đ</p>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <div class="text-muted">
+                                                                    <div class="row">
+                                                                        <div class="col" style="color: blue;">Xem chi tiết</div>
+                                                                        <div class="col text-center" style="color: tomato;"><i class="fas fa-cart-plus"></i></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <div class="card-body" >
+                                    
+                                    <div class="card-header">
+                                        <h2>Sản phẩm đã xem</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="card-body">
+                                                <div class="card-deck">
+                                                    <div class="col md-4">
+                                                        <div class="card">
+                                                            <img src="assets/img/skincare.jpg" class="card-img-top" alt="..." style="height: 146px;">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Serum vitamin c giúp ngăn ngừa lão hóa...</h5>
+                                                                <p class="card-text" style="color: tomato;">738,000đ</p>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <div class="text-muted">
+                                                                    <div class="row">
+                                                                        <div class="col" style="color: blue;">Xem chi tiết</div>
+                                                                        <div class="col text-center" style="color: tomato;"><i class="fas fa-cart-plus"></i></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col md-4">
+                                                        <div class="card">
+                                                            <img src="assets/img/mayanh.jpg" class="card-img-top" alt="...">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Máy ảnh kỹ thuật số Sony...</h5>
+                                                                <p class="card-text" style="color: tomato">1,600,000đ</p>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <div class="text-muted">
+                                                                    <div class="row">
+                                                                        <div class="col" style="color: blue;">Xem chi tiết</div>
+                                                                        <div class="col text-center" style="color: tomato;"><i class="fas fa-cart-plus"></i></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col md-4">
+                                                        <div class="card">
+                                                            <img src="assets/img/sport.jpg" class="card-img-top" alt="..." style="height: 145px;">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Bộ quần áo thể thao co giãn 4 chiều...</h5>
+                                                                <p class="card-text" style="color: tomato">199,000đ </p>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <div class="text-muted">
+                                                                    <div class="row">
+                                                                        <div class="col" style="color: blue;">Xem chi tiết</div>
+                                                                        <div class="col text-center" style="color: tomato;"><i class="fas fa-cart-plus"></i></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron text-center" style="background-color: #666699;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <img src="assets/img/store.jpg" alt="" style="width:150px; height:150px;">
+                        <div class="col">
+                            <button type="button" class="btn btn-warning">TÌM CỬA HÀNG</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <a  href="#" style="color: aliceblue;">SẢN PHẨM</a>
+                        <a  href="#" style="color: aliceblue;"><p>Thời trang & Phụ Kiện</p></a>
+                        <a  href="#" style="color: aliceblue;"><p>Thời trang Nam</p></a>
+                        <a  href="#" style="color: aliceblue;"><p>Saleoff</p></a>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <a  href="#" style="color: aliceblue;">VỀ CÔNG TY</a>
+                        <a  href="#" style="color: aliceblue;"><p>Liên hệ Quảng Cáo</p></a>
+                        <a  href="#" style="color: aliceblue;"><p>Đối tác</p></a>
+                        <a  href="#" style="color: aliceblue;"><p></p></a>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <a  href="#" style="color: aliceblue;">HỖ TRỢ</a>
+                        <a  href="#" style="color: aliceblue;"><p>FAQS</p></a>
+                        <a  href="#" style="color: aliceblue;"><p>Chính sách chung</p></a>
+                        <a  href="#" style="color: aliceblue;"><p>Tra cứu đơn hàng</p></a>
+                        
+                    </div>
+                    
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <a  href="#" style="color: aliceblue;">LIÊN HỆ</a>
+                        <a  href="#" style="color: aliceblue;"><p>Email góp ý</p></a>
+                        <a  href="#" style="color: aliceblue;"><p>Hotline</p></a>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <a  href="#" style="color: aliceblue;">LIÊN HỆ</a>
+                        <a  href="#" style="color: aliceblue;"><p>Email góp ý</p></a>
+                        <a  href="#" style="color: aliceblue;"><p>Hotline</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <!-- Custom template | don't include it in your project! -->
+        <div class="custom-template">
+            <div class="title">Settings</div>
+            <div class="custom-content">
+                <div class="switcher">
+                    <div class="switch-block">
+                        <h4>Topbar</h4>
+                        <div class="btnSwitch">
+                            <button type="button" class="changeMainHeaderColor" data-color="blue"></button>
+                            <button type="button" class="selected changeMainHeaderColor" data-color="purple"></button>
+                            <button type="button" class="changeMainHeaderColor" data-color="light-blue"></button>
+                            <button type="button" class="changeMainHeaderColor" data-color="green"></button>
+                            <button type="button" class="changeMainHeaderColor" data-color="orange"></button>
+                            <button type="button" class="changeMainHeaderColor" data-color="red"></button>
+                        </div>
+                    </div>
+                    <div class="switch-block">
+                        <h4>Background</h4>
+                        <div class="btnSwitch">
+                            <button type="button" class="changeBackgroundColor" data-color="bg2"></button>
+                            <button type="button" class="changeBackgroundColor selected" data-color="bg1"></button>
+                            <button type="button" class="changeBackgroundColor" data-color="bg3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-toggle">
+                <i class="flaticon-settings"></i>
+            </div>
+        </div>
+        <!-- End Custom template -->
+    </div>
+</div>
+<!--   Core JS Files   -->
+<script src="assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="assets/js/core/popper.min.js"></script>
+<script src="assets/js/core/bootstrap.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+<!-- jQuery Scrollbar -->
+<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+<!-- Moment JS -->
+<script src="assets/js/plugin/moment/moment.min.js"></script>
+
+<!-- Chart JS -->
+<script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+<!-- jQuery Sparkline -->
+<script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+<!-- Chart Circle -->
+<script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+<!-- Datatables -->
+<script src="assets/js/plugin/datatables/datatables.min.js"></script>
+
+<!-- Bootstrap Notify -->
+<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+<!-- Bootstrap Toggle -->
+<script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+
+<!-- jQuery Vector Maps -->
+<script src="assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+<script src="assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+
+<!-- Google Maps Plugin -->
+<script src="assets/js/plugin/gmaps/gmaps.js"></script>
+
+<!-- Sweet Alert -->
+<script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+<!-- Azzara JS -->
+<script src="assets/js/ready.min.js"></script>
+
+<!-- Azzara DEMO methods, don't include it in your project! -->
+<script src="assets/js/setting-demo.js"></script>
+<script src="assets/js/demo.js"></script>
+</body>
+</html>
