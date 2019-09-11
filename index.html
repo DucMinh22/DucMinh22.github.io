@@ -42,13 +42,13 @@
                 <div class="container">
                     <div class="row">
                         
-                        <div class="col-sm-6">
+                        <div class="col-12 col-sm-12 col-md-6">
                             <div class="nav_top_left">
                                 Hotline: 0978.485.015
                             </div>
                         </div>
                         
-                        <div class="col-sm-6">
+                        <div class="pl-4 col-12 col-sm-12 col-md-6 ">
                             <div class="nav_top_right">
                                 <ul>
                                     <li>Giới thiệu</li>
@@ -65,27 +65,11 @@
                 <!-- Navbar content -->
                 
                 <div class="container">
+                    
                     <a  class="navbar-brand" href="index.html">Navbar</a>
                     
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    SHOP
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">BLOG</a>
-                            </li>
-                            
                             
                             <form class="navbar-left navbar-form nav-search" style="width: 500px;" action="resultbysearch.html">
                                 <div class="input-group">
@@ -97,9 +81,6 @@
                                     </div>
                                 </div>
                             </form>
-                            
-                            
-                            
                         </ul>
                     </div>
                     
@@ -107,7 +88,7 @@
                         <div class="row">
                             <div class="col-6">
                                 <li class="nav-item">
-                                    <a class="nav-link" style="color:white;""  href="#">ĐĂNG NHẬP</a>
+                                    <a class="nav-link" style="color:white;" href="#">ĐĂNG NHẬP</a>
                                 </li>
                             </div>
                             <div class="col-6">
@@ -121,6 +102,40 @@
                         </button>
                     </div>
                 </nav>
+                
+                <div class="d-none d-lg-block">
+                    <div id="navbar" style="background-color: #f1f1f1;">
+                        <div class="container" >
+                            <div class="row">
+                                <div class="col-lg-3"></div>
+                                <div class="col-lg-6 px-5 ml-4">
+                                    <a href="index.html"><i class="fas fa-home" style="font-size: 20px;"></i></a>
+                                    <a class="nav-link"href="#"><b>SẢN PHẨM</b></a>
+                                    <a class="nav-link"href="#"><b>BLOG</b></a>
+                                    <a class="nav-link"href="#"><b>HƯỚNG DẪN</b></a>
+                                    <a class="nav-link"href="#"><b>LIÊN HỆ</b></a>
+                                    
+                                </div>
+                                <div class="col-lg-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    window.onscroll = function() {myFunction()};
+                    
+                    var navbar = document.getElementById("navbar");
+                    var sticky = navbar.offsetTop;
+                    
+                    function myFunction() {
+                        if (window.pageYOffset >= sticky) {
+                            navbar.classList.add("sticky")
+                        } else {
+                            navbar.classList.remove("sticky");
+                        }
+                    }
+                </script>
+                
             </div>
             
             
@@ -130,28 +145,369 @@
             <!-- Sidebar -->
             
             <!-- End Sidebar -->
+            <div class="container">
+                <div class="product py-5 mb-md-2 pb-lg-3">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-6">
+                            
+                            <div class="row no-gutters">
+                                <div class="px-2 col-md-4">
+                                    <img src="assets/img/truck.jpg" class="card-img" alt="..." >
+                                </div>
+                                <div class="col-md-8">
+                                    <h4><b>HỖ TRỢ VẬN CHUYỂN</b></h4>
+                                    <p>Với đơn hàng tên 500.000</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <div class="row no-gutters">
+                                <div class="px-2 col-md-4">
+                                    <img src="assets/img/tick.png" class="card-img" alt="..." >
+                                </div>
+                                <div class="col-md-8">
+                                    <h4><b>CAM KẾT CHÍNH HÃNG</b></h4>
+                                    <p>Đảm bảo chất lượng 100%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <div class="row no-gutters">
+                                <div class="px-2 col-md-4">
+                                    <img src="assets/img/money.png" class="card-img" alt="..." >
+                                </div>
+                                <div class="col-md-8">
+                                    <h4><b>CHÍNH SÁCH & ĐỔI TRẢ</b></h4>
+                                    <p>Đổi trả hàng trong 7 ngày</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <div class="row no-gutters">
+                                <div class="px-2 col-md-4">
+                                    <img src="assets/img/clock.png" class="card-img" alt="..." >
+                                </div>
+                                <div class="col-md-8">
+                                    <h4><b>HỖ TRỢ 24/7</b></h4>
+                                    <p>Thứ 2-Thứ 7:9h-18h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
             
             <div class="container">
                 
-                <div class="product mb-3 mb-md-5 pb-lg-5">
+                <div class="product  mb-3 mb-md-5 pb-lg-5">
                     <div class="card-around">
                         <div class="topbar-bottom py-3 py-md-4 d-lg-block">
                             <div class="row">
-                                <div class="px-1 col-md-2 d-none d-lg-block">
-                                    
+                                <div class="px-1 col-md-3 d-none d-lg-block">   
                                     <div class="list-group" id="list-tab" role="tablist">
-                                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Thời trang </a>
-                                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Làm đẹp</a>
-                                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Thể thao</a>
-                                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Đồng hồ</a>
-                                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Game & đồ chơi</a>
-                                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Mẹ & bé</a>
-                                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Điện tử & điện lạnh</a>
-                                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Phụ tùng xe máy</a>
+                                        
+                                        <div class="mega-menu">
+                                            <div class="dropdown-hover">  
+                                                <div class="mega-menu" >
+                                                    <a class="list-group-item list-group-item-action" style="width: 270px;" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile"><i class="fas fa-gift" style="margin-right: 15px; margin-top: 2px; font-size: 20px;"></i>Sản phẩm HOT</a>
+                                                </div>
+                                                <div class="dropdown-content">  
+                                                    <div class="row">
+                                                        <div class="column" >
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Giảm giá 50%</a>
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>HOT công nghệ</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mega-menu">
+                                            <div class="dropdown-hover">  
+                                                <div class="mega-menu" >
+                                                    <a class="list-group-item list-group-item-action" style="width: 270px;" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile"><i class="fas fa-tshirt" style="margin-right: 15px; margin-top: 2px;"></i>Thời trang nam</a>
+                                                </div>
+                                                <div class="dropdown-content">  
+                                                    <div class="row">
+                                                        <div class="column" >
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Đồng hồ</a>
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Thắt lưng</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Ví da</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Đồ lót</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Áo khoắc nam</a>
+                                                            
+                                                            
+                                                            <a href="#"> <i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Dày giép</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Ba lô</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mega-menu">
+                                            <div class="dropdown-hover">  
+                                                <div class="mega-menu">
+                                                    <a class="list-group-item list-group-item-action" style="width: 270px;"id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"><i class="fas fa-female" style="margin-right: 15px; margin-top: 2px; font-size: 20px;"></i>Thời trang nữ</a>
+                                                </div>
+                                                <div class="dropdown-content">  
+                                                    <div class="row">
+                                                        <div class="column" >
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Áo, váy nữ</a>
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Ví, túi xách</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Đồng hồ</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Đồ lót</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Đồ bơi, đồ đi biển</a>
+                                                            
+                                                            <a href="#"> <i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Vòng tay</a>
+                                                            <a href="#"> <i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Dày giép</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Nón</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mega-menu">
+                                            <div class="dropdown-hover">  
+                                                <div class="mega-menu">
+                                                    <a class="list-group-item list-group-item-action" style="width: 270px;" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"><i class="fas fa-mobile-alt" style="margin-right: 15px; margin-top: 2px;"></i>Công nghệ</a>
+                                                </div>
+                                                <div class="dropdown-content">  
+                                                    <div class="row">
+                                                        <div class="column" >
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Sạc cáp điện thoại</a>
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Tai nghe</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Ốp lưng, camera, điện thoại</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mega-menu">
+                                            <div class="dropdown-hover">  
+                                                <div class="mega-menu">
+                                                    <a class="list-group-item list-group-item-action" style="width: 270px;" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"><i class="fas fa-plug"  style="margin-right: 15px; margin-top: 2px;"></i>Gia dụng</a>
+                                                </div>
+                                                <div class="dropdown-content">  
+                                                    <div class="row">
+                                                        <div class="column" >
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Ga chống thấm</a>
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Máy làm sữa chua</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Hộp cơm hâm nóng</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Quạt</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Máy say, máy ép</a>
+                                                            
+                                                            
+                                                            <a href="#"> <i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Thiết bị nhà bếp</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mega-menu">
+                                            <div class="dropdown-hover">  
+                                                <div class="mega-menu">
+                                                    <a class="list-group-item list-group-item-action" style="width: 270px;" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"><i class="fas fa-heartbeat" style="margin-right: 15px; margin-top: 2px;"></i>Sức khỏe-Làm đẹp</a>
+                                                </div>
+                                                <div class="dropdown-content">  
+                                                    <div class="row">
+                                                        <div class="column" >
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Ga chống thấm</a>
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Máy làm sữa chua</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Hộp cơm hâm nóng</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Quạt</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Máy say, máy ép</a>
+                                                            
+                                                            
+                                                            <a href="#"> <i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Thiết bị nhà bếp</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mega-menu">
+                                            <div class="dropdown-hover">  
+                                                <div class="mega-menu">
+                                                    <a class="list-group-item list-group-item-action" style="width: 270px;" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"><i class="fab fa-ebay"></i>Mẹ và Bé</a>
+                                                </div>
+                                                <div class="dropdown-content">  
+                                                    <div class="row">
+                                                        <div class="column" >
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Máy hút sữa</a>
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Đồ chơi an toàn</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Đồ dùng cho mẹ bàu</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Đồ cho bé ra ngoài</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Đồ dùng phòng tắm cho bé</a>
+                                                            
+                                                            
+                                                            <a href="#"> <i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Chăm sóc sức khỏe an toàn</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mega-menu">
+                                            <div class="dropdown-hover">  
+                                                <div class="mega-menu">
+                                                    <a class="list-group-item list-group-item-action" style="width: 270px;" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"><i class="fas fa-home" style="margin-right: 15px; margin-top: 2px;"></i></i>Nhà cửa-đời sống</a>
+                                                </div>
+                                                <div class="dropdown-content">  
+                                                    <div class="row">
+                                                        <div class="column" >
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Đồ dùng sinh hoạt</a>
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Đồ dùng nhà bếp</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Đồ dùng phòng ngủ</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Nội thất</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Quà tặng, hàng thủ công</a>
+                                                            
+                                                            <a href="#"> <i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Trang trí nhà cửa</a>
+                                                            <a href="#"> <i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Các loại đèn</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mega-menu">
+                                            <div class="dropdown-hover">  
+                                                <div class="mega-menu">
+                                                    <a class="list-group-item list-group-item-action" style="width: 270px;" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"><i class="fas fa-volleyball-ball" style="margin-right: 15px; margin-top: 2px;"></i>Thể thao-dã ngoại-giải trí</a>
+                                                </div>
+                                                <div class="dropdown-content">  
+                                                    <div class="row">
+                                                        <div class="column" >
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Thiết bị âm thanh</a>
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Dụng cụ, thiết bị tập thể dục</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Dã ngoại, cắm trại</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Câu cá</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mega-menu">
+                                            <div class="dropdown-hover">  
+                                                <div class="mega-menu">
+                                                    <a class="list-group-item list-group-item-action" style="width: 270px;" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"><i class="fas fa-store" style="margin-right: 15px; margin-top: 2px;"></i>Bách hóa tổng hợp</a>
+                                                </div>
+                                                <div class="dropdown-content">  
+                                                    <div class="row">
+                                                        <div class="column" >
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Sách & văn phòng phẩm</a>
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Giặt rũ & chăm sóc nhà cửa</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Các loại thực phẩm khô</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Đồ uống</a>
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Bánh mứt</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mega-menu">
+                                            <div class="dropdown-hover">  
+                                                <div class="mega-menu">
+                                                    <a class="list-group-item list-group-item-action" style="width: 270px;" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"><i class="fas fa-birthday-cake" style="margin-right: 15px; margin-top: 2px;"></i>Đồ làm bánh</a>
+                                                </div>
+                                                <div class="dropdown-content">  
+                                                    <div class="row">
+                                                        <div class="column" >
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Khuân khay</a>
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Dụng cụ</a>
+                                                            
+                                                            
+                                                            <a href="#"><i class="fas fa-shopping-cart" style="margin-right: 20px;" ></i>Thiết bị</a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
                                     
                                 </div>
-                                <div class="px-0 col-md-6">
+                                <div class="px-1 col-md-6">
                                     
                                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
@@ -176,20 +532,20 @@
                                     </div>
                                     
                                 </div>
-                                <div class="px-1 col-md-4">
+                                <div class="px-1 col-md-3">
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="px-1 col">
                                             <img src="assets/img/skincare.jpg" class="card-img-top" alt="..." style="height: 174px;">
                                         </div>
-                                        <div class="col">
+                                        <div class="px-1 col">
                                             <img src="assets/img/mayanh.jpg" class="card-img-top" alt="...">
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="px-1 col">
                                             <img src="assets/img/skincare.jpg" class="card-img-top" alt="..." style="height: 174px;">
                                         </div>
-                                        <div class="col">
+                                        <div class="px-1 col">
                                             <img src="assets/img/mayanh.jpg" class="card-img-top" alt="...">
                                         </div>
                                     </div>
@@ -198,6 +554,7 @@
                         </div>  
                     </div>
                 </div>
+                
                 
                 
                 <div class="product mb-3 mb-md-5 pb-lg-5">
@@ -209,13 +566,13 @@
                                     
                                     <div class="col-md-4">
                                         
-                                        <img src="assets/img/tulanh.jpg" class="card-img" alt="..." style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                                        <img src="assets/img/tulanh.jpg" class="card-img" alt="..." style="border-radius: 5px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                                         
                                     </div>
                                     <div class="col-md-8">
                                         <div class="ml-3 mt-2">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider </p>
+                                            <a class="card-title">Sản phẩm hot</a>
+                                            
                                         </div>
                                     </div>
                                     
@@ -226,12 +583,12 @@
                             <div class="card mb-3" style="max-width: 200px;">
                                 <div class="row no-gutters">
                                     <div class="col-md-4">
-                                        <img src="assets/img/tulanh.jpg" class="card-img" alt="..." style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                                        <img src="assets/img/tulanh.jpg" class="card-img" alt="..." style="border-radius: 5px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="ml-3 mt-2">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider </p>
+                                            <h5 class="card-title">Mẹ & bé</h5>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -241,12 +598,12 @@
                             <div class="card mb-3" style="max-width: 200px;">
                                 <div class="row no-gutters">
                                     <div class="col-md-4">
-                                        <img src="assets/img/tulanh.jpg" class="card-img" alt="..." style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                                        <img src="assets/img/tulanh.jpg" class="card-img" alt="..." style=" border-radius: 5px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="ml-3 mt-2">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider </p>
+                                            <h5 class="card-title">Đồ da dụng</h5>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -256,12 +613,12 @@
                             <div class="card mb-3" style="max-width: 200px;">
                                 <div class="row no-gutters">
                                     <div class="col-md-4">
-                                        <img src="assets/img/tulanh.jpg" class="card-img" alt="..." style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                                        <img src="assets/img/tulanh.jpg" class="card-img" alt="..." style=" border-radius: 5px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="ml-3 mt-2">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider </p>
+                                            <h5 class="card-title">Thời trang nam</h5>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -269,6 +626,7 @@
                         </div>
                     </div>
                 </div>   
+                
                 
                 
                 
@@ -943,7 +1301,7 @@
                     <div class="col-12" style="padding-bottom: 20px;">
                         <div class="row">
                             
-                            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%; ">
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
                                 <a class="navbar-brand" style="color: white;" href="#"><h4>SẢN PHẨM</h4></a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <i class="fas fa-angle-down"></i>
@@ -970,8 +1328,8 @@
                         </div>
                         
                     </div>
-                    <div class="col-12" style="padding-bottom: 20px;">
-                        <div class="row">
+                    <div class="col-12" style="padding-bottom: 20px; " >
+                        <div class="row" >
                             
                             <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
                                 <a class="navbar-brand" style="color: white;" href="#"><h4>VỀ CÔNG TY</h4></a>
@@ -1001,35 +1359,35 @@
                         
                     </div>
                     <div class="col-12" style="padding-bottom: 20px;">
-                            <div class="row">
-                                
-                                <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
-                                    <a class="navbar-brand" style="color: white;" href="#"><h4>HỖ TRỢ</h4></a>
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                        <i class="fas fa-angle-down"></i>
-                                    </button>
-                                    
-                                    <div class="collapse navbar-collapse" id="navbarSupportedContent2">
-                                        <ul class="navbar-nav mr-auto">
-                                            
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">FAQS</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Chính sách chung</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Tra cứu đơn hàng</a>
-                                            </li>
-                                            
-                                            
-                                        </ul>
-                                        
-                                    </div>
-                                </nav>
-                            </div>
+                        <div class="row">
                             
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                                <a class="navbar-brand" style="color: white;" href="#"><h4>HỖ TRỢ</h4></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fas fa-angle-down"></i>
+                                </button>
+                                
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                                    <ul class="navbar-nav mr-auto">
+                                        
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">FAQS</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Chính sách chung</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Tra cứu đơn hàng</a>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                    
+                                </div>
+                            </nav>
                         </div>
+                        
+                    </div>
                     
                 </div>
             </div>

@@ -149,9 +149,10 @@ body[data-background-color=bg3] {
    background-color: #f09819;
    margin-bottom: 0px;
    position: relative;
-  height: 35px;
+ 
   min-height: 35px;
   color: #ffffff;
+ 
   
 }
 .nav_top_left{
@@ -170,21 +171,97 @@ body[data-background-color=bg3] {
    margin-right: 20px;
    text-decoration: none;
 }
+.sticky {
+   position: fixed;
+   top: 0;
+   width: 100%;
+}
+
+#navbar {
+   overflow: hidden;
+   padding: 5px 10px;
+   transition: 0.4s;
+  
+   width: 100%;
+   z-index: 10;
+ }
+
+ #navbar a {
+   float: left;
+   color: black;
+   text-align: center;
+   padding: 8px;
+   text-decoration: none;
+   line-height: 25px;
+   border-radius: 4px;
+   padding: 10px 10px;
+ }
+ #navbar #logo {
+   font-size: 35px;
+   font-weight: bold;
+   transition: 0.4s;
+ }
+ #navbar-rights {
+   float: right;
+ }
+ @media screen and (max-width: 580px) {
+   #navbar {
+     padding: 20px 10px !important;
+   }
+   #navbar a {
+     float: none;
+     display: block;
+     text-align: left;
+   }
+   #navbar-rights {
+     float: none;
+   }
+ }
 .navbar {
         background: #ffb347; /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #ffb347, #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #ffb347, #ffcc33); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-       
+        z-index: 99;
+        position: relative;
 }
 .header{
   width: 100%;
-   position: -webkit-fixed;
-   position: fixed;
-position: relative;
-z-index: 1;
-
-
+  z-index: 10;
 }
+
+
+
+.mega-menu .dropdown-hover{
+   float: left;
+   overflow: hidden;
+   display: flex;
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #ffffff;
+   width: 100%;
+  margin-left: 270px;
+   z-index: 3;
+   border: 1px solid gainsboro;
+   border-radius: 5px;
+ }
+ .dropdown-content .row .column a{
+   
+   color: black;
+   display: block;
+   padding: 12px;
+   text-decoration: none;
+   float: left;
+   margin-left: 20px;
+   clear: left;
+   
+ }
+
+ .dropdown-hover:hover .dropdown-content {
+   display: block;
+ }
 .card-around{
    margin-top: 80px;
 }
@@ -206,6 +283,7 @@ z-index: 1;
    margin-top: 150px;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .bg-default-gradient {
    background: #282a3c!important;
    background: -webkit-linear-gradient(legacy-direction(-45deg), #08080e, #282a3c)!important;
