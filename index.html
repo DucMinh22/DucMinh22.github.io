@@ -6,9 +6,13 @@
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <meta charset="utf-8">
     <link rel="icon" href="assets/img/icon.ico" type="image/x-icon"/>
-    
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <!-- Fonts and icons -->
     <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    
+    <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script>
         WebFont.load({
             google: {"families":["Open+Sans:300,400,600,700"]},
@@ -22,6 +26,7 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/azzara.min.css">
+    
     
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link rel="stylesheet" href="assets/css/demo.css">
@@ -152,7 +157,7 @@
                             
                             <div class="row no-gutters">
                                 <div class="px-2 col-md-4">
-                                    <img src="assets/img/truck.jpg" class="card-img" alt="..." >
+                                    <img src="assets/img/truck.jpg" class="card-img"alt="..." >
                                 </div>
                                 <div class="col-md-8">
                                     <h4><b>HỖ TRỢ VẬN CHUYỂN</b></h4>
@@ -630,805 +635,541 @@
                 
                 
                 
+                <div class="card-header">
+                    <h2 style="border-left: 4px solid orange; padding-left: 10px;"><b>THE MOST POPULAR PRODUCTS</b></h2>
+                </div>
                 <!--Carousel Wrapper-->
-                <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-                    
-                    <!--Controls-->
-                    
-                    <!--/.Controls-->
-                    
-                    <!--Indicators-->
-                    <ol class="carousel-indicators">
-                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                        <li data-target="#multi-item-example" data-slide-to="1"></li>
-                        <li data-target="#multi-item-example" data-slide-to="2"></li>
-                    </ol>
-                    <!--/.Indicators-->
-                    
-                    <!--Slides-->
-                    <div class="carousel-inner" role="listbox">
-                        
-                        <!--First slide-->
-                        
-                        <div class="carousel-item active">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h2 style="border-left: 4px solid orange; padding-left: 10px;"><b>THE MOST POPULAR PRODUCTS</b></h2>
-                                </div>
-                                <div class="card-body">
-                                    <div class="controls-top-button">
-                                        
-                                        <a class="btn-floating" style="float: left;" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-                                        <a class="btn-floating" style="float: right;"href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
-                                    </div>
-                                    <div class="row">
-                                        
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/skincare.jpg" alt="Chania">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Serum vitamin c </h4></a>
-                                                    
-                                                    <h2 class="card-text" style="color: #cc3333;">738,000đ</h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/mayanh.jpg" alt="">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Máy ảnh kỹ Sony...</h4></a>
-                                                    <h2 class="card-text" style="color: #cc3333">1,600,000đ</h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/sport.jpg" alt="">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Bộ quần áo thể thao</h4></a>
-                                                    <h2 class="card-text" style="color: #cc3333">199,000đ </h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/skincare.jpg" alt="Chania">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Serum vitamin c </h4></a>
-                                                    
-                                                    <h2 class="card-text" style="color: #cc3333;">738,000đ</h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/mayanh.jpg" alt="">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Máy ảnh Sony...</h4></a>
-                                                    <h2 class="card-text" style="color: #cc3333">1,600,000đ</h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/sport.jpg" alt="">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Bộ quần áo thể thao</h4></a>
-                                                    <h2 class="card-text" style="color: #cc3333">199,000đ </h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.First slide-->
-                        
-                        <!--Second slide-->
-                        <div class="carousel-item">
-                            
-                            <div class="card">
-                                <div class="card-header">
-                                    <h2 style="border-left: 4px solid orange; padding-left: 10px;"><b>THE MOST POPULAR PRODUCTS</b></h2>
-                                </div>
-                                <div class="card-body">
-                                    <div class="controls-top">
-                                        <a class="btn-floating" style="float: left;" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-                                        <a class="btn-floating" style="float: right;"href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
-                                    </div>
-                                    <div class="row">
-                                        
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/skincare.jpg" alt="Chania">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Serum vitamin c giúp ngăn ngừa lão hóa...</h4></a>
-                                                    
-                                                    <h2 class="card-text" style="color: #cc3333;">738,000đ</h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/mayanh.jpg" alt="">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Máy ảnh kỹ thuật số Sony...</h4></a>
-                                                    <h2 class="card-text" style="color: #cc3333">1,600,000đ</h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/sport.jpg" alt="">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Bộ quần áo thể thao co giãn 4 chiều...</h4></a>
-                                                    <h2 class="card-text" style="color: #cc3333">199,000đ </h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/skincare.jpg" alt="Chania">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Serum vitamin c giúp ngăn ngừa lão hóa...</h4></a>
-                                                    
-                                                    <h2 class="card-text" style="color: #cc3333;">738,000đ</h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/mayanh.jpg" alt="">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Máy ảnh kỹ thuật số Sony...</h4></a>
-                                                    <h2 class="card-text" style="color: #cc3333">1,600,000đ</h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/sport.jpg" alt="">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Bộ quần áo thể thao co giãn 4 chiều...</h4></a>
-                                                    <h2 class="card-text" style="color: #cc3333">199,000đ </h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Second slide-->
-                        
-                        <!--Third slide-->
-                        <div class="carousel-item">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h2 style="border-left: 4px solid orange; padding-left: 10px;"><b>THE MOST POPULAR PRODUCTS</b></h2>
-                                </div>
-                                <div class="card-body">
-                                    <div class="controls-top">
-                                        <a class="btn-floating" style="float: left;" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-                                        <a class="btn-floating" style="float: right;"href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
-                                    </div>
-                                    <div class="row">
-                                        
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/skincare.jpg" alt="Chania">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Serum vitamin c giúp ngăn ngừa lão hóa...</h4></a>
-                                                    
-                                                    <h2 class="card-text" style="color: #cc3333;">738,000đ</h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/mayanh.jpg" alt="">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Máy ảnh kỹ thuật số Sony...</h4></a>
-                                                    <h2 class="card-text" style="color: #cc3333">1,600,000đ</h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/sport.jpg" alt="">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Bộ quần áo thể thao co giãn 4 chiều...</h4></a>
-                                                    <h2 class="card-text" style="color: #cc3333">199,000đ </h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/skincare.jpg" alt="Chania">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Serum vitamin c giúp ngăn ngừa lão hóa...</h4></a>
-                                                    
-                                                    <h2 class="card-text" style="color: #cc3333;">738,000đ</h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/mayanh.jpg" alt="">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Máy ảnh kỹ thuật số Sony...</h4></a>
-                                                    <h2 class="card-text" style="color: #cc3333">1,600,000đ</h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-2">
-                                            <div class="card">
-                                                
-                                                <img class="img-fluid" src="assets/img/sport.jpg" alt="">
-                                                <div class="card-body">
-                                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Bộ quần áo thể thao co giãn 4 chiều...</h4></a>
-                                                    <h2 class="card-text" style="color: #cc3333">199,000đ </h2>
-                                                    <h4 class="card-text" style="color: #666699; text-decoration: line-through">1,200,000đ</h4>
-                                                    <div class="row">
-                                                        <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                        
-                                                        <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Tdhird slide-->
-                        
-                    </div>
-                    <!--/.Slides-->
-                    
-                </div>
-                <!--/.Carousel Wrapper-->
-                
-                
-                <!--từ khóa hot-->
-                <div class="product mb-3 mb-md-5 pb-lg-5">
-                    <div class="card-body">
-                        <h2 style="border-left: 4px solid orange; padding-left: 10px;"><b>TỪ KHÓA HOT</b></h2>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="mb-3 col-6 col-md-6 col-lg-2">
-                                
-                                <button type="button" class="btn btn-primary">Iphone 7 plus</button>
-                                
-                            </div>
-                            <div class="mb-3 col-6 col-md-6 col-lg-2">
-                                
-                                <button type="button" class="btn btn-danger">Sạc dự phòng</button>
-                                
-                            </div>
-                            <div class="mb-3 col-6 col-md-6 col-lg-2">
-                                
-                                <button type="button" class="btn btn-success  ">Loa bluetooth</button>
-                                
-                            </div>
-                            <div class="mb-3 col-6 col-md-6 col-lg-2">
-                                
-                                <button type="button" class="btn btn-info ">đồ gia dụng</button>
-                                
-                            </div>
-                            <div class="mb-3 col-6 col-md-6 col-lg-2">
-                                
-                                <button type="button" class="btn btn-secondary ">Máy ảnh Sony</button>
-                                
-                            </div>
-                            <div class="mb-3 col-6 col-md-6 col-lg-2">
-                                
-                                <button type="button" class="btn btn-warning">Tai nghe không dây</button>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div class="product mb-3 mb-md-5 pb-lg-5">
-                    <div class="card">
-                        <div class="card-header">
-                            <h2 style="border-left: 4px solid orange; padding-left: 10px;"><b>ON SALE</b></h2>
-                        </div>
-                        <div class="card-body">
-                            
-                            <div class="row">
-                                
-                                <div class="px-1 col-6 col-sm-6 col-md-3 col-lg-2">
+                <div class="owl-carousel owl-theme" id='duc_carousel'>
+                    <div class="item">
+                        <div class="card">
                                     
-                                    <div class="card">
-                                        
-                                        <img class="img-fluid" src="assets/img/skincare.jpg" alt="Chania">
-                                        <div class="card-body">
-                                            <a  class="card-title" style="color: black;" href="productpage.html"><h4>Serum vitamin c giúp ngăn ngừa lão hóa...</h4></a>
-                                            
-                                            <h2 class="card-text" style="color: #cc3333;">738,000đ</h2>
-                                            <div class="row">
-                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                
-                                                <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                <div class="px-1 col-6 col-sm-6 col-md-3 col-lg-2">
-                                    <div class="card">
-                                        
-                                        <img class="img-fluid" src="assets/img/mayanh.jpg" alt="">
-                                        <div class="card-body">
-                                            <a  class="card-title" style="color: black;" href="productpage.html"><h4>Máy ảnh kỹ thuật số Sony...</h4></a>
-                                            <h2 class="card-text" style="color: #cc3333">1,600,000đ</h2>
-                                            <div class="row">
-                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                
-                                                <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                <div class="px-1 col-6 col-sm-6 col-md-3 col-lg-2">
-                                    <div class="card">
-                                        
-                                        <img class="img-fluid" src="assets/img/sport.jpg" alt="">
-                                        <div class="card-body">
-                                            <a  class="card-title" style="color: black;" href="productpage.html"><h4>Bộ quần áo thể thao co giãn 4 chiều...</h4></a>
-                                            <h2 class="card-text" style="color: #cc3333">199,000đ </h2>
-                                            <div class="row">
-                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                
-                                                <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                <div class="px-1 col-6 col-sm-6 col-md-3 col-lg-2">
+                            <img class="img-fluid" src="assets/img/skincare.jpg" alt="Chania">
+                            <div class="card-body">
+                                <a  class="card-title" style="color: black;" href="productpage.html"><h4>Serum vitamin c giúp ngăn ngừa lão hóa...</h4></a>
+                                
+                                <h2 class="card-text" style="color: #cc3333;">738,000đ</h2>
+                                <div class="row">
+                                    <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
                                     
-                                    <div class="card">
-                                        
-                                        <img class="img-fluid" src="assets/img/skincare.jpg" alt="Chania">
-                                        <div class="card-body">
-                                            <a  class="card-title" style="color: black;" href="productpage.html"><h4>Serum vitamin c giúp ngăn ngừa lão hóa...</h4></a>
-                                            
-                                            <h2 class="card-text" style="color: #cc3333;">738,000đ</h2>
-                                            <div class="row">
-                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                
-                                                <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                <div class="px-1 col-6 col-sm-6 col-md-3 col-lg-2">
-                                    <div class="card">
-                                        
-                                        <img class="img-fluid" src="assets/img/mayanh.jpg" alt="">
-                                        <div class="card-body">
-                                            <a  class="card-title" style="color: black;" href="productpage.html"><h4>Máy ảnh kỹ thuật số Sony...</h4></a>
-                                            <h2 class="card-text" style="color: #cc3333">1,600,000đ</h2>
-                                            <div class="row">
-                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                
-                                                <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                <div class="px-1 col-6 col-sm-6 col-md-3 col-lg-2">
-                                    <div class="card">
-                                        
-                                        <img class="img-fluid" src="assets/img/sport.jpg" alt="">
-                                        <div class="card-body">
-                                            <a  class="card-title" style="color: black;" href="productpage.html"><h4>Bộ quần áo thể thao co giãn 4 chiều...</h4></a>
-                                            <h2 class="card-text" style="color: #cc3333">199,000đ </h2>
-                                            <div class="row">
-                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                
-                                                <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
+                                    <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
                                 </div>
                             </div>
+                            
                         </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                                    
+                            <img class="img-fluid" src="assets/img/mayanh.jpg" alt="">
+                            <div class="card-body">
+                                <a  class="card-title" style="color: black;" href="productpage.html"><h4>Máy ảnh kỹ thuật số Sony...</h4></a>
+                                <h2 class="card-text" style="color: #cc3333">1,600,000đ</h2>
+                                <div class="row">
+                                    <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                    
+                                    <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                                    
+                            <img class="img-fluid" src="assets/img/sport.jpg" alt="">
+                            <div class="card-body">
+                                <a  class="card-title" style="color: black;" href="productpage.html"><h4>Bộ quần áo thể thao co giãn 4 chiều...</h4></a>
+                                <h2 class="card-text" style="color: #cc3333">199,000đ </h2>
+                                <div class="row">
+                                    <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                    
+                                    <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                                    
+                            <img class="img-fluid" src="assets/img/skincare.jpg" alt="Chania">
+                            <div class="card-body">
+                                <a  class="card-title" style="color: black;" href="productpage.html"><h4>Serum vitamin c giúp ngăn ngừa lão hóa...</h4></a>
+                                
+                                <h2 class="card-text" style="color: #cc3333;">738,000đ</h2>
+                                <div class="row">
+                                    <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                    
+                                    <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                                    
+                            <img class="img-fluid" src="assets/img/skincare.jpg" alt="Chania">
+                            <div class="card-body">
+                                <a  class="card-title" style="color: black;" href="productpage.html"><h4>Serum vitamin c giúp ngăn ngừa lão hóa...</h4></a>
+                                
+                                <h2 class="card-text" style="color: #cc3333;">738,000đ</h2>
+                                <div class="row">
+                                    <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                    
+                                    <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h4>6</h4>
+                    </div>
+                    <div class="item">
+                        <h4>7</h4>
+                    </div>
+                    <div class="item">
+                        <h4>8</h4>
+                    </div>
+                    <div class="item">
+                        <h4>9</h4>
+                    </div>
+                    <div class="item">
+                        <h4>10</h4>
+                    </div>
+                    <div class="item">
+                        <h4>11</h4>
+                    </div>
+                    <div class="item">
+                        <h4>12</h4>
                     </div>
                 </div>
                 
-                <div class="product mb-3 mb-md-5 pb-lg-5">
+                <!--Controls-->
+                
+                <!--/.Controls-->
+                
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                    <li data-target="#multi-item-example" data-slide-to="1"></li>
+                    <li data-target="#multi-item-example" data-slide-to="2"></li>
+                </ol>
+                <!--/.Indicators-->
+                
+               
+                
+           
+            
+            
+            <!--từ khóa hot-->
+            <div class="product mb-3 mb-md-5 pb-lg-5">
+                <div class="card-body">
+                    <h2 style="border-left: 4px solid orange; padding-left: 10px;"><b>TỪ KHÓA HOT</b></h2>
+                </div>
+                <div class="col-md-12">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 left">
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h2>NEWEST ITEMS</h2>
-                                    </div>
-                                    <div class="card-body">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h2>Shopping news</h2>
-                                    </div>
-                                    <div class="card-body">
-                                        
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="mb-3 col-6 col-md-6 col-lg-2">
+                            
+                            <button type="button" class="btn btn-primary">Iphone 7 plus</button>
+                            
                         </div>
+                        <div class="mb-3 col-6 col-md-6 col-lg-2">
+                            
+                            <button type="button" class="btn btn-danger">Sạc dự phòng</button>
+                            
+                        </div>
+                        <div class="mb-3 col-6 col-md-6 col-lg-2">
+                            
+                            <button type="button" class="btn btn-success  ">Loa bluetooth</button>
+                            
+                        </div>
+                        <div class="mb-3 col-6 col-md-6 col-lg-2">
+                            
+                            <button type="button" class="btn btn-info ">đồ gia dụng</button>
+                            
+                        </div>
+                        <div class="mb-3 col-6 col-md-6 col-lg-2">
+                            
+                            <button type="button" class="btn btn-secondary ">Máy ảnh Sony</button>
+                            
+                        </div>
+                        <div class="mb-3 col-6 col-md-6 col-lg-2">
+                            
+                            <button type="button" class="btn btn-warning">Tai nghe không dây</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="product mb-3 mb-md-5 pb-lg-5">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 style="border-left: 4px solid orange; padding-left: 10px;"><b>ON SALE</b></h2>
+                    </div>
+                    <div class="card-body">
                         
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 right">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h2 style="border-left: 4px solid orange; padding-left: 10px;"><b>TIN TỨC & BÀI VIẾT</b></h2>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="px-1 col-6">
-                                            <div class="card">
-                                                <img src="assets/img/blogpost.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <a  class="card-title" href="news.html">VINTAS SAIGON 1980s</a>
-                                                    <a  class="card-text" href="news.html"><p>Cảm hứng Sài Gòn xưa giữa thời hiện đại.</p></a>
-                                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                                </div>
-                                            </div>
+                        <div class="row">
+                            
+                            <div class="px-1 col-6 col-sm-6 col-md-3 col-lg-2">
+                                
+                                <div class="card">
+                                    
+                                    <img class="img-fluid" src="assets/img/skincare.jpg" alt="Chania">
+                                    <div class="card-body">
+                                        <a  class="card-title" style="color: black;" href="productpage.html"><h4>Serum vitamin c giúp ngăn ngừa lão hóa...</h4></a>
+                                        
+                                        <h2 class="card-text" style="color: #cc3333;">738,000đ</h2>
+                                        <div class="row">
+                                            <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                            
+                                            <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
                                         </div>
-                                        <div class="px-1 col-6">
-                                            <div class="card">
-                                                <img src="assets/img/blogpost.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <a  class="card-title" href="news.html">VINTAS SAIGON 1980s</a>
-                                                    <a  class="card-text" href="news.html"><p>Cảm hứng Sài Gòn xưa giữa thời hiện đại.</p></a>
-                                                    
-                                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                                </div>
-                                            </div>
-                                        </div> 
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="px-1 col-6 col-sm-6 col-md-3 col-lg-2">
+                                <div class="card">
+                                    
+                                    <img class="img-fluid" src="assets/img/mayanh.jpg" alt="">
+                                    <div class="card-body">
+                                        <a  class="card-title" style="color: black;" href="productpage.html"><h4>Máy ảnh kỹ thuật số Sony...</h4></a>
+                                        <h2 class="card-text" style="color: #cc3333">1,600,000đ</h2>
+                                        <div class="row">
+                                            <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                            
+                                            <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="px-1 col-6 col-sm-6 col-md-3 col-lg-2">
+                                <div class="card">
+                                    
+                                    <img class="img-fluid" src="assets/img/sport.jpg" alt="">
+                                    <div class="card-body">
+                                        <a  class="card-title" style="color: black;" href="productpage.html"><h4>Bộ quần áo thể thao co giãn 4 chiều...</h4></a>
+                                        <h2 class="card-text" style="color: #cc3333">199,000đ </h2>
+                                        <div class="row">
+                                            <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                            
+                                            <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="px-1 col-6 col-sm-6 col-md-3 col-lg-2">
+                                
+                                <div class="card">
+                                    
+                                    <img class="img-fluid" src="assets/img/skincare.jpg" alt="Chania">
+                                    <div class="card-body">
+                                        <a  class="card-title" style="color: black;" href="productpage.html"><h4>Serum vitamin c giúp ngăn ngừa lão hóa...</h4></a>
+                                        
+                                        <h2 class="card-text" style="color: #cc3333;">738,000đ</h2>
+                                        <div class="row">
+                                            <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                            
+                                            <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="px-1 col-6 col-sm-6 col-md-3 col-lg-2">
+                                <div class="card">
+                                    
+                                    <img class="img-fluid" src="assets/img/mayanh.jpg" alt="">
+                                    <div class="card-body">
+                                        <a  class="card-title" style="color: black;" href="productpage.html"><h4>Máy ảnh kỹ thuật số Sony...</h4></a>
+                                        <h2 class="card-text" style="color: #cc3333">1,600,000đ</h2>
+                                        <div class="row">
+                                            <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                            
+                                            <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="px-1 col-6 col-sm-6 col-md-3 col-lg-2">
+                                <div class="card">
+                                    
+                                    <img class="img-fluid" src="assets/img/sport.jpg" alt="">
+                                    <div class="card-body">
+                                        <a  class="card-title" style="color: black;" href="productpage.html"><h4>Bộ quần áo thể thao co giãn 4 chiều...</h4></a>
+                                        <h2 class="card-text" style="color: #cc3333">199,000đ </h2>
+                                        <div class="row">
+                                            <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                            
+                                            <a href="productpage.html"><div class="ml-4" style="color: #cc3333;"><i class="fas fa-cart-plus"></i></div></a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product mb-3 mb-md-5 pb-lg-5">
+                <div class="card-header">
+                    <h2 style="border-left: 4px solid orange; padding-left: 10px;"><b>TIN TỨC & BÀI VIẾT</b></h2>
+                </div>
+                <!-- Portfolio Gallery Grid -->
+                <div class="post">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="column_img nature">
+                                <div class="content">
+                                    <img src="assets/img/NATURE.jpg" alt="Mountains" style="width:100%">
+                                    <div class="card-body">
+                                        <a  class="card-title" href="news.html">VINTAS SAIGON 1980s</a>
+                                        <a  class="card-text" href="news.html"><p>Cảm hứng Sài Gòn xưa giữa thời hiện đại.</p></a>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                
-            </div>
-            
-            <div class="col-sm-12 col-12 d-none d-lg-block">
-                <div class="jumbotron text-center" style="background-color: #f09819;">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                                <img src="assets/img/store.jpg" alt="" style="width:150px; height:150px;">
-                                <div class="col">
-                                    <button type="button" class="btn btn-warning">TÌM CỬA HÀNG</button>
+                        <div class="col-12 col-lg-4">
+                            <div class="column_img nature">
+                                <div class="content">
+                                    <img src="assets/img/blogpost.jpg" alt="Lights" style="width:100%">
+                                    <div class="card-body">
+                                        <a  class="card-title" href="news.html">VINTAS SAIGON 1980s</a>
+                                        <a  class="card-text" href="news.html"><p>Cảm hứng Sài Gòn xưa giữa thời hiện đại.</p></a>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                                <a  href="#" style="color: aliceblue;">SẢN PHẨM</a>
-                                <a  href="#" style="color: aliceblue;"><p>Thời trang & Phụ Kiện</p></a>
-                                <a  href="#" style="color: aliceblue;"><p>Thời trang Nam</p></a>
-                                <a  href="#" style="color: aliceblue;"><p>Saleoff</p></a>
-                            </div>
-                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                                <a  href="#" style="color: aliceblue;">VỀ CÔNG TY</a>
-                                <a  href="#" style="color: aliceblue;"><p>Liên hệ Quảng Cáo</p></a>
-                                <a  href="#" style="color: aliceblue;"><p>Đối tác</p></a>
-                                <a  href="#" style="color: aliceblue;"><p></p></a>
-                            </div>
-                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                                <a  href="#" style="color: aliceblue;">HỖ TRỢ</a>
-                                <a  href="#" style="color: aliceblue;"><p>FAQS</p></a>
-                                <a  href="#" style="color: aliceblue;"><p>Chính sách chung</p></a>
-                                <a  href="#" style="color: aliceblue;"><p>Tra cứu đơn hàng</p></a>
-                                
-                            </div>
-                            
-                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                                <a  href="#" style="color: aliceblue;">LIÊN HỆ</a>
-                                <a  href="#" style="color: aliceblue;"><p>Email góp ý</p></a>
-                                <a  href="#" style="color: aliceblue;"><p>Hotline</p></a>
-                            </div>
-                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                                <a  href="#" style="color: aliceblue;">LIÊN HỆ</a>
-                                <a  href="#" style="color: aliceblue;"><p>Email góp ý</p></a>
-                                <a  href="#" style="color: aliceblue;"><p>Hotline</p></a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="column_img nature">
+                                <div class="content">
+                                    <img src="assets/img/NATURE.jpg" alt="Nature" style="width:100%">
+                                    <div class="card-body">
+                                        <a  class="card-title" href="news.html">VINTAS SAIGON 1980s</a>
+                                        <a  class="card-text" href="news.html"><p>Cảm hứng Sài Gòn xưa giữa thời hiện đại.</p></a>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- END GRID -->
                     </div>
                 </div>
             </div>
             
-            <div class="col-sm-12 d-block d-lg-none">
-                <div class="jumbotron" style="background-color: #f09819;">
-                    <div class="col-12" style="padding-bottom: 20px;">
-                        <div class="row">
+            </div>
+        
+        <div class="col-sm-12 col-12 d-none d-lg-block">
+            <div class="jumbotron text-center" style="background-color: #f09819;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="assets/img/store.jpg" alt="" style="width:150px; height:150px;">
+                            <div class="col">
+                                <button type="button" class="btn btn-warning">TÌM CỬA HÀNG</button>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <a  href="#" style="color: aliceblue;">SẢN PHẨM</a>
+                            <a  href="#" style="color: aliceblue;"><p>Thời trang & Phụ Kiện</p></a>
+                            <a  href="#" style="color: aliceblue;"><p>Thời trang Nam</p></a>
+                            <a  href="#" style="color: aliceblue;"><p>Saleoff</p></a>
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <a  href="#" style="color: aliceblue;">VỀ CÔNG TY</a>
+                            <a  href="#" style="color: aliceblue;"><p>Liên hệ Quảng Cáo</p></a>
+                            <a  href="#" style="color: aliceblue;"><p>Đối tác</p></a>
+                            <a  href="#" style="color: aliceblue;"><p></p></a>
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <a  href="#" style="color: aliceblue;">HỖ TRỢ</a>
+                            <a  href="#" style="color: aliceblue;"><p>FAQS</p></a>
+                            <a  href="#" style="color: aliceblue;"><p>Chính sách chung</p></a>
+                            <a  href="#" style="color: aliceblue;"><p>Tra cứu đơn hàng</p></a>
                             
-                            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
-                                <a class="navbar-brand" style="color: white;" href="#"><h4>SẢN PHẨM</h4></a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <i class="fas fa-angle-down"></i>
-                                </button>
-                                
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav mr-auto">
-                                        
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Thời trang & phụ kiện</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Thời trang nam</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Saleoff</a>
-                                        </li>
-                                        
-                                        
-                                    </ul>
-                                    
-                                </div>
-                            </nav>
                         </div>
                         
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <a  href="#" style="color: aliceblue;">LIÊN HỆ</a>
+                            <a  href="#" style="color: aliceblue;"><p>Email góp ý</p></a>
+                            <a  href="#" style="color: aliceblue;"><p>Hotline</p></a>
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <a  href="#" style="color: aliceblue;">LIÊN HỆ</a>
+                            <a  href="#" style="color: aliceblue;"><p>Email góp ý</p></a>
+                            <a  href="#" style="color: aliceblue;"><p>Hotline</p></a>
+                        </div>
                     </div>
-                    <div class="col-12" style="padding-bottom: 20px; " >
-                        <div class="row" >
-                            
-                            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
-                                <a class="navbar-brand" style="color: white;" href="#"><h4>VỀ CÔNG TY</h4></a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <i class="fas fa-angle-down"></i>
-                                </button>
-                                
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-                                    <ul class="navbar-nav mr-auto">
-                                        
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Liên hệ Quảng Cáo</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Đối tác</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Đại lý</a>
-                                        </li>
-                                        
-                                        
-                                    </ul>
-                                    
-                                </div>
-                            </nav>
-                        </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-12 d-block d-lg-none">
+            <div class="jumbotron" style="background-color: #f09819;">
+                <div class="col-12" style="padding-bottom: 20px;">
+                    <div class="row">
                         
-                    </div>
-                    <div class="col-12" style="padding-bottom: 20px;">
-                        <div class="row">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                            <a class="navbar-brand" style="color: white;" href="#"><h4>SẢN PHẨM</h4></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-angle-down"></i>
+                            </button>
                             
-                            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
-                                <a class="navbar-brand" style="color: white;" href="#"><h4>HỖ TRỢ</h4></a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <i class="fas fa-angle-down"></i>
-                                </button>
-                                
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent2">
-                                    <ul class="navbar-nav mr-auto">
-                                        
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">FAQS</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Chính sách chung</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Tra cứu đơn hàng</a>
-                                        </li>
-                                        
-                                        
-                                    </ul>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
                                     
-                                </div>
-                            </nav>
-                        </div>
-                        
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Thời trang & phụ kiện</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Thời trang nam</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Saleoff</a>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                                
+                            </div>
+                        </nav>
                     </div>
                     
                 </div>
+                <div class="col-12" style="padding-bottom: 20px; " >
+                    <div class="row" >
+                        
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                            <a class="navbar-brand" style="color: white;" href="#"><h4>VỀ CÔNG TY</h4></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-angle-down"></i>
+                            </button>
+                            
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                                <ul class="navbar-nav mr-auto">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Liên hệ Quảng Cáo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Đối tác</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Đại lý</a>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                                
+                            </div>
+                        </nav>
+                    </div>
+                    
+                </div>
+                <div class="col-12" style="padding-bottom: 20px;">
+                    <div class="row">
+                        
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                            <a class="navbar-brand" style="color: white;" href="#"><h4>HỖ TRỢ</h4></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-angle-down"></i>
+                            </button>
+                            
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                                <ul class="navbar-nav mr-auto">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">FAQS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Chính sách chung</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tra cứu đơn hàng</a>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                                
+                            </div>
+                        </nav>
+                    </div>
+                    
+                </div>
+                
             </div>
-            
         </div>
         
-        
-        
-        <!-- Custom template | don't include it in your project! -->
-        <div class="custom-template">
-            <div class="title">Settings</div>
-            <div class="custom-content">
-                <div class="switcher">
-                    <div class="switch-block">
-                        <h4>Topbar</h4>
-                        <div class="btnSwitch">
-                            <button type="button" class="changeMainHeaderColor" data-color="blue"></button>
-                            <button type="button" class="selected changeMainHeaderColor" data-color="purple"></button>
-                            <button type="button" class="changeMainHeaderColor" data-color="light-blue"></button>
-                            <button type="button" class="changeMainHeaderColor" data-color="green"></button>
-                            <button type="button" class="changeMainHeaderColor" data-color="orange"></button>
-                            <button type="button" class="changeMainHeaderColor" data-color="red"></button>
-                        </div>
+    </div>
+    
+    
+    
+    <!-- Custom template | don't include it in your project! -->
+    <div class="custom-template">
+        <div class="title">Settings</div>
+        <div class="custom-content">
+            <div class="switcher">
+                <div class="switch-block">
+                    <h4>Topbar</h4>
+                    <div class="btnSwitch">
+                        <button type="button" class="changeMainHeaderColor" data-color="blue"></button>
+                        <button type="button" class="selected changeMainHeaderColor" data-color="purple"></button>
+                        <button type="button" class="changeMainHeaderColor" data-color="light-blue"></button>
+                        <button type="button" class="changeMainHeaderColor" data-color="green"></button>
+                        <button type="button" class="changeMainHeaderColor" data-color="orange"></button>
+                        <button type="button" class="changeMainHeaderColor" data-color="red"></button>
                     </div>
-                    <div class="switch-block">
-                        <h4>Background</h4>
-                        <div class="btnSwitch">
-                            <button type="button" class="changeBackgroundColor" data-color="bg2"></button>
-                            <button type="button" class="changeBackgroundColor selected" data-color="bg1"></button>
-                            <button type="button" class="changeBackgroundColor" data-color="bg3"></button>
-                        </div>
+                </div>
+                <div class="switch-block">
+                    <h4>Background</h4>
+                    <div class="btnSwitch">
+                        <button type="button" class="changeBackgroundColor" data-color="bg2"></button>
+                        <button type="button" class="changeBackgroundColor selected" data-color="bg1"></button>
+                        <button type="button" class="changeBackgroundColor" data-color="bg3"></button>
                     </div>
                 </div>
             </div>
-            <div class="custom-toggle">
-                <i class="flaticon-settings"></i>
-            </div>
         </div>
-        <!-- End Custom template -->
+        <div class="custom-toggle">
+            <i class="flaticon-settings"></i>
+        </div>
     </div>
+    <!-- End Custom template -->
 </div>
+</div>
+<!-- slider -->
+
+<script>
+    $('#duc_carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})
+</script>
 <!--   Core JS Files   -->
 <script src="assets/js/core/jquery.3.2.1.min.js"></script>
 <script src="assets/js/core/popper.min.js"></script>
