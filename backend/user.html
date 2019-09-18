@@ -412,7 +412,7 @@
                                                     <button type="button" class="btn btn-icon btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Edit">
                                                         <i class="fas fa-pencil-alt"></i>
                                                     </button>
-                                                    <button type="button" id="alert_demo_7" class="btn btn-icon btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete">
+                                                    <button type="button" id="alert_demo" class="btn btn-icon btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete">
                                                         <i class="fas fa-trash"></i>
                                                     </button>
                                                 </td>
@@ -435,7 +435,7 @@
                                                     <button type="button" class="btn btn-icon btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Edit">
                                                         <i class="fas fa-pencil-alt"></i>
                                                     </button>
-                                                    <button type="button" class="btn btn-icon btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete">
+                                                    <button type="button" id="alert_demo" class="btn btn-icon btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete">
                                                         <i class="fas fa-trash"></i>
                                                     </button>
                                                 </td>
@@ -458,7 +458,7 @@
                                                     <button type="button" class="btn btn-icon btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Edit">
                                                         <i class="fas fa-pencil-alt"></i>
                                                     </button>
-                                                    <button type="button" class="btn btn-icon btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete">
+                                                    <button type="button" id="alert_demo" class="btn btn-icon btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete">
                                                         <i class="fas fa-trash"></i>
                                                     </button>
                                                 </td>
@@ -481,7 +481,7 @@
                                                     <button type="button" class="btn btn-icon btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Edit">
                                                         <i class="fas fa-pencil-alt"></i>
                                                     </button>
-                                                    <button type="button" class="btn btn-icon btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete">
+                                                    <button type="button" id="alert_demo" class="btn btn-icon btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete">
                                                         <i class="fas fa-trash"></i>
                                                     </button>
                                                 </td>
@@ -600,7 +600,8 @@
 
         //== Demos
         var initDemos = function() {
-            $('#alert_demo_7').click(function(e) {
+            $('.btn-danger').click(function(e) {
+                
                 swal({
                     title: 'Are you sure?',
                     text: "You won't be able to revert this!",
