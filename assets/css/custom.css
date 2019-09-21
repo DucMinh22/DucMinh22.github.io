@@ -320,6 +320,53 @@
     cursor: pointer;
     border: 1px solid #f09819;
  }
+ .text-rate-star{
+    display: flex;
+    font-size: 50px;
+   
+
+ }
+ .modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+ }
+ .modal-content {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+ }
+
+ #caption h4 {
+   color: #ccc;
+ }
+ #caption {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+   text-align: center;
+   color: #ccc;
+   padding: 10px 0;
+   height: 150px;
+ }
+ 
+ .rating-star-1{
+    padding-top: 0px;
+ }
+ .text-rate-star h1 small{
+    color: #f09819;
+   
+ }
  .btn-pay{
     background-color: #f09819;
     padding: 15px 30px;
