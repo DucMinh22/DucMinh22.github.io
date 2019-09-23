@@ -8,7 +8,6 @@
     margin-bottom: 0px;
     position: relative;
     
-    min-height: 35px;
     color: #ffffff;
     
     
@@ -25,20 +24,24 @@
     padding:0;
  }
  .nav_top_left{
-    margin-top: 8px;
+    margin-top: 13px;
  }
  .nav_top_right {
-    margin-top: 8px;
-    margin-left: 60px;
+    margin-top: 13px;
+
+ }
+ .nav-link{
+    margin-right: 30px;
  }
  .nav_top_right ul{
     display: flex;
     list-style: none;
-    
+    float: right;
  }
  .nav_top_right ul li{
-    margin-right: 20px;
+    margin-right: 10px;
     text-decoration: none;
+    
  }
  .sticky {
     position: fixed;
@@ -87,6 +90,10 @@
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+ }
+
+ .comment h4{
+    margin-left: 95px;
  }
  
  .side-bar a {
@@ -186,7 +193,20 @@
     border: none;
     width: 170px;;
  }
- 
+ .text-content pre ul li{
+   
+    
+ }
+
+ .cart-icon{
+display: flex;
+color:white;
+ margin-left: 25px;
+  border: 1px solid white; 
+  padding: 10px;
+   border-radius:5px;
+   width:120px;
+ }
  .openbtn:hover {
     background-color: #444;
  }
@@ -303,14 +323,17 @@
  #cost h2{
     color: #f09819;
  }
- #cost h4{
+ #cost h3{
     text-decoration: line-through;
   margin-right: 10px;
   margin-top: 4px;
  }
  #row-pay{
     margin-top: 15px;
+   
  }
+
+ 
  .btn-cart{
    background-color: #fdcf51;
     padding: 15px 20px;
@@ -326,8 +349,6 @@
    
 
  }
- 
-
  
 
  .modal {
