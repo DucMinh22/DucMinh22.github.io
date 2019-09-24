@@ -25,13 +25,14 @@
  }
  .nav_top_left{
     margin-top: 13px;
+    margin-left: 25px;
  }
  .nav_top_right {
     margin-top: 13px;
 
  }
  .nav-link{
-    margin-right: 30px;
+    
  }
  .nav_top_right ul{
     display: flex;
@@ -76,7 +77,54 @@
  #navbar-rights {
     float: right;
  }
+ .search-form{
+    display: flex;
+ }
+ .search
+{
+	
+	overflow: auto;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   width: 700px;
+   margin-right: 60px;
+  
+}
+
+.search input[type="text"]
+{
+	border: 0px;
+	width: 100%;
+   padding: 10px 10px;
+ background-color: #000;
+color: white;
+opacity: 0.6;
  
+}
+
+.search input[type="text"]:focus
+{
+   outline: 0;
+ 
+}
+
+
+
+/* ===========================
+   ====== Medua Query for Search Box ====== 
+   =========================== */
+
+@media only screen and (min-width : 150px) and (max-width : 780px)
+{
+	{}
+	.search
+	{
+		width: 95%;
+		margin: 0 auto;
+	}
+
+}
  .side-bar {
     height: 1000px;
     width: 0;
@@ -115,7 +163,23 @@
     font-size: 36px;
     margin-left: 50px;
  }
- 
+#main-category{
+   margin-right: 30px;
+}
+
+ #pills-profile-tab:hover{
+   background-color: #f09819;
+ }
+
+#pills-home-tab{
+    background-color: #f09819;
+    color: #ffffff;
+    border: none;
+    display: inline-block;
+ }
+ #pills-home-tab:hover{
+    background-color: gainsboro;
+ }
  #list-profile-list:hover {
  background-color:#ffcc33;
  color: #ffffff;
@@ -129,7 +193,6 @@
  
   .card-product:hover {
     border: 2px solid #f09819;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
  }
  .active_header{
@@ -204,6 +267,7 @@ color:white;
  margin-left: 25px;
   border: 1px solid white; 
   padding: 10px;
+  padding-bottom: 4px;
    border-radius:5px;
    width:120px;
  }
@@ -342,6 +406,7 @@ color:white;
     border-radius: 5px;
     cursor: pointer;
     border: 1px solid #f09819;
+
  }
  .text-rate-star{
     display: flex;

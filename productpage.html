@@ -43,107 +43,97 @@
         
         <!-- Navbar Header -->
         <div class="header">
-            <div class="nav_top">
-                <div class="container">
-                    <div class="row" >      
-                        <div class="col-12 col-md-4 col-sm-4">
-                            <div class="nav_top_left">
-                                Hotline: 0978.485.015
+                <div class="nav_top">
+                    <div class="container">
+                        <div class="row" >      
+                            <div class="col-12 col-md-4 col-sm-4">
+                                <div class="nav_top_left">
+                                    Hotline: 0978.485.015
+                                </div>
                             </div>
+                            
+                            <div class="col-12 col-sm-8 col-md-8 ">
+                                <div class="nav_top_right">
+                                    <ul class="top-menu">
+                                        <li>Tra cứu đơn hàng</li>
+                                        <li>Câu hỏi thường gặp</li>
+                                        <li>Thông báo</li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" >
+                    <!-- Navbar content -->
+                    
+                    <div class="container">
+                        
+                        <a  class="navbar-brand" href="index.html"> <img src="assets/img/logo_blue.png" class="img-fluid" alt="..." style="width: 250px; height: 60px; "></a>
+                        
+                        <div class="search">
+                            <form class="search-form" action="resultbysearch.html">
+                                <input type="text" placeholder="Tìm kiếm..." >
+                                <a href="resultbysearch.html"><i class="fa fa-search search-icon" style="padding:13px; background-color:#f09819; color: white;"></i></a>
+                            </form>
                         </div>
                         
-                        <div class="col-12 col-sm-8 col-md-8 ">
-                            <div class="nav_top_right">
-                                <ul class="top-menu">
-                                    <li>Tra cứu đơn hàng</li>
-                                    <li>Câu hỏi thường gặp</li>
-                                    <li>Thông báo</li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" >
-                <!-- Navbar content -->
-                
-                <div class="container">
-                    
-                    <a  class="navbar-brand" href="index.html"> <img src="assets/img/logo_blue.png" class="img-fluid" alt="..." style="width: 250px; height: 60px;"></a>
-                    
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            
-                            <form class="navbar-left navbar-form nav-search"  action="resultbysearch.html">
-                                <div class="input-group"  style="width: 350px; min-width: 650px;">
-                                    <input type="text" placeholder="Tìm kiếm ..." class="form-control" >
-                                    <div class="input-group-append">
-                                        <span class="input-group-text">
-                                            <a href="resultbysearch.html"><i class="fa fa-search search-icon"></i></a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </form>
-                        </ul>
-                    </div>
-                    
-                    <ul class="navbar-nav navbar-brand">
-                        <div class="row">
-                            <div class="col-6">
-                                <li class="nav-item">
-                                    <a class="nav-link" style="color:white;" href="#">ĐĂNG NHẬP</a>
-                                </li>
-                            </div>
-                            <div class="col-6">
-                                <li class="nav-item">
-                                    <div class="cart-icon">
-                                        <i class="fas fa-cart-plus" style="margin-right: 7px; "></i>
-                                        <h4>Giỏ Hàng </h4>
-                                    </div>
-                                </li>
-                            </div>
-                        </ul>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                </nav>
-                
-                <div class="d-none d-lg-block">
-                    <div id="navbar" style="background-color: #f1f1f1;">
-                        <div class="container" >
+                        
+                        <ul class="navbar-nav navbar-brand">
                             <div class="row">
-                                <div class="col-lg-3"></div>
-                                <div class="col-lg-6">
-                                    <a href="index.html"><i class="fas fa-home" style="font-size: 20px; margin-right: 25px;"></i></a>
-                                    <a class="nav-link"href="#"><b>SẢN PHẨM</b></a>
-                                    <a class="nav-link"href="#"><b>BLOG</b></a>
-                                    <a class="nav-link"href="#"><b>HƯỚNG DẪN</b></a>
-                                    <a class="nav-link"href="#"><b>LIÊN HỆ</b></a>
-                                    
+                                <div class="pt-2 col-6 col-lg-4">
+                                    <li class="nav-item">
+                                        <a class="nav-link" style="color:white;" href="#">ĐĂNG NHẬP</a>
+                                    </li>
                                 </div>
-                                <div class="col-lg-3"></div>
+                                <div class="pt-2 col-6 col-lg-8">
+                                    <li class="nav-item">
+                                        <div class="cart-icon">
+                                            <i class="fas fa-cart-plus" style="margin-right: 7px; "></i>
+                                            <h4>Giỏ Hàng </h4>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+                            
+                        </div>
+                    </nav>
+                    
+                    <div class="d-none d-lg-block">
+                        <div id="navbar" style="background-color: #f1f1f1;">
+                            <div class="container" >
+                                <div class="row">
+                                    <div class="col-lg-3"></div>
+                                    <div class="col-lg-6">
+                                        <a href="index.html"><i class="fas fa-home" style="font-size: 20px; margin-right: 25px;"></i></a>
+                                        <a id="main-category" class="nav-link"href="#"><b>SẢN PHẨM</b></a>
+                                        <a id="main-category"class="nav-link"href="#"><b>BLOG</b></a>
+                                        <a id="main-category"class="nav-link"href="#"><b>HƯỚNG DẪN</b></a>
+                                        <a id="main-category" class="nav-link"href="#"><b>LIÊN HỆ</b></a>
+                                        
+                                    </div>
+                                    <div class="col-lg-3"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <script>
-                    window.onscroll = function() {myFunction()};
-                    
-                    var navbar = document.getElementById("navbar");
-                    var sticky = navbar.offsetTop;
-                    
-                    function myFunction() {
-                        if (window.pageYOffset >= sticky) {
-                            navbar.classList.add("sticky")
-                        } else {
-                            navbar.classList.remove("sticky");
+                    <script>
+                        window.onscroll = function() {myFunction()};
+                        
+                        var navbar = document.getElementById("navbar");
+                        var sticky = navbar.offsetTop;
+                        
+                        function myFunction() {
+                            if (window.pageYOffset >= sticky) {
+                                navbar.classList.add("sticky")
+                            } else {
+                                navbar.classList.remove("sticky");
+                            }
                         }
-                    }
-                </script>
-                
-            </div>
+                    </script>
+                    
+                </div>
             
             
             <!-- End Navbar -->
@@ -310,15 +300,14 @@
                                                     </div>
                                                     <div class="pb-4" >
                                                         <div class="row">
-                                                            <div class="col-5">
+                                                            <div class="px-0 col-5">
                                                                 <h4 style="padding-top:10px;"><b>SỐ LƯỢNG</b> </h4>
                                                             </div>
-                                                            <div class="col-7">
-                                                                <select class="custom-select" id="inputGroupSelect01">
-                                                                    <option selected>Lựa chọn...</option>
-                                                                    <option value="1">1</option>
-                                                                    <option value="2">2</option>
-                                                                    <option value="3">3</option>
+                                                            <div class="px-0 col-7">
+                                                                <select class="form-control input-fixed" id="notify_placement_align" style="width: 100px;">
+                                                                    <option value="left" selected="">1</option>
+                                                                    <option value="right" >2</option>
+                                                                    <option value="center">3</option>
                                                                 </select>
                                                             </div>
                                                             
@@ -327,7 +316,7 @@
                                                     <div class="pb-2 pl-3" id="row-pay">
                                                         <div class="row"> 
                                                             <div class="px-0 col-lg-6 col-12">
-                                                                <button type="button" class="btn-cart" >THÊM VÀO GIỎ HÀNG</button>
+                                                                <button type="button" class="btn-cart" >  <i class="fas fa-cart-plus" style="margin-right: 7px; "></i>THÊM VÀO GIỎ HÀNG</button>
                                                             </div>
                                                             <div class="px-0 col-lg-6 col-12">
                                                                 <a href="cart.html">  <button type="button" class="btn-pay">THANH TOÁN</button></a>
@@ -363,111 +352,119 @@
                                     </li>
                                 </ul>
                             </div>
+                            
                             <div class="card-body">
-                                
                                 <div class="tab-content mt-2 mb-3" id="pills-tabContent">
                                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                        <div class="px-4 ">
-                                            <h5 style="border-bottom: 1px solid #f09819; padding-bottom: 10px;">THUỘC TÍNH SẢN PHẨM</h5>
-                                            <p style="background-color: gainsboro; padding: 5px 10px;"><b>Bảo hành:</b> Không bảo hành</p>
-                                            <p><b>Phương thức thanh toán:</b> Không bảo hành</p>
-                                            <p style="background-color: gainsboro; padding: 5px 10px;"><b>Hãng sản xuất:</b> Khác</p>
-                                        </div>
-                                        <div class="px-4 pb-3">
-                                            <h5 style="border-bottom: 1px solid #f09819; padding-bottom: 10px;">CHI TIẾT SẢN PHẨM</h5>
-                                        </div>
-                                        <img class="img-fluid" src="assets/img/meat_1.png" alt="Chania">
-                                        <h3>Máy hút chân không là một trong những dòng sản phẩm giúp bảo quản thực phẩm được tươi ngon hơn và được các bà nội trợ yêu thích sử dụng hiện nay.</h3>
-                                        <img class="img-fluid" src="assets/img/meat_2.png" alt="Chania">
-                                        <img class="img-fluid" src="assets/img/meat_3.png" alt="Chania">
-                                        <div>
-                                            <img class="img-fluid" src="assets/img/meat.png" alt="Chania">
-                                        </div>
-                                        <div class="text-content">
-                                            <pre style="margin-left: 20px;">
-                                                
-                                                <h3>Thông tin chi tiết sản phẩm máy hút chân không:</h3>
-                                                <h3>- Kích thước: 360*54*50mm</h3>
-                                                <h3>- Trọng lượng: 600g</h3>
-                                                <h3>- Nguồn điện: 220V</h3>
-                                                <h3>- Chất liệu: ABS</h3>
-                                                <h3>- Công suất: 100W</h3>
-                                                <h3>- Tốc độ: 5 túi / 1 phút</h3>
-                                                <h3>- Công suất hút: 0.05 MP</h3>
-                                                <h3>- Chất liệu an toàn, thân thiện với môi trường</h3>
-                                                <h3>- Thiết kê chiếc máy nhỏ gọn nhưng vô cùng mạnh mẽ.</h3>
-                                                
-                                            </pre>
-                                        </div>
-                                        <img class="img-fluid" src="assets/img/meat_4.png" alt="Chania">
-                                        <h3>Cách sử dụng máy hút chân không vô cùng đơn giản, chỉ cần cho thực phẩm vào túi, đặt chúng lên miệng của máy, dập xuống và bấm nút là bạn đã có một túi đồ ăn được hút chân không lúc này bạn có thể yên tâm cất giữ thực phẩm, hoa quả…giúp chúng giữ được dưỡng chất quan trọng và đảm bảo vệ sinh, sạch sẽ cho tủ lạnh.</h3>
-                                        <img class="img-fluid" src="assets/img/meat_5.png" alt="Chania">
-                                        <div class="text-content">
-                                            <pre style="margin-left: 20px;">
-                                                
-                                                <h3> Hướng dẫn sử dụng máy hút chân không</h3>
-                                                <h3> – B1: Cắm điện và kiểm tra máy. lúc này nút phía tay trái của bạn sẽ có đèn màu xanh.</h3>
-                                                <h3>– B2: Cho thực phẩm vào trong các túi chuyên dụng 1 mặt nhám 1 mặt trơn như túi kèm theo máy.</h3>
-                                                <h3>– B3: Kẹp đầu túi vào phía trong máy hút chân không (lưu ý để phần miện túi nằm chính giữa phần gioăng cao su màu đen).</h3>
-                                                <h3> – B4: Khóa 2 đầu và nhấn nút màu xanh. Đèn báo nhấp nháy.</li>
-                                                    <h3> – B5: Sau khi hút chân không xong đèn báo sẽ chuyển sang màu đỏ, lúc này máy sẽ hàn miện túi nilon, kết thúc quá trình đèn chuyển sang xanh.</h3>
-                                                    <h3>– B6: Mở khóa 2 đầu và kiểm tra kết quả.</h3>
-                                                    
-                                                </pre>
-                                            </div>
-                                            <img class="img-fluid" src="assets/img/meat_6.jpg" alt="Chania">
-                                            <div class="text-content">
-                                                <pre style="margin-left: 20px;">
-                                                    <h3>XEM THÊM SẢN PHẨM ==> TẠI ĐÂY</h3>
-                                                    <h3>============================================================</h3>
-                                                    
-                                                    <h3> Mua hàng tại Shop SIÊU THỊ GREENMART bạn được:</h3>
-                                                    
-                                                    <h3>Kiểm tra hàng trước khi nhận hàng và thanh toán</h3>
-                                                    <h3>Đổi trả hàng trong vòng 1 tháng đối với các sản phẩm điện gia dụng do lỗi sản xuất.</h3>
-                                                    <h3>Bảo hành sản phẩm theo từng mặt hàng.</h3>
-                                                    <h3> Cách thức mua hàng:</h3>
-                                                    
-                                                    <h3> Cách 1: Đặt hàng trực tiếp tại https://www.sendo.vn/shop/sieu-thi-greenmart/</h3>
-                                                    
-                                                    <h3>Cách 2: Gọi điện đến số điện thoại 0981994856 để đặt hàng</h3>
-                                                    
-                                                    <h3>Cách 3: Liên hệ Face hoặc Zalo theo số điện thoại 098994856 để được tư vấn và hỗ trợ đặt hàng.</h3>
-                                                    
-                                                    <h3>Lưu ý: Trong trường hợp Khách hàng muốn giảm phí ship/ đặt nhiều món hàng/ giảm giá nếu mua nhiều/ mua sỉ sản phẩm…,gọi điện hoặc nhắn tin ngay</h3>
-                                                    <h3> để được nhân viên hỗ trợ</h3>
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    <h3>Quý Khách Mua Hàng Lưu ý: </h3>
-                                                    
-                                                    
-                                                    <h3>Cước phí vận chuyển:</h3>
-                                                    
-                                                    <h3>Giá hiển thị trên sp chỉ là giá trị của sp(chưa bao gồm phí vận chuyển), quý khách hàng đặt hàng (đặc biệt đối với khách tỉnh) sẽ cộng thêm phí </h3>
-                                                    <h3> vận chuyển, mức phí vận chuyển  cao hay thấp phụ thuộc vào nơi đặt hàng của quý khách,ngoài ra sẽ có thời gian bên vận chuyển giao hàng đến </h3>
-                                                    <h3> Quý khách,vì vậy Quý khách nên kiểm tra thật kỹ số tiền và thời gian vận chuyển để cân nhắc trước khi đặt hàng.</h3>
-                                                    <h3> Khi đặt hàng Quý khách vui lòng ghi chú vào đơn hàng khi cần có thêm thông tin như : màu sắc, thời gian Quý khách có thể nhận hàng, ........</h3>
-                                                    <h3>(màu sắc ghi chú sẽ được ưu tiên nếu hết shop sẽ chọn ngẫu nhiên )</h3>
-                                                    <h3>Khi đặt hàng xong Quý khách vui lòng nghe máy trong thời gian giao hàng để bên vận chuyển giao hàng liên lạc kịp thời để đưa sản phẩm đến Quý khách</h3>
-                                                    <h3> Thắc mắc về thời gian vận chuyển không đúng hẹn xin liên lạc Hotline Sendo:19006000</h3>
-                                                    <h3>hắc mắc về thông tin hàng hóa, chất lượng sp, hỗ trợ kỹ thuật ..vv...xin liên lạc Shop</h3>
-                                                    
-                                                    
-                                                    <h3>Chế độ bảo hành :</h3>
-                                                    
-                                                    <h3>Shop hỗ trợ đổi trả thoải mái trong 7 ngày nếu không hài lòng, nhưng hàng đổi trả phải còn nguyên vẹn không qua sử dụng - còn nguyên tem nhãn.</h3>
-                                                    <h3> Shop hỗ trợ chính sách đổi mới 1 đổi 1 trong 7 ngày đầu tiên nếu sp lỗi do nhà sản xuất. Shop hỗ trợ tiền Ship 1 chiều.</h3>
-                                                    <h3>Shop hỗ trợ bảo hành sớm nhất trong thời gian còn bảo hành của sản phẩm.</h3>
-                                                    
-                                                    
-                                                    <h3> ❤️❤️ SỐ LƯỢNG CÓ HẠN HÃY NHANH TAY ĐẶT HÀNG ĐỂ ĐƯỢC ƯU ĐÃI TỐT NHẤT NHÉ ❤️❤️</h3>
-                                                    
-                                                    <h3> Quý khách vui lòng liên hệ:0981.994.856(zalo,facebook) đặt hàng & được tư vấn tốt nhất.</h3>
-                                                    <h3>Ship hàng toàn quốc, thanh toán khi nhận hàng</h3>
-                                                    <h3> Rất mong sự ủng hộ của quý khách để SIÊU THỊ GREEN MART phát triển tốt hơn nữa, phục vụ quý khách được tốt hơn nữa.</h3>
-                                                </pre>
+                                        <div class="row">
+                                            <div class="col-lg-9">
+                                                <div class="px-4 ">
+                                                    <h5 style="border-bottom: 1px solid #f09819; padding-bottom: 10px;">THUỘC TÍNH SẢN PHẨM</h5>
+                                                    <p style="background-color: gainsboro; padding: 5px 10px;"><b>Bảo hành:</b> Không bảo hành</p>
+                                                    <p><b>Phương thức thanh toán:</b> Không bảo hành</p>
+                                                    <p style="background-color: gainsboro; padding: 5px 10px;"><b>Hãng sản xuất:</b> Khác</p>
+                                                </div>
+                                                <div class="px-4 pb-3">
+                                                    <h5 style="border-bottom: 1px solid #f09819; padding-bottom: 10px;">CHI TIẾT SẢN PHẨM</h5>
+                                                </div>
+                                                <img class="img-fluid" src="assets/img/meat_1.png" alt="Chania">
+                                                <h3>Máy hút chân không là một trong những dòng sản phẩm giúp bảo quản thực phẩm được tươi ngon hơn và được các bà nội trợ yêu thích sử dụng hiện nay.</h3>
+                                                <img class="img-fluid" src="assets/img/meat_2.png" alt="Chania">
+                                                <img class="img-fluid" src="assets/img/meat_3.png" alt="Chania">
+                                                <div>
+                                                    <img class="img-fluid" src="assets/img/meat.png" alt="Chania">
+                                                </div>
+                                                <div class="text-content">
+                                                    <pre style="margin-left: 20px;">
+                                                        
+                                                        <h3>Thông tin chi tiết sản phẩm máy hút chân không:</h3>
+                                                        <h3>- Kích thước: 360*54*50mm</h3>
+                                                        <h3>- Trọng lượng: 600g</h3>
+                                                        <h3>- Nguồn điện: 220V</h3>
+                                                        <h3>- Chất liệu: ABS</h3>
+                                                        <h3>- Công suất: 100W</h3>
+                                                        <h3>- Tốc độ: 5 túi / 1 phút</h3>
+                                                        <h3>- Công suất hút: 0.05 MP</h3>
+                                                        <h3>- Chất liệu an toàn, thân thiện với môi trường</h3>
+                                                        <h3>- Thiết kê chiếc máy nhỏ gọn nhưng vô cùng mạnh mẽ.</h3>
+                                                        
+                                                    </pre>
+                                                </div>
+                                                <img class="img-fluid" src="assets/img/meat_4.png" alt="Chania">
+                                                <h3>Cách sử dụng máy hút chân không vô cùng đơn giản, chỉ cần cho thực phẩm vào túi, đặt chúng lên miệng của máy, dập xuống và bấm nút là bạn đã có một túi đồ ăn được hút chân không lúc này bạn có thể yên tâm cất giữ thực phẩm, hoa quả…giúp chúng giữ được dưỡng chất quan trọng và đảm bảo vệ sinh, sạch sẽ cho tủ lạnh.</h3>
+                                                <img class="img-fluid" src="assets/img/meat_5.png" alt="Chania">
+                                                <div class="text-content">
+                                                    <pre style="margin-left: 20px;">
+                                                        
+                                                        <h3> Hướng dẫn sử dụng máy hút chân không</h3>
+                                                        <h3> – B1: Cắm điện và kiểm tra máy. lúc này nút phía tay trái của bạn sẽ có đèn màu xanh.</h3>
+                                                        <h3>– B2: Cho thực phẩm vào trong các túi chuyên dụng 1 mặt nhám 1 mặt trơn như túi kèm theo máy.</h3>
+                                                        <h3>– B3: Kẹp đầu túi vào phía trong máy hút chân không (lưu ý để phần miện túi nằm chính giữa phần gioăng cao su màu đen).</h3>
+                                                        <h3> – B4: Khóa 2 đầu và nhấn nút màu xanh. Đèn báo nhấp nháy.</li>
+                                                            <h3> – B5: Sau khi hút chân không xong đèn báo sẽ chuyển sang màu đỏ, lúc này máy sẽ hàn miện túi nilon, kết thúc quá trình đèn chuyển sang xanh.</h3>
+                                                            <h3>– B6: Mở khóa 2 đầu và kiểm tra kết quả.</h3>
+                                                            
+                                                        </pre>
+                                                    </div>
+                                                    <img class="img-fluid" src="assets/img/meat_6.jpg" alt="Chania">
+                                                    <div class="text-content">
+                                                        <pre style="margin-left: 20px;">
+                                                            <h3>XEM THÊM SẢN PHẨM ==> TẠI ĐÂY</h3>
+                                                            <h3>============================================================</h3>
+                                                            
+                                                            <h3> Mua hàng tại Shop SIÊU THỊ GREENMART bạn được:</h3>
+                                                            
+                                                            <h3>Kiểm tra hàng trước khi nhận hàng và thanh toán</h3>
+                                                            <h3>Đổi trả hàng trong vòng 1 tháng đối với các sản phẩm điện gia dụng do lỗi sản xuất.</h3>
+                                                            <h3>Bảo hành sản phẩm theo từng mặt hàng.</h3>
+                                                            <h3> Cách thức mua hàng:</h3>
+                                                            
+                                                            <h3> Cách 1: Đặt hàng trực tiếp tại https://www.sendo.vn/shop/sieu-thi-greenmart/</h3>
+                                                            
+                                                            <h3>Cách 2: Gọi điện đến số điện thoại 0981994856 để đặt hàng</h3>
+                                                            
+                                                            <h3>Cách 3: Liên hệ Face hoặc Zalo theo số điện thoại 098994856 để được tư vấn và hỗ trợ đặt hàng.</h3>
+                                                            
+                                                            <h3>Lưu ý: Trong trường hợp Khách hàng muốn giảm phí ship/ đặt nhiều món hàng/ giảm giá nếu mua nhiều/ mua sỉ sản phẩm…,gọi điện hoặc nhắn tin ngay</h3>
+                                                            <h3> để được nhân viên hỗ trợ</h3>
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            <h3>Quý Khách Mua Hàng Lưu ý: </h3>
+                                                            
+                                                            
+                                                            <h3>Cước phí vận chuyển:</h3>
+                                                            
+                                                            <h3>Giá hiển thị trên sp chỉ là giá trị của sp(chưa bao gồm phí vận chuyển), quý khách hàng đặt hàng (đặc biệt đối với khách tỉnh) sẽ cộng thêm phí </h3>
+                                                            <h3> vận chuyển, mức phí vận chuyển  cao hay thấp phụ thuộc vào nơi đặt hàng của quý khách,ngoài ra sẽ có thời gian bên vận chuyển giao hàng đến </h3>
+                                                            <h3> Quý khách,vì vậy Quý khách nên kiểm tra thật kỹ số tiền và thời gian vận chuyển để cân nhắc trước khi đặt hàng.</h3>
+                                                            <h3> Khi đặt hàng Quý khách vui lòng ghi chú vào đơn hàng khi cần có thêm thông tin như : màu sắc, thời gian Quý khách có thể nhận hàng, ........</h3>
+                                                            <h3>(màu sắc ghi chú sẽ được ưu tiên nếu hết shop sẽ chọn ngẫu nhiên )</h3>
+                                                            <h3>Khi đặt hàng xong Quý khách vui lòng nghe máy trong thời gian giao hàng để bên vận chuyển giao hàng liên lạc kịp thời để đưa sản phẩm đến Quý khách</h3>
+                                                            <h3> Thắc mắc về thời gian vận chuyển không đúng hẹn xin liên lạc Hotline Sendo:19006000</h3>
+                                                            <h3>hắc mắc về thông tin hàng hóa, chất lượng sp, hỗ trợ kỹ thuật ..vv...xin liên lạc Shop</h3>
+                                                            
+                                                            
+                                                            <h3>Chế độ bảo hành :</h3>
+                                                            
+                                                            <h3>Shop hỗ trợ đổi trả thoải mái trong 7 ngày nếu không hài lòng, nhưng hàng đổi trả phải còn nguyên vẹn không qua sử dụng - còn nguyên tem nhãn.</h3>
+                                                            <h3> Shop hỗ trợ chính sách đổi mới 1 đổi 1 trong 7 ngày đầu tiên nếu sp lỗi do nhà sản xuất. Shop hỗ trợ tiền Ship 1 chiều.</h3>
+                                                            <h3>Shop hỗ trợ bảo hành sớm nhất trong thời gian còn bảo hành của sản phẩm.</h3>
+                                                            
+                                                            
+                                                            <h3> ❤️❤️ SỐ LƯỢNG CÓ HẠN HÃY NHANH TAY ĐẶT HÀNG ĐỂ ĐƯỢC ƯU ĐÃI TỐT NHẤT NHÉ ❤️❤️</h3>
+                                                            
+                                                            <h3> Quý khách vui lòng liên hệ:0981.994.856(zalo,facebook) đặt hàng & được tư vấn tốt nhất.</h3>
+                                                            <h3>Ship hàng toàn quốc, thanh toán khi nhận hàng</h3>
+                                                            <h3> Rất mong sự ủng hộ của quý khách để SIÊU THỊ GREEN MART phát triển tốt hơn nữa, phục vụ quý khách được tốt hơn nữa.</h3>
+                                                        </pre>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 d-none d-lg-block">
+                                                        <img class="img-fluid" src="assets/img/qc_banner.jpg" style="margin-left:40px;" alt="Chania">
+                                                        <img class="img-fluid" src="assets/img/qc_banner.jpg" style="margin-left:40px; margin-top: 20px;" alt="Chania">
+                                                    </div>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade"  id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
@@ -1346,8 +1343,8 @@
                                                                                 </div>
                                                                                 <!--Computer-->
                                                                                 <div class="card-body">
-                                                                                <div class="card">
-                                                                                   
+                                                                                    <div class="card">
+                                                                                        
                                                                                         <div class="card-header">
                                                                                             <h2 style="border-left: 4px solid orange; padding-left: 10px;"><b>SẢN PHẨM LIÊN QUAN</b></h2>
                                                                                         </div>
@@ -1660,7 +1657,7 @@
                                                                                 </div>
                                                                                 <!--for End MOBILE PHONE-->
                                                                                 
-                                                                                    <div class="card-body">
+                                                                                <div class="card-body">
                                                                                     <div class="card">
                                                                                         <div class="card-header">
                                                                                             <h2 style="border-left: 4px solid orange; padding-left: 10px;"><b>SẢN PHẨM ĐÃ XEM</b></h2>
