@@ -117,7 +117,7 @@ opacity: 0.6;
 
 @media only screen and (min-width : 150px) and (max-width : 780px)
 {
-	{}
+	
 	.search
 	{
 		width: 95%;
@@ -200,6 +200,159 @@ opacity: 0.6;
     padding: 15px 20px;
    
  }
+ .card-category .card-text{
+    margin: 20px 0px 0px 15px;
+
+ }
+
+ * {
+   box-sizing: border-box;
+ }
+ 
+ img {
+   vertical-align: middle;
+ }
+ 
+ /* Position the image container (needed to position the left and right arrows) */
+ .container {
+   position: relative;
+ }
+ 
+ /* Hide the images by default */
+ .mySlides {
+   display: none;
+ }
+ 
+ /* Add a pointer when hovering over the thumbnail images */
+ .cursor {
+   cursor: pointer;
+ }
+ 
+ /* Next & previous buttons */
+ .prev,
+ .next {
+   cursor: pointer;
+   position: absolute;
+   top: 40%;
+   width: auto;
+   padding: 16px;
+   margin-top: -50px;
+   color: white;
+   font-weight: bold;
+   font-size: 20px;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+   -webkit-user-select: none;
+ }
+ 
+ /* Position the "next button" to the right */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+ 
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover,
+ .next:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+ }
+ 
+ /* Number text (1/3 etc) */
+ .numbertext {
+   color: #000;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+ 
+ /* Container for image text */
+ .caption-container {
+   text-align: center;
+   background-color: #222;
+   padding: 2px 16px;
+   color: white;
+ }
+ 
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ 
+ /* Six columns side by side */
+ .column {
+   float: left;
+   width: 16.66%;
+ }
+ 
+ /* Add a transparency effect for thumnbail images */
+ .demo {
+   opacity: 0.6;
+ }
+ 
+ .active,
+ .demo:hover {
+   opacity: 1;
+ }
+.card-category{
+   display: flex;
+}
+ .owl-carousel{
+    position: relative;
+ }
+ .owl-nav button{
+
+transition:all 0.5s ease;
+width:40px;
+height: 40px;
+top: 50%;
+padding:0;
+transform: translate(0,-50%);
+cursor: pointer;
+border: none;
+outline: none;
+color: transparent;
+
+ }
+
+ .owl-theme .owl-nav [class*=owl-] {
+    margin: 5px;
+    font-size: 20px !important ;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 52%;
+    color: #000! important ;
+    background: white! important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    
+ }
+ .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+   padding-bottom: 5px !important ;
+ }
+
+ .owl-nav button.owl-prev{
+    left: -26px;
+    position: absolute;
+    display: block;
+    top: 52%;
+    z-index: 999;
+    position: absolute;
+    
+  
+}
+
+ 
+.owl-nav button.owl-next{
+   position: absolute;
+   right: -26px;
+   display: block;
+   top: 50%;
+   z-index: 999;
+  
+}
+
  #active_text{
     margin-top: 5px;
     color: black;
