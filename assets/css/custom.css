@@ -491,7 +491,24 @@ color:white;
     color: brown;
     padding: 8px 20px;
  }
- 
+ .fixed-pay{
+   overflow: hidden;
+background: white;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   z-index: 1000;
+ }
+
+ .fixed-pay a{
+   float: left;
+   display: block;
+   color: #000;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+ }
  .side {
    float: left;
    width: 15%;
@@ -555,14 +572,14 @@ color:white;
  }
 
  
- .btn-cart{
-   background-color: #fdcf51;
+ #alert_demo_1{
+   background-color: #fdcf51 !important;
     padding: 15px 20px;
     color: #ffffff;
     border:none;
     border-radius: 5px;
     cursor: pointer;
-    border: 1px solid #f09819;
+    border: 1px solid #f09819 !important;
 
  }
  .text-rate-star{
