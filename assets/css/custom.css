@@ -476,7 +476,30 @@ color:white;
    border-style: dashed;
    padding: 10px;
    margin-top: 10px;
-   background-color: #ffe7ff;
+   background-color: #f8e4ae;
+ }
+
+ #Step{
+   background: #fdcf51;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #fdcf51, #f09819);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #fdcf51, #f09819);
+   margin-top: 5px;
+   color: white;
+   padding: 10px;
+  
+ }
+ #infor-detail .col{
+ 
+   
+ }
+ #header-pay{
+   
+ }
+ #header-pay p{
+    margin-bottom: 0px; 
+ }
+ #header-pay h3{
+   margin-bottom: 0px; 
  }
  .fash-sale{
     height: 40px;
@@ -556,22 +579,25 @@ background: white;
  }
  #cost h4{
 border-radius: 5px;
-padding: 7px 10px 7px 10px;
+padding: 5px 10px;
 color: white;
 margin-right: 10px;
    background: #fdcf51;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, #ffe293, #fdcf51);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, #ffe293, #fdcf51);
-
+   background: -webkit-linear-gradient(to right, #fdcf51, #f09819);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #fdcf51, #f09819);
+   margin-top: 5px;
+height: 30px;
  }
- #cost h2{
+ #cost p{
     color: #f09819;
-    margin-top: 3px;
+    margin-top: 2px;
+    font-size: 25px;
  }
- #cost h5{
+ #cost p2{
     text-decoration: line-through;
   margin-right: 10px;
-  margin-top: 10px;
+  margin-top: 17px;
+  font-size: 15px;
  }
  #row-pay{
     margin-top: 15px;
@@ -738,6 +764,18 @@ background-color: gainsboro;
  cursor: pointer;
  color: white;
  width: 130px;
+ }
+ .btn-gradient15{
+   background: #fe8c00;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   padding: 10px 15px ;
+   border: none;
+   border-radius: 30px;
+   cursor: pointer;
+   color: white;
+   width: 200px;
+  
  }
  .btn-gradient6{
     background: #00d2ff;  /* fallback for old browsers */
