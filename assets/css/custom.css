@@ -34,6 +34,10 @@
  .nav-link{
     
  }
+
+ .text-para p{
+font-size: 16px;
+ }
  .nav_top_right ul{
     display: flex;
     list-style: none;
@@ -221,6 +225,7 @@ opacity: 0.6;
  /* Hide the images by default */
  .mySlides {
    display: none;
+   margin-top: 0px;
  }
  
  /* Add a pointer when hovering over the thumbnail images */
@@ -560,6 +565,8 @@ background: white;
    text-align: center;
    color: white;
  }
+
+ 
  
  /* Individual bars */
  .bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
@@ -606,15 +613,29 @@ height: 30px;
 
  
  #alert_demo_1{
-   background-color: #fdcf51 !important;
-    padding: 15px 20px;
-    color: #ffffff;
+   background-color: #fdedc4 !important;
+    padding: 13px 15px;
+    color: #f09819;
     border:none;
     border-radius: 5px;
     cursor: pointer;
     border: 1px solid #f09819 !important;
+    width: 190px;
 
  }
+
+ .btn-pay{
+   background-color: #ff9500;
+   padding: 13px 15px;
+   color: #ffffff;
+   border:none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-left: 60px;
+   width: 190px;
+   
+   
+}
  .text-rate-star{
     display: flex;
     font-size: 50px;
@@ -694,16 +715,7 @@ height: 30px;
     color: #f09819;
    
  }
- .btn-pay{
-    background-color: #f09819;
-    padding: 15px 30px;
-    color: #ffffff;
-    border:none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 0px;
-    
- }
+
  .btn-btn-footer{
  padding: 5px 10px;
  margin-bottom: 5px;
