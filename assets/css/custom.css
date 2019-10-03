@@ -210,6 +210,16 @@ margin: -7px 10px 0px 15px;
    margin-right: 30px;
 }
 
+#cart-title :hover{
+color: #bd6e00;
+text-decoration: none;
+}
+
+#message p{
+color: rgb(177, 177, 177);
+margin: 104px 0px 0px 0px;
+font-size: 12px;
+}
  #pills-profile-tab:hover{
    
  }
@@ -355,6 +365,16 @@ border: none;
 outline: none;
 color: transparent;
 
+ }
+
+ #shadow-card .card:hover {
+   border-radius: 4px;  
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+ }
+
+ #shadow-card .card{
+    border: 1px solid rgb(236, 236, 236);
  }
 
  .owl-theme .owl-nav [class*=owl-] {
@@ -550,9 +570,16 @@ color:white;
  .shiping-free{
    border-style: dashed;
    padding: 10px;
-  
    background-color: #fffab4;
    height: 60px;
+ }
+
+ #box-shipping{
+    height: 40px;;
+ }
+
+ #box-shipping h5{
+    margin-bottom: 5px;
  }
 
  #Step{
@@ -660,7 +687,7 @@ background: white;
 border-radius: 2px;
 padding: 2px 5px;
 color: white;
-
+font-size: 12px;
    background: #fdcf51;  /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #fdcf51, #f09819);  /* Chrome 10-25, Safari 5.1-6 */
    background: linear-gradient(to right, #fdcf51, #f09819);
@@ -675,7 +702,7 @@ height: 23px;
  #cost p2{
     text-decoration: line-through;
   margin-right: 10px;
-  margin-top: 17px;
+  margin-top: 14px;
   font-size: 15px;
  }
  #row-pay{
@@ -788,10 +815,11 @@ height: 23px;
  border-radius: 5px;
  cursor: pointer;
  background-color: #fff;
- border: none;
+ border: 1px solid #000;
  }
  .btn-btn-footer:hover{
-background-color: gainsboro;
+background-color: #f09819;
+color: white;
  }
 
  .navbar .navbar-nav .nav-item .nav-link:hover {
@@ -925,9 +953,13 @@ background-color: gainsboro;
  }
  
  .text-footer a p{
-    color: white;
+    color: #000;
     margin-bottom: 10px;
    
+ }
+
+ .text-footer a p:hover{
+    color:#ff9500;
  }
 
  .text-footer a{
@@ -983,5 +1015,21 @@ background-color: gainsboro;
     padding: 15px 20px;
     margin-top: 150px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ #main-footer-computer{
+   background-color: white;
+   border-top: 4px solid #f09819;
+ }
+ #copyright-company{
+    height: 120px;
+    background-color: #f5f5f5;
+   
+    width: 100%;
+ }
+
+ #copyright-company p{
+    color: #000;
+    margin-bottom: 2px;
  }
  

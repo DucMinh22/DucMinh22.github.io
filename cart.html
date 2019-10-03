@@ -122,16 +122,7 @@
         
         
         <div class="py-4 container">              
-            <div class="py-3 col-lg-12"> 
-                <div class="row">    
-                    <div class="col-lg-9 col-6">       
-                        <h4><b>GIỎ HÀNG </b></h4>
-                    </div>
-                    <div class="col-lg-3 col-6 " style="background-color: gainsboro; padding-top: 8px; padding-left: 40px;">
-                        <h4 ><b>TIẾN HÀNH THANH TOÁN</b></h4>
-                    </div>
-                </div>
-            </div>
+            
             <div class="col-12" style="padding: 10px; height: 40px; border: 1px solid #f09819; background-color: #fffab4;">
                 <h5 >Nhập Mã giảm giá ở cuối trang để hưởng miễn phí vận chuyển bạn nhé!</h5>
             </div>
@@ -140,8 +131,8 @@
                 <div class="row ml-1">
                     <div class="col-8">
                         <div class="py-3 px-4 row">
-                            <div class="px-0 col-3">
-                                <a  href="#" style="color: black"> Giỏ hàng của quý khách</a>
+                            <div class="px-0 col-3" id="cart-title">
+                                <a href="#" style="color: #f09819"><b> Giỏ hàng của quý khách</b></a>
                             </div>
                             <div class="col-9 text-center" id="header-pay">
                                 <h3><b>Thanh toán đơn hàng</b></h3>
@@ -150,19 +141,19 @@
                         </div>
                         <div class=" px-4 row" style="" >
                             <div class="text-center col-2" id="Step" style="height:40px;">
-                                Bước 1
+                               <b> Bước 1</b>
                             </div>
                             <div class="pl-5 mt-1  col-8" style="height:40px; padding: 10px; background-color: #fffab4">
                                 <b style=" color: #f09819;">Quý khách vui lòng cung cấp thông tin mua hàng</b>
                             </div>
                             
                             <div class="mt-1 col-2" style="height:40px; padding: 10px; background-color: #fffab4">
-                                <a  href="#" style="color: black"> <i>Đăng nhập</i></a>
+                                <a  href="#" style="color: #f09819"> <i><b>Đăng nhập</b></i></a>
                             </div>
                         </div>
                         <div class="private-information">
                             <div class="row">
-                                <div class="px-0 col-3">
+                                <div class="px-0 col-2">
                                     
                                     <div class="text-right" style="margin-top: 38px; margin-left: 50px;">
                                         Họ và tên *
@@ -242,13 +233,17 @@
                                         
                                     </form>
                                 </div>
+                                <div class="px-0 col-md-5" id="message">
+                                        <p><i>VanChuyenMy sẽ liên hệ quý khách theo số điện thoại này
+                                        để xác nhận hoặc thông báo giao hàng</i></p>
+                                </div>
                             </div>
                         </div>
                         
                         
                         <div class="pb-4 px-4 row" style="" >
                             <div class="text-center col-2" id="Step" style="height:40px;">
-                                Bước 2
+                               <b> Bước 2</b>
                             </div>
                             <div class="pl-5 mt-1 col-8" style="height:40px;padding: 10px; background-color: #fffab4">
                                 <b style="color: #f09819;">Vui lòng chọn hình thức thanh toán phù hợp với Quý Khách</b>
@@ -272,7 +267,7 @@
                     
                     <div class="px-0 col-4">
                         
-                        <div class="px-0 mt-3 mr-4 py-4 stamp" style="background-color: #fffab4;">
+                        <div class="px-0 mt-3 mr-4 py-4 stamp" style="background-color: #fffeee;">
                             <div class="text-center">
                                 <h4><b>Đơn hàng của quý khách</b></h4>
                             </div>
@@ -326,10 +321,10 @@
                                 <div class="pt-3 px-3 pr-4">
                                     <div class="row" style=" ">
                                         <div class= "col" style="">
-                                            <h4><b>Tổng giá trị sản phẩm:</b></h4>
+                                            <h5><b>Tổng giá trị sản phẩm:</b></h>
                                         </div>
                                         <div class="" >
-                                            <h5 style="color: #f09819; font-size: 15px;">289.000đ</h5>
+                                            <h5 style="color: #f09819; font-size: 18px;"><b>289.000đ</b></h5>
                                         </div>
                                     </div>
                                     
@@ -348,20 +343,15 @@
                             <div class="py-4">
                                 <ul class="nav nav-pills nav-secondary" id="pills-tab" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Ví AirPay</a>
+                                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Chuyển Khoản Trực Tiếp</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Thẻ Tín Dụng/Ghi Nợ</a>
+                                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Thanh Toán COD</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Thẻ ATM Nội Địa (Internet Banking)</a>
+                                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Thanh Toán Trực Tiếp Tại Cửa Hàng</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="pills-installment-tab" data-toggle="pill" href="#pills-installment" role="tab" aria-controls="pills-installment" aria-selected="false">Trả góp</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="pills-COD-tab" data-toggle="pill" href="#pills-COD" role="tab" aria-controls="pills-COD" aria-selected="false">Thanh Toán Khi Nhận Hàng COD</a>
-                                    </li>
+                                    
                                 </ul>
                                 <div class="tab-content mt-2 mb-3" id="pills-tabContent">
                                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
