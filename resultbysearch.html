@@ -29,69 +29,96 @@
 </head>
 <body>
     <div class="wrapper">
-        <!--
-            Tip 1: You can change the background color of the main header using: data-background-color="blue | purple | light-blue | green | orange | red"
-        -->
-        
-        <!-- Logo Header -->
-        
-        <!-- End Logo Header -->
-        
-        <!-- Navbar Header -->
-        
-        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary"> 
-            <!-- Navbar content -->
-            <div class="container">
-                <a  class="navbar-brand" href="index.html">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown link
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
+          <!-- Navbar Header -->
+          <div class="header">
+                <div class="nav_top">
+                    <div class="container">
+                        <div class="row" >      
+                            <div class="col-12 col-md-4 col-sm-4">
+                                <div class="nav_top_left">
+                                    <a href="#">Hotline: 0978.485.015</a>
+                                </div>
                             </div>
-                        </li>
-                    </ul>
-                </div>
-                <form class="navbar-left navbar-form nav-search" action="resultbysearch.html">
-                        <div class="input-group">
-                            <input type="text" placeholder="Search ..." class="form-control">
-                            <div class="input-group-append">
-                                <span class="input-group-text">
-                                    <a href="resultbysearch.html"><i class="fa fa-search search-icon"></i></a>
-                                </span>
+                            
+                            <div class="col-12 col-sm-8 col-md-8 ">
+                                <div class="nav_top_right">
+                                    <ul class="top-menu">
+                                        <li><a href="#">Tra cứu đơn hàng </a></li>
+                                        <li><a href="#">Câu hỏi thường gặp </a></li>
+                                        <li><a href="#">Thông báo </a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </form>
-                <ul class="navbar-nav navbar-brand">
-                    <li class="nav-item">
-                        
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                <!-- Navbar content -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" >
+                    <div class="container">
+                        <a  class="navbar-brand" href="index.html"> <img src="assets/img/logo_blue.png" class="img-fluid" alt="..." style="width: 250px; height: 60px; "></a>
+                        <div class="search">
+                            <form class="search-form" action="resultbysearch.html">
+                                <input type="text" placeholder="Tìm kiếm..." >
+                                <a href="resultbysearch.html"><i class="fa fa-search search-icon" style="padding:13px; background-color:#f09819; color: white;"></i></a>
+                            </form>
+                        </div>
+                        <ul class="navbar-nav navbar-brand">
+                            <div class="row">
+                                <div class="pt-2 col-6 col-lg-4">
+                                    <li class="nav-item">
+                                        <a class="nav-link"  href="#">Đăng Nhập</a>
+                                    </li>
+                                </div>
+                                <div class="pt-2 col-6 col-lg-8">
+                                    <li class="nav-item">
+                                        <div class="cart-icon">
+                                            <i class="fas fa-cart-plus" style="margin-right: 7px; "></i>
+                                            <a href="#">Giỏ Hàng</a>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Navbar content -->
+                <!-- Category sticky -->
+                <div class="d-none d-lg-block">
+                    <div id="navbar" style="background-color: #f1f1f1;">
+                        <div class="container" >
+                            <div class="row">
+                                <div class="col-lg-3"></div>
+                                <div class="col-lg-6">
+                                    <a href="index.html"><i class="fas fa-home" style="font-size: 20px; margin-right: 25px;"></i></a>
+                                    <a id="main-category" class="nav-link"href="#"><b>SẢN PHẨM</b></a>
+                                    <a id="main-category"class="nav-link"href="#"><b>BLOG</b></a>
+                                    <a id="main-category"class="nav-link"href="#"><b>HƯỚNG DẪN</b></a>
+                                    <a id="main-category" class="nav-link"href="#"><b>LIÊN HỆ</b></a>
+                                    
+                                </div>
+                                <div class="col-lg-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    window.onscroll = function() {myFunction()};
+                    
+                    var navbar = document.getElementById("navbar");
+                    var sticky = navbar.offsetTop;
+                    
+                    function myFunction() {
+                        if (window.pageYOffset >= sticky) {
+                            navbar.classList.add("sticky")
+                        } else {
+                            navbar.classList.remove("sticky");
+                        }
+                    }
+                </script>
+                <!-- end category sticky -->
+                
             </div>
-        </nav>
-        
-        
-        <!-- End Navbar -->
+            <!-- End-Navbar Header -->
         
         
         <!-- Sidebar -->

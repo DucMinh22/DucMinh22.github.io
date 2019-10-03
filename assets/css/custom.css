@@ -29,6 +29,11 @@ body, h1, h2, h3, h4, h5, h6, p{
     margin-top: 13px;
     margin-left: 25px;
  }
+
+ .nav_top_left a{
+    color: white;
+    text-decoration: none;
+ }
  .nav_top_right {
     margin-top: 13px;
 
@@ -44,12 +49,21 @@ font-size: 16px;
     display: flex;
     list-style: none;
     float: right;
+
  }
  .nav_top_right ul li{
     margin-right: 10px;
     text-decoration: none;
-    
+   
+
  }
+
+ .nav_top_right ul li a {
+   text-decoration: none;
+   color: white;
+   
+}
+
  .sticky {
     position: fixed;
     top: 0;
@@ -113,6 +127,19 @@ opacity: 0.6;
 {
    outline: 0;
  
+}
+
+/*
+@media only screen and (min-width : 576px) {
+
+   .container {
+      max-width: 540px;
+   }
+
+@media only screen and (min-width : 768px) {
+
+.container {
+   max-width: 1200px;
 }
 
 
@@ -208,7 +235,7 @@ margin: -7px 10px 0px 15px;
  }
  
   .card-product:hover {
-    border: 2px solid #f09819;
+    border: 1px solid #f09819;
     cursor: pointer;
  }
  .active_header{
@@ -449,15 +476,27 @@ color: transparent;
    background-color: #f09819;
    color: white;
 }
+
+.navbar .navbar-nav .nav-item .nav-link{
+   color: white;
+   font-size: 13px;
+
+}
  .cart-icon{
 display: flex;
 color:white;
  margin-left: 25px;
   border: 1px solid white; 
   padding: 10px;
-  padding-bottom: 4px;
    border-radius:5px;
    width:120px;
+   height: 40px;
+ }
+
+ .cart-icon a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
  }
  .openbtn:hover {
     background-color: #444;
@@ -476,7 +515,9 @@ color:white;
     padding: 8px;
  }
  
- 
+ .card-product .card-title h4{
+    text-decoration: none;
+ }
  
  
  .post .row .column_img {
@@ -883,7 +924,15 @@ background-color: gainsboro;
     z-index: 10;
  }
  
- 
+ .text-footer a p{
+    color: white;
+    margin-bottom: 10px;
+   
+ }
+
+ .text-footer a{
+   text-decoration: none;
+ }
  
  .mega-menu .dropdown-hover{
     float: left;
