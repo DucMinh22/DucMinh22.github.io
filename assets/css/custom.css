@@ -396,6 +396,22 @@ color: transparent;
     font-size: 10px;
  }
  
+ .nav{
+   overflow: auto;
+   white-space: nowrap;
+   flex-wrap: nowrap;
+   
+ }
+
+ .nav li li {
+
+   display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+ }
+
  .scroll-menu {
     
     overflow: auto;
@@ -422,7 +438,8 @@ color: transparent;
     color: white;
     padding: 10px 15px;
     border: none;
-    width: 170px;;
+    width: 250px;;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
  .text-content pre ul li{
    
@@ -493,7 +510,7 @@ color:white;
    border-style: dashed;
    padding: 10px;
   
-   background-color: #f8e4ae;
+   background-color: #fffab4;
    height: 60px;
  }
 
