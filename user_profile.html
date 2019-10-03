@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Azzara Bootstrap 4 Admin Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <meta charset="utf-8">
+    <link rel="icon" href="assets/img/icon.ico" type="image/x-icon"/>
+    
+    <!-- Fonts and icons -->
+    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    
+    <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+        WebFont.load({
+            google: {"families":["Open+Sans:300,400,600,700"]},
+            custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands"], urls: ['assets/css/fonts.css']},
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="assets/css/azzara.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    
+    
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="assets/css/demo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Navbar Header -->
+        <div class="header">
+            <div class="nav_top">
+                <div class="container">
+                    <div class="row" >      
+                        <div class="col-12 col-md-4 col-sm-4">
+                            <div class="nav_top_left">
+                                Hotline: 0978.485.015
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-sm-8 col-md-8 ">
+                            <div class="nav_top_right">
+                                <ul class="top-menu">
+                                    <li>Tra cứu đơn hàng</li>
+                                    <li>Câu hỏi thường gặp</li>
+                                    <li>Thông báo</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar content -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" >
+                <div class="container">
+                    <a  class="navbar-brand" href="index.html"> <img src="assets/img/logo_blue.png" class="img-fluid" alt="..." style="width: 250px; height: 60px; "></a>
+                    <div class="search">
+                        <form class="search-form" action="resultbysearch.html">
+                            <input type="text" placeholder="Tìm kiếm..." >
+                            <a href="resultbysearch.html"><i class="fa fa-search search-icon" style="padding:13px; background-color:#f09819; color: white;"></i></a>
+                        </form>
+                    </div>
+                    <ul class="navbar-nav navbar-brand">
+                        <div class="row">
+                            <div class="pt-2 col-6 col-lg-4">
+                                <li class="nav-item">
+                                    <a class="nav-link" style="color:white;" href="#">ĐĂNG NHẬP</a>
+                                </li>
+                            </div>
+                            <div class="pt-2 col-6 col-lg-8">
+                                <li class="nav-item">
+                                    <div class="cart-icon">
+                                        <i class="fas fa-cart-plus" style="margin-right: 7px; "></i>
+                                        <h4>Giỏ Hàng </h4>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Navbar content -->
+            <!-- Category sticky -->
+            <div class="d-none d-lg-block">
+                <div id="navbar" style="background-color: #f1f1f1;">
+                    <div class="container" >
+                        <div class="row">
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-6">
+                                <a href="index.html"><i class="fas fa-home" style="font-size: 20px; margin-right: 25px;"></i></a>
+                                <a id="main-category" class="nav-link"href="#"><b>SẢN PHẨM</b></a>
+                                <a id="main-category"class="nav-link"href="#"><b>BLOG</b></a>
+                                <a id="main-category"class="nav-link"href="#"><b>HƯỚNG DẪN</b></a>
+                                <a id="main-category" class="nav-link"href="#"><b>LIÊN HỆ</b></a>
+                                
+                            </div>
+                            <div class="col-lg-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                window.onscroll = function() {myFunction()};
+                
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                
+                function myFunction() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+            </script>
+            <!-- end category sticky -->
+            
+        </div>
+        <!-- End-Navbar Header -->
+        
+        
+        <!-- Sidebar -->
+        
+        <!-- End Sidebar -->
+        
+        <!-- POLICY & RULE -->
+        <div class="container">
+            <div class="product pt-2 pb-lg-2">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-6">
+                        
+                        <div class="row no-gutters">
+                            <div class="px-2 col-md-4">
+                                <img src="assets/img/delivery-services.gif" class="card-img"alt="..." style="padding:10px; width: 70px; height:70px;">
+                            </div>
+                            <div class="py-0" style="margin-top: 20px;">
+                                <h5><b>HỖ TRỢ VẬN CHUYỂN</b></h5>
+                                <p>Với đơn hàng tên 500.000</p>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="row no-gutters">
+                            <div class="px-2 col-md-4">
+                                <img src="assets/img/tick.png" class="card-img" alt="..." style="padding:10px; width: 70px; height:70px;" >
+                            </div>
+                            <div class="py-0" style="margin-top: 20px;">
+                                <h5><b>CAM KẾT CHÍNH HÃNG</b></h5>
+                                <p>Đảm bảo chất lượng 100%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="row no-gutters">
+                            <div class="px-2 col-md-4">
+                                <img src="assets/img/money.png" class="card-img" alt="..." style="padding:10px; width: 70px; height:70px;" >
+                            </div>
+                            
+                            <div class="py-0" style="margin-top: 20px;">
+                                <h5><b>CHÍNH SÁCH & ĐỔI TRẢ</b></h5>
+                                <p>Đổi trả hàng trong 7 ngày</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="row no-gutters">
+                            <div class="px-2 col-md-4">
+                                <img src="assets/img/clock.png" class="card-img" alt="..." style="padding:10px; width: 70px; height:70px;" >
+                            </div>
+                            
+                            <div class="py-0" style="margin-top: 20px;">
+                                <h4><b>HỖ TRỢ 24/7</b></h4>
+                                <p>Thứ 2-Thứ 7: 9h-18h</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="product pt-2 pb-lg-2">
+                <div class="row">
+                    
+                    <div class="col-lg-3 col-md-6 col-6">
+                        
+                        <div class="row no-gutters">
+                            <div class="px-2 col-md-4">
+                                <img src="assets/img/jm_denis.jpg" class="rounded-circle"alt="..." style="padding:10px; width: 70px; height:70px;">
+                            </div>
+                            <div class="py-0" style="margin-top: 25px; margin-left: 20px">
+                                <h4><b>Khách Hàng</b></h4>
+                                <!-- <p>Với đơn hàng tên 500.000</p> -->
+                                
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="row no-gutters">
+                                <!-- <div class="px-2 col-md-4">
+                                    <img src="assets/img/jm_denis.jpg" class="rounded-circle"alt="..." style="padding:10px; width: 50px; height:50px; margin-left: 5px">
+                                </div> -->
+                                <div class="py-0" style="margin-top: 5px; margin-left: 0px; padding: 10px">
+                                    
+                                    <a href=""> <h5>Tài khoản</h5></a>
+                                    <ul style="list-style-type:none;">
+                                        <a href="user_profile.html"><li>Hồ Sơ</li></a>
+                                        <a href="user_address.html"><li>Địa Chỉ</li></a>
+                                        <a href=""><li>Ngân Hàng</li></a>
+                                        <a href="user_change_password.html"><li>Đổi Mật Khẩu</li></a>
+                                    </ul>  
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="row no-gutters">
+                                
+                                <div class="py-0" style="margin-top: 5px; margin-left: 15px">
+                                    <a href=""> <h5>Đơn Hàng</h5></a>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="row no-gutters">
+                                
+                                <div class="py-0" style="margin-top: 5px; margin-left: 15px">
+                                    <a href=""> <h5>Ví Voucher</h5></a>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="row no-gutters">
+                                
+                                <div class="py-0" style="margin-top: 5px; margin-left: 15px">
+                                    <a href=""> <h5>Thông Báo</h5></a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="card col-6 -lg-7">
+                        <div class="col-lg-12 col-md-6 col-6">
+                            <div class="row no-gutters">
+                                <div class="px-2 col-md-12">
+                                    <h2 style="margin-top: 10px">Thay Đổi Thông Tin Cá Nhân </h2>
+                                    <hr width=100%>
+                                    <!-- <img src="assets/img/tick.png" class="card-img" alt="..." style="padding:10px; width: 70px; height:70px;" > -->
+                                </div>
+                                <div class="px-2 col-md-12">
+                                    
+                                    <label><strong>Họ Tên:</strong></label>
+                                    <input type="text" size="100" name="name" class="form-control" >
+                                    <p></p>
+                                    <!-- <br> -->
+                                    
+                                    <label><strong>Email:</strong></label>
+                                    <input type="text" size="64" name="name" class="form-control" >
+                                    <p></p>
+                                    <!-- <br> -->
+                                    
+                                    <label><strong>Số Điện Thoại:</strong></label>
+                                    <input type="text" size="64" name="name" class="form-control" >
+                                    <p></p>
+                                    
+                                    <div>
+                                        <label for="myDate2"><strong>Ngày Sinh:</strong></label>
+                                        <input type="date" id="example-date-input" class="form-control"
+                                        min="1960-01-01" max="2200-12-31" value="">
+                                    </div>
+                                    <p></p>
+                                    
+                                    <label><strong>Giới Tính:</strong></label>
+                                    <br>
+                                    <input type="radio" name="gender" id="" value="1" checked="checked"> Nam &nbsp;
+                                    <input type="radio" name="gender" id="" value="0"> Nữ
+                                    <!-- </div> -->
+                                    <p></p>
+                                    
+                                    
+                                    
+                                </div>
+                                
+                                <!-- <div class="row"></div> -->
+                                <div class="px-2 col-md-12">
+                                    <a href="" class="btn btn-danger">Hủy</a>
+                                    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+                                    <p></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-9 col-md-6 col-6"></div>
+                    </div>
+                    
+                    <div class="col-lg-3">
+                        <div class="row no-gutters">
+                            
+                            <!-- <img src="assets/img/jm_denis.jpg" class="mx-auto d-block"alt="..." style="padding:10px; width: 70px; height:70px;"> -->
+                            <img src="assets/img/jm_denis.jpg" style="margin-top: 70px; margin-left: 80px" class="rounded-circle" alt="" width="150" height="150"> 
+                            <label style="margin-left: 102px" for="files" class="btn text-primary"><h3>Thay ảnh</h3></label>
+                            <input id="files" style="visibility:hidden" type="file">
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!-- End POLICY & RULE -->
+        
+        <!--Menu For mobile-->
+        <div class="col-sm-12 d-block d-lg-none">
+            <div id="mySide-bar" class="side-bar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <div class="col-12" style="padding-bottom: 20px;">
+                    <div class="row">  
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style=" width: 100%;">
+                            <a class="navbar-brand" style="color: white;" href="category.html"><h4>Sản Phẩm HOT</h4></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-angle-down" style="color: white;"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Giảm giá 50%</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Hot Công Nghệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-12" style="padding-bottom: 20px;">
+                    <div class="row">  
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                            <a class="navbar-brand" style="color: white;" href="#"><h4>Thời trang nam</h4></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-angle-down" style="color: white;"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                                <ul class="navbar-nav mr-auto">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Đồng Hồ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Thắt Lưng</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Ví Da</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Đồ Dót</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Thắt Lưng</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Áo Khoắc Nam</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Giày Dép</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Ba Lô</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-12" style="padding-bottom: 20px;">
+                    <div class="row">  
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                            <a class="navbar-brand" style="color: white;" href="#"><h4>Thời Trang Nữ</h4></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-angle-down"style="color: white;"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                                <ul class="navbar-nav mr-auto">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Áo,váy nữ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Ví, Túi Xách</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Đồng Hồ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Đồ Dót</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Đồ Đi Bơi, Đồ Đi biển</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Vòng Tay</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Giày Dép</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Nón</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-12" style="padding-bottom: 20px;">
+                    <div class="row">  
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                            <a class="navbar-brand" style="color: white;" href="#"><h4>Công Nghệ</h4></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent3" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-angle-down"style="color: white;"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent3">
+                                <ul class="navbar-nav mr-auto">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Sạc Cáp Điện Thoại</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tai nghe</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Sạc Dự Phòng</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Ốp Lưng</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Camera</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Điện Thoại</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-12" style="padding-bottom: 20px;">
+                    <div class="row">  
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                            <a class="navbar-brand" style="color: white;" href="#"><h4>Gia Dụng</h4></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent4" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-angle-down" style="color: white;"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent4">
+                                <ul class="navbar-nav mr-auto">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Ga Chống Thấm</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Máy Làm Sữa Chua</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Hộp Cơm Nóng</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Quạt</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Máy Say, Máy Ép</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Thiết Bị Nhà Bếp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-12" style="padding-bottom: 20px;">
+                    <div class="row">  
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                            <a class="navbar-brand" style="color: white;" href="#"><h4>Sức Khỏe</h4></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent5" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-angle-down"style="color: white;"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent5">
+                                <ul class="navbar-nav mr-auto">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Trang Sức </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Mỹ Phẩm</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Dụng Cụ Chăm Sóc Cá Nhân</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="main-btn">
+                <button class="openbtn" onclick="openNav()">☰ DANH MỤC </button>  
+            </div>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("mySide-bar").style.width = "300px";
+                
+            }
+            
+            function closeNav() {
+                document.getElementById("mySide-bar").style.width = "0";
+                
+            }
+        </script>
+        <!--End Menu mobile-->
+        
+        <!-- <div class="container">
+            
+            <div class ="col-lg-3">
+                
+            </div>
+            
+            <div class="col-lg-9"></div>
+        </div> -->
+        
+        <!--COMPUTER FOOTER-->
+        <div class="px-0 col-sm-12 col-12 d-none d-lg-block" >
+            <div class="text-center" style="background-color: #f09819;">
+                <div class="container">
+                    <div class="row">
+                        <div class="py-5 col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="assets/img/store.jpg" alt="" style="width:150px; height:150px; padding-bottom: 20px;">
+                            <div class="col">
+                                <button type="button" class="btn btn-warning">TÌM CỬA HÀNG</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="text-left px-0  py-5 col-xs-2 col-sm-2 col-md-2 col-lg-4">
+                                    <div class="col" style="height: 45px; ">
+                                        <a  href="#" style="color: aliceblue;"><b>LIÊN HỆ</b></a>
+                                    </div>
+                                    <div class="col">
+                                        <a  href="#" style="color: aliceblue;"><p>Liên hệ Quảng Cáo</p></a>
+                                        <a  href="#" style="color: aliceblue;"><p>Đối tác</p></a>
+                                    </div>
+                                </div>
+                                <div class="text-left px-0 py-5 col-xs-2 col-sm-2 col-md-2 col-lg-4">
+                                    <div class="col" style="height: 45px;">
+                                        <a  href="#" style="color: aliceblue;"><b>CHÍNH SÁCH KHÁCH HÀNG</b></a>
+                                    </div>
+                                    <div class="col">
+                                        <a  href="#" style="color: aliceblue;"><p>Chế độ ưu đãi</p></a>
+                                        <a  href="#" style="color: aliceblue;"><p>Chính sách mua bán</p></a>
+                                        <a  href="#" style="color: aliceblue;"><p></p></a>
+                                    </div>
+                                </div>
+                                <div class="text-left px-0  py-5 col-xs-2 col-sm-2 col-md-2 col-lg-4">
+                                    <div class="col" style="height: 45px;">
+                                        <a  href="#" style="color: aliceblue;"><b>THÔNG TIN HỮU ÍCH</b></a>
+                                    </div>
+                                    <div class="col">
+                                        <a  href="#" style="color: aliceblue;"><p>FAQS</p></a>
+                                        <a  href="#" style="color: aliceblue;"><p>Chính sách chung</p></a>
+                                        <a  href="#" style="color: aliceblue;"><p>Tra cứu đơn hàng</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-left px-0  py-5 col-xs-2 col-sm-2 col-md-2 col-lg-3">
+                            <div class="col" style="height: 45px;">
+                                <a  href="#" style="color: aliceblue;"><b>THẺ PHỔ BIẾN</b></a>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn-btn-footer">Thể thao</button>
+                                <button type="button" class="btn-btn-footer">Làm đẹp</button>
+                                <button type="button" class="btn-btn-footer">Gia dụng</button>
+                                <button type="button" class="btn-btn-footer">Công nghệ</button>
+                                <button type="button" class="btn-btn-footer">Giải trí</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END COMPUTER FOOTER-->
+        <!--MOBILE FOOTER-->
+        <div class="col-sm-12 d-block d-lg-none">
+            <div class="jumbotron" style="background-color: #f09819;">
+                <div class="col-12" style="padding-bottom: 20px;">
+                    <div class="row">
+                        
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                            <a class="navbar-brand" style="color: white;" href="#"><h4>SẢN PHẨM</h4></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent6" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-angle-down"></i>
+                            </button>
+                            
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent6">
+                                <ul class="navbar-nav mr-auto">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Thời trang & phụ kiện</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Thời trang nam</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Saleoff</a>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                                
+                            </div>
+                        </nav>
+                    </div>
+                    
+                </div>
+                <div class="col-12" style="padding-bottom: 20px; " >
+                    <div class="row" >
+                        
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                            <a class="navbar-brand" style="color: white;" href="#"><h4>VỀ CÔNG TY</h4></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent7" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-angle-down"></i>
+                            </button>
+                            
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent7">
+                                <ul class="navbar-nav mr-auto">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Liên hệ Quảng Cáo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Đối tác</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Đại lý</a>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                                
+                            </div>
+                        </nav>
+                    </div>
+                    
+                </div>
+                <div class="col-12" style="padding-bottom: 20px;">
+                    <div class="row">
+                        
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                            <a class="navbar-brand" style="color: white;" href="#"><h4>HỖ TRỢ</h4></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent8" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-angle-down"></i>
+                            </button>
+                            
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent8">
+                                <ul class="navbar-nav mr-auto">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">FAQS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Chính sách chung</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tra cứu đơn hàng</a>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                                
+                            </div>
+                        </nav>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <!--END MOBILE FOOTER-->
+        
+    </div>
+    
+    
+    <!-- slider -->
+    <script>
+        $('#duc_carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            }
+        })
+    </script>
+    
+    <script>
+        $('#duc_2carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            }
+        })
+    </script>
+    
+    
+    
+    <script>
+        $('#duc_5carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            }
+        })
+    </script>
+    
+    <!--COUNTDOWN-->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 5, 2021 0:37:25").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+            
+            // Get today's date and time
+            var now = new Date().getTime();
+            
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+            
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = hours + "H "
+            + minutes + "M " + seconds + "S ";
+            
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+    <!--END- COUNTDOWN-->
+    <!--   Core JS Files   -->
+    <script src="assets/js/core/jquery.3.2.1.min.js"></script>
+    <script src="assets/js/core/popper.min.js"></script>
+    <script src="assets/js/core/bootstrap.min.js"></script>
+    
+    <!-- jQuery UI -->
+    <script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    
+    <!-- jQuery Scrollbar -->
+    <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    
+    <!-- Moment JS -->
+    <script src="assets/js/plugin/moment/moment.min.js"></script>
+    
+    <!-- Chart JS -->
+    <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+    
+    <!-- jQuery Sparkline -->
+    <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+    
+    <!-- Chart Circle -->
+    <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+    
+    <!-- Datatables -->
+    <script src="assets/js/plugin/datatables/datatables.min.js"></script>
+    
+    <!-- Bootstrap Notify -->
+    <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+    
+    <!-- Bootstrap Toggle -->
+    <script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+    
+    <!-- jQuery Vector Maps -->
+    <script src="assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+    <script src="assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+    
+    <!-- Google Maps Plugin -->
+    <script src="assets/js/plugin/gmaps/gmaps.js"></script>
+    
+    <!-- Sweet Alert -->
+    <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+    
+    <!-- Azzara JS -->
+    <script src="assets/js/ready.min.js"></script>
+</body>
+</html>
