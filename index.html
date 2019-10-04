@@ -981,24 +981,20 @@
                 <div class="owl-carousel owl-theme" id='duc_carousel'>
                     <div class="item">
                         <div class="card-product">   
-                            <a href="productpage.html"><img class="img-fluid" style="height: 230px;" src="assets/img/giado-đt.png" alt="Chania"></a>
+                            <a href="productpage.html"><img class="img-fluid" style="height: 200px;" src="assets/img/giado-đt.png" alt="Chania"></a>
                             <div class="container">
-                                <div class="pt-3" style="width:100%; height: 40px; ">
-                                    <a  class="card-title" style="color: black;" href="productpage.html"><h4>Giá đỡ điện thoại ô tô</h4></a>
+                                <div class="pt-3" id="title-card" >
+                                    <a  class="card-title" href="productpage.html"><h4>Giá đỡ điện thoại ô tô</h4></a>
                                 </div>
-                                <div class="text-left pt-3" style="width:100%; height: 20px;">
+                                <div class="text-left pt-3" id="common-cost" >
                                     <div class="row">
-                                        <div class="px-0 col-5"> 
-                                            <h3 class="col" style="color: #f09819;"><b>270.000đ</b></h3>
+                                        <div class="px-0 col-5" id="color-text-cost"> 
+                                            <h3 class="col" ><b>270.000đ</b></h3>
                                         </div>
-                                        <div class="pt-1 col-7">
-                                            <h5 class="card-text" style="width:100%;height: 0px; text-decoration: line-through;"></h5>
-                                        </div>
-                                        
+                                        <div class="pt-1 col-7" id="abondon-text-cost" >
+                                            <h5 class="card-text" ></h5>
+                                        </div>    
                                     </div>
-                                </div>
-                                <div class="text-left pb-1">
-                                    <h5 class="card-text" style="width:100%; height: 20px; text-decoration: line-through;"></h5>
                                 </div>
                                 <div class="rating-star pb-2">
                                     <span class="fa fa-star checked" id="star"></span>
@@ -1007,10 +1003,10 @@
                                     <span class="fa fa-star" id="star"></span>
                                     <span class="fa fa-star" id="star"></span>
                                 </div>
-                                <div class="row pb-3">
-                                    <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                <div class="row pb-2">
+                                     <div class="col-6"  id="view-details"><a href="productpage.html">Xem chi tiết</a></div>
                                     
-                                    <a href="productpage.html"><div class="ml-4" style="color: #f09819;"><i class="fas fa-cart-plus"></i></div></a>
+                                    <div class="ml-4" id="icon-view-details" ><a href="productpage.html"><i class="fas fa-cart-plus"></i></a></div>
                                 </div>
                             </div>
                         </div>
@@ -1387,26 +1383,26 @@
                 <div class="px-0col-md-12">
                     
                     <div class="card" style=" margin-bottom: 0px;">  
-                        <div class="pl-3 card-header">
+                        <div class="pl-2 ml-1 py-2 card-header">
                             <ul class="nav nav-pills nav-secondary" id="pills-tab" role="tablist">
                                 <li class="nav-item">
                                     
-                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">THỜI TRANG NAM</a>
+                                    <a class="nav-link active" id="pills-male-tab" data-toggle="pill" href="#pills-male" role="tab" aria-controls="pills-male" aria-selected="true">THỜI TRANG NAM</a>
                                     
                                 </li>
                                 <li class="nav-item">
                                     
-                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">ĐỒNG HỒ </a>
+                                    <a class="nav-link" id="pills-clock-tab" data-toggle="pill" href="#pills-clock" role="tab" aria-controls="pills-clock" aria-selected="false">ĐỒNG HỒ </a>
                                     
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">THẮT LƯNG</a>
+                                    <a class="nav-link" id="pills-belt1-tab" data-toggle="pill" href="#pills-belt1" role="tab" aria-controls="pills-belt1" aria-selected="false">THẮT LƯNG</a>
                                 </li>
                             </ul>     
                         </div>
                         
                         <div class="tab-content mt-2 mb-3" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="tab-pane fade show active" id="pills-male" role="tabpanel" aria-labelledby="pills-male-tab">
                                 
                                 <!--THỜI TRANG NAM-->
                                 <div class="owl-carousel owl-theme">
@@ -1747,7 +1743,7 @@
                                 </div>
                                 <!--End THỜI TRANG NAM-->
                                 <!--ĐỒNG HỒ-->
-                                <div class="tab-pane fade"  id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="tab-pane fade"  id="pills-clock" role="tabpanel" aria-labelledby="pills-clock-tab">
                                     <div class="owl-carousel owl-theme">
                                         <div class="item">
                                             <div class="card-product"> 
@@ -1936,7 +1932,7 @@
                                 })</script>
                             </div>
                             <!--end ĐỒNG HỒ-->
-                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="tab-pane fade" id="pills-belt1" role="tabpanel" aria-labelledby="pills-belt1-tab">
                                 
                                 
                                 
@@ -1992,7 +1988,7 @@
                 <!--THỜI TRANG NỮ-->
                 <div class="px-0 col-md-12">
                     <div class="card">
-                        <div class="pl-3 card-header">
+                        <div class="pl-2 ml-1 py-2 card-header">
                             <ul class="nav nav-pills nav-secondary" id="pills-tab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="pills-female-tab" data-toggle="pill" href="#pills-female" role="tab" aria-controls="pills-female" aria-selected="true">THỜI TRANG NỮ</a>
@@ -2426,7 +2422,7 @@
                 <!-- CÔNG NGHỆ -->
                 <div class="px-0 col-md-12">
                     <div class="card">
-                        <div class="pl-3 card-header">
+                        <div class="pl-2 ml-1 py-2 card-header">
                             <ul class="nav nav-pills nav-secondary" id="pills-tab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="pills-IT-tab" data-toggle="pill" href="#pills-IT" role="tab" aria-controls="pills-IT" aria-selected="true">CÔNG NGHỆ</a>

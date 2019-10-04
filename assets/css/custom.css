@@ -253,6 +253,54 @@ font-size: 12px;
     padding: 15px 20px;
    
  }
+
+ #title-card {
+   height: 40px; 
+   width: 100%;
+
+   
+ }
+
+ #title-card h4{
+   color: #000;
+ }
+
+ #title-card a {
+text-decoration: none;
+ }
+
+ #title-card a h4:hover {
+    color: #f08c00;
+ }
+
+ #icon-view-details a{
+   color: #f08c00;
+
+ }
+
+ #color-text-cost h3{
+   color: #f09819;
+ }
+
+ #common-cost{
+   width:100%; 
+   height: 40px;
+ }
+
+ #view-details{
+    color: #0353a3;
+   
+ }
+ #view-details a{
+   text-decoration: none;
+}
+
+ #abondon-text-cost h5{
+   width:100%;
+   height: 0px; 
+   text-decoration: line-through;
+
+ }
  .card-category .card-text{
     margin: 20px 0px 0px 15px;
 
@@ -397,7 +445,7 @@ color: transparent;
     left: -26px;
     position: absolute;
     display: block;
-    top: 52%;
+    top: 45%;
     z-index: 999;
     position: absolute;
     
@@ -409,7 +457,7 @@ color: transparent;
    position: absolute;
    right: -26px;
    display: block;
-   top: 50%;
+   top: 45%;
    z-index: 999;
   
 }
@@ -815,7 +863,7 @@ height: 23px;
  border-radius: 5px;
  cursor: pointer;
  background-color: #fff;
- border: 1px solid #000;
+ border: 1px solid rgb(177, 176, 176);
  }
  .btn-btn-footer:hover{
 background-color: #f09819;
@@ -959,7 +1007,7 @@ color: white;
  }
 
  .text-footer a p:hover{
-    color:#ff9500;
+    color:#f08c00;
  }
 
  .text-footer a{
