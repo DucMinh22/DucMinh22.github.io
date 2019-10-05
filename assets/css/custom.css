@@ -387,9 +387,13 @@ text-decoration: none;
    opacity: 0.6;
  }
 
+ #cursor-img1{
+   opacity: 1;
+ }
+ #cursor-img1:hover{
+   border: 1px solid #f09819;
+ }
 
- 
- #cursor-img1,
  #cursor-img:hover {
    opacity: 1;
    border: 1px solid #f09819;
@@ -477,12 +481,20 @@ color: transparent;
  }
  #icon_menu{
     color: #f09819;
-     margin-right: 20px;
+     margin-right: 30px;
      width: 0px;
+ }
+
+ #text-hidden-category a:hover{
+   color: #f09819;
  }
  .checked{
     color: #f09819;
    
+ }
+
+ #category-title p{
+margin-bottom: 0px;
  }
  .unchecked{
     color: #000;
