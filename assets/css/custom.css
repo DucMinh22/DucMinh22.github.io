@@ -38,9 +38,9 @@ body, h1, h2, h3, h4, h5, h6, p{
     margin-top: 13px;
 
  }
- .nav-link{
+ /* .nav-link{
     
- }
+ } */
 
  .text-para p{
 font-size: 16px;
@@ -220,9 +220,9 @@ color: rgb(177, 177, 177);
 margin: 104px 0px 0px 0px;
 font-size: 12px;
 }
- #pills-profile-tab:hover{
+ /* #pills-profile-tab:hover{
    
- }
+ } */
 
 #pills-home-tab{
     background-color: #f09819;
@@ -548,10 +548,10 @@ margin-bottom: 0px;
     width: 250px;;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
- .text-content pre ul li{
+ /* .text-content pre ul li{
    
     
- }
+ } */
 .page-link:hover{
    background-color: #f09819;
    color: white;
@@ -651,13 +651,13 @@ color:white;
    padding: 10px;
   
  }
- #infor-detail .col{
+ /* #infor-detail .col{
  
    
  }
  #header-pay{
    
- }
+ } */
  #header-pay p{
     margin-bottom: 0px; 
  }
