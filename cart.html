@@ -347,7 +347,7 @@
                                                                 </div>  
                                                             </div>
                                                         </a>
-                                                        <a class="nav-link" id="v-pills-profile-tab-icons" data-toggle="pill" href="#v-pills-profile-icons" role="tab" aria-controls="v-pills-profile-icons" aria-selected="false" style="height:80px;"> 
+                                                        <a class="nav-link" id="v-pills-profile-tab-icons" data-toggle="pill" href="#v-pills-profile-icons" role="tab" aria-controls="v-pills-profile-icons" aria-selected="false" style="height:80px; "> 
                                                             <div class="pt-1 row">                                            
                                                                 <div class="col" id="category-title">
                                                                     <p> Thanh toán trực tiếp </p>
@@ -371,14 +371,15 @@
                                                         <!-- chuyển khoản trực tiếp -->
                                                         <div class="tab-pane fade show active" id="v-pills-home-icons" role="tabpanel" aria-labelledby="v-pills-home-tab-icons">
                                                             
-                                                            <div class="pr-2 pl-0 col" id="box-shipping">
-                                                                <div class="shiping-free" style="height: 180px;">
+                                                            <div class="pr-2 pl-0 col" >
+                                                                <div class="paying-method">
                                                                     <h5>Quý Khách có thể chuyển khoản bằng Internet Banking, tại máy ATM hoặc Quầy giao dịch ngân hàng, hoặc chuyển khoản qua điện thoại. </h5>
                                                                     <h5>* Lưu ý: Vui lòng chuyển tiền chính xác theo thông tin tài khoản ngân hàng và nội dung chuyển khoản. Sẽ được hiển thị sau khi quý khách hoàn click Xác nhận đặt hàng bên dưới</h5>
                                                                     <h5>- Đơn hàng được thanh toán tại máy ATM, vì không thể ghi chú nội dung thanh toán nên qúy khách vui lòng thông báo qua email hoặc gọi trực tiếp tổng đài Fado để được hỗ trợ</h5>
                                                                     <h5>- Đơn hàng được của quý khách chỉ được xác nhận thanh toán sau khi Fado nhận được thông báo từ Ngân hàng với nội dung thanh toán đầy đủ. Bất cập: một số Ngân hàng không hỗ trợ kiểm tra sau 19h00: Agribank, Đông Á, Sacombank, Vietinbank,...</h5>
                                                                 </div>
                                                                 <div class="col pt-3">
+                                                                    
                                                                     <h4> <b>1, Quý khách muốn thanh toán trước:</b></h4>
                                                                 </div>
                                                                 
@@ -386,7 +387,7 @@
                                                                 
                                                                 <div class="content">
                                                                     <div class="col" id="title-pay">
-                                                                        <p>Quý khách được miễn phí xử lý giao dịch</p>
+                                                                        <p><i class="fas fa-check" style="color: rgb(119, 197, 1);"></i> Quý khách được miễn phí xử lý giao dịch</p>
                                                                     </div>
                                                                     <div class="py-2 px-4 row">
                                                                         <div class="text-left col">
@@ -396,32 +397,32 @@
                                                                             289.000đ
                                                                         </div>
                                                                     </div>
-                                                                    <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(189, 189, 189);">
-                                                                        <div class="text-left col-2">
+                                                                    <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(223, 220, 220);">
+                                                                        <div class="text-left pr-0 col-2">
                                                                             Mã giảm giá:
                                                                         </div>
-                                                                        <div class="col-4" id="code-discount">
-                                                                            Sử dụng mã giảm giá
+                                                                        <div class="col-3" id="code-discount">
+                                                                            <i class="fas fa-ticket-alt" style="margin-right: 2px; color: #f09819;"></i><i>Sử dụng mã giảm giá</i>
                                                                         </div>
-                                                                        <div class="text-right col">
+                                                                        <div class="text-right col" style="color: rgb(119, 197, 1);">
                                                                             -0đ
                                                                         </div>
                                                                     </div>
                                                                     
-                                                                    <div class="py-2 px-4 row">
+                                                                    <div class="px-4 row" id="text-sum-cost">
                                                                         <div class="text-left col">
-                                                                            <b>Tổng giá trị đơn hàng:</b>
+                                                                            <p><b>Tổng giá trị đơn hàng:</b></p>
                                                                         </div>
                                                                         <div class="text-right col">
-                                                                            <b>289.000 đ</b>
+                                                                            <p><b>289.000 đ</b></p>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="py-2 px-4 row">
+                                                                    <div class="px-4 mb-2 row" id="text-sum-cost">
                                                                         <div class="text-left col">
-                                                                            <b>Số tiền cần được thanh toán:</b>
+                                                                            <p><b>Số tiền cần được thanh toán:</b></p>
                                                                         </div>
                                                                         <div class="text-right col" style="color: #f09819;">
-                                                                            <b>289.000 đ</b>
+                                                                            <p><b>289.000 đ</b></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -430,7 +431,7 @@
                                                                 <div class="content">
                                                                     
                                                                     <div class="col-12 py-2 px-4" id="warning">
-                                                                        <p> Nếu quý khách thanh toán trước 50%. VanChuyenMy sẽ cộng thêm phí bù trừ thanh toán: 2.2% của tổng giá sản phẩm trong đơn hàng của quý khách.</p>
+                                                                        <p> <i class="fas fa-exclamation-triangle" style="color: #f09819;"></i> Nếu quý khách thanh toán trước 50%. VanChuyenMy sẽ cộng thêm phí bù trừ thanh toán: 2.2% của tổng giá sản phẩm trong đơn hàng của quý khách.</p>
                                                                     </div>
                                                                     <div class="py-2 px-4 row">
                                                                         <div class="text-left col">
@@ -448,35 +449,35 @@
                                                                             +18.030đ
                                                                         </div>
                                                                     </div>
-                                                                    <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(189, 189, 189);">
-                                                                        <div class="text-left col-2">
+                                                                    <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(223, 220, 220);">
+                                                                        <div class="text-left pr-0 col-2">
                                                                             Mã giảm giá:
                                                                         </div>
-                                                                        <div class="col-4" id="code-discount">
-                                                                            Sử dụng mã giảm giá
+                                                                        <div class="col-3" id="code-discount">
+                                                                            <i class="fas fa-ticket-alt" style="margin-right: 2px; color: #f09819;"></i><i>Sử dụng mã giảm giá</i>
                                                                         </div>
-                                                                        <div class="text-right col">
+                                                                        <div class="text-right col" style="color: rgb(119, 197, 1);">
                                                                             -0đ
                                                                         </div>
                                                                     </div>
-                                                                    <div class="py-2 px-4 row">
+                                                                    <div class="px-4 row" id="text-sum-cost">
                                                                         <div class="text-left col">
-                                                                            <b>Tổng giá trị đơn hàng:</b>
+                                                                            <p><b>Tổng giá trị đơn hàng:</b></p>
                                                                         </div>
                                                                         <div class="text-right col">
-                                                                            <b>289.000 đ</b>
+                                                                            <p><b>289.000 đ</b></p>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="py-2 px-4 row">
+                                                                    <div class="px-4 mb-2 row" id="text-sum-cost">
                                                                         <div class="text-left col">
-                                                                            <b>Số tiền cần được thanh toán để đặt hàng:</b>
+                                                                            <p><b>Số tiền cần được thanh toán để đặt hàng:</b></p>
                                                                         </div>
                                                                         <div class="text-right col" style="color: #f09819;">
-                                                                            <b>143.000 đ</b>
+                                                                            <p><b>289.000 đ</b></p>
                                                                         </div>
                                                                     </div>
                                                                     
-                                                                    <div class="py-2 px-4 row">
+                                                                    <div class="pb-2 px-4 row" id="text-sum-cost">
                                                                         <div class="text-left col">
                                                                             Còn lại phải thanh toán khi nhận hàng
                                                                         </div>
@@ -485,24 +486,29 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col pt-3">
+                                                                <div class="col px-4 pt-3">
                                                                     <h4> <b>2, Vui lòng chọn ngân hàng thanh toán:</b></h4>
-                                                                    <img class="img-fluid" src="assets/img/vietinbank.png" alt="Chania" style="margin-right: 25px; ">
+                                                                    
                                                                 </div>
                                                                 
-                                                                <div class="py-2 px-4 row">
-                                                                    <p>Thông tin tài khoản ngân hàng và nội dung chuyển khoản. Sẽ được hiển thị sau khi quý khách click nút [Xác nhận đặt hàng] bên dưới</p>
+                                                                <div class="py-2 mx-4 row" style="border-bottom: 1px solid rgb(223, 220, 220);">
+                                                                    <div col-4>
+                                                                        <img class="img-fluid" src="assets/img/vietcombank2.jpg" alt="Chania" style="margin-right: 25px; height: 40px;  border: 1px solid rgb(223, 220, 220); border-radius: 3px; ">
+                                                                    </div>
+                                                                    <div class="col-8">
+                                                                        <p>Thông tin tài khoản ngân hàng và nội dung chuyển khoản. Sẽ được hiển thị sau khi quý khách click nút [Xác nhận đặt hàng] bên dưới</p>
+                                                                    </div>
                                                                 </div>
                                                                 
-                                                                <div class="col-12 py-2 px-4" id="warning">
+                                                                <div class="col-12 py-2 px-4" id="warning2">
                                                                     <p> <b>Lưu ý:</b> VanChuyenMy đảm bảo giá sản phẩm không thay đổi trong vòng 60 phút. Căn cứ vào thời điểm quý khách [Xác nhận đặt hàng] thành công.
                                                                         Đối với giao dịch phát sinh từ 22h, VanChuyenMy sẽ xử lý sau 8h sáng ngày hôm sau. Quý khách vui lòng lựa chọn thanh toán online để được giữ giá đã chọn</p>
                                                                     </div>
-                                                                    <div class="pt-4 px-4 row">
+                                                                    <div class="pt-3 px-5 row">
                                                                         <p>Đồng ý với <a href="#"> Điều khoản & điều kiện </a> giao dịch của Fado Việt Nam</p>
                                                                     </div>
                                                                     <div class="pl-5  col-3">
-                                                                        <button type="button" class="btn-gradient15" style="width: 500x; margin-left:60px;">Xác nhận đặt hàng</button>     
+                                                                        <button type="button" class="btn-gradient15" style="width: 500x; margin-left:60px;">Xác nhận đặt hàng <i class="fas fa-angle-double-right"></i></button>     
                                                                     </div>
                                                                     
                                                                 </div>
@@ -514,6 +520,7 @@
                                                             <!-- thanh toán tại văn phòng -->
                                                             <div class="tab-pane fade" id="v-pills-profile-icons" role="tabpanel" aria-labelledby="v-pills-profile-tab-icons">
                                                                 <div class="col pt-3">
+                                                                    
                                                                     <h4> <b>1, Quý khách muốn thanh toán trước:</b></h4>
                                                                 </div>
                                                                 
@@ -521,7 +528,7 @@
                                                                 
                                                                 <div class="content">
                                                                     <div class="col" id="title-pay">
-                                                                        <p>Quý khách được miễn phí xử lý giao dịch</p>
+                                                                        <p><i class="fas fa-check" style="color: rgb(119, 197, 1);"></i> Quý khách được miễn phí xử lý giao dịch</p>
                                                                     </div>
                                                                     <div class="py-2 px-4 row">
                                                                         <div class="text-left col">
@@ -531,32 +538,32 @@
                                                                             289.000đ
                                                                         </div>
                                                                     </div>
-                                                                    <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(189, 189, 189);">
-                                                                        <div class="text-left col-2">
+                                                                    <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(223, 220, 220);">
+                                                                        <div class="text-left pr-0 col-2">
                                                                             Mã giảm giá:
                                                                         </div>
-                                                                        <div class="col-4" id="code-discount">
-                                                                            Sử dụng mã giảm giá
+                                                                        <div class="col-3" id="code-discount">
+                                                                            <i class="fas fa-ticket-alt" style="margin-right: 2px; color: #f09819;"></i><i>Sử dụng mã giảm giá</i>
                                                                         </div>
-                                                                        <div class="text-right col">
+                                                                        <div class="text-right col" style="color: rgb(119, 197, 1);">
                                                                             -0đ
                                                                         </div>
                                                                     </div>
                                                                     
-                                                                    <div class="py-2 px-4 row">
+                                                                    <div class="px-4 row" id="text-sum-cost">
                                                                         <div class="text-left col">
-                                                                            <b>Tổng giá trị đơn hàng:</b>
+                                                                            <p><b>Tổng giá trị đơn hàng:</b></p>
                                                                         </div>
                                                                         <div class="text-right col">
-                                                                            <b>289.000 đ</b>
+                                                                            <p><b>289.000 đ</b></p>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="py-2 px-4 row">
+                                                                    <div class="px-4 mb-2 row" id="text-sum-cost">
                                                                         <div class="text-left col">
-                                                                            <b>Số tiền cần được thanh toán:</b>
+                                                                            <p><b>Số tiền cần được thanh toán:</b></p>
                                                                         </div>
                                                                         <div class="text-right col" style="color: #f09819;">
-                                                                            <b>289.000 đ</b>
+                                                                            <p><b>289.000 đ</b></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -565,7 +572,7 @@
                                                                 <div class="content">
                                                                     
                                                                     <div class="col-12 py-2 px-4" id="warning">
-                                                                        <p> Nếu quý khách thanh toán trước 50%. VanChuyenMy sẽ cộng thêm phí bù trừ thanh toán: 2.2% của tổng giá sản phẩm trong đơn hàng của quý khách.</p>
+                                                                        <p> <i class="fas fa-exclamation-triangle" style="color: #f09819;"></i> Nếu quý khách thanh toán trước 50%. VanChuyenMy sẽ cộng thêm phí bù trừ thanh toán: 2.2% của tổng giá sản phẩm trong đơn hàng của quý khách.</p>
                                                                     </div>
                                                                     <div class="py-2 px-4 row">
                                                                         <div class="text-left col">
@@ -583,35 +590,35 @@
                                                                             +18.030đ
                                                                         </div>
                                                                     </div>
-                                                                    <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(189, 189, 189);">
-                                                                        <div class="text-left col-2">
+                                                                    <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(223, 220, 220);">
+                                                                        <div class="text-left pr-0 col-2">
                                                                             Mã giảm giá:
                                                                         </div>
-                                                                        <div class="col-4" id="code-discount">
-                                                                            Sử dụng mã giảm giá
+                                                                        <div class="col-3" id="code-discount">
+                                                                            <i class="fas fa-ticket-alt" style="margin-right: 2px; color: #f09819;"></i><i>Sử dụng mã giảm giá</i>
                                                                         </div>
-                                                                        <div class="text-right col">
+                                                                        <div class="text-right col" style="color: rgb(119, 197, 1);">
                                                                             -0đ
                                                                         </div>
                                                                     </div>
-                                                                    <div class="py-2 px-4 row">
+                                                                    <div class="px-4 row" id="text-sum-cost">
                                                                         <div class="text-left col">
-                                                                            <b>Tổng giá trị đơn hàng:</b>
+                                                                            <p><b>Tổng giá trị đơn hàng:</b></p>
                                                                         </div>
                                                                         <div class="text-right col">
-                                                                            <b>289.000 đ</b>
+                                                                            <p><b>289.000 đ</b></p>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="py-2 px-4 row">
+                                                                    <div class="px-4 mb-2 row" id="text-sum-cost">
                                                                         <div class="text-left col">
-                                                                            <b>Số tiền cần được thanh toán để đặt hàng:</b>
+                                                                            <p><b>Số tiền cần được thanh toán để đặt hàng:</b></p>
                                                                         </div>
                                                                         <div class="text-right col" style="color: #f09819;">
-                                                                            <b>143.000 đ</b>
+                                                                            <p><b>289.000 đ</b></p>
                                                                         </div>
                                                                     </div>
                                                                     
-                                                                    <div class="py-2 px-4 row">
+                                                                    <div class="pb-2 px-4 row" id="text-sum-cost">
                                                                         <div class="text-left col">
                                                                             Còn lại phải thanh toán khi nhận hàng
                                                                         </div>
@@ -631,19 +638,19 @@
                                                                     <p><b>TP. Hồ Chí Minh:</b> 21Bis Hậu Giang, Phường 4, Quận Tân Bình, TP. HCM</p>
                                                                     <p><b>TP. Hà Nội: </b>Tầng 3, tháp A, tòa nhà D2 Giảng Võ, đường Giảng Võ, P.Giảng Võ, Q.Ba Đình, TP.Hà Nội</p>
                                                                 </div>
-                                                                <div class="pb-4 px-4 row">
+                                                                <div class="pb-2 px-4 row">
                                                                     <a href="#">Xem Thêm Chi Nhánh</a>  
                                                                 </div>
                                                                 
-                                                                <div class="col-12 py-2 px-4" id="warning">
+                                                                <div class="col-12 py-2 px-4" id="warning2">
                                                                     <p> <b>Lưu ý:</b> VanChuyenMy đảm bảo giá sản phẩm không thay đổi trong vòng 60 phút. Căn cứ vào thời điểm quý khách [Xác nhận đặt hàng] thành công.
                                                                         Đối với giao dịch phát sinh từ 22h, VanChuyenMy sẽ xử lý sau 8h sáng ngày hôm sau. Quý khách vui lòng lựa chọn thanh toán online để được giữ giá đã chọn</p>
                                                                     </div>
-                                                                    <div class="pt-4 px-4 row">
+                                                                    <div class="pt-3 px-5 row">
                                                                         <p>Đồng ý với <a href="#"> Điều khoản & điều kiện </a> giao dịch của Fado Việt Nam</p>
                                                                     </div>
                                                                     <div class="pl-5  col-3">
-                                                                        <button type="button" class="btn-gradient15" style="width: 500x; margin-left:60px;">Xác nhận đặt hàng</button>     
+                                                                        <button type="button" class="btn-gradient15" style="width: 500x; margin-left:60px;">Xác nhận đặt hàng <i class="fas fa-angle-double-right"></i></button>     
                                                                     </div>
                                                                     
                                                                 </div>
@@ -652,6 +659,7 @@
                                                                 <!-- thanh toán COD -->
                                                                 <div class="tab-pane fade" id="v-pills-cod-icons" role="tabpanel" aria-labelledby="v-pills-cod-tab-icons">
                                                                     <div class="col pt-3">
+                                                                        
                                                                         <h4> <b>1, Quý khách muốn thanh toán trước:</b></h4>
                                                                     </div>
                                                                     
@@ -659,7 +667,7 @@
                                                                     
                                                                     <div class="content">
                                                                         <div class="col" id="title-pay">
-                                                                            <p>Quý khách được miễn phí xử lý giao dịch</p>
+                                                                            <p><i class="fas fa-check" style="color: rgb(119, 197, 1);"></i> Quý khách được miễn phí xử lý giao dịch</p>
                                                                         </div>
                                                                         <div class="py-2 px-4 row">
                                                                             <div class="text-left col">
@@ -669,32 +677,32 @@
                                                                                 289.000đ
                                                                             </div>
                                                                         </div>
-                                                                        <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(189, 189, 189);">
-                                                                            <div class="text-left col-2">
+                                                                        <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(223, 220, 220);">
+                                                                            <div class="text-left pr-0 col-2">
                                                                                 Mã giảm giá:
                                                                             </div>
-                                                                            <div class="col-4" id="code-discount">
-                                                                                Sử dụng mã giảm giá
+                                                                            <div class="col-3" id="code-discount">
+                                                                                <i class="fas fa-ticket-alt" style="margin-right: 2px; color: #f09819;"></i><i>Sử dụng mã giảm giá</i>
                                                                             </div>
-                                                                            <div class="text-right col">
+                                                                            <div class="text-right col" style="color: rgb(119, 197, 1);">
                                                                                 -0đ
                                                                             </div>
                                                                         </div>
                                                                         
-                                                                        <div class="py-2 px-4 row">
+                                                                        <div class="px-4 row" id="text-sum-cost">
                                                                             <div class="text-left col">
-                                                                                <b>Tổng giá trị đơn hàng:</b>
+                                                                                <p><b>Tổng giá trị đơn hàng:</b></p>
                                                                             </div>
                                                                             <div class="text-right col">
-                                                                                <b>289.000 đ</b>
+                                                                                <p><b>289.000 đ</b></p>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="py-2 px-4 row">
+                                                                        <div class="px-4 mb-2 row" id="text-sum-cost">
                                                                             <div class="text-left col">
-                                                                                <b>Số tiền cần được thanh toán:</b>
+                                                                                <p><b>Số tiền cần được thanh toán:</b></p>
                                                                             </div>
                                                                             <div class="text-right col" style="color: #f09819;">
-                                                                                <b>289.000 đ</b>
+                                                                                <p><b>289.000 đ</b></p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -703,7 +711,7 @@
                                                                     <div class="content">
                                                                         
                                                                         <div class="col-12 py-2 px-4" id="warning">
-                                                                            <p> Nếu quý khách thanh toán trước 50%. VanChuyenMy sẽ cộng thêm phí bù trừ thanh toán: 2.2% của tổng giá sản phẩm trong đơn hàng của quý khách.</p>
+                                                                            <p> <i class="fas fa-exclamation-triangle" style="color: #f09819;"></i> Nếu quý khách thanh toán trước 50%. VanChuyenMy sẽ cộng thêm phí bù trừ thanh toán: 2.2% của tổng giá sản phẩm trong đơn hàng của quý khách.</p>
                                                                         </div>
                                                                         <div class="py-2 px-4 row">
                                                                             <div class="text-left col">
@@ -721,35 +729,35 @@
                                                                                 +18.030đ
                                                                             </div>
                                                                         </div>
-                                                                        <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(189, 189, 189);">
-                                                                            <div class="text-left col-2">
+                                                                        <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(223, 220, 220);">
+                                                                            <div class="text-left pr-0 col-2">
                                                                                 Mã giảm giá:
                                                                             </div>
-                                                                            <div class="col-4" id="code-discount">
-                                                                                Sử dụng mã giảm giá
+                                                                            <div class="col-3" id="code-discount">
+                                                                                <i class="fas fa-ticket-alt" style="margin-right: 2px; color: #f09819;"></i><i>Sử dụng mã giảm giá</i>
                                                                             </div>
-                                                                            <div class="text-right col">
+                                                                            <div class="text-right col" style="color: rgb(119, 197, 1);">
                                                                                 -0đ
                                                                             </div>
                                                                         </div>
-                                                                        <div class="py-2 px-4 row">
+                                                                        <div class="px-4 row" id="text-sum-cost">
                                                                             <div class="text-left col">
-                                                                                <b>Tổng giá trị đơn hàng:</b>
+                                                                                <p><b>Tổng giá trị đơn hàng:</b></p>
                                                                             </div>
                                                                             <div class="text-right col">
-                                                                                <b>289.000 đ</b>
+                                                                                <p><b>289.000 đ</b></p>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="py-2 px-4 row">
+                                                                        <div class="px-4 mb-2 row" id="text-sum-cost">
                                                                             <div class="text-left col">
-                                                                                <b>Số tiền cần được thanh toán để đặt hàng:</b>
+                                                                                <p><b>Số tiền cần được thanh toán để đặt hàng:</b></p>
                                                                             </div>
                                                                             <div class="text-right col" style="color: #f09819;">
-                                                                                <b>143.000 đ</b>
+                                                                                <p><b>289.000 đ</b></p>
                                                                             </div>
                                                                         </div>
                                                                         
-                                                                        <div class="py-2 px-4 row">
+                                                                        <div class="pb-2 px-4 row" id="text-sum-cost">
                                                                             <div class="text-left col">
                                                                                 Còn lại phải thanh toán khi nhận hàng
                                                                             </div>
@@ -761,24 +769,21 @@
                                                                     <div class="col pt-3">
                                                                         <h4> <b>2, Thông tin thu tiền tại nhà:</b></h4>  
                                                                     </div>
-                                                                    <div class="pt-2 px-4 row">
+                                                                    <div class=" px-4 row" id="paying-COD">
                                                                         <p>Nhân Viên Fado sẽ đến nhận thanh toán trước tại địa chỉ quý khách yêu cầu, hình thức này chỉ áp dụng cho TP.HCM và Hà Nội.</p>
-                                                                    </div>
-                                                                    
-                                                                    <div class=" px-4 row">
                                                                         <p>Phí thu tiền tại nhà: <b>30,000 đ</b></p>
                                                                     </div>
-
-                                                                    <div class="col-12 py-2 px-4" id="warning">
-                                                                        <p> <b>Lưu ý:</b> VanChuyenMy đảm bảo giá sản phẩm không thay đổi trong vòng 60 phút. Căn cứ vào thời điểm quý khách [Xác nhận đặt hàng] thành công.
-                                                                            Đối với giao dịch phát sinh từ 22h, VanChuyenMy sẽ xử lý sau 8h sáng ngày hôm sau. Quý khách vui lòng lựa chọn thanh toán online để được giữ giá đã chọn</p>
-                                                                        </div>
-                                                                        <div class="pt-4 px-4 row">
-                                                                            <p>Đồng ý với <a href="#"> Điều khoản & điều kiện </a> giao dịch của Fado Việt Nam</p>
-                                                                        </div>
-                                                                        <div class="pl-5  col-3">
-                                                                            <button type="button" class="btn-gradient15" style="width: 500x; margin-left:60px;">Xác nhận đặt hàng</button>     
-                                                                        </div>
+                                                                    
+                                                                    <div class="col-12 py-2 px-4" id="warning2">
+                                                                            <p> <b>Lưu ý:</b> VanChuyenMy đảm bảo giá sản phẩm không thay đổi trong vòng 60 phút. Căn cứ vào thời điểm quý khách [Xác nhận đặt hàng] thành công.
+                                                                                Đối với giao dịch phát sinh từ 22h, VanChuyenMy sẽ xử lý sau 8h sáng ngày hôm sau. Quý khách vui lòng lựa chọn thanh toán online để được giữ giá đã chọn</p>
+                                                                            </div>
+                                                                            <div class="pt-3 px-5 row">
+                                                                                <p>Đồng ý với <a href="#"> Điều khoản & điều kiện </a> giao dịch của Fado Việt Nam</p>
+                                                                            </div>
+                                                                            <div class="pl-5  col-3">
+                                                                                <button type="button" class="btn-gradient15" style="width: 500x; margin-left:60px;">Xác nhận đặt hàng <i class="fas fa-angle-double-right"></i></button>     
+                                                                            </div>
                                                                         
                                                                     </div>
                                                                     <!-- END thanh toán COD -->

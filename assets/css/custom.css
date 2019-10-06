@@ -467,7 +467,10 @@ color: transparent;
 }
 
 .collapsible {
-   background-color:white;
+   background: #EDE574;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, rgb(229, 243, 208), rgb(240, 239, 230));  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, rgb(234, 248, 212), rgb(243, 241, 225)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
    color: #000;
    cursor: pointer;
    padding: 10px;
@@ -476,9 +479,10 @@ color: transparent;
    text-align: left;
    outline: none;
    font-size: 15px;
-   border: 1px solid rgb(189, 189, 189);
+   border: 1px solid rgb(223, 220, 220);
    border-radius: 3px;
-   margin-top: 15px;
+  margin-top: 10px;
+   height: 40px;
  }
  
  .active, .collapsible:hover {
@@ -490,38 +494,78 @@ color: transparent;
    display: none;
    overflow: hidden;
    color: #000;
-   margin: 20px 5px 20px 5px;
-   border: 1px solid rgb(189, 189, 189);
+   
+   border: 1px solid rgb(223, 220, 220);
    border-radius: 3px;
  }
 
- .content p{
-   padding-top: 20px;
 
+
+ .paying-method{
+   height: 180px;
+   background-color: #fffeee;
+   border: 1px solid #ffcd87;
+   border-radius: 3px;
+   padding: 15px 10px;
  }
 
  #title-pay{
-    background-color: #f09819;
+   background: #EDE574;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, rgb(230, 255, 192), rgb(240, 239, 230));  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, rgb(230, 252, 196), rgb(243, 241, 225));
     height: 35px;
-    
+   margin-top: 10px;
+    border-radius: 3px;
+    margin-left: 25px;
+    width: 700px;
  }
 
  #warning{
     height: 70px;
-    margin-top: 0px;
-    background-color: #fffcd4;
+    width: 700px;
+    background-color: #fffeee;
+    border: 1px solid #ffcd87;
+    border-radius: 3px;
+    padding-bottom: 10px;
+   margin-top: 10px;
+   margin-left: 25px;
  }
 
  #warning p{
    padding-top: 5px;
  }
 
- #code-discount{
-    height: 30px;
-    border: 1px solid blue;
-    padding: 4px 20px;
+ #warning2{
+   height: 90px;
+   width: 700px;
+   background-color: #fffeee;
+   border: 1px solid #ffcd87;
+   border-radius: 3px;
+   padding-bottom: 10px;
+  margin-top: 15px;
+  margin-left: 25px;
+ }
+ #paying-COD p{
+    margin-bottom: 0px;
+
  }
 
+ #code-discount{
+    height: 30px;
+    border: 1px solid rgb(165, 165, 255);
+    border-radius: 3px;
+    padding: 4px 20px;
+    width: 40px;
+    color: rgb(184, 180, 180);
+ }
+
+ #text-sum-cost{
+    height: 30px;
+ }
+#text-sum-cost p{
+   font-size: 15px;
+  margin-top: 5px;
+}
  #title-pay p{
     padding: 5px 0px;
  }
@@ -719,6 +763,30 @@ color:white;
    padding: 10px;
   
  }
+
+ .nav-pills.flex-column .nav-link:hover{
+   background: #fe8c00 !important;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #f83600, #fe8c00) !important;  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #f83600, #fe8c00) !important;
+   color: white;
+   
+ }
+
+ .nav-pills.nav-secondary #v-pills-home-tab-icons.active{
+   background: #fe8c00 !important;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #f83600, #fe8c00) !important;  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #f83600, #fe8c00) !important;
+
+ }
+
+ .nav-pills.nav-secondary .nav-link.active{
+   background: #fe8c00 !important;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #f83600, #fe8c00) !important;  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #f83600, #fe8c00) !important;
+   
+ }
+
+ 
  /* #infor-detail .col{
  
    
