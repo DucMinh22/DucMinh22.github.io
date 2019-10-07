@@ -158,6 +158,8 @@ opacity: 0.6;
 	}
 
 }
+
+
  .side-bar {
     height: 1000px;
     width: 0;
@@ -217,7 +219,7 @@ text-decoration: none;
 
 #message p{
 color: rgb(177, 177, 177);
-margin: 104px 0px 0px 0px;
+margin: 90px 30px 0px 0px;
 font-size: 12px;
 }
  /* #pills-profile-tab:hover{
@@ -236,6 +238,7 @@ font-size: 12px;
  #list-profile-list:hover {
  background-color:#ffcc33;
  color: #ffffff;
+ width: 240px;
  }
  
  .item .card-product{
@@ -597,6 +600,11 @@ color: transparent;
     color: #f09819;
    
  }
+ .list-group-item.active{
+    background-color: rgb(252, 252, 252);
+    color: #000;
+
+ }
 
  #category-title p{
 margin-bottom: 0px;
@@ -734,13 +742,13 @@ color:white;
  
  .shiping-free{
    border-style: dashed;
-   padding: 10px;
+   padding: 15px;
    background-color: #fffab4;
-   height: 60px;
+   height: 65px;
  }
 
  #box-shipping{
-    background-color: white;
+    
     height: 0px;
  }
 
@@ -748,7 +756,7 @@ color:white;
    overflow: hidden;
  }
  #box-shipping h5{
-    margin-bottom: 5px;
+    padding-bottom: 20px;
  }
  .active, .collapsible:hover {
     background-color: white;
@@ -894,11 +902,12 @@ height: 23px;
     color: #f09819;
     margin-top: 2px;
     font-size: 25px;
+    height: 20px;
  }
  #cost p2{
-    text-decoration: line-through;
+ text-decoration: line-through;
   margin-right: 10px;
-  margin-top: 14px;
+margin-top: 15px;
   font-size: 15px;
  }
  #row-pay{
@@ -926,7 +935,7 @@ height: 23px;
    border:none;
    border-radius: 5px;
    cursor: pointer;
-   margin-left: 30px;
+   
    width: 190px;
    
    
