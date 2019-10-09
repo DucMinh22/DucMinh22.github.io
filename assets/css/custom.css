@@ -724,7 +724,11 @@ color:white;
     text-decoration: none;
  }
  
- 
+ .bg-light{
+   background: -webkit-linear-gradient(to right, #ffb347, #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #ffb347, #ffcc33);
+
+ }
  .post .row .column_img {
     float: left;
     
