@@ -34,98 +34,81 @@
 </head>
 <body>
     <div class="wrapper">
-        <!-- Navbar Header -->
-        <div class="header">
-            <div class="nav_top">
-                <div class="container">
-                    <div class="row" >      
-                        <div class="col-12 col-md-4 col-sm-4">
-                            <div class="nav_top_left">
-                                <a href="#">Hotline: 0978.485.015</a>
-                            </div>
+       <!-- Navbar Header -->
+       <div class="header">
+        <div class="nav_top">
+            <div class="container">
+                <div class="row" >      
+                    <div class="col-12 col-md-4 col-sm-4">
+                        <div class="nav_top_left">
+                            <a href="#">Hotline: 0978.485.015</a>
                         </div>
-                        
-                        <div class="col-12 col-sm-8 col-md-8 ">
-                            <div class="nav_top_right">
-                                <ul class="top-menu">
-                                    <li><a href="#">Tra cứu đơn hàng </a></li>
-                                    <li><a href="#">Câu hỏi thường gặp </a></li>
-                                    <li><a href="#">Thông báo </a></li>
-                                </ul>
-                            </div>
+                    </div>
+                    
+                    <div class="col-12 col-sm-8 col-md-8 ">
+                        <div class="nav_top_right">
+                            <ul class="top-menu">
+                                <li><a href="#">Tra cứu đơn hàng </a></li>
+                                <li><a href="#">Câu hỏi thường gặp </a></li>
+                                <li><a href="#">Thông báo </a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Navbar content -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" >
-                <div class="container">
-                    <a  class="navbar-brand" href="index.html"> <img src="assets/img/final-logo.png" class="img-fluid" alt="..." style="width: 250px; height: 60px; "></a>
-                    <div class="search">
-                        <form class="search-form" action="resultbysearch.html">
-                            <input type="text" placeholder="Tìm kiếm..." >
-                            <a href="resultbysearch.html"><i class="fa fa-search search-icon" style="padding:13px; background-color:#f09819; color: white;"></i></a>
-                        </form>
-                    </div>
-                    <ul class="navbar-nav navbar-brand">
-                        <div class="row">
-                            <div class="pt-2 col-6 col-lg-4">
-                                <li class="nav-item">
-                                    <a class="nav-link"  href="#">Đăng Nhập</a>
-                                </li>
-                            </div>
-                            <div class="pt-2 col-6 col-lg-8">
-                                <li class="nav-item">
-                                    <div class="cart-icon">
-                                        <i class="fas fa-cart-plus" style="margin-right: 7px; "></i>
-                                        <a href="#">Giỏ Hàng</a>
-                                    </div>
-                                </li>
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-            </nav>
-            <!-- Navbar content -->
-            <!-- Category sticky -->
-            <div class="d-none d-lg-block">
-                <div id="navbar" style="background-color: #f1f1f1;">
-                    <div class="container" >
-                        <div class="row">
-                            <div class="col-3">
-                                
-                            </div>
-                            <div class="col-7">
-                                <a href="index.html"><i class="fas fa-home" style="font-size: 20px; margin-right: 25px;"></i></a>
-                                <a id="main-category" class="nav-link"href="#"><b>SẢN PHẨM</b></a>
-                                <a id="main-category"class="nav-link"href="#"><b>BLOG</b></a>
-                                <a id="main-category"class="nav-link"href="#"><b>HƯỚNG DẪN</b></a>
-                                <a id="main-category" class="nav-link"href="#"><b>LIÊN HỆ</b></a>
-                                
-                            </div>
-                            <div class="col"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <script>
-                window.onscroll = function() {myFunction()};
-                
-                var navbar = document.getElementById("navbar");
-                var sticky = navbar.offsetTop;
-                
-                function myFunction() {
-                    if (window.pageYOffset >= sticky) {
-                        navbar.classList.add("sticky")
-                    } else {
-                        navbar.classList.remove("sticky");
-                    }
-                }
-            </script>
-            <!-- end category sticky -->
-            
         </div>
-        <!-- End-Navbar Header -->
+        <!-- Navbar content -->
+        <div class="" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" >
+            <div class="container">
+                <a  class="navbar-brand" href="index.html"> <img src="assets/img/final-logo.png" class="img-fluid" alt="..." style="width: 250px; height: 60px; "></a>
+                <div class="search">
+                    <form class="search-form" action="resultbysearch.html">
+                        <input type="text" placeholder="Tìm kiếm..." >
+                        <a href="resultbysearch.html"><i class="fa fa-search search-icon" style="padding:13px; background-color:#f09819; color: white;"></i></a>
+                    </form>
+                </div>
+                <ul class="navbar-nav navbar-brand">
+                    <div class="row">
+                        <div class="pt-2 col-6 col-lg-4">
+                            <li class="nav-item">
+                                <a class="nav-link"  href="#">Đăng Nhập</a>
+                            </li>
+                        </div>
+                        <div class="pt-2 col-6 col-lg-8">
+                            <li class="nav-item">
+                                <div class="cart-icon">
+                                    <i class="fas fa-cart-plus" style="margin-right: 3px; margin-top: 10px; "></i>
+                                    <a href="#">Giỏ Hàng</a>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        </div>
+        <!-- Navbar content -->
+    
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+        <!-- end category sticky -->
+        
+    </div>
+    <!-- End-Navbar Header -->
+    
         
         
         
@@ -342,9 +325,9 @@
                                                             span.onclick = function() { 
                                                                 modal.style.display = "none";
                                                             }
-                                                </script>
+                                                        </script>
                                                         
-                                                <script>
+                                                        <script>
                                                             // Get the modal
                                                             var modal = document.getElementById("myModal");
                                                             
@@ -365,9 +348,9 @@
                                                                     {
                                                                         modal.style.display = "none";
                                                                     }
-                                                </script>
-                                            <!-- Category horizontal -->
-                                            <div class="owl-carousel owl-theme" id='carousel_horizontal'>
+                                                                </script>
+                                                                <!-- Category horizontal -->
+                                                                <div class="owl-carousel owl-theme" id='carousel_horizontal'>
                                                                     
                                                                     <div class="item">
                                                                         <img class="demo cursor" id="cursor-img1" src="assets/img/meat_1.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
@@ -393,9 +376,9 @@
                                                                         <img class="demo cursor"id="cursor-img"  src="assets/img/meat_3.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
                                                                     </div>
                                                                     
-                                            </div>
+                                                                </div>
                                                                 
-                                            <script>
+                                                                <script>
                                                                     $('#carousel_horizontal').owlCarousel({
                                                                         loop:true,
                                                                         margin:10,
@@ -416,11 +399,11 @@
                                                                             }
                                                                         }
                                                                     })
-                                            </script>
-                                            <!--End Category horizontal -->
-                                            </div>
+                                                                </script>
+                                                                <!--End Category horizontal -->
+                                                            </div>
                                                             
-                                            <script>
+                                                            <script>
                                                                 var slideIndex = 1;
                                                                 showSlides(slideIndex);
                                                                 
@@ -449,9 +432,9 @@
                                                                     dots[slideIndex-1].className += " active";
                                                                     captionText.innerHTML = dots[slideIndex-1].alt;
                                                                 }
-                                            </script>
-                                        </div>
-                                        <div class="pr-0 pl-3 py-2 col-md-8 col-lg-8">
+                                                            </script>
+                                                        </div>
+                                                        <div class="pr-0 pl-3 py-2 col-md-8 col-lg-8">
                                                             <div class="container">
                                                                 <div class="row">
                                                                     <div class="col-md-8 col-lg-8">
@@ -539,6 +522,10 @@
                                                                                 
                                                                                 
                                                                             </div>
+                                                                            <div class="pb-2 px-0" id="row-pay">  
+                                                                                <button type="button" class="btn btn-info "  id="alert_demo_1" >  <i class="fas fa-cart-plus" style="margin-right: 7px; "></i>THÊM VÀO GIỎ HÀNG</button>                                                               
+                                                                                <a href="cart.html">  <button type="button" class="btn-pay">MUA NGAY</button></a>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                     
@@ -548,29 +535,17 @@
                                                                     </div>
                                                                     
                                                                 </div>
-                                                                <div class="pb-2 pl-3" id="row-pay">
-                                                                    <div class="row" style="width:100%;">  
-                                                                        <div class="px-0 pb-3 mr-5 col-lg-3 col-md-12 col-12">
-                                                                            <button type="button" class="btn btn-info"  id="alert_demo_1" >  <i class="fas fa-cart-plus" style="margin-right: 7px; "></i>THÊM VÀO GIỎ HÀNG</button>                                                              
-                                                                        </div>
-                                                                        
-                                                                        <div class="px-0 col-lg-4 col-md-12 col-12">
-                                                                            <a href="cart.html">  <button type="button" class="btn-pay">MUA NGAY</button></a>
-                                                                        </div>
-                                                                        <div class="col-lg-4"></div>
-                                                                        
-                                                                    </div>
-                                                                </div>
+                                                                
                                                             </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                                 
-                <div class="col-md-12">
+                                <div class="col-md-12">
                                     <div class="card">
                                         <div class="pl-2 ml-1 py-2 card-header">
                                             <ul class="nav nav-pills nav-secondary" id="pills-tab" role="tablist">
@@ -878,9 +853,9 @@
                                                                                             span.onclick = function() { 
                                                                                                 modal.style.display = "none";
                                                                                             }
-                                                                                </script>
-                                                                                <img class="img-fluid" id="myImg1" src="assets/img/meat_1.png" style="width:70px; height: 70px; max-width:300px; cursor: pointer;" alt="Chania">
-                                                                                <script>
+                                                                                        </script>
+                                                                                        <img class="img-fluid" id="myImg1" src="assets/img/meat_1.png" style="width:70px; height: 70px; max-width:300px; cursor: pointer;" alt="Chania">
+                                                                                        <script>
                                                                                             // Get the modal
                                                                                             var modal = document.getElementById("myModal");
                                                                                             
@@ -901,10 +876,10 @@
                                                                                                     span.onclick = function() { 
                                                                                                         modal.style.display = "none";
                                                                                                     }
-                                                                                </script>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="comment-user">
+                                                                                                </script>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="comment-user">
                                                                                             <div class="pt-5 row">
                                                                                                 <div class="col-lg-6 col-md-6 col-6">
                                                                                                     <div class=" row no-gutters">
@@ -938,8 +913,8 @@
                                                                                                 
                                                                                                 
                                                                                             </div>
-                                                                        </div>
-                                                                        <div class="comment-user">
+                                                                                        </div>
+                                                                                        <div class="comment-user">
                                                                                             <div class="pt-5 row">
                                                                                                 <div class="col-lg-6 col-md-6 col-6">
                                                                                                     <div class="row no-gutters">
@@ -971,9 +946,9 @@
                                                                                                 
                                                                                                 <img class="img-fluid" id="myImg" src="assets/img/meat_1.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
                                                                                             </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="tab-pane fade" id="pills-profile-nobd" role="tabpanel" aria-labelledby="pills-profile-tab-nobd">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="tab-pane fade" id="pills-profile-nobd" role="tabpanel" aria-labelledby="pills-profile-tab-nobd">
                                                                                         <div class="comment-user">
                                                                                             <div class="pt-5 row">
                                                                                                 <div class="col-lg-6 col-md-6 col-6">
@@ -1033,10 +1008,10 @@
                                                                                                             span.onclick = function() { 
                                                                                                                 modal.style.display = "none";
                                                                                                             }
-                                                                                                </script>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="comment-user">
+                                                                                                        </script>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="comment-user">
                                                                                                     <div class="pt-5 row">
                                                                                                         <div class="col-lg-6 col-md-6 col-6">
                                                                                                             <div class=" row no-gutters">
@@ -1068,9 +1043,9 @@
                                                                                                         
                                                                                                         <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
                                                                                                     </div>
-                                                                                        </div>
-                                                                    </div>
-                                                                    <div class="tab-pane fade" id="pills-contact-nobd" role="tabpanel" aria-labelledby="pills-contact-tab-nobd">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="tab-pane fade" id="pills-contact-nobd" role="tabpanel" aria-labelledby="pills-contact-tab-nobd">
                                                                                                 <div class="comment-user">
                                                                                                     <div class="pt-5 row">
                                                                                                         <div class="col-lg-6 col-md-6 col-6">
@@ -1130,10 +1105,10 @@
                                                                                                                     span.onclick = function() { 
                                                                                                                         modal.style.display = "none";
                                                                                                                     }
-                                                                                                        </script>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="comment-user">
+                                                                                                                </script>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="comment-user">
                                                                                                             <div class="pt-5 row">
                                                                                                                 <div class="col-lg-6 col-md-6 col-6">
                                                                                                                     <div class=" row no-gutters">
@@ -1165,9 +1140,9 @@
                                                                                                                 
                                                                                                                 <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
                                                                                                             </div>
-                                                                                                </div>
-                                                                    </div>
-                                                                    <div class="tab-pane fade" id="pills-three-star-nobd" role="tabpanel" aria-labelledby="pills-three-star-tab-nobd">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="tab-pane fade" id="pills-three-star-nobd" role="tabpanel" aria-labelledby="pills-three-star-tab-nobd">
                                                                                                         <div class="comment-user">
                                                                                                             <div class="pt-5 row">
                                                                                                                 <div class="col-lg-6 col-md-6 col-6">
@@ -1227,10 +1202,10 @@
                                                                                                                             span.onclick = function() { 
                                                                                                                                 modal.style.display = "none";
                                                                                                                             }
-                                                                                                                </script>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="comment-user">
+                                                                                                                        </script>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="comment-user">
                                                                                                                     <div class="pt-5 row">
                                                                                                                         <div class="col-lg-6 col-md-6 col-6">
                                                                                                                             <div class=" row no-gutters">
@@ -1262,9 +1237,9 @@
                                                                                                                         
                                                                                                                         <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
                                                                                                                     </div>
-                                                                                                        </div>
-                                                                    </div>
-                                                                    <div class="tab-pane fade" id="pills-two-star-nobd" role="tabpanel" aria-labelledby="pills-two-star-tab-nobd">
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="tab-pane fade" id="pills-two-star-nobd" role="tabpanel" aria-labelledby="pills-two-star-tab-nobd">
                                                                                                                 <div class="comment-user">
                                                                                                                     <div class="pt-5 row">
                                                                                                                         <div class="col-lg-6 col-md-6 col-6">
@@ -1324,10 +1299,10 @@
                                                                                                                                     span.onclick = function() { 
                                                                                                                                         modal.style.display = "none";
                                                                                                                                     }
-                                                                                                                        </script>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                                <div class="comment-user">
+                                                                                                                                </script>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                        <div class="comment-user">
                                                                                                                             <div class="pt-5 row">
                                                                                                                                 <div class="col-lg-6 col-md-6 col-6">
                                                                                                                                     <div class=" row no-gutters">
@@ -1359,9 +1334,9 @@
                                                                                                                                 
                                                                                                                                 <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
                                                                                                                             </div>
-                                                                                                                </div>
-                                                                    </div>
-                                                                    <div class="tab-pane fade" id="pills-one-star-nobd" role="tabpanel" aria-labelledby="pills-one-star-tab-nobd">
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div class="tab-pane fade" id="pills-one-star-nobd" role="tabpanel" aria-labelledby="pills-one-star-tab-nobd">
                                                                                                                         <div class="comment-user">
                                                                                                                             <div class="pt-5 row">
                                                                                                                                 <div class="col-lg-6 col-md-6 col-6">
@@ -1421,10 +1396,10 @@
                                                                                                                                             span.onclick = function() { 
                                                                                                                                                 modal.style.display = "none";
                                                                                                                                             }
-                                                                                                                                </script>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                        <div class="comment-user">
+                                                                                                                                        </script>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <div class="comment-user">
                                                                                                                                     <div class="pt-5 row">
                                                                                                                                         <div class="col-lg-6 col-md-6 col-6">
                                                                                                                                             <div class=" row no-gutters">
@@ -1456,10 +1431,10 @@
                                                                                                                                         
                                                                                                                                         <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
                                                                                                                                     </div>
-                                                                                                                        </div>
-                                                                    </div>
-                                                                    <div class="tab-pane fade" id="pills-image-star-nobd" role="tabpanel" aria-labelledby="pills-image-star-tab-nobd">
-                                                                                                        <div class="comment-user">
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                            <div class="tab-pane fade" id="pills-image-star-nobd" role="tabpanel" aria-labelledby="pills-image-star-tab-nobd">
+                                                                                                                                <div class="comment-user">
                                                                                                                                     <div class="pt-5 row">
                                                                                                                                         <div class="col-lg-6 col-md-6 col-6">
                                                                                                                                             <div class="row no-gutters">
@@ -1520,10 +1495,10 @@
                                                                                                                                                     span.onclick = function(){ 
                                                                                                                                                         modal.style.display = "none";
                                                                                                                                                     }
-                                                                                                                                        </script>
-                                                                                                                                    </div>
-                                                                                                        </div>
-                                                                                                        <div class="comment-user">
+                                                                                                                                                </script>
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="comment-user">
                                                                                                                                             <div class="pt-5 row">
                                                                                                                                                 <div class="col-lg-6 col-md-6 col-6">
                                                                                                                                                     <div class=" row no-gutters">
@@ -1555,14 +1530,14 @@
                                                                                                                                                 
                                                                                                                                                 <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
                                                                                                                                             </div>
-                                                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="pills-QandA" role="tabpanel" aria-labelledby="pills-QandA-tab">
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="tab-pane fade" id="pills-QandA" role="tabpanel" aria-labelledby="pills-QandA-tab">
                                                                                                                     <div class="pl-4 comment-user">
                                                                                                                         <div class="pt-5 row">
                                                                                                                             <div class="col-lg-6 col-md-6 col-6">
@@ -1606,12 +1581,12 @@
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                     
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                </div>
-                <div class="col">
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col">
                                                                                                     <div class="card">
                                                                                                         <div class="card-header">
                                                                                                             <h2 style="border-left: 4px solid orange; padding-left: 10px;">SẢN PHẨM LIÊN QUAN</h2>
@@ -2089,10 +2064,10 @@
                                                                                                             })
                                                                                                         </script>
                                                                                                     </div>
-                </div>
+                                                                                                </div>
                                                                                                 
-                <!--for MOBILE PHONE-->
-                <div class="col-sm-12 d-block d-lg-none">
+                                                                                                <!--for MOBILE PHONE-->
+                                                                                                <div class="col-sm-12 d-block d-lg-none">
                                                                                                     <div class="card-header">
                                                                                                         <h2 style="border-left: 4px solid orange; padding-left: 10px;"><b>SẢN PHẨM LIÊN QUAN</b></h2>
                                                                                                     </div>
@@ -2256,10 +2231,10 @@
                                                                                                         </div>
                                                                                                         
                                                                                                     </div>
-                </div>
-                <!--for End MOBILE PHONE-->
+                                                                                                </div>
+                                                                                                <!--for End MOBILE PHONE-->
                                                                                                 
-                <div class="col">
+                                                                                                <div class="col">
                                                                                                     <div class="card">
                                                                                                         <div class="card-header">
                                                                                                             <h2 style="border-left: 4px solid orange; padding-left: 10px;">SẢN PHẨM ĐÃ XEM</h2>
@@ -2735,196 +2710,196 @@
                                                                                                             })
                                                                                                         </script>
                                                                                                     </div>
-                </div>
-                <!--for End MOBILE PHONE-->
+                                                                                                </div>
+                                                                                                <!--for End MOBILE PHONE-->
                                                                                                 
-            </div>
-        </div>
+                                                                                            </div>
+                                                                                        </div>
                                                                                         
                                                                                         
                                                                                         
-        <!--COMPUTER FOOTER-->
-        <div class="px-0 col-sm-12 col-12 d-none d-lg-block" >
-            <div class="text-center" id="main-footer-computer">
-                <div class="container">
-                    <div class="row">
-                        <div class="py-5 col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                            <img src="assets/img/store.jpg" alt="" style="width:150px; height:150px; padding-bottom: 20px;">
-                            <div class="col">
-                                <button type="button" class="btn btn-warning">TÌM CỬA HÀNG</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="row">
-                                <div class="text-left px-0  py-5 col-xs-2 col-sm-2 col-md-2 col-lg-4">
-                                    <div class="col" style="height: 30px; ">
-                                        <a  href="#" style="color: #000;"><b>LIÊN HỆ</b></a>
-                                    </div>
-                                    <div class="col">
-                                        <div class="text-footer">
-                                            <a  href="#" ><p>Liên hệ Quảng Cáo</p></a>
-                                            <a  href="#" ><p>Đối tác</p></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-left px-0 py-5 col-xs-2 col-sm-2 col-md-2 col-lg-4">
-                                    <div class="col" style="height: 30px;">
-                                        <a  href="#" style="color: #000;"><b>CHÍNH SÁCH KHÁCH HÀNG</b></a>
-                                    </div>
-                                    <div class="col">
-                                        <div class="text-footer">
-                                            <a  href="#" ><p>Chế độ ưu đãi</p></a>
-                                            <a  href="#" ><p>Chính sách mua bán</p></a>
-                                            <a  href="#" ><p></p></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-left px-0  py-5 col-xs-2 col-sm-2 col-md-2 col-lg-4">
-                                    <div class="col" style="height: 30px;">
-                                        <a  href="#" style="color: #000;"><b>THÔNG TIN HỮU ÍCH</b></a>
-                                    </div>
-                                    <div class="col">
-                                        <div class="text-footer">
-                                            <a  href="#" ><p>FAQS</p></a>
-                                            <a  href="#" ><p>Chính sách chung</p></a>
-                                            <a  href="#" ><p>Tra cứu đơn hàng</p></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                                                                        <!--COMPUTER FOOTER-->
+                                                                                        <div class="px-0 col-sm-12 col-12 d-none d-lg-block" >
+                                                                                            <div class="text-center" id="main-footer-computer">
+                                                                                                <div class="container">
+                                                                                                    <div class="row">
+                                                                                                        <div class="py-5 col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                                                                            <img src="assets/img/store.jpg" alt="" style="width:150px; height:150px; padding-bottom: 20px;">
+                                                                                                            <div class="col">
+                                                                                                                <button type="button" class="btn btn-warning">TÌM CỬA HÀNG</button>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col">
+                                                                                                            <div class="row">
+                                                                                                                <div class="text-left px-0  py-5 col-xs-2 col-sm-2 col-md-2 col-lg-4">
+                                                                                                                    <div class="col" style="height: 30px; ">
+                                                                                                                        <a  href="#" style="color: #000;"><b>LIÊN HỆ</b></a>
+                                                                                                                    </div>
+                                                                                                                    <div class="col">
+                                                                                                                        <div class="text-footer">
+                                                                                                                            <a  href="#" ><p>Liên hệ Quảng Cáo</p></a>
+                                                                                                                            <a  href="#" ><p>Đối tác</p></a>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="text-left px-0 py-5 col-xs-2 col-sm-2 col-md-2 col-lg-4">
+                                                                                                                    <div class="col" style="height: 30px;">
+                                                                                                                        <a  href="#" style="color: #000;"><b>CHÍNH SÁCH KHÁCH HÀNG</b></a>
+                                                                                                                    </div>
+                                                                                                                    <div class="col">
+                                                                                                                        <div class="text-footer">
+                                                                                                                            <a  href="#" ><p>Chế độ ưu đãi</p></a>
+                                                                                                                            <a  href="#" ><p>Chính sách mua bán</p></a>
+                                                                                                                            <a  href="#" ><p></p></a>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="text-left px-0  py-5 col-xs-2 col-sm-2 col-md-2 col-lg-4">
+                                                                                                                    <div class="col" style="height: 30px;">
+                                                                                                                        <a  href="#" style="color: #000;"><b>THÔNG TIN HỮU ÍCH</b></a>
+                                                                                                                    </div>
+                                                                                                                    <div class="col">
+                                                                                                                        <div class="text-footer">
+                                                                                                                            <a  href="#" ><p>FAQS</p></a>
+                                                                                                                            <a  href="#" ><p>Chính sách chung</p></a>
+                                                                                                                            <a  href="#" ><p>Tra cứu đơn hàng</p></a>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
                                                                                                         
-                        <div class="text-left px-0  py-5 col-xs-2 col-sm-2 col-md-2 col-lg-3">
-                            <div class="col" style="height: 30px;">
-                                <a  href="#" style="color: #000;;"><b>THẺ PHỔ BIẾN</b></a>
-                            </div>
-                            <div class="col">
-                                <div class="text-footer">
-                                    <button type="button" class="btn-btn-footer">Thể thao</button>
-                                    <button type="button" class="btn-btn-footer">Làm đẹp</button>
-                                    <button type="button" class="btn-btn-footer">Gia dụng</button>
-                                    <button type="button" class="btn-btn-footer">Công nghệ</button>
-                                    <button type="button" class="btn-btn-footer">Giải trí</button>
-                                </div>
-                            </div>
-                        </div>
+                                                                                                        <div class="text-left px-0  py-5 col-xs-2 col-sm-2 col-md-2 col-lg-3">
+                                                                                                            <div class="col" style="height: 30px;">
+                                                                                                                <a  href="#" style="color: #000;;"><b>THẺ PHỔ BIẾN</b></a>
+                                                                                                            </div>
+                                                                                                            <div class="col">
+                                                                                                                <div class="text-footer">
+                                                                                                                    <button type="button" class="btn-btn-footer">Thể thao</button>
+                                                                                                                    <button type="button" class="btn-btn-footer">Làm đẹp</button>
+                                                                                                                    <button type="button" class="btn-btn-footer">Gia dụng</button>
+                                                                                                                    <button type="button" class="btn-btn-footer">Công nghệ</button>
+                                                                                                                    <button type="button" class="btn-btn-footer">Giải trí</button>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
                                                                                                         
-                    </div>
+                                                                                                    </div>
                                                                                                     
-                </div>
-                <div class="py-4 text-center" id="copyright-company">
-                    <p>VanChuyenMy.vn - một sản phẩm của VESTA GLOBAL</p>
-                    <p>Giấy chứng nhận Đăng ký doanh nghiệp số: 0107797701 do Sở Kế hoạch và Đầu tư Tp Hà Nội cấp ngày 23/5/2015.</p>
-                    <p> Hotline: 0911333222, Email: support@vanchuyenmy.vn</p>
-                </div>
-            </div>
-        </div>
-        <!--END COMPUTER FOOTER-->
-        <!--MOBILE FOOTER-->
-        <div class="col-sm-12 d-block d-lg-none">
-            <div class="jumbotron" style="background-color: #f09819;">
-                <div class="col-12" style="padding-bottom: 20px;">
-                    <div class="row">
+                                                                                                </div>
+                                                                                                <div class="py-4 text-center" id="copyright-company">
+                                                                                                    <p>VanChuyenMy.vn - một sản phẩm của VESTA GLOBAL</p>
+                                                                                                    <p>Giấy chứng nhận Đăng ký doanh nghiệp số: 0107797701 do Sở Kế hoạch và Đầu tư Tp Hà Nội cấp ngày 23/5/2015.</p>
+                                                                                                    <p> Hotline: 0911333222, Email: support@vanchuyenmy.vn</p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <!--END COMPUTER FOOTER-->
+                                                                                        <!--MOBILE FOOTER-->
+                                                                                        <div class="col-sm-12 d-block d-lg-none">
+                                                                                            <div class="jumbotron" style="background-color: #f09819;">
+                                                                                                <div class="col-12" style="padding-bottom: 20px;">
+                                                                                                    <div class="row">
                                                                                                         
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
-                            <a class="navbar-brand" style="color: white;" href="#"><h4>SẢN PHẨM</h4></a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent6" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fas fa-angle-down">
-                                </i>
-                            </button>
+                                                                                                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                                                                                                            <a class="navbar-brand" style="color: white;" href="#"><h4>SẢN PHẨM</h4></a>
+                                                                                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent6" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                                                                                                <i class="fas fa-angle-down">
+                                                                                                                </i>
+                                                                                                            </button>
                                                                                                             
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent6">
-                                <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Thời trang & phụ kiện</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Thời trang nam</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Saleoff</a>
-                                    </li>
-                                </ul>
+                                                                                                            <div class="collapse navbar-collapse" id="navbarSupportedContent6">
+                                                                                                                <ul class="navbar-nav mr-auto">
+                                                                                                                    <li class="nav-item">
+                                                                                                                        <a class="nav-link" href="#">Thời trang & phụ kiện</a>
+                                                                                                                    </li>
+                                                                                                                    <li class="nav-item">
+                                                                                                                        <a class="nav-link" href="#">Thời trang nam</a>
+                                                                                                                    </li>
+                                                                                                                    <li class="nav-item">
+                                                                                                                        <a class="nav-link" href="#">Saleoff</a>
+                                                                                                                    </li>
+                                                                                                                </ul>
                                                                                                                 
-                            </div>
-                        </nav>
-                    </div>
+                                                                                                            </div>
+                                                                                                        </nav>
+                                                                                                    </div>
                                                                                                     
-                </div>
-                <div class="col-12" style="padding: 0px">
-                    <div class="row" >
+                                                                                                </div>
+                                                                                                <div class="col-12" style="padding: 0px">
+                                                                                                    <div class="row" >
                                                                                                         
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
-                            <a class="navbar-brand" style="color: white;" href="#"><h4>VỀ CÔNG TY</h4></a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent7" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fas fa-angle-down"></i>
-                            </button>
+                                                                                                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                                                                                                            <a class="navbar-brand" style="color: white;" href="#"><h4>VỀ CÔNG TY</h4></a>
+                                                                                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent7" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                                                                                                <i class="fas fa-angle-down"></i>
+                                                                                                            </button>
                                                                                                             
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent7">
-                                <ul class="navbar-nav mr-auto">
+                                                                                                            <div class="collapse navbar-collapse" id="navbarSupportedContent7">
+                                                                                                                <ul class="navbar-nav mr-auto">
                                                                                                                     
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Liên hệ Quảng Cáo</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Đối tác</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Đại lý</a>
-                                    </li>
+                                                                                                                    <li class="nav-item">
+                                                                                                                        <a class="nav-link" href="#">Liên hệ Quảng Cáo</a>
+                                                                                                                    </li>
+                                                                                                                    <li class="nav-item">
+                                                                                                                        <a class="nav-link" href="#">Đối tác</a>
+                                                                                                                    </li>
+                                                                                                                    <li class="nav-item">
+                                                                                                                        <a class="nav-link" href="#">Đại lý</a>
+                                                                                                                    </li>
                                                                                                                     
                                                                                                                     
-                                </ul>
+                                                                                                                </ul>
                                                                                                                 
-                            </div>
-                        </nav>
-                    </div>
+                                                                                                            </div>
+                                                                                                        </nav>
+                                                                                                    </div>
                                                                                                     
-                </div>
-                <div class="col-12" style="padding-bottom: 20px;">
-                    <div class="row">
+                                                                                                </div>
+                                                                                                <div class="col-12" style="padding-bottom: 20px;">
+                                                                                                    <div class="row">
                                                                                                         
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
-                            <a class="navbar-brand" style="color: white;" href="#"><h4>HỖ TRỢ</h4></a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent8" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fas fa-angle-down"></i>
-                            </button>
+                                                                                                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                                                                                                            <a class="navbar-brand" style="color: white;" href="#"><h4>HỖ TRỢ</h4></a>
+                                                                                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent8" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                                                                                                <i class="fas fa-angle-down"></i>
+                                                                                                            </button>
                                                                                                             
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent8">
-                                <ul class="navbar-nav mr-auto">
+                                                                                                            <div class="collapse navbar-collapse" id="navbarSupportedContent8">
+                                                                                                                <ul class="navbar-nav mr-auto">
                                                                                                                     
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">FAQS</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Chính sách chung</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Tra cứu đơn hàng</a>
-                                    </li>
+                                                                                                                    <li class="nav-item">
+                                                                                                                        <a class="nav-link" href="#">FAQS</a>
+                                                                                                                    </li>
+                                                                                                                    <li class="nav-item">
+                                                                                                                        <a class="nav-link" href="#">Chính sách chung</a>
+                                                                                                                    </li>
+                                                                                                                    <li class="nav-item">
+                                                                                                                        <a class="nav-link" href="#">Tra cứu đơn hàng</a>
+                                                                                                                    </li>
                                                                                                                     
                                                                                                                     
-                                </ul>
+                                                                                                                </ul>
                                                                                                                 
-                            </div>
-                        </nav>
-                    </div>
+                                                                                                            </div>
+                                                                                                        </nav>
+                                                                                                    </div>
                                                                                                     
-                </div>
+                                                                                                </div>
                                                                                                 
-            </div>
-        </div>
-        <!--END MOBILE FOOTER-->
-    </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <!--END MOBILE FOOTER-->
+                                                                                    </div>
                                                                                     
-        </div>
-        </div>
-        <!--   Core JS Files   -->
-        <script src="assets/js/core/jquery.3.2.1.min.js"></script>
-        <script src="assets/js/core/popper.min.js"></script>
-        <script src="assets/js/core/bootstrap.min.js"></script>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--   Core JS Files   -->
+                                                                            <script src="assets/js/core/jquery.3.2.1.min.js"></script>
+                                                                            <script src="assets/js/core/popper.min.js"></script>
+                                                                            <script src="assets/js/core/bootstrap.min.js"></script>
                                                                             
-        <script>
+                                                                            <script>
                                                                                 $('#product_carousel').owlCarousel({
                                                                                     loop:true,
                                                                                     margin:10,
@@ -2945,8 +2920,8 @@
                                                                                         }
                                                                                     }
                                                                                 })
-        </script>
-        <script>
+                                                                            </script>
+                                                                            <script>
                                                                                 $('.btn-number').click(function(e){
                                                                                     e.preventDefault();
                                                                                     
@@ -3018,46 +2993,46 @@
                                                                                         e.preventDefault();
                                                                                     }
                                                                                 });
-        </script>
+                                                                            </script>
                                                                             
-        <!-- jQuery UI -->
-        <script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-        <script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+                                                                            <!-- jQuery UI -->
+                                                                            <script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+                                                                            <script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
                                                                             
-        <!-- jQuery Scrollbar -->
-        <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+                                                                            <!-- jQuery Scrollbar -->
+                                                                            <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
                                                                             
-        <!-- Moment JS -->
-        <script src="assets/js/plugin/moment/moment.min.js"></script>
+                                                                            <!-- Moment JS -->
+                                                                            <script src="assets/js/plugin/moment/moment.min.js"></script>
                                                                             
-        <!-- Chart JS -->
-        <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+                                                                            <!-- Chart JS -->
+                                                                            <script src="assets/js/plugin/chart.js/chart.min.js"></script>
                                                                             
-        <!-- jQuery Sparkline -->
-        <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+                                                                            <!-- jQuery Sparkline -->
+                                                                            <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
                                                                             
-        <!-- Chart Circle -->
-        <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+                                                                            <!-- Chart Circle -->
+                                                                            <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
                                                                             
-        <!-- Datatables -->
-        <script src="assets/js/plugin/datatables/datatables.min.js"></script>
+                                                                            <!-- Datatables -->
+                                                                            <script src="assets/js/plugin/datatables/datatables.min.js"></script>
                                                                             
-        <!-- Bootstrap Notify -->
-        <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+                                                                            <!-- Bootstrap Notify -->
+                                                                            <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
                                                                             
-        <!-- Bootstrap Toggle -->
-        <script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+                                                                            <!-- Bootstrap Toggle -->
+                                                                            <script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
                                                                             
-        <!-- jQuery Vector Maps -->
-        <script src="assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
-        <script src="assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+                                                                            <!-- jQuery Vector Maps -->
+                                                                            <script src="assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+                                                                            <script src="assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
                                                                             
-        <!-- Google Maps Plugin -->
-        <script src="assets/js/plugin/gmaps/gmaps.js"></script>
+                                                                            <!-- Google Maps Plugin -->
+                                                                            <script src="assets/js/plugin/gmaps/gmaps.js"></script>
                                                                             
-        <!-- Sweet Alert -->
-        <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
-        <script>
+                                                                            <!-- Sweet Alert -->
+                                                                            <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+                                                                            <script>
                                                                                 //== Sweetalert Demo 1
                                                                                 $('#alert_demo_1').click(function(e) {
                                                                                     swal('Good job!', {
@@ -3068,12 +3043,12 @@
                                                                                         },
                                                                                     });
                                                                                 });
-        </script>
+                                                                            </script>
                                                                             
                                                                             
-        <!-- Azzara JS -->
-        <script src="assets/js/ready.min.js">
-        </script>
+                                                                            <!-- Azzara JS -->
+                                                                            <script src="assets/js/ready.min.js">
+                                                                            </script>
                                                                             
-</body>
-</html>
+                                                                        </body>
+                                                                        </html>

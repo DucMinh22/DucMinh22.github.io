@@ -14,9 +14,14 @@ body, h1, h2, h3, h4, h5, h6, p{
     
     
  }
+
+ .bg-secondary{
+   background: -webkit-linear-gradient(to right, #ffb347, #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #ffb347, #ffcc33);
+ }
  .card_header{
-    background: -webkit-linear-gradient(to right, #ffb347, #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffb347, #ffcc33);
+   background: -webkit-linear-gradient(to right, #ffb347, #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #ffb347, #ffcc33);
     height: 60px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -70,9 +75,14 @@ font-size: 16px;
     width: 100%;
  }
  
+
+         
+ 
+         
+ 
  #navbar {
     overflow: hidden;
-    padding: 5px 10px;
+   
     transition: 0.4s;
     
     width: 100%;
@@ -81,7 +91,7 @@ font-size: 16px;
  
  #navbar a {
     float: left;
-    color: black;
+    color: white;
     text-align: center;
     padding: 8px;
     text-decoration: none;
@@ -117,6 +127,8 @@ font-size: 16px;
 	border: 0px;
 	width: 100%;
    padding: 10px 10px;
+   height: 60%;
+   margin-top: 10px;
  background-color: #000;
 color: white;
 opacity: 0.6;
@@ -676,14 +688,14 @@ margin-bottom: 0px;
 
 }
  .cart-icon{
-display: flex;
+display: inline-flex;
 color:white;
  margin-left: 25px;
   border: 1px solid white; 
-  padding: 10px;
+  padding: 0px 15px;
    border-radius:5px;
-   width:120px;
-   height: 40px;
+  
+   
  }
 
  .cart-icon a{
@@ -718,7 +730,15 @@ color:white;
     
     /* Hide all elements by default */
  }
- 
+
+ .btn-default:disabled, .btn-default:focus, .btn-default:hover{
+    background-color: #ff9500 !important;
+ }
+ .btn-default{
+    background-color:white !important;
+    color: #000 !important;
+    border: 1px solid rgb(238, 237, 237);
+ }
  .post .row .column_img .content {
     background: #fdcf51;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ffe293, #fdcf51);  /* Chrome 10-25, Safari 5.1-6 */
@@ -1131,11 +1151,11 @@ color: white;
     height: 200px;
     margin-top: 20px;
  }
+
+
+
+
  
- @media screen and (max-width: 580px) {
-    #navbar {
-       padding: 20px 10px !important;
-    }
     #navbar a {
        float: none;
        display: block;
