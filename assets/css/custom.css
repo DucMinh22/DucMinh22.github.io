@@ -15,6 +15,12 @@ body, h1, h2, h3, h4, h5, h6, p{
     
  }
 
+ .form-control{
+    max-width: 200px;
+ }
+
+
+
  .bg-secondary{
    background: -webkit-linear-gradient(to right, #ffb347, #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
    background: linear-gradient(to right, #ffb347, #ffcc33);
@@ -211,15 +217,26 @@ opacity: 0.6;
     font-size: 36px;
     margin-left: 50px;
  }
-
- #final-price p{
+ #final-price{
+    display: inline-flex;
+ }
+ #final-price #p1{
 color: #f09819;
 font-size: 18px;
-margin: -7px 10px 0px 15px;
+margin-right: 15px;
+margin-bottom: 0px;
+
  }
 
- #final-price p2{
+ #final-price #p2{
     text-decoration: line-through;
+    color: #000;
+  margin-top: 5px;
+ margin-bottom: 0px;
+ }
+ .infor-checkout p{
+font-size: 12px;;
+margin-bottom: 5px;
  }
 #main-category{
    margin-right: 30px;
@@ -498,7 +515,7 @@ color: transparent;
    border: 1px solid rgb(223, 220, 220);
    border-radius: 3px;
   margin-top: 10px;
-   height: 40px;
+  
  }
  
  .active, .collapsible:hover {
@@ -518,7 +535,7 @@ color: transparent;
 
 
  .paying-method{
-   height: 180px;
+   
    background-color: #fffeee;
    border: 1px solid #ffcd87;
    border-radius: 3px;
@@ -537,29 +554,34 @@ color: transparent;
  }
 
  #warning{
-    height: 70px;
-    width: 700px;
+    
+
     background-color: #fffeee;
     border: 1px solid #ffcd87;
     border-radius: 3px;
-    padding-bottom: 10px;
    margin-top: 10px;
-   margin-left: 25px;
+   margin-right: 20px;
+  
  }
 
  #warning p{
-   padding-top: 5px;
+ 
+   padding-top: 15px;
+  
  }
 
- #warning2{
-   height: 90px;
-   width: 700px;
+ .warning2{ 
    background-color: #fffeee;
    border: 1px solid #ffcd87;
    border-radius: 3px;
-   padding-bottom: 10px;
-  margin-top: 15px;
-  margin-left: 25px;
+ 
+ }
+ .warning2 p{
+   padding-top: 20px;
+ }
+
+ .infor-banking{
+    display: inline-flex;
  }
  #paying-COD p{
     margin-bottom: 0px;
@@ -567,11 +589,10 @@ color: transparent;
  }
 
  #code-discount{
-    height: 30px;
+
     border: 1px solid rgb(165, 165, 255);
     border-radius: 3px;
     padding: 4px 20px;
-    width: 40px;
     color: rgb(184, 180, 180);
  }
 
