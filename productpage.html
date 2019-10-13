@@ -115,9 +115,8 @@
         
         <div class="product px-4 py-1 mb-md-2 pb-lg-3">
             <div class="page-header">
-                
-                <div class="product">
-                    
+                <!-- bread-cum -->
+                <div class="product"> 
                     <div class="row" > 
                         <ul class="breadcrumbs">
                             <li class="nav-home">
@@ -139,8 +138,8 @@
                             </li>
                         </ul>
                     </div>
-                    
                 </div>
+                <!-- end bread-cum -->
                 
                 <div class="pt-1 pb-0 card-body" >
                     <div class="card">
@@ -171,7 +170,7 @@
                                                                             <img class="my-Slides1" id="gallery-hightlight"src="assets/img/meat_3.png" style="width:167%">
                                                                             <img class="my-Slides1" id="gallery-hightlight" src="assets/img/meat_4.png" style="width:167%">
                                                                             <img class="my-Slides1" id="gallery-hightlight" src="assets/img/meat_5.png" style="width:167%">
-
+                                                                            
                                                                             <button class="w3-button w3-black w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
                                                                             <button class="w3-button w3-black w3-display-right" onclick="plusDivs1(1)">&#10095;</button>
                                                                         </div>
@@ -509,15 +508,15 @@
                                                     }
                                                     
                                                     // Get the <span> element that closes the modal
-                                                        var span = document.getElementsByClassName("close")[0];
+                                                     var span = document.getElementsByClassName("close")[0];
                                                         
                                                         // When the user clicks on <span> (x), close the modal
-                                                            span.onclick = function() { 
-                                                                modal.style.display = "none";
-                                                            }
-                                                        </script>
+                                                    span.onclick = function() { 
+                                                    modal.style.display = "none";
+                                                     }
+                                                </script>
                                                         
-                                                        <script>
+                                                <script>
                                                             // Get the modal
                                                             var modal = document.getElementById("myModal");
                                                             
@@ -527,20 +526,20 @@
                                                             var captionText = document.getElementById("caption");
                                                             img.onclick = function()
                                                             {
-                                                                modal.style.display = "block";
-                                                                modalImg.src = this.src;
-                                                                captionText.innerHTML = this.alt;
+                                                             modal.style.display = "block";
+                                                             modalImg.src = this.src;
+                                                            captionText.innerHTML = this.alt;
                                                             }
                                                             // Get the <span> element that closes the modal
-                                                                var span = document.getElementsByClassName("close")[0];
+                                                            var span = document.getElementsByClassName("close")[0];
                                                                 // When the user clicks on <span> (x), close the modal
-                                                                    span.onclick = function()
-                                                                    {
-                                                                        modal.style.display = "none";
-                                                                    }
-                                                                </script>
-                                                                <!-- Category horizontal -->
-                                                                <div class="owl-carousel owl-theme" id='carousel_horizontal'>
+                                                             span.onclick = function()
+                                                            {
+                                                            modal.style.display = "none";
+                                                             }
+                                                 </script>
+                                                 <!-- Category horizontal -->
+                                                <div class="owl-carousel owl-theme" id='carousel_horizontal'>
                                                                     
                                                                     <div class="item">
                                                                         <img class="demo cursor" id="cursor-img1" src="assets/img/meat_1.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
@@ -566,9 +565,9 @@
                                                                         <img class="demo cursor"id="cursor-img"  src="assets/img/meat_3.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
                                                                     </div>
                                                                     
-                                                                </div>
+                                                </div>
                                                                 
-                                                                <script>
+                                                <script>
                                                                     $('#carousel_horizontal').owlCarousel({
                                                                         loop:true,
                                                                         margin:10,
@@ -589,11 +588,11 @@
                                                                             }
                                                                         }
                                                                     })
-                                                                </script>
-                                                                <!--End Category horizontal -->
-                                                            </div>
+                                                </script>
+                                                 <!--End Category horizontal -->
+                                             </div>
                                                             
-                                                            <script>
+                                                 <script>
                                                                 var slideIndex = 1;
                                                                 showSlides(slideIndex);
                                                                 
@@ -622,9 +621,9 @@
                                                                     dots[slideIndex-1].className += " active";
                                                                     captionText.innerHTML = dots[slideIndex-1].alt;
                                                                 }
-                                                            </script>
-                                                        </div>
-                                                        <div class="pr-0 pl-3 py-2 col-md-8 col-lg-8">
+                                                 </script>
+                                         </div>
+                                         <div class="pr-0 pl-3 py-2 col-md-8 col-lg-8">
                                                             <div class="container">
                                                                 <div class="row">
                                                                     <div class="col-md-8 col-lg-8">
@@ -724,15 +723,15 @@
                                                                     </div>
                                                                 </div>  
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
                                 
-                                <div class="col-md-12">
+                 <div class="col-md-12">
                                     <div class="card">
                                         <div class="pl-2 ml-1 py-2 card-header">
                                             <ul class="nav nav-pills nav-secondary" id="pills-tab" role="tablist">
@@ -1018,47 +1017,25 @@
                                                                                     var modalImg = document.getElementById("img01");
                                                                                     var captionText = document.getElementById("caption");
                                                                                     img.onclick = function(){
-                                                                                        modal.style.display = "block";
-                                                                                        modalImg.src = this.src;
-                                                                                        captionText.innerHTML = this.alt;
+                                                                                     modal.style.display = "block";
+                                                                                     modalImg.src = this.src;
+                                                                                     captionText.innerHTML = this.alt;
                                                                                     }
                                                                                     
                                                                                     // Get the <span> element that closes the modal
-                                                                                        var span = document.getElementsByClassName("close")[0];
+                                                                                    var span = document.getElementsByClassName("close")[0];
                                                                                         
                                                                                         // When the user clicks on <span> (x), close the modal
-                                                                                            span.onclick = function() { 
-                                                                                                modal.style.display = "none";
+                                                                                        span.onclick = function() { 
+                                                                                         modal.style.display = "none";
                                                                                             }
-                                                                                        </script>
-                                                                                        <img class="img-fluid" id="myImg1" src="assets/img/meat_1.png" style="width:70px; height: 70px; max-width:300px; cursor: pointer;" alt="Chania">
-                                                                                        <script>
-                                                                                            // Get the modal
-                                                                                            var modal = document.getElementById("myModal");
-                                                                                            
-                                                                                            // Get the image and insert it inside the modal - use its "alt" text as a caption
-                                                                                            var img = document.getElementById("myImg1");
-                                                                                            var modalImg = document.getElementById("img01");
-                                                                                            var captionText = document.getElementById("caption");
-                                                                                            img.onclick = function(){
-                                                                                                modal.style.display = "block";
-                                                                                                modalImg.src = this.src;
-                                                                                                captionText.innerHTML = this.alt;
-                                                                                            }
-                                                                                            
-                                                                                            // Get the <span> element that closes the modal
-                                                                                                var span = document.getElementsByClassName("close")[0];
-                                                                                                
-                                                                                                // When the user clicks on <span> (x), close the modal
-                                                                                                    span.onclick = function() { 
-                                                                                                        modal.style.display = "none";
-                                                                                                    }
-                                                                                                </script>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="comment-user">
-                                                                                            <div class="pt-5 row">
-                                                                                                <div class="col-lg-6 col-md-6 col-6">
+                                                                                 </script>
+                                                                               
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="comment-user">
+                                                                            <div class="pt-5 row">
+                                                                                <div class="col-lg-6 col-md-6 col-6">
                                                                                                     <div class=" row no-gutters">
                                                                                                         <div class="px-2 col-md-2">
                                                                                                             <div class="avatar">
@@ -1071,8 +1048,8 @@
                                                                                                         </div>
                                                                                                         
                                                                                                     </div>
-                                                                                                </div>
-                                                                                                <div class="col-lg-6 col-md-6 col-6">
+                                                                                </div>
+                                                                                <div class="col-lg-6 col-md-6 col-6">
                                                                                                     <div class="text-right rating-star pb-2">
                                                                                                         <span class="fa fa-star checked" id="star"></span>
                                                                                                         <span class="fa fa-star checked" id="star"></span>
@@ -1080,55 +1057,54 @@
                                                                                                         <span class="fa fa-star" id="star"></span>
                                                                                                         <span class="fa fa-star" id="star"></span>
                                                                                                     </div>
+                                                                                </div>
+                                                                            </div>
+                                                                                            
+                                                                            <div class="comment">
+                                                                            <h4>Shop phục vụ chấp nhận được.</h4>
+                                                                                                
+                                                                            <img class="img-fluid" id="myImg" src="assets/img/meat.png" style="width:70px; height: 70px; max-width:300px; cursor: pointer;" alt="Chania">
+       
+                                                                           </div>
+                                                                        </div>
+                                                                        <div class="comment-user">
+                                                                            <div class="pt-5 row">
+                                                                                <div class="col-lg-6 col-md-6 col-6">
+                                                                                    <div class="row no-gutters">
+                                                                                            <div class="px-2 col-md-2">
+                                                                                                <div class="avatar">
+                                                                                                    <img src="assets/img/talha.jpg" alt="..." class="avatar-img rounded-circle">
                                                                                                 </div>
                                                                                             </div>
-                                                                                            
-                                                                                            <div class="comment">
-                                                                                                <h4>Shop phục vụ chấp nhận được.</h4>
-                                                                                                
-                                                                                                <img class="img-fluid" id="myImg" src="assets/img/meat.png" style="width:70px; height: 70px; max-width:300px; cursor: pointer;" alt="Chania">
-                                                                                                
-                                                                                                
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="comment-user">
-                                                                                            <div class="pt-5 row">
-                                                                                                <div class="col-lg-6 col-md-6 col-6">
-                                                                                                    <div class="row no-gutters">
-                                                                                                        <div class="px-2 col-md-2">
-                                                                                                            <div class="avatar">
-                                                                                                                <img src="assets/img/talha.jpg" alt="..." class="avatar-img rounded-circle">
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="py-0">
-                                                                                                            <h5><b>h**thực</b></h5>
-                                                                                                            <p><i>12:35, 21 thg 08, 2019</i></p>
-                                                                                                        </div>
+                                                                                            <div class="py-0">
+                                                                                                <h5><b>h**thực</b></h5>
+                                                                                                <p><i>12:35, 21 thg 08, 2019</i></p>
+                                                                                             </div>
                                                                                                         
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="col-lg-6 col-md-6 col-6">
-                                                                                                    <div class="text-right rating-star pb-2">
-                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                        <span class="fa fa-star" id="star"></span>
-                                                                                                        <span class="fa fa-star" id="star"></span>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            
-                                                                                            <div class="comment">
-                                                                                                <h4>Shop phục vụ chấp nhận được.</h4>
-                                                                                                
-                                                                                                <img class="img-fluid" id="myImg" src="assets/img/meat_1.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
-                                                                                            </div>
-                                                                                        </div>
                                                                                     </div>
+                                                                                </div>
+                                                                                <div class="col-lg-6 col-md-6 col-6">
+                                                                               <div class="text-right rating-star pb-2">
+                                                                                                        <span class="fa fa-star checked" id="star"></span>
+                                                                                                        <span class="fa fa-star checked" id="star"></span>
+                                                                                                        <span class="fa fa-star checked" id="star"></span>
+                                                                                                        <span class="fa fa-star" id="star"></span>
+                                                                                                        <span class="fa fa-star" id="star"></span>
+                                                                                </div>
+                                                                                </div>
+                                                                            </div>
+                                                                                            
+                                                                            <div class="comment">
+                                                                                <h4>Shop phục vụ chấp nhận được.</h4>
+                                                                                                
+                                                                                <img class="img-fluid" id="myImg" src="assets/img/meat_1.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
                                                                                     
-                                                                                    <div class="tab-pane fade" id="pills-profile-nobd" role="tabpanel" aria-labelledby="pills-profile-tab-nobd">
-                                                                                        <div class="comment-user">
-                                                                                            <div class="pt-5 row">
+                                                                    <div class="tab-pane fade" id="pills-profile-nobd" role="tabpanel" aria-labelledby="pills-profile-tab-nobd">
+                                                                         <div class="comment-user">
+                                                                                 <div class="pt-5 row">
                                                                                                 <div class="col-lg-6 col-md-6 col-6">
                                                                                                     <div class="row no-gutters">
                                                                                                         <div class="px-2 col-md-2">
@@ -1152,18 +1128,18 @@
                                                                                                         <span class="fa fa-star" id="star"></span>
                                                                                                     </div>
                                                                                                 </div>
-                                                                                            </div>
-                                                                                            <div class="comment">
-                                                                                                <h4>Shop phục vụ chấp nhận được.</h4>
+                                                                                </div>
+                                                                                <div class="comment">
+                                                                                     <h4>Shop phục vụ chấp nhận được.</h4>
                                                                                                 
-                                                                                                <img class="img-fluid" id="myImg" src="assets/img/meat.png" style="width:70px; height: 70px; max-width:300px; cursor: pointer;" alt="Chania">
+                                                                                    <img class="img-fluid" id="myImg" src="assets/img/meat.png" style="width:70px; height: 70px; max-width:300px; cursor: pointer;" alt="Chania">
                                                                                                 
                                                                                                 <!-- The Modal -->
-                                                                                                <div id="myModal" class="modal">
-                                                                                                    <span class="close" style=" color: #f1f1f1;  position: relative; top: 5px;  font-size: 40px; font-weight: bold; transition: 0.3s;cursor: pointer; right: 70px;">&times;</span>
-                                                                                                    <img class="modal-content" id="img01">
-                                                                                                    <div id="caption"></div>
-                                                                                                </div>
+                                                                                    <div id="myModal" class="modal">
+                                                                                        <span class="close" style=" color: #f1f1f1;  position: relative; top: 5px;  font-size: 40px; font-weight: bold; transition: 0.3s;cursor: pointer; right: 70px;">&times;</span>
+                                                                                        <img class="modal-content" id="img01">
+                                                                                        <div id="caption"></div>
+                                                                                    </div>
                                                                                                 
                                                                                                 <script>
                                                                                                     // Get the modal
@@ -1180,185 +1156,186 @@
                                                                                                     }
                                                                                                     
                                                                                                     // Get the <span> element that closes the modal
-                                                                                                        var span = document.getElementsByClassName("close")[0];
+                                                                                                    var span = document.getElementsByClassName("close")[0];
                                                                                                         
                                                                                                         // When the user clicks on <span> (x), close the modal
-                                                                                                            span.onclick = function() { 
-                                                                                                                modal.style.display = "none";
+                                                                                                    span.onclick = function() { 
+                                                                                                     modal.style.display = "none";
                                                                                                             }
-                                                                                                        </script>
+                                                                                                </script>
+                                                                                </div>
+                                                                        </div>
+                                                                         <div class="comment-user">
+                                                                                <div class="pt-5 row">
+                                                                                    <div class="col-lg-6 col-md-6 col-6">
+                                                                                            <div class=" row no-gutters">
+                                                                                                <div class="px-2 col-md-2">
+                                                                                                     <div class="avatar">
+                                                                                                        <img src="assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
                                                                                                     </div>
-                                                                                                </div>
-                                                                                                <div class="comment-user">
-                                                                                                    <div class="pt-5 row">
-                                                                                                        <div class="col-lg-6 col-md-6 col-6">
-                                                                                                            <div class=" row no-gutters">
-                                                                                                                <div class="px-2 col-md-2">
-                                                                                                                    <div class="avatar">
-                                                                                                                        <img src="assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                                <div class="py-0">
-                                                                                                                    <h5><b>h**thực</b></h5>
-                                                                                                                    <p><i>12:35, 21 thg 08, 2019</i></p>
-                                                                                                                </div>
+                                                                                                 </div>
+                                                                                                <div class="py-0">
+                                                                                                    <h5><b>h**thực</b></h5>
+                                                                                                     <p><i>12:35, 21 thg 08, 2019</i></p>
+                                                                                                 </div>
                                                                                                                 
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="col-lg-6 col-md-6 col-6">
-                                                                                                            <div class="text-right rating-star pb-2">
-                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                <span class="fa fa-star" id="star"></span>
-                                                                                                                <span class="fa fa-star" id="star"></span>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
+                                                                                             </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-6 col-md-6 col-6">
+                                                                                        <div class="text-right rating-star pb-2">
+                                                                                            <span class="fa fa-star checked" id="star"></span>
+                                                                                            <span class="fa fa-star checked" id="star"></span>
+                                                                                            <span class="fa fa-star checked" id="star"></span>
+                                                                                            <span class="fa fa-star" id="star"></span>
+                                                                                            <span class="fa fa-star" id="star"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                 </div>
                                                                                                     
-                                                                                                    <div class="comment">
-                                                                                                        <h4>Shop phục vụ chấp nhận được.</h4>
+                                                                                <div class="comment">
+                                                                                    <h4>Shop phục vụ chấp nhận được.</h4>
                                                                                                         
-                                                                                                        <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="tab-pane fade" id="pills-contact-nobd" role="tabpanel" aria-labelledby="pills-contact-tab-nobd">
-                                                                                                <div class="comment-user">
-                                                                                                    <div class="pt-5 row">
-                                                                                                        <div class="col-lg-6 col-md-6 col-6">
-                                                                                                            <div class="row no-gutters">
-                                                                                                                <div class="px-2 col-md-2">
-                                                                                                                    <div class="avatar">
-                                                                                                                        <img src="assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                                <div class="py-0">
-                                                                                                                    <h5><b>h**thực</b></h5>
-                                                                                                                    <p><i>12:35, 21 thg 08, 2019</i></p>
-                                                                                                                </div>
+                                                                                     <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
+                                                                                 </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="tab-pane fade" id="pills-contact-nobd" role="tabpanel" aria-labelledby="pills-contact-tab-nobd">
+                                                                        <div class="comment-user">
+                                                                            <div class="pt-5 row">
+                                                                                <div class="col-lg-6 col-md-6 col-6">
+                                                                                    <div class="row no-gutters">
+                                                                                        <div class="px-2 col-md-2">
+                                                                                             <div class="avatar">
+                                                                                                 <img src="assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
+                                                                                             </div>
+                                                                                        </div>
+                                                                                        <div class="py-0">
+                                                                                            <h5><b>h**thực</b></h5>
+                                                                                             <p><i>12:35, 21 thg 08, 2019</i></p>
+                                                                                        </div>
                                                                                                                 
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="col-lg-6 col-md-6 col-6">
-                                                                                                            <div class="text-right rating-star pb-2">
-                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                <span class="fa fa-star" id="star"></span>
-                                                                                                                <span class="fa fa-star" id="star"></span>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                    <div class="comment">
-                                                                                                        <h4>Shop phục vụ chấp nhận được.</h4>
+                                                                                    </div>
+                                                                                </div>
+                                                                                 <div class="col-lg-6 col-md-6 col-6">
+                                                                                    <div class="text-right rating-star pb-2">
+                                                                                        <span class="fa fa-star checked" id="star"></span>
+                                                                                        <span class="fa fa-star checked" id="star"></span>
+                                                                                        <span class="fa fa-star checked" id="star"></span>
+                                                                                        <span class="fa fa-star" id="star"></span>
+                                                                                        <span class="fa fa-star" id="star"></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                             </div>
+                                                                            <div class="comment">
+                                                                                 <h4>Shop phục vụ chấp nhận được.</h4>
                                                                                                         
-                                                                                                        <img class="img-fluid" id="myImg" src="assets/img/meat.png" style="width:70px; height: 70px; max-width:300px; cursor: pointer;" alt="Chania">
+                                                                                <img class="img-fluid" id="myImg" src="assets/img/meat.png" style="width:70px; height: 70px; max-width:300px; cursor: pointer;" alt="Chania">
                                                                                                         
                                                                                                         <!-- The Modal -->
-                                                                                                        <div id="myModal" class="modal">
-                                                                                                            <span class="close" style=" color: #f1f1f1;  position: relative; top: 5px;  font-size: 40px; font-weight: bold; transition: 0.3s;cursor: pointer; right: 70px;">&times;</span>
-                                                                                                            <img class="modal-content" id="img01">
-                                                                                                            <div id="caption"></div>
-                                                                                                        </div>
+                                                                                <div id="myModal" class="modal">
+                                                                                    <span class="close" style=" color: #f1f1f1;  position: relative; top: 5px;  font-size: 40px; font-weight: bold; transition: 0.3s;cursor: pointer; right: 70px;">&times;</span>
+                                                                                    <img class="modal-content" id="img01">
+                                                                                    <div id="caption"></div>
+                                                                                </div>
                                                                                                         
-                                                                                                        <script>
+                                                                            <script>
                                                                                                             // Get the modal
-                                                                                                            var modal = document.getElementById("myModal");
+                                                                                 var modal = document.getElementById("myModal");
                                                                                                             
                                                                                                             // Get the image and insert it inside the modal - use its "alt" text as a caption
-                                                                                                            var img = document.getElementById("myImg");
-                                                                                                            var modalImg = document.getElementById("img01");
-                                                                                                            var captionText = document.getElementById("caption");
-                                                                                                            img.onclick = function(){
-                                                                                                                modal.style.display = "block";
-                                                                                                                modalImg.src = this.src;
-                                                                                                                captionText.innerHTML = this.alt;
-                                                                                                            }
+                                                                                var img = document.getElementById("myImg");
+                                                                                 var modalImg = document.getElementById("img01");
+                                                                                var captionText = document.getElementById("caption");
+                                                                                img.onclick = function(){
+                                                                                 modal.style.display = "block";
+                                                                                modalImg.src = this.src;
+                                                                                captionText.innerHTML = this.alt;
+                                                                                                    }
                                                                                                             
                                                                                                             // Get the <span> element that closes the modal
-                                                                                                                var span = document.getElementsByClassName("close")[0];
+                                                                                var span = document.getElementsByClassName("close")[0];
                                                                                                                 
                                                                                                                 // When the user clicks on <span> (x), close the modal
-                                                                                                                    span.onclick = function() { 
-                                                                                                                        modal.style.display = "none";
-                                                                                                                    }
-                                                                                                                </script>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <div class="comment-user">
-                                                                                                            <div class="pt-5 row">
-                                                                                                                <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                    <div class=" row no-gutters">
-                                                                                                                        <div class="px-2 col-md-2">
-                                                                                                                            <div class="avatar">
-                                                                                                                                <img src="assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                        <div class="py-0">
+                                                                                 span.onclick = function() { 
+                                                                                modal.style.display = "none";
+                                                                                                         }
+                                                                            </script>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="comment-user">
+                                                                            <div class="pt-5 row">
+                                                                                <div class="col-lg-6 col-md-6 col-6">
+                                                                                    <div class=" row no-gutters">
+                                                                                        <div class="px-2 col-md-2">
+                                                                                            <div class="avatar">
+                                                                                                <img src="assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                     <div class="py-0">
                                                                                                                             <h5><b>h**thực</b></h5>
                                                                                                                             <p><i>12:35, 21 thg 08, 2019</i></p>
                                                                                                                         </div>
                                                                                                                         
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                                <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                    <div class="text-right rating-star pb-2">
-                                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                                        <span class="fa fa-star" id="star"></span>
-                                                                                                                        <span class="fa fa-star" id="star"></span>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-lg-6 col-md-6 col-6">
+                                                                                    <div class="text-right rating-star pb-2">
+                                                                                        <span class="fa fa-star checked" id="star"></span>
+                                                                                        <span class="fa fa-star checked" id="star"></span>
+                                                                                        <span class="fa fa-star checked" id="star"></span>
+                                                                                         <span class="fa fa-star" id="star"></span>
+                                                                                        <span class="fa fa-star" id="star"></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                                                             
-                                                                                                            <div class="comment">
-                                                                                                                <h4>Shop phục vụ chấp nhận được.</h4>
+                                                                            <div class="comment">
+                                                                                <h4>Shop phục vụ chấp nhận được.</h4>
                                                                                                                 
-                                                                                                                <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
-                                                                                                            </div>
-                                                                                                        </div>
+                                                                                <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
+                                                                            </div>
+                                                                        </div>
                                                                                                         
-                                                                                                    </div>
-                                                                                                    <div class="tab-pane fade" id="pills-three-star-nobd" role="tabpanel" aria-labelledby="pills-three-star-tab-nobd">
-                                                                                                        <div class="comment-user">
-                                                                                                            <div class="pt-5 row">
-                                                                                                                <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                    <div class="row no-gutters">
-                                                                                                                        <div class="px-2 col-md-2">
-                                                                                                                            <div class="avatar">
-                                                                                                                                <img src="assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                        <div class="py-0">
-                                                                                                                            <h5><b>h**thực</b></h5>
-                                                                                                                            <p><i>12:35, 21 thg 08, 2019</i></p>
-                                                                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab-pane fade" id="pills-three-star-nobd" role="tabpanel" aria-labelledby="pills-three-star-tab-nobd">
+                                                                        <div class="comment-user">
+                                                                            <div class="pt-5 row">
+                                                                                <div class="col-lg-6 col-md-6 col-6">
+                                                                                    <div class="row no-gutters">
+                                                                                        <div class="px-2 col-md-2">
+                                                                                            <div class="avatar">
+                                                                                                <img src="assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
+                                                                                             </div>
+                                                                                         </div>
+                                                                                         <div class="py-0">
+                                                                                            <h5><b>h**thực</b></h5>
+                                                                                             <p><i>12:35, 21 thg 08, 2019</i></p>
+                                                                                        </div>
                                                                                                                         
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                                <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                    <div class="text-right rating-star pb-2">
-                                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                                        <span class="fa fa-star" id="star"></span>
-                                                                                                                        <span class="fa fa-star" id="star"></span>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                            <div class="comment">
-                                                                                                                <h4>Shop phục vụ chấp nhận được.</h4>
+                                                                                    </div>
+                                                                                </div>
+                                                                                 <div class="col-lg-6 col-md-6 col-6">
+                                                                                     <div class="text-right rating-star pb-2">
+                                                                                            <span class="fa fa-star checked" id="star"></span>
+                                                                                            <span class="fa fa-star checked" id="star"></span>
+                                                                                            <span class="fa fa-star checked" id="star"></span>
+                                                                                            <span class="fa fa-star" id="star"></span>
+                                                                                            <span class="fa fa-star" id="star"></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                             <div class="comment">
+                                                                                <h4>Shop phục vụ chấp nhận được.</h4>
                                                                                                                 
-                                                                                                                <img class="img-fluid" id="myImg" src="assets/img/meat.png" style="width:70px; height: 70px; max-width:300px; cursor: pointer;" alt="Chania">
+                                                                                 <img class="img-fluid" id="myImg" src="assets/img/meat.png" style="width:70px; height: 70px; max-width:300px; cursor: pointer;" alt="Chania">
                                                                                                                 
-                                                                                                                <!-- The Modal -->
-                                                                                                                <div id="myModal" class="modal">
-                                                                                                                    <span class="close" style=" color: #f1f1f1;  position: relative; top: 5px;  font-size: 40px; font-weight: bold; transition: 0.3s;cursor: pointer; right: 70px;">&times;</span>
-                                                                                                                    <img class="modal-content" id="img01">
-                                                                                                                    <div id="caption"></div>
-                                                                                                                </div>
+                                                                                 <!-- The Modal -->
+                                                                                <div id="myModal" class="modal">
+                                                                                     <span class="close" style=" color: #f1f1f1;  position: relative; top: 5px;  font-size: 40px; font-weight: bold; transition: 0.3s;cursor: pointer; right: 70px;">&times;</span>
+                                                                                    <img class="modal-content" id="img01">
+                                                                                      <div id="caption"></div>
+                                                                                 </div>
                                                                                                                 
                                                                                                                 <script>
                                                                                                                     // Get the modal
@@ -1381,84 +1358,84 @@
                                                                                                                             span.onclick = function() { 
                                                                                                                                 modal.style.display = "none";
                                                                                                                             }
-                                                                                                                        </script>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                                <div class="comment-user">
-                                                                                                                    <div class="pt-5 row">
-                                                                                                                        <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                            <div class=" row no-gutters">
-                                                                                                                                <div class="px-2 col-md-2">
-                                                                                                                                    <div class="avatar">
-                                                                                                                                        <img src="assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                                <div class="py-0">
-                                                                                                                                    <h5><b>h**thực</b></h5>
-                                                                                                                                    <p><i>12:35, 21 thg 08, 2019</i></p>
-                                                                                                                                </div>
+                                                                                                               </script>
+                                                                            </div>
+                                                                        </div>
+                                                                         <div class="comment-user">
+                                                                             <div class="pt-5 row">
+                                                                                <div class="col-lg-6 col-md-6 col-6">
+                                                                                     <div class=" row no-gutters">
+                                                                                         <div class="px-2 col-md-2">
+                                                                                             <div class="avatar">
+                                                                                                  <img src="assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
+                                                                                             </div>
+                                                                                         </div>
+                                                                                         <div class="py-0">
+                                                                                            <h5><b>h**thực</b></h5>
+                                                                                             <p><i>12:35, 21 thg 08, 2019</i></p>
+                                                                                          </div>
                                                                                                                                 
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                        <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                            <div class="text-right rating-star pb-2">
-                                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                <span class="fa fa-star" id="star"></span>
-                                                                                                                                <span class="fa fa-star" id="star"></span>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    </div>
+                                                                                      </div>
+                                                                                 </div>
+                                                                                <div class="col-lg-6 col-md-6 col-6">
+                                                                                     <div class="text-right rating-star pb-2">
+                                                                                        <span class="fa fa-star checked" id="star"></span>
+                                                                                         <span class="fa fa-star checked" id="star"></span>
+                                                                                         <span class="fa fa-star checked" id="star"></span>
+                                                                                          <span class="fa fa-star" id="star"></span>
+                                                                                          <span class="fa fa-star" id="star"></span>
+                                                                                       </div>
+                                                                                 </div>
+                                                                             </div>
                                                                                                                     
-                                                                                                                    <div class="comment">
-                                                                                                                        <h4>Shop phục vụ chấp nhận được.</h4>
+                                                                              <div class="comment">
+                                                                                    <h4>Shop phục vụ chấp nhận được.</h4>
                                                                                                                         
-                                                                                                                        <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                    <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
+                                                                              </div>
+                                                                        </div>
                                                                                                                 
-                                                                                                            </div>
-                                                                                                            <div class="tab-pane fade" id="pills-two-star-nobd" role="tabpanel" aria-labelledby="pills-two-star-tab-nobd">
-                                                                                                                <div class="comment-user">
-                                                                                                                    <div class="pt-5 row">
-                                                                                                                        <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                            <div class="row no-gutters">
-                                                                                                                                <div class="px-2 col-md-2">
-                                                                                                                                    <div class="avatar">
-                                                                                                                                        <img src="assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                                <div class="py-0">
-                                                                                                                                    <h5><b>h**thực</b></h5>
-                                                                                                                                    <p><i>12:35, 21 thg 08, 2019</i></p>
-                                                                                                                                </div>
+                                                                    </div>
+                                                                    <div class="tab-pane fade" id="pills-two-star-nobd" role="tabpanel" aria-labelledby="pills-two-star-tab-nobd">
+                                                                         <div class="comment-user">
+                                                                             <div class="pt-5 row">
+                                                                                <div class="col-lg-6 col-md-6 col-6">
+                                                                                     <div class="row no-gutters">
+                                                                                        <div class="px-2 col-md-2">
+                                                                                             <div class="avatar">
+                                                                                                 <img src="assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
+                                                                                             </div>
+                                                                                        </div>
+                                                                                        <div class="py-0">
+                                                                                              <h5><b>h**thực</b></h5>
+                                                                                               <p><i>12:35, 21 thg 08, 2019</i></p>
+                                                                                         </div>
                                                                                                                                 
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                        <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                            <div class="text-right rating-star pb-2">
-                                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                <span class="fa fa-star" id="star"></span>
-                                                                                                                                <span class="fa fa-star" id="star"></span>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                    <div class="comment">
-                                                                                                                        <h4>Shop phục vụ chấp nhận được.</h4>
+                                                                                    </div>
+                                                                                 </div>
+                                                                                <div class="col-lg-6 col-md-6 col-6">
+                                                                                     <div class="text-right rating-star pb-2">
+                                                                                          <span class="fa fa-star checked" id="star"></span>
+                                                                                          <span class="fa fa-star checked" id="star"></span>
+                                                                                          <span class="fa fa-star checked" id="star"></span>
+                                                                                           <span class="fa fa-star" id="star"></span>
+                                                                                          <span class="fa fa-star" id="star"></span>
+                                                                                      </div>
+                                                                                 </div>
+                                                                            </div>
+                                                                            <div class="comment">
+                                                                                 <h4>Shop phục vụ chấp nhận được.</h4>
                                                                                                                         
-                                                                                                                        <img class="img-fluid" id="myImg" src="assets/img/meat.png" style="width:70px; height: 70px; max-width:300px; cursor: pointer;" alt="Chania">
+                                                                                     <img class="img-fluid" id="myImg" src="assets/img/meat.png" style="width:70px; height: 70px; max-width:300px; cursor: pointer;" alt="Chania">
                                                                                                                         
-                                                                                                                        <!-- The Modal -->
-                                                                                                                        <div id="myModal" class="modal">
-                                                                                                                            <span class="close" style=" color: #f1f1f1;  position: relative; top: 5px;  font-size: 40px; font-weight: bold; transition: 0.3s;cursor: pointer; right: 70px;">&times;</span>
-                                                                                                                            <img class="modal-content" id="img01">
-                                                                                                                            <div id="caption"></div>
-                                                                                                                        </div>
+                                                                                      <!-- The Modal -->
+                                                                                         <div id="myModal" class="modal">
+                                                                                              <span class="close" style=" color: #f1f1f1;  position: relative; top: 5px;  font-size: 40px; font-weight: bold; transition: 0.3s;cursor: pointer; right: 70px;">&times;</span>
+                                                                                               <img class="modal-content" id="img01">
+                                                                                                <div id="caption"></div>
+                                                                                         </div>
                                                                                                                         
-                                                                                                                        <script>
+                                                                                      <script>
                                                                                                                             // Get the modal
                                                                                                                             var modal = document.getElementById("myModal");
                                                                                                                             
@@ -1479,85 +1456,85 @@
                                                                                                                                     span.onclick = function() { 
                                                                                                                                         modal.style.display = "none";
                                                                                                                                     }
-                                                                                                                                </script>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                        <div class="comment-user">
-                                                                                                                            <div class="pt-5 row">
-                                                                                                                                <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                                    <div class=" row no-gutters">
-                                                                                                                                        <div class="px-2 col-md-2">
-                                                                                                                                            <div class="avatar">
-                                                                                                                                                <img src="assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
-                                                                                                                                            </div>
-                                                                                                                                        </div>
-                                                                                                                                        <div class="py-0">
-                                                                                                                                            <h5><b>h**thực</b></h5>
-                                                                                                                                            <p><i>12:35, 21 thg 08, 2019</i></p>
-                                                                                                                                        </div>
+                                                                                      </script>
+                                                                             </div>
+                                                                         </div>
+                                                                          <div class="comment-user">
+                                                                             <div class="pt-5 row">
+                                                                                 <div class="col-lg-6 col-md-6 col-6">
+                                                                                     <div class=" row no-gutters">
+                                                                                        <div class="px-2 col-md-2">
+                                                                                            <div class="avatar">
+                                                                                                <img src="assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
+                                                                                             </div>
+                                                                                         </div>
+                                                                                        <div class="py-0">
+                                                                                            <h5><b>h**thực</b></h5>
+                                                                                              <p><i>12:35, 21 thg 08, 2019</i></p>
+                                                                                        </div>
                                                                                                                                         
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                                <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                                    <div class="text-right rating-star pb-2">
-                                                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                        <span class="fa fa-star" id="star"></span>
-                                                                                                                                        <span class="fa fa-star" id="star"></span>
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                            </div>
+                                                                                    </div>
+                                                                                 </div>
+                                                                                 <div class="col-lg-6 col-md-6 col-6">
+                                                                                     <div class="text-right rating-star pb-2">
+                                                                                         <span class="fa fa-star checked" id="star"></span>
+                                                                                          <span class="fa fa-star checked" id="star"></span>
+                                                                                          <span class="fa fa-star checked" id="star"></span>
+                                                                                          <span class="fa fa-star" id="star"></span>
+                                                                                           <span class="fa fa-star" id="star"></span>
+                                                                                    </div>
+                                                                                 </div>
+                                                                             </div>
                                                                                                                             
-                                                                                                                            <div class="comment">
-                                                                                                                                <h4>Shop phục vụ chấp nhận được.</h4>
+                                                                             <div class="comment">
+                                                                                <h4>Shop phục vụ chấp nhận được.</h4>
                                                                                                                                 
-                                                                                                                                <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
-                                                                                                                            </div>
-                                                                                                                        </div>
+                                                                                 <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
+                                                                             </div>
+                                                                          </div>
                                                                                                                         
                                                                                                                         
-                                                                                                                    </div>
-                                                                                                                    <div class="tab-pane fade" id="pills-one-star-nobd" role="tabpanel" aria-labelledby="pills-one-star-tab-nobd">
-                                                                                                                        <div class="comment-user">
-                                                                                                                            <div class="pt-5 row">
-                                                                                                                                <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                                    <div class="row no-gutters">
-                                                                                                                                        <div class="px-2 col-md-2">
-                                                                                                                                            <div class="avatar">
-                                                                                                                                                <img src="assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
-                                                                                                                                            </div>
-                                                                                                                                        </div>
-                                                                                                                                        <div class="py-0">
-                                                                                                                                            <h5><b>h**thực</b></h5>
-                                                                                                                                            <p><i>12:35, 21 thg 08, 2019</i></p>
-                                                                                                                                        </div>
+                                                                     </div>
+                                                                    <div class="tab-pane fade" id="pills-one-star-nobd" role="tabpanel" aria-labelledby="pills-one-star-tab-nobd">
+                                                                         <div class="comment-user">
+                                                                            <div class="pt-5 row">
+                                                                                <div class="col-lg-6 col-md-6 col-6">
+                                                                                    <div class="row no-gutters">
+                                                                                         <div class="px-2 col-md-2">
+                                                                                             <div class="avatar">
+                                                                                                  <img src="assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
+                                                                                             </div>
+                                                                                        </div>
+                                                                                        <div class="py-0">
+                                                                                              <h5><b>h**thực</b></h5>
+                                                                                               <p><i>12:35, 21 thg 08, 2019</i></p>
+                                                                                        </div>
                                                                                                                                         
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                                <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                                    <div class="text-right rating-star pb-2">
-                                                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                        <span class="fa fa-star" id="star"></span>
-                                                                                                                                        <span class="fa fa-star" id="star"></span>
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                            <div class="comment">
-                                                                                                                                <h4>Shop phục vụ chấp nhận được.</h4>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-lg-6 col-md-6 col-6">
+                                                                                     <div class="text-right rating-star pb-2">
+                                                                                         <span class="fa fa-star checked" id="star"></span>
+                                                                                         <span class="fa fa-star checked" id="star"></span>
+                                                                                        <span class="fa fa-star checked" id="star"></span>
+                                                                                          <span class="fa fa-star" id="star"></span>
+                                                                                          <span class="fa fa-star" id="star"></span>
+                                                                                     </div>
+                                                                                </div>
+                                                                             </div>
+                                                                             <div class="comment">
+                                                                                 <h4>Shop phục vụ chấp nhận được.</h4>
                                                                                                                                 
-                                                                                                                                <img class="img-fluid" id="myImg" src="assets/img/meat.png" style="width:70px; height: 70px; max-width:300px; cursor: pointer;" alt="Chania">
+                                                                                 <img class="img-fluid" id="myImg" src="assets/img/meat.png" style="width:70px; height: 70px; max-width:300px; cursor: pointer;" alt="Chania">
                                                                                                                                 
-                                                                                                                                <!-- The Modal -->
-                                                                                                                                <div id="myModal" class="modal">
-                                                                                                                                    <span class="close" style=" color: #f1f1f1;  position: relative; top: 5px;  font-size: 40px; font-weight: bold; transition: 0.3s;cursor: pointer; right: 70px;">&times;</span>
-                                                                                                                                    <img class="modal-content" id="img01">
-                                                                                                                                    <div id="caption"></div>
-                                                                                                                                </div>
+                                                                                 <!-- The Modal -->
+                                                                                 <div id="myModal" class="modal">
+                                                                                      <span class="close" style=" color: #f1f1f1;  position: relative; top: 5px;  font-size: 40px; font-weight: bold; transition: 0.3s;cursor: pointer; right: 70px;">&times;</span>
+                                                                                     <img class="modal-content" id="img01">
+                                                                                     <div id="caption"></div>
+                                                                                 </div>
                                                                                                                                 
-                                                                                                                                <script>
+                                                                                  <script>
                                                                                                                                     // Get the modal
                                                                                                                                     var modal = document.getElementById("myModal");
                                                                                                                                     
@@ -1578,87 +1555,84 @@
                                                                                                                                             span.onclick = function() { 
                                                                                                                                                 modal.style.display = "none";
                                                                                                                                             }
-                                                                                                                                        </script>
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                                <div class="comment-user">
-                                                                                                                                    <div class="pt-5 row">
-                                                                                                                                        <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                                            <div class=" row no-gutters">
-                                                                                                                                                <div class="px-2 col-md-2">
-                                                                                                                                                    <div class="avatar">
-                                                                                                                                                        <img src="assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
-                                                                                                                                                    </div>
-                                                                                                                                                </div>
-                                                                                                                                                <div class="py-0">
-                                                                                                                                                    <h5><b>h**thực</b></h5>
-                                                                                                                                                    <p><i>12:35, 21 thg 08, 2019</i></p>
-                                                                                                                                                </div>
+                                                                                  </script>
+                                                                             </div>
+                                                                         </div>
+                                                                         <div class="comment-user">
+                                                                             <div class="pt-5 row">
+                                                                                 <div class="col-lg-6 col-md-6 col-6">
+                                                                                     <div class=" row no-gutters">
+                                                                                        <div class="px-2 col-md-2">
+                                                                                             <div class="avatar">
+                                                                                                 <img src="assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
+                                                                                              </div>
+                                                                                         </div>
+                                                                                         <div class="py-0">
+                                                                                               <h5><b>h**thực</b></h5>
+                                                                                                <p><i>12:35, 21 thg 08, 2019</i></p>
+                                                                                        </div>
                                                                                                                                                 
-                                                                                                                                            </div>
-                                                                                                                                        </div>
-                                                                                                                                        <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                                            <div class="text-right rating-star pb-2">
-                                                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                                <span class="fa fa-star" id="star"></span>
-                                                                                                                                                <span class="fa fa-star" id="star"></span>
-                                                                                                                                            </div>
-                                                                                                                                        </div>
-                                                                                                                                    </div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="col-lg-6 col-md-6 col-6">
+                                                                                     <div class="text-right rating-star pb-2">
+                                                                                          <span class="fa fa-star checked" id="star"></span>
+                                                                                           <span class="fa fa-star checked" id="star"></span>
+                                                                                           <span class="fa fa-star checked" id="star"></span>
+                                                                                            <span class="fa fa-star" id="star"></span>
+                                                                                           <span class="fa fa-star" id="star"></span>
+                                                                                     </div>
+                                                                                   </div>
+                                                                             </div>
                                                                                                                                     
-                                                                                                                                    <div class="comment">
-                                                                                                                                        <h4>Shop phục vụ chấp nhận được.</h4>
+                                                                            <div class="comment">
+                                                                                  <h4>Shop phục vụ chấp nhận được.</h4>
                                                                                                                                         
-                                                                                                                                        <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
-                                                                                                                                    </div>
-                                                                                                                                </div>
+                                                                                <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
+                                                                            </div>
+                                                                         </div>
                                                                                                                                 
                                                                                                                                 
-                                                                                                                            </div>
-                                                                                                                            <div class="tab-pane fade" id="pills-image-star-nobd" role="tabpanel" aria-labelledby="pills-image-star-tab-nobd">
-                                                                                                                                <div class="comment-user">
-                                                                                                                                    <div class="pt-5 row">
-                                                                                                                                        <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                                            <div class="row no-gutters">
-                                                                                                                                                <div class="px-2 col-md-2">
-                                                                                                                                                    <div class="avatar">
-                                                                                                                                                        <img src="assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
-                                                                                                                                                    </div>
-                                                                                                                                                </div>
-                                                                                                                                                <div class="py-0">
-                                                                                                                                                    <h5><b>h**thực</b></h5>
-                                                                                                                                                    <p><i>12:35, 21 thg 08, 2019</i></p>
-                                                                                                                                                </div>
+                                                                    </div>
+                                                                     <div class="tab-pane fade" id="pills-image-star-nobd" role="tabpanel" aria-labelledby="pills-image-star-tab-nobd">
+                                                                         <div class="comment-user">
+                                                                            <div class="pt-5 row">
+                                                                                 <div class="col-lg-6 col-md-6 col-6">
+                                                                                    <div class="row no-gutters">
+                                                                                        <div class="px-2 col-md-2">
+                                                                                             <div class="avatar">
+                                                                                                  <img src="assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
+                                                                                              </div>
+                                                                                        </div>
+                                                                                        <div class="py-0">
+                                                                                      <h5><b>h**thực</b></h5>
+                                                                                      <p><i>12:35, 21 thg 08, 2019</i></p>
+                                                                                         </div>
                                                                                                                                                 
-                                                                                                                                            </div>
-                                                                                                                                        </div>
-                                                                                                                                        <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                                            <div class="text-right rating-star pb-2">
-                                                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                                <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                                <span class="fa fa-star" id="star"></span>
-                                                                                                                                                <span class="fa fa-star" id="star"></span>
-                                                                                                                                            </div>
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-                                                                                                                                    <div class="comment">
-                                                                                                                                        <h4>Shop phục vụ chấp nhận được.</h4>
+                                                                                    </div>
+                                                                                </div>
+                                                                                 <div class="col-lg-6 col-md-6 col-6">
+                                                                                    <div class="text-right rating-star pb-2">
+                                                                                        <span class="fa fa-star checked" id="star"></span>
+                                                                                          <span class="fa fa-star checked" id="star"></span>
+                                                                                         <span class="fa fa-star checked" id="star"></span>
+                                                                                           <span class="fa fa-star" id="star"></span>
+                                                                                          <span class="fa fa-star" id="star"></span>
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
+                                                                             <div class="comment">
+                                                                                  <h4>Shop phục vụ chấp nhận được.</h4>
+                                                                                  <img class="img-fluid" id="myImg" src="assets/img/meat.png" style="width:70px; height: 70px; max-width:300px; cursor: pointer;" alt="Chania">
                                                                                                                                         
-                                                                                                                                        <img class="img-fluid" id="myImg" src="assets/img/meat.png" style="width:70px; height: 70px; max-width:300px; cursor: pointer;" alt="Chania">
+                                                                                  <!-- The Modal -->
+                                                                                 <div id="myModal" class="modal">
+                                                                                     <span class="close" style=" color: #f1f1f1;  position: relative; top: 5px;  font-size: 40px; font-weight: bold; transition: 0.3s;cursor: pointer; right: 70px;">&times;</span>
+                                                                                     <img class="modal-content" id="img01">
+                                                                                     <div id="caption">   </div>
+                                                                                 </div>
                                                                                                                                         
-                                                                                                                                        <!-- The Modal -->
-                                                                                                                                        <div id="myModal" class="modal">
-                                                                                                                                            <span class="close" style=" color: #f1f1f1;  position: relative; top: 5px;  font-size: 40px; font-weight: bold; transition: 0.3s;cursor: pointer; right: 70px;">&times;</span>
-                                                                                                                                            <img class="modal-content" id="img01">
-                                                                                                                                            <div id="caption">
-                                                                                                                                                
-                                                                                                                                            </div>
-                                                                                                                                        </div>
-                                                                                                                                        
-                                                                                                                                        <script>
+                                                                                <script>
                                                                                                                                             // Get the modal
                                                                                                                                             var modal = document.getElementById("myModal");
                                                                                                                                             
@@ -1679,97 +1653,95 @@
                                                                                                                                                     span.onclick = function(){ 
                                                                                                                                                         modal.style.display = "none";
                                                                                                                                                     }
-                                                                                                                                                </script>
-                                                                                                                                            </div>
-                                                                                                                                        </div>
-                                                                                                                                        <div class="comment-user">
-                                                                                                                                            <div class="pt-5 row">
-                                                                                                                                                <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                                                    <div class=" row no-gutters">
-                                                                                                                                                        <div class="px-2 col-md-2">
-                                                                                                                                                            <div class="avatar">
-                                                                                                                                                                <img src="assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
-                                                                                                                                                            </div>
-                                                                                                                                                        </div>
-                                                                                                                                                        <div class="py-0">
-                                                                                                                                                            <h5><b>h**thực</b></h5>
-                                                                                                                                                            <p><i>12:35, 21 thg 08, 2019</i></p>
-                                                                                                                                                        </div>
+                                                                                  </script>
+                                                                             </div>
+                                                                         </div>
+                                                                          <div class="comment-user">
+                                                                             <div class="pt-5 row">
+                                                                                <div class="col-lg-6 col-md-6 col-6">
+                                                                                    <div class=" row no-gutters">
+                                                                                         <div class="px-2 col-md-2">
+                                                                                             <div class="avatar">
+                                                                                                 <img src="assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                       <div class="py-0">
+                                                                                            <h5><b>h**thực</b></h5>
+                                                                                             <p><i>12:35, 21 thg 08, 2019</i></p>
+                                                                                         </div>
                                                                                                                                                         
-                                                                                                                                                    </div>
-                                                                                                                                                </div>
-                                                                                                                                                <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                                                    <div class="text-right rating-star pb-2">
-                                                                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                                        <span class="fa fa-star checked" id="star"></span>
-                                                                                                                                                        <span class="fa fa-star" id="star"></span>
-                                                                                                                                                        <span class="fa fa-star" id="star"></span>
-                                                                                                                                                    </div>
-                                                                                                                                                </div>
-                                                                                                                                            </div>
+                                                                                    </div>
+                                                                                 </div>
+                                                                                 <div class="col-lg-6 col-md-6 col-6">
+                                                                                <div class="text-right rating-star pb-2">
+                                                                                      <span class="fa fa-star checked" id="star"></span>
+                                                                                      <span class="fa fa-star checked" id="star"></span>
+                                                                                      <span class="fa fa-star checked" id="star"></span>
+                                                                                     <span class="fa fa-star" id="star"></span>
+                                                                                        <span class="fa fa-star" id="star"></span>
+                                                                                </div>
+                                                                                </div>
+                                                                            </div>
                                                                                                                                             
-                                                                                                                                            <div class="comment">
-                                                                                                                                                <h4>Shop phục vụ chấp nhận được.</h4>
+                                                                             <div class="comment">
+                                                                                 <h4>Shop phục vụ chấp nhận được.</h4>
                                                                                                                                                 
-                                                                                                                                                <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
-                                                                                                                                            </div>
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                                <div class="tab-pane fade" id="pills-QandA" role="tabpanel" aria-labelledby="pills-QandA-tab">
-                                                                                                                    <div class="pl-4 comment-user">
-                                                                                                                        <div class="pt-5 row">
-                                                                                                                            <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                                <div class="row no-gutters">
-                                                                                                                                    <div class="px-2 col-md-2">
-                                                                                                                                        <div class="avatar">
-                                                                                                                                            <img src="assets/img/talha.jpg" alt="..." class="avatar-img rounded-circle">
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-                                                                                                                                    <div class="py-0">
-                                                                                                                                        <h5><b>h**thực</b></h5>
-                                                                                                                                        <p><i>12:35, 21 thg 08, 2019</i></p>
-                                                                                                                                    </div>
-                                                                                                                                    
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div> 
-                                                                                                                        <div class="comment">
-                                                                                                                            <h4>Minh moi mua về mà ko xóa dc dù đã nhan nut xoa rat nhieu lan và đã thử thay pin.??😑 z là sao shop</h4> 
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                    <div class="pl-4 comment-user">
-                                                                                                                        <div class="pt-5 row">
-                                                                                                                            <div class="col-lg-6 col-md-6 col-6">
-                                                                                                                                <div class="row no-gutters">
-                                                                                                                                    <div class="px-2 col-md-2">
-                                                                                                                                        <div class="avatar">
+                                                                                    <img class="img-fluid" id="myImg" src="assets/img/meat_2.png" style="width:70px; height: 70px; max-width:300px" alt="Chania">
+                                                                             </div>
+                                                                        </div>
+                                                                    </div>
+                                                                 </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                </div>
+                                                 <div class="tab-pane fade" id="pills-QandA" role="tabpanel" aria-labelledby="pills-QandA-tab">
+                                                <div class="pl-4 comment-user">
+                                                    <div class="pt-5 row">
+                                                         <div class="col-lg-6 col-md-6 col-6">
+                                                            <div class="row no-gutters">
+                                                                 <div class="px-2 col-md-2">
+                                                                     <div class="avatar">
+                                                                         <img src="assets/img/talha.jpg" alt="..." class="avatar-img rounded-circle">
+                                                                     </div>
+                                                                  </div>
+                                                                <div class="py-0">
+                                                                    <h5><b>h**thực</b></h5>
+                                                                      <p><i>12:35, 21 thg 08, 2019</i></p>
+                                                                </div>                                                                  
+                                                            </div>                                                                    
+                                                         </div> 
+                                                    </div>
+                                                    <div class="comment">                                                                      <h4>Minh moi mua về mà ko xóa dc dù đã nhan nut xoa rat nhieu lan và đã thử thay pin.??😑 z là sao shop</h4> 
+                                                   </div>
+                                                </div>
+                                                 <div class="pl-4 comment-user">
+                                                     <div class="pt-5 row">
+                                                         <div class="col-lg-6 col-md-6 col-6">
+                                                            <div class="row no-gutters">
+                                                                  <div class="px-2 col-md-2">
+                                                                         <div class="avatar">
                                                                                                                                             <img src="assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-                                                                                                                                    <div class="py-0">
-                                                                                                                                        <h5><b>h**thực</b></h5>
-                                                                                                                                        <p><i>12:35, 21 thg 08, 2019</i></p>
-                                                                                                                                    </div>
+                                                                            </div>
+                                                                 </div>
+                                                                <div class="py-0">
+                                                                       <h5><b>h**thực</b></h5>
+                                                                      <p><i>12:35, 21 thg 08, 2019</i></p>
+                                                                 </div>
                                                                                                                                     
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                        </div> 
-                                                                                                                        <div class="comment">
-                                                                                                                            <h4>ủa pin cái này thì mua đc đâu sh ha</h4> 
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="col">
+                                                             </div>
+                                                        </div>
+                                                     </div> 
+                                                    <div class="comment">
+                                                            <h4>ủa pin cái này thì mua đc đâu sh ha</h4> 
+                                                    </div>
+                                                 </div>
+                                                 </div>
+                                            </div>
+                                         </div>
+                                     </div>
+                 </div>
+                <div class="col">
                                                                                                     <div class="card">
                                                                                                         <div class="card-header">
                                                                                                             <h2 style="border-left: 4px solid orange; padding-left: 10px;">SẢN PHẨM LIÊN QUAN</h2>
@@ -1781,22 +1753,17 @@
                                                                                                                     <div class="card">  
                                                                                                                         <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/gia-kep-đt.png" alt="Chania"></a>
                                                                                                                         <div class="container">
-                                                                                                                            <div class="pt-3"   id="title-card">
+                                                                                                                            <div class="pt-3"   id="title-card" style="height: 50px;">
                                                                                                                                 <a  class="card-title"  href="productpage.html"><h4>Giá đỡ điện thoại</h4></a>
                                                                                                                             </div>
-                                                                                                                            <div class="text-left pt-3" id="common-cost">
-                                                                                                                                <div class="row">
-                                                                                                                                    <div class="px-1 col-7"> 
-                                                                                                                                        <h3 class="col" style=" width: 110px;color: #f09819;"><b>270.000đ</b></h3>
+                                                                                                                            <div class="text-left" id="common-cost">
+                                                                                                                                <div class="col">
+                                                                                                                                    <div class="row">
+                                                                                                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
+                                                                                                                                        
+                                                                                                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
                                                                                                                                     </div>
-                                                                                                                                    <div class="pt-1 col-5">
-                                                                                                                                        <h5 class="card-text" style="width:95px; height: 0px; text-decoration: line-through;">280.000đ</h5>
-                                                                                                                                    </div>
-                                                                                                                                    
                                                                                                                                 </div>
-                                                                                                                            </div>
-                                                                                                                            <div class="text-left">
-                                                                                                                                
                                                                                                                             </div>
                                                                                                                             <div class="rating-star pb-2">
                                                                                                                                 <span class="fa fa-star checked" id="star"></span>
@@ -2247,10 +2214,10 @@
                                                                                                             })
                                                                                                         </script>
                                                                                                     </div>
-                                                                                                </div>
+                 </div>
                                                                                                 
-                                                                                                <!--for MOBILE PHONE-->
-                                                                                                <div class="col-sm-12 d-block d-lg-none">
+         <!--for MOBILE PHONE-->
+             <div class="col-sm-12 d-block d-lg-none">
                                                                                                     <div class="card-header">
                                                                                                         <h2 style="border-left: 4px solid orange; padding-left: 10px;"><b>SẢN PHẨM LIÊN QUAN</b></h2>
                                                                                                     </div>
@@ -2414,10 +2381,10 @@
                                                                                                         </div>
                                                                                                         
                                                                                                     </div>
-                                                                                                </div>
-                                                                                                <!--for End MOBILE PHONE-->
+             </div>
+          <!--for End MOBILE PHONE-->
                                                                                                 
-                                                                                                <div class="col">
+            <div class="col">
                                                                                                     <div class="card">
                                                                                                         <div class="card-header">
                                                                                                             <h2 style="border-left: 4px solid orange; padding-left: 10px;">SẢN PHẨM ĐÃ XEM</h2>
@@ -2893,16 +2860,16 @@
                                                                                                             })
                                                                                                         </script>
                                                                                                     </div>
-                                                                                                </div>
-                                                                                                <!--for End MOBILE PHONE-->
+             </div>
+                                                                                               
                                                                                                 
-                                                                                            </div>
-                                                                                        </div>
+         </div>
+    </div>
                                                                                         
                                                                                         
                                                                                         
-                                                                                        <!--COMPUTER FOOTER-->
-                                                                                        <div class="px-0 col-sm-12 col-12 d-none d-lg-block" >
+    <!--COMPUTER FOOTER-->
+     <div class="px-0 col-sm-12 col-12 d-none d-lg-block" >
                                                                                             <div class="text-center" id="main-footer-computer">
                                                                                                 <div class="container">
                                                                                                     <div class="row">
@@ -2976,10 +2943,10 @@
                                                                                                     <p> Hotline: 0911333222, Email: support@vanchuyenmy.vn</p>
                                                                                                 </div>
                                                                                             </div>
-                                                                                        </div>
-                                                                                        <!--END COMPUTER FOOTER-->
-                                                                                        <!--MOBILE FOOTER-->
-                                                                                        <div class="col-sm-12 d-block d-lg-none">
+       </div>
+     <!--END COMPUTER FOOTER-->
+       <!--MOBILE FOOTER-->
+        <div class="col-sm-12 d-block d-lg-none">
                                                                                             <div class="jumbotron" style="background-color: #f09819;">
                                                                                                 <div class="col-12" style="padding-bottom: 20px;">
                                                                                                     <div class="row">
@@ -3071,12 +3038,11 @@
                                                                                                 </div>
                                                                                                 
                                                                                             </div>
-                                                                                        </div>
-                                                                                        <!--END MOBILE FOOTER-->
-                                                                                    </div>
+        </div>
+      <!--END MOBILE FOOTER-->
+  </div>
                                                                                     
-                                                                                </div>
-                                                                            </div>
+  </div> </div>
                                                                             <!--   Core JS Files   -->
                                                                             <script src="assets/js/core/jquery.3.2.1.min.js"></script>
                                                                             <script src="assets/js/core/popper.min.js"></script>
