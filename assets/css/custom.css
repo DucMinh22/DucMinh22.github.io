@@ -373,6 +373,19 @@ z-index: 100000;
  .mySlides {
    display: none;
    margin-top: 0px;
+ 
+ }
+
+ .mySlides .img-thumbnail{
+    height: 380px;
+    width: 400px;
+ }
+
+ .item .img-fluid{
+   height: 75px;
+   width: 70px;
+   cursor: pointer;
+  
  }
  
  /* Add a pointer when hovering over the thumbnail images */
@@ -385,8 +398,10 @@ z-index: 100000;
    margin-left: 10px;
 
  }
- .w3-content img{
-   border: 2px solid #f09819;
+ .w3-display-container .img-fluid{
+    width: 700px;
+    height: 400px;
+  
  }
 
  }
@@ -415,9 +430,11 @@ background-color: rgba(0, 0, 0, 0.8);
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  
  }
-
+ .w3-display-left{
+    margin-left: 164px;
+ }
  .w3-display-right{
-margin-left: 64%;;
+margin-left: 95%;;
  }
 
  .room-preview img:hover{
@@ -426,10 +443,17 @@ margin-left: 64%;;
 
  }
 
+ .room-preview .img-fluid{
+    width: 100px;
+    height: 100px;
+
+ }
  .room-preview .room-active{
    border: 1px solid #f09819;
  }
-
+ .modal-open .modal{
+    padding-right: 170px !important;
+ }
  
  /* Next & previous buttons */
  .prev,
@@ -646,7 +670,7 @@ color: transparent;
  }
  .warning2 p{
    padding-top: 20px;
-=ư
+
  }
 
  .infor-banking{
@@ -672,6 +696,7 @@ color: transparent;
    justify-content: center;
    align-items: center;
  }
+
  
  .room-description {
    width: 50%;
