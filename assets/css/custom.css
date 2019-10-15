@@ -1,3 +1,4 @@
+
 body, h1, h2, h3, h4, h5, h6, p{
    font-family: 'Roboto', sans-serif !important;
 }
@@ -88,7 +89,6 @@ font-size: 16px;
  
  #navbar {
     overflow: hidden;
-   
     transition: 0.4s;
     
     width: 100%;
@@ -331,6 +331,11 @@ text-decoration: none;
 #common-cost .main-cost p{
    margin-bottom: 0px;
 
+
+}
+#notice{
+position: absolute;
+z-index: 100000;
 
 }
  #view-details{
