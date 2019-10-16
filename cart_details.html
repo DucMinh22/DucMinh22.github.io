@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Azzara Bootstrap 4 Admin Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <meta charset="utf-8">
+    <link rel="icon" href="assets/img/logo_without_text.png" class="img-fluid"  type="image/x-icon"/>
+    
+    <!-- Fonts and icons -->
+    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+        WebFont.load({
+            google: {"families":["Open+Sans:300,400,600,700"]},
+            custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands"], urls: ['assets/css/fonts.css']},
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/azzara.min.css">
+    
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="assets/css/demo.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Navbar Header -->
+        <div class="header">
+            <div class="nav_top">
+                <div class="container">
+                    <div class="row" >      
+                        <div class="col-12 col-md-4 col-sm-4">
+                            <div class="nav_top_left">
+                                <a href="#">Hotline: 0978.485.015</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-sm-8 col-md-8 ">
+                            <div class="nav_top_right">
+                                <ul class="top-menu">
+                                    <li><a href="#">Tra cứu đơn hàng </a></li>
+                                    <li><a href="#">Câu hỏi thường gặp </a></li>
+                                    <li><a href="#">Thông báo </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar content -->
+            <div class="" id="navbar">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" >
+                    <div class="container">
+                        <a  class="navbar-brand" href="index.html"> <img src="assets/img/final-logo.png" class="img-fluid" alt="..." style="width: 250px; height: 60px; "></a>
+                        <div class="search">
+                            <form class="search-form" action="resultbysearch.html">
+                                <input type="text" placeholder="Tìm kiếm..." >
+                                <a href="resultbysearch.html"><i class="fa fa-search search-icon" style="padding:13px; background-color:#f09819; color: white;"></i></a>
+                            </form>
+                        </div>
+                        <ul class="navbar-nav navbar-brand">
+                            <div class="row">
+                                <div class="pt-2 col-6 col-lg-4">
+                                    <li class="nav-item">
+                                        <a class="nav-link"  href="#">Đăng Nhập</a>
+                                    </li>
+                                </div>
+                                <div class="pt-2 col-6 col-lg-8">
+                                    <li class="nav-item">
+                                        <div class="cart-icon">
+                                            <i class="fas fa-cart-plus" style="margin-right: 3px; margin-top: 10px; "></i>
+                                            <a href="#">Giỏ Hàng</a>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- Navbar content -->
+            
+            <script>
+                window.onscroll = function() {myFunction()};
+                
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                
+                function myFunction() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+            </script>
+            <!-- end category sticky -->
+            
+        </div>
+        <!-- End-Navbar Header -->
+        
+        <div class="pb-2 pt-2 container">
+            <div class="page-header">
+                <!-- breadcum -->
+                <div class="row"> 
+                    
+                    <ul class="breadcrumbs">
+                        <li class="nav-home">
+                            <a href="#">
+                                <a href="index.html"><i class="flaticon-home"></i></a>
+                            </a>
+                        </li>
+                        <li class="separator">
+                            <i class="flaticon-right-arrow"></i>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Chi tiết đơn hàng</a>
+                        </li>
+                        <li class="separator">
+                            <i class="flaticon-right-arrow"></i>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- end breadcum -->
+                <div class="row py-2">
+                    <img src="assets/img/profile2.jpg" class="rounded-circle" alt="Cinque Terre" width="" height=""> 
+                    <div id="pesonal-infor">
+                        <p >Xin chào <b>Đặng Trường</b></p>
+                        <p><i class="fas fa-pen" style="margin-right: 3px;"></i>Sửa hồ sơ</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- left category -->
+                    <div class=" py-4 col-3">
+                        
+                        <div class="list-group" id="text-hidden-category">
+                            <a href="#" class="list-group-item list-group-item-action"><b><i class="fas fa-user" style="margin-right:10px;"></i>Thông tin tài khoản của quý khách</b></a>
+                            <a href="#" class="list-group-item list-group-item-action" ><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Thông tin cá nhân</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Thay đổi mật khẩu</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-file-invoice-dollar" style="margin-right:10px;" ></i>Quản lý mua hàng</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Lịch sử đơn hàng</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Yêu cầu báo giá</a>
+                            <a href="#" class="list-group-item list-group-item-action" style="color: #f09819;"><i class="fas fa-caret-right" style="margin: 5px 5px 0px 0px; color: #f09819;"></i><b>Dich Vụ Khuyến Mãi</b></a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check"  style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Mua nhiều giảm giá</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check"  style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Đang giảm giá</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check"  style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Miễn phí vận chuyển</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check"  style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Rẻ vô địch</a>
+                        </div>
+                        
+                    </div>
+                    <!-- eND left category -->
+                    
+                    <div class="py-4 pl-0 col-9" style="">
+                        <divc= class="card">
+                        <div class="row py-3 px-3 mx-3" style="border-bottom: 1px solid rgb(236, 235, 235)">
+                            <div class="col-3">
+                                <a href="#"><i class="fas fa-angle-double-left mr-1"></i>Danh sách đơn hàng</a>
+                            </div>
+                            <div class="text-center col-6" id="details-order" >
+                                
+                                <p><b>Chi tiết đơn hàng AM161019-283509</b></p>
+                                <p><i>Ngày đặt hàng: 16-10-2019 13:27:14</i> / <span style="color: #b9232e;">Đã bị hủy</span> </p>
+                                
+                            </div>
+                            <div class="col-3" >
+                                In đơn hàng
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="row py-2 px-3">
+                            <div class="col-4" style="background-color: #fffab4;">
+                                <p style="border-left: 3px solid #f09819; padding-left: 5px;">Thông tin người mua</p>
+                                <div class="row">
+                                    <div class="text-right col-5 ">
+                                        <p>Họ và tên:</p>
+                                        <p>Số điện thoại:</p>
+                                        <p>Email:</p>
+                                        <p>Địa chỉ:</p>
+                                        
+                                    </div>
+                                    <div class="col-7 px-0">
+                                        <p>Dang Truong</p>
+                                        <p>0978485015</p>
+                                        <p>haitruongvn90@gmail.com</p>
+                                        <p>dại học hà nội, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Hà Nội</p>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-4" >
+                                <div class="" style="background-color: #fffab4;">
+                                    <p style="border-left: 3px solid #f09819; padding-left: 5px;">Thông tin người nhận</p>
+                                    <div class="row">
+                                        <div class="text-right col-5 ">
+                                            <p>Họ và tên:</p>
+                                            <p>Số điện thoại:</p>
+                                            <p>Email:</p>
+                                            <p>Địa chỉ:</p>
+                                            
+                                        </div>
+                                        <div class="col-7 px-0">
+                                            <p>Dang Truong</p>
+                                            <p>0978485015</p>
+                                            <p>haitruongvn90@gmail.com</p>
+                                            <p>dại học hà nội, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Hà Nội</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4" style="background-color: #fffab4;">
+                                <p style="border-left: 3px solid #f09819; padding-left: 5px;">Thông tin thanh toán</p>
+                                <div class="row">
+                                    <div class="text-right col-5 ">
+                                        <p>Phương thức thanh toán:</p>
+                                        <p>Hình thức:</p>
+                                        <p>Trạng thái:</p>
+                                        
+                                        
+                                    </div>
+                                    <div class="col-7 px-0">
+                                        <p>Chuyển khoản</p>
+                                        <p>Thanh toán toàn bộ đơn hàng</p>
+                                        <p>Bị hủy</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div> 
+                        <div class="row mx-3 py-2" style="background-color: #fffab4;" >
+                            <div class="text-center col-5" >
+                                Thông tin sản phẩm
+                            </div>
+                            
+                            <div class="col-7">
+                                <div class="row pr-5">
+                                    <div class="col">
+                                        Đơn giá
+                                    </div>
+                                    <div class="col px-0">
+                                        Số lượng
+                                    </div>
+                                    <div class="col px-0">
+                                        Thành tiền
+                                    </div>
+                                    <div class="col">
+                                        Trạng thái
+                                    </div>
+                                    <div class=""> 
+                                        Thao tác
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-5">
+                                <div class="row ml-2">
+                                    <div class="col-3 pr-0">
+                                        <img src="assets/img/meat_1.png"  class="img-fluid" alt="..." width="60px" height="60px;">
+                                    </div>
+                                    <div class="col-9 px-0"  id="details-order">
+                                        <p>YAZOLE Classic Business Men Watches Quartz Male Watch 3ATM Water-resistant Luminous Man Watch Time Display</p>
+                                        <p>Mã sản phẩm: <b>J2823WBR</b></p> 
+                                        <p>Người bán: <b> Modernlife </b></p> 
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-7">
+                                <div class="row pr-5">
+                                    <div class="col text-center">
+                                        0đ
+                                    </div>
+                                    <div class="col text-center">
+                                        1
+                                    </div>
+                                    <div class="col text-center">
+                                        0đ
+                                    </div>
+                                    <div class="col text-center">
+                                        Đã hủy
+                                    </div>
+                                    <div class="col text-center"> 
+                                        Theo dõi
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class=" px-4 table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Phí giao hàng trong nước</th>
+                                        <th scope="col">+0đ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"></th>
+                                        <td><b>Tổng giá trị khi về Việt Nam</b></td>
+                                        <td>0đ</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"></th>
+                                        <td>Phải thanh toán trước</td>
+                                        <td>0đ</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"></th>
+                                        <td>Số tiền thanh toán khi nhận hàng</td>
+                                        <td>0đ</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="ml-4 mb-3" id="warning4">
+                            <p><b>Lưu ý:</b></p>
+                            <p><b><i>- Phí giao hàng trong nước:</i></b> Phí giao hàng từ TP.Hồ Chí Minh đến tay khách hàng</p>
+                        </div>
+                        <div >
+                            <p class="text-center"><b>Điều khoản giao dịch trên sàn thương mại điện tử xuyên biên giới VanChuyenMy</b></p>
+                            <p class="px-4">1. Trách nhiệm của Fado: Chính sách về trách nhiệm với hàng hóa thông qua các hoạt động giao dịch của Fado được thực hiện dựa trên các điều khoản của các website quốc tế và theo luật pháp Việt Nam:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <!--MOBILE FOOTER-->
+    <div class="col-sm-12 d-block d-lg-none">
+        <div class="jumbotron" style="background-color: #f09819;">
+            <div class="col-12" style="padding-bottom: 20px;">
+                <div class="row">
+                    
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                        <a class="navbar-brand" style="color: white;" href="#"><h4>SẢN PHẨM</h4></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent6" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-angle-down"></i>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent6">
+                            <ul class="navbar-nav mr-auto">
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Thời trang & phụ kiện</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Thời trang nam</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Saleoff</a>
+                                </li>
+                                
+                                
+                            </ul>
+                            
+                        </div>
+                    </nav>
+                </div>
+                
+            </div>
+            <div class="col-12" style="padding-bottom: 20px; " >
+                <div class="row" >
+                    
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                        <a class="navbar-brand" style="color: white;" href="#"><h4>VỀ CÔNG TY</h4></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent7" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-angle-down"></i>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent7">
+                            <ul class="navbar-nav mr-auto">
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Liên hệ Quảng Cáo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Đối tác</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Đại lý</a>
+                                </li>
+                                
+                                
+                            </ul>
+                            
+                        </div>
+                    </nav>
+                </div>
+                
+            </div>
+            <div class="col-12" style="padding-bottom: 20px;">
+                <div class="row">
+                    
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                        <a class="navbar-brand" style="color: white;" href="#"><h4>HỖ TRỢ</h4></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent8" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-angle-down"></i>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent8">
+                            <ul class="navbar-nav mr-auto">
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">FAQS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Chính sách chung</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tra cứu đơn hàng</a>
+                                </li>
+                                
+                                
+                            </ul>
+                            
+                        </div>
+                    </nav>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <!--END MOBILE FOOTER-->
+    
+    
+    
+    <!-- Custom template | don't include it in your project! -->
+    <div class="custom-template">
+        <div class="title">Settings</div>
+        <div class="custom-content">
+            <div class="switcher">
+                <div class="switch-block">
+                    <h4>Topbar</h4>
+                    <div class="btnSwitch">
+                        <button type="button" class="changeMainHeaderColor" data-color="blue"></button>
+                        <button type="button" class="selected changeMainHeaderColor" data-color="purple"></button>
+                        <button type="button" class="changeMainHeaderColor" data-color="light-blue"></button>
+                        <button type="button" class="changeMainHeaderColor" data-color="green"></button>
+                        <button type="button" class="changeMainHeaderColor" data-color="orange"></button>
+                        <button type="button" class="changeMainHeaderColor" data-color="red"></button>
+                    </div>
+                </div>
+                <div class="switch-block">
+                    <h4>Background</h4>
+                    <div class="btnSwitch">
+                        <button type="button" class="changeBackgroundColor" data-color="bg2"></button>
+                        <button type="button" class="changeBackgroundColor selected" data-color="bg1"></button>
+                        <button type="button" class="changeBackgroundColor" data-color="bg3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom-toggle">
+            <i class="flaticon-settings"></i>
+        </div>
+    </div>
+    <!-- End Custom template -->
+</div>
+</div>
+<!--   Core JS Files   -->
+<script src="assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="assets/js/core/popper.min.js"></script>
+<script src="assets/js/core/bootstrap.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+<!-- jQuery Scrollbar -->
+<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+<!-- Moment JS -->
+<script src="assets/js/plugin/moment/moment.min.js"></script>
+
+<!-- Chart JS -->
+<script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+<!-- jQuery Sparkline -->
+<script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+<!-- Chart Circle -->
+<script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+<!-- Datatables -->
+<script src="assets/js/plugin/datatables/datatables.min.js"></script>
+
+<!-- Bootstrap Notify -->
+<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+<!-- Bootstrap Toggle -->
+<script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+
+<!-- jQuery Vector Maps -->
+<script src="assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+<script src="assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+
+<!-- Google Maps Plugin -->
+<script src="assets/js/plugin/gmaps/gmaps.js"></script>
+
+<!-- Sweet Alert -->
+<script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+<!-- Azzara JS -->
+<script src="assets/js/ready.min.js"></script>
+
+<!-- Azzara DEMO methods, don't include it in your project! -->
+<script src="assets/js/setting-demo.js"></script>
+<script src="assets/js/demo.js"></script>
+</body>
+</html>

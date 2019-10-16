@@ -488,6 +488,81 @@ margin-left: 95%;;
 
  
  /* Container for image text */
+
+ #suceed-text{
+    color: #ba222e;
+ }
+
+ #infor-pay-left p{
+    margin-bottom: 2px;
+    padding: 5px;
+    background-color: #fffab4;
+    padding-right: 20px;
+ }
+
+ #single-text-pay{
+   background-color: #fffab4;
+ 
+ }
+ #pesonal-infor {
+    margin-top: 50px;
+ }
+ #pesonal-infor p{
+   
+   margin-left: 10px;
+   margin-bottom: 2px;
+ }
+
+ #single-text-pay p{
+   padding-top: 90px;
+   padding-right: 20px;
+ }
+
+
+ 
+#details-order p{
+   margin-bottom: 3px;
+
+}
+
+ #details-bank-pay p{
+
+margin-bottom: 2px;
+padding: 5px;
+padding-left: 20px;
+ }
+#warning3{
+ background-color: #fffeee;
+ border: 1px solid #ffcd87;
+ border-radius: 3px;
+margin-top: 10px;
+padding: 10px 20px;
+width: 85%;
+}
+#warning4{
+   background-color: #fffeee;
+ border: 1px solid #ffcd87;
+ border-radius: 3px;
+margin-top: 10px;
+padding: 10px 20px;
+width: 85%;
+}
+#warning4 p{
+   margin-bottom: 0px;
+}
+.help-support p{
+   margin-bottom: 2px;
+
+}
+
+ #infor-pay-right p{
+   margin-bottom: 2px;
+   padding: 5px;
+   padding-left: 20px;
+ }
+ #infor-pay-right p:hover{
+    background-color: rgb(248, 248, 248);
+ }
  .caption-container {
    text-align: center;
    background-color: #222;
@@ -1194,6 +1269,10 @@ margin-top: 15px;
    
  }
 
+ #multiple-button{
+    margin-left: 135px;
+ }
+
  .btn-btn-footer{
  padding: 5px 10px;
  margin-bottom: 5px;
@@ -1281,6 +1360,40 @@ color: white;
    width: 200px;
   
  }
+ .btn-gradient16{
+ 
+   padding: 10px 15px ;
+   border: none;
+   border: 1px solid  #fe8c00; ;
+   border-radius: 30px;
+   cursor: pointer;
+   width: 200px;
+   background-color: white;
+   margin-left: 10px !important;
+
+ }
+
+ .btn-gradient17{
+   background: #fe8c00;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   padding: 10px 20px;
+   border: none;
+   border-radius: 30px;
+   cursor: pointer;
+   color: white;
+   margin-left: 10px !important;
+ 
+ }
+.btn-gradient18{
+   
+   padding: 10px 20px;
+   border: none;
+   border-radius: 30px;
+   cursor: pointer;
+   border: 1px solid #fe8c00;
+   background-color: white;
+}
  .btn-gradient6{
     background: #00d2ff;  /* fallback for old browsers */
  background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
