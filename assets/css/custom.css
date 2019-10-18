@@ -853,6 +853,11 @@ color: transparent;
  #category-title p{
 margin-bottom: 0px;
  }
+
+ #v-pills-home-tab-icons:hover::after{
+   
+    
+ }
  .unchecked{
     color: #000;
  }
@@ -1016,14 +1021,26 @@ color:white;
  .active, .collapsible:hover {
     background-color: white;
  }
+ #Step img{
+    position: absolute;
+    z-index: 1;
+    height: 86%;
+    margin-top: 5px;
+    margin-left: 20px;
 
+ }
+ #Step h5{
+    position: absolute;
+    z-index: 5;
+    padding-top: 15px;
+    padding-left: 36px;
+ }
  #Step{
-   background: #fdcf51;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, #fdcf51, #f09819);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, #fdcf51, #f09819);
-   margin-top: 4px;
+  
+ 
+  
    color: white;
-   padding: 10px;
+ 
   
  }
 
@@ -1039,13 +1056,67 @@ color:white;
    background: #fe8c00 !important;  /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #f83600, #fe8c00) !important;  /* Chrome 10-25, Safari 5.1-6 */
    background: linear-gradient(to right, #f83600, #fe8c00) !important;
+   border-radius: 0px !important;
+   margin: 0 !important;
 
  }
+ .nav-pills.nav-secondary #v-pills-home-tab-icons.active::after{
+   content: "";
+   width: 0;
+   height: 0;
+    position: absolute;
+    z-index: 10;
+    border-top: 41px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 11px solid #FD8700;
+    top: 0%;
+    left: 100%;
+   
+ }
 
- .nav-pills.nav-secondary .nav-link.active{
+ .nav-pills.nav-secondary #v-pills-profile-tab-icons.active{
    background: #fe8c00 !important;  /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #f83600, #fe8c00) !important;  /* Chrome 10-25, Safari 5.1-6 */
    background: linear-gradient(to right, #f83600, #fe8c00) !important;
+   margin: 0px !important;
+   border-radius: 0 !important;
+   
+ }
+ .nav-pills.nav-secondary #v-pills-profile-tab-icons.active::after{
+   content: "";
+   width: 0;
+   height: 0;
+    position: absolute;
+    z-index: 10;
+    border-top: 41px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 11px solid #FD8700;
+    top: 7%;
+    left: 100%;
+    margin-top: 2px;
+   
+ }
+
+ .nav-pills.nav-secondary #v-pills-cod-tab-icons.active{
+   background: #fe8c00 !important;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #f83600, #fe8c00) !important;  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #f83600, #fe8c00) !important;
+   margin: 0px !important;
+   border-radius: 0 !important;
+ }
+
+ .nav-pills.nav-secondary #v-pills-cod-tab-icons.active::after{
+   content: "";
+   width: 0;
+   height: 0;
+    position: absolute;
+    z-index: 10;
+    border-top: 41px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 11px solid #FD8700;
+    top: 14%;
+    left: 100%;
+    margin-top: 4px;
    
  }
 
@@ -1272,7 +1343,19 @@ margin-top: 15px;
  #multiple-button{
     margin-left: 135px;
  }
+.cart-information #img_pink{
+   z-index: 1;
+   position: absolute;
+   width: 92%;
+   height: 38%;
 
+}
+
+.infor-cart-details{
+   position: absolute;
+   z-index: 3;
+   margin-top: 30px;
+}
  .btn-btn-footer{
  padding: 5px 10px;
  margin-bottom: 5px;
