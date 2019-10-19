@@ -129,7 +129,7 @@
                             <i class="flaticon-right-arrow"></i>
                         </li>
                         <li class="nav-item">
-                            <a href="#">Chi tiết đơn hàng</a>
+                            <a href="#">Lịch sử đơn hàng</a>
                         </li>
                         <li class="separator">
                             <i class="flaticon-right-arrow"></i>
@@ -166,159 +166,100 @@
                         
                     </div>
                     
-                    <div class="card col-9 mt-4">
-                        <div class="row no-gutters">
+                    <div class="card col-9 mt-4" style="height: 72%">
+                        <div class="row no-gutters" >
                             <div class="px-2 pt-3 col-md-12" >
-                                <h3 style="border-left: 3px solid #f09819; padding-left:5px;"><b>Thông tin cá nhân </b></h3>
+                                <h3 style="border-left: 3px solid #f09819; padding-left:5px;"><b>Lịch sử đơn hàng </b></h3>
                                 <hr width=100%>
                                 <!-- <img src="assets/img/tick.png" class="card-img" alt="..." style="padding:10px; width: 70px; height:70px;" > -->
                             </div>
                             <div class="col-12">
                                 <div class="private-information">
-                                    <div class="row">
-                                        <div class="px-0 col-12 pl-0">
-                                            <div class="row">
-                                                <div class="text-right col-3" style=" margin-top: 20px;">
-                                                    Họ và tên *
-                                                </div>
-                                                
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">   
-                                                            <input type="text" class="form-control" id="uname" placeholder="VD: Nguyễn Văn A" name="uname" required>
-                                                        </div>
-                                                    </form>
-                                                </div>
+                                    <div class="row py-3">
+                                        <div class="col-4 pr-0">
+                                            <div class="form-group py-0">
+                                                <select class="form-control input-square" id="squareSelect">
+                                                    <option>Trạng thái đơn hàng</option>
+                                                    <option>Đã hủy-Chờ hoàn tiền</option>
+                                                    <option>Đã thanh toán-Chờ đối soát</option>
+                                                    <option>Đã thanh toán-Chờ xác nhận</option>
+                                                    <option>Đã thanh toán-Chờ kiểm duyệt</option>
+                                                    <option>Đã hủy</option>
+                                                    <option>Chờ thanh toán</option>
+                                                    <option>Đang mua hàng</option>
+                                                    <option>Hàng đã giao</option>
+                                                </select>
                                             </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="  margin-top: 20px;">
-                                                    Điện thoại *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">                   
-                                                            <input type="text" class="form-control" id="uname" placeholder="VD: 0978485015" name="uname" required>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="  margin-top: 20px;">
-                                                    Email *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control" id="uname" placeholder="VD: ducdudu@gmail..." name="uname" required>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row py-2">
-                                                <div class="text-right col-3 pl-0" style="  margin-top: 20px;">
-                                                    Ngày sinh * 
-                                                </div>
-                                                <div class="col-4 pr-0">
-                                                    <input id="datepicker" width="276" />
-                                                </div>
-                                                <div class="col-5 pl-0 pt-2">
-                                                    <p style="color: rgb(187, 187, 187);"><i>Cập nhập thông tin ngày sinh để nhận được nhiều ưu đãi </i></p>
-                                                </div>
-                                                <script>
-                                                    $('#datepicker').datepicker({
-                                                        uiLibrary: 'bootstrap4'
-                                                    });
-                                                </script>
-                                            </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="  margin-top: 20px;">
-                                                    Giới tính *
-                                                </div>
-                                                <div class="col-6 px-0 pt-3 pb-2 pl-3">
-                                                    <label class="form-radio-label">
-                                                        <input class="form-radio-input" type="radio" name="optionsRadios" value=""  checked="">
-                                                        <span class="form-radio-sign">Nam</span>
-                                                    </label>
-                                                    <label class="form-radio-label ml-3">
-                                                        <input class="form-radio-input" type="radio" name="optionsRadios" value="">
-                                                        <span class="form-radio-sign">Nữ</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="margin-top: 20px; ">
-                                                    Tỉnh / TP *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">
-                                                            <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px; " >
-                                                                <option value="left" selected="">Tỉnh/Thành phố</option>
-                                                                <option value="right" >Hà Nội</option>
-                                                                <option value="center">Phú Thọ</option>
-                                                                <option value="center">Vĩnh Phúc</option>
-                                                            </select>   
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="margin-top: 20px;" >
-                                                    Quận / Huyện *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">
-                                                            <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px;  " >
-                                                                <option value="left" selected="">Quận/Huyện</option>
-                                                                <option value="right" >Hà Nội</option>
-                                                                <option value="center">Phú Thọ</option>
-                                                                <option value="center">Vĩnh Phúc</option>
-                                                            </select>   
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="margin-top: 20px;">
-                                                    Phường / Xã *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">
-                                                            <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px; " >
-                                                                <option value="left" selected="">Phường/Xã</option>
-                                                                <option value="right" >Hà Nội</option>
-                                                                <option value="center">Phú Thọ</option>
-                                                                <option value="center">Vĩnh Phúc</option>
-                                                            </select>   
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="margin-top: 20px;">
-                                                    Địa chỉ chi tiết *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">
-                                                            <textarea class="form-control" aria-label="With textarea"></textarea>
-                                                            
-                                                            <div class="invalid-feedback">Đây là trường bắt buộc</div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>    
+                                        </div>
+                                        <div class="col-3 px-0">
+                                            <input id="datepicker" width="165" placeholder="Từ ngày..." />
+                                        </div>
+                                        <script>
+                                            $('#datepicker').datepicker({
+                                                uiLibrary: 'bootstrap4'
+                                            });
+                                        </script>
+                                        <div class="col-3 px-0">
+                                            <input id="datepicker2" width="165" placeholder="Đến ngày..."  />
+                                        </div>
+                                        <script>
+                                            $('#datepicker2').datepicker({
+                                                uiLibrary: 'bootstrap4'
+                                            });
+                                        </script>
+                                        <div class="col-2">
+                                            <a href="checkout.html"> <button type="button" class="btn-gradient17" style="width: 200x; margin-left:60px;">Tìm kiếm</button> </a>
+                                        </div>
                                     </div>
-                                    <!-- button -->
-                                    <div class="py-3 col-md-12" id="multiple-button">
-                                        <a href="checkout.html"> <button type="button" class="btn-gradient18" style="width: 200x; margin-left:60px;">Nhập lại</button> </a>
-                                        <a href="checkout.html"> <button type="button" class="btn-gradient17" style="width: 200x; margin-left:60px;">Xác nhận</button> </a>
+                                    <div>
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"><b>Mã đơn hàng</b></th>
+                                                    <th scope="col"><b>Khuyến mãi</b></th>
+                                                    <th scope="col"><b>Tổng tiền đơn hàng</b></th>
+                                                    <th scope="col">Trạng thái</th>
+                                                    <th scope="col">Ngày tạo</th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" id="number-code">AM161019-283509</th>
+                                                    <td id="text-discount">không</td>
+                                                    <td id="total-cost">0đ</td>
+                                                    <td style="color: rgb(211, 0, 0);">Đã bị hủy</td>
+                                                    <td id="date">
+                                                        <p>16-10-2019</p>
+                                                        <p>13:27:14</p>
+                                                    </td>
+                                                    <td>Xem</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" id="number-code">AM031019-279421</th>
+                                                    <td id="text-discount">không</td>
+                                                    <td id="total-cost">298.000đ</td>
+                                                    <td style="color: rgb(5, 170, 5);">Đã kiểm duyệt-Chờ thanh toán </td>
+                                                    <td id="date">
+                                                        <p>03-10-2019</p>
+                                                        <p>13:27:14</p>
+                                                    </td>
+                                                    <td>Xem</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"id="number-code" >AM031019-279421</th>
+                                                    <td id="text-discount">không</td>
+                                                    <td id="total-cost">298.000đ</td>
+                                                    <td style="color: rgb(5, 170, 5);">Đã kiểm duyệt - Chờ thanh toán </td>
+                                                    <td id="date">
+                                                        <p>03-10-2019</p>
+                                                        <p>13:27:14</p>
+                                                    </td>
+                                                    <td>Xem</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                    <!-- end button -->
                                 </div>
                             </div>
                         </div>

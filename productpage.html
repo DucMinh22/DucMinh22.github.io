@@ -24,6 +24,7 @@
     </script>
     
     <!-- CSS Files -->
+    
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/azzara.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -140,7 +141,7 @@
                     </div>
                 </div>
                 <!-- end bread-cum -->
-                
+
                 <div class="pt-1 pb-0 card-body" >
                     <div class="card">
                         <div class="pb-3">
@@ -151,393 +152,45 @@
                                             <div class="px-0 container">
                                                 <!-- IMG MEAT_1 -->
                                                 <div class="mySlides">
-                                                    <img src="assets/img/meat_1.png"  class="img-fluid" data-toggle="modal" data-target="#exampleModal-1" >
-                                                    <div class="modal fade" id="exampleModal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog" role="document">
-                                                            <div class="modal-content" style="width:700px;">
-                                                                <div class="modal-header" style="width: 100%;">
-                                                                    <h4 class="modal-title" id="exampleModalLabel"><b>Máy Hút Chân Không</b></h4>
-                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                        <span aria-hidden="true">&times;</span>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="modal-body" style="padding-left: 100px;">
-                                                                    <div class="room-gallery">
-                                                                        
-                                                                        <div class="w3-content w3-display-container">
-                                                                            <img class="my-Slides1" id="gallery-hightlight" src="assets/img/meat_1.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            <img class="my-Slides1" id="gallery-hightlight" src="assets/img/meat_2.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            <img class="my-Slides1" id="gallery-hightlight"src="assets/img/meat_3.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            <img class="my-Slides1" id="gallery-hightlight" src="assets/img/meat_4.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            <img class="my-Slides1" id="gallery-hightlight" src="assets/img/meat_5.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            
-                                                                            <button class="w3-button w3-black w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
-                                                                            <button class="w3-button w3-black w3-display-right" onclick="plusDivs1(1)">&#10095;</button>
-                                                                        </div>
-                                                                        
-                                                                        <script>
-                                                                            var slideIndex = 1;
-                                                                            showDivs1(slideIndex);
-                                                                            
-                                                                            function plusDivs1(n) {
-                                                                                showDivs1(slideIndex += n);
-                                                                            }
-                                                                            
-                                                                            function showDivs1(n) {
-                                                                                var i;
-                                                                                var x = document.getElementsByClassName("my-Slides1");
-                                                                                if (n > x.length) {slideIndex = 1}
-                                                                                if (n < 1) {slideIndex = x.length}
-                                                                                for (i = 0; i < x.length; i++) {
-                                                                                    x[i].style.display = "none";  
-                                                                                }
-                                                                                x[slideIndex-1].style.display = "block";  
-                                                                            }
-                                                                        </script>
-                                                                        
-                                                                        <div class="pt-3 room-preview">
-                                                                            <img src="assets/img/meat_1.png" class=" img-fluid room-active" alt="" >
-                                                                            <img src="assets/img/meat_2.png" class="img-fluid" alt="" />
-                                                                            <img src="assets/img/meat_3.png" class="img-fluid" alt="" />
-                                                                            <img src="assets/img/meat_4.png" class="img-fluid" alt="" />
-                                                                            <img src="assets/img/meat_5.png" class="img-fluid" alt="" />   
-                                                                        </div>
-                                                                    </div>
-                                                                    
-                                                                </div>
-                                                                
-                                                            </div>
+                                                        <div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails">
+                                                            <a href="assets/img/meat_1.png" >
+                                                                <img src="assets/img/meat_1.png" class="img-fluid" alt="" width="400" height="380" />
+                                                             </a>
                                                         </div>
-                                                    </div>
-                                                    <script>
-                                                        function imageGallery() {
-                                                            const highlight = document.querySelector("#gallery-hightlight");
-                                                            const previews = document.querySelectorAll(".room-preview img");
-                                                            
-                                                            previews.forEach(preview => {
-                                                                preview.addEventListener("click", function() {
-                                                                    const smallSrc = this.src;
-                                                                    const bigSrc = smallSrc.replace("small", "big");
-                                                                    previews.forEach(preview => preview.classList.remove("room-active"));
-                                                                    highlight.src = bigSrc;
-                                                                    preview.classList.add("room-active");
-                                                                });
-                                                            });
-                                                        }
-                                                        
-                                                        imageGallery();
-                                                        
-                                                    </script>
                                                 </div>
                                                 <!-- END IMG MEAT_1 -->
                                                 
                                                 <!-- IMG MEAT_2 -->
                                                 <div class="mySlides">
-                                                    <img src="assets/img/meat_2.png"  class="img-fluid" data-toggle="modal" data-target="#exampleModal-2" >
-                                                    <div class="modal fade" id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog" role="document">
-                                                            <div class="modal-content" style="width:700px;">
-                                                                <div class="modal-header" style="width: 100%;">
-                                                                    <h4 class="modal-title" id="exampleModalLabel"><b>Máy Hút Chân Không</b></h4>
-                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                        <span aria-hidden="true">&times;</span>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="modal-body" style="padding-left: 100px;">
-                                                                    <div class="room-gallery">
-                                                                        
-                                                                        <div class="w3-content w3-display-container">
-                                                                            <img class="my-Slides2" id="gallery-hightlight2" src="assets/img/meat_2.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            <img class="my-Slides2" id="gallery-hightlight2" src="assets/img/meat_1.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            <img class="my-Slides2" id="gallery-hightlight2" src="assets/img/meat_3.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            <img class="my-Slides2" id="gallery-hightlight2" src="assets/img/meat_4.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            <img class="my-Slides2" id="gallery-hightlight2" src="assets/img/meat_5.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            
-                                                                            
-                                                                            
-                                                                            <button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
-                                                                            <button class="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
-                                                                        </div>
-                                                                        
-                                                                        <script>
-                                                                            var slideIndex = 1;
-                                                                            showDivs2(slideIndex);
-                                                                            
-                                                                            function plusDivs2(n) {
-                                                                                showDivs2(slideIndex += n);
-                                                                            }
-                                                                            
-                                                                            function showDivs2(n) {
-                                                                                var i;
-                                                                                var x = document.getElementsByClassName("my-Slides2");
-                                                                                if (n > x.length) {slideIndex = 1}
-                                                                                if (n < 1) {slideIndex = x.length}
-                                                                                for (i = 0; i < x.length; i++) {
-                                                                                    x[i].style.display = "none";  
-                                                                                }
-                                                                                x[slideIndex-1].style.display = "block";  
-                                                                            }
-                                                                        </script>
-                                                                        
-                                                                        <div class="pt-3 room-preview">
-                                                                            <img src="assets/img/meat_2.png" class="img-fluid room-active" alt="" >
-                                                                            <img src="assets/img/meat_1.png" class="img-fluid" alt="" />
-                                                                            <img src="assets/img/meat_3.png" class="img-fluid" alt="" />
-                                                                            <img src="assets/img/meat_4.png" class="img-fluid" alt="" />
-                                                                            <img src="assets/img/meat_5.png" class="img-fluid" alt="" />
-                                                                        </div>
-                                                                    </div>
-                                                                    
-                                                                </div>
-                                                                
-                                                            </div>
+                                                        <div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails">
+                                                            <a href="assets/img/meat_2.png" >
+                                                                <img src="assets/img/meat_2.png" class="img-fluid" alt="" width="400" height="380" />
+                                                             </a>
                                                         </div>
-                                                    </div>
-                                                    <script>
-                                                        function imageGallery() {
-                                                            const highlight = document.querySelector("#gallery-hightlight2");
-                                                            const previews = document.querySelectorAll(".room-preview img");
-                                                            
-                                                            previews.forEach(preview => {
-                                                                preview.addEventListener("click", function() {
-                                                                    const smallSrc = this.src;
-                                                                    const bigSrc = smallSrc.replace("small", "big");
-                                                                    previews.forEach(preview => preview.classList.remove("room-active"));
-                                                                    highlight.src = bigSrc;
-                                                                    preview.classList.add("room-active");
-                                                                });
-                                                            });
-                                                        }
-                                                        
-                                                        imageGallery();
-                                                        
-                                                    </script>
                                                 </div>
                                                 <!-- End IMG MEAT_2 -->
                                                 
                                                 <!-- IMG MEAT-3  -->
                                                 <div class="mySlides">
-                                                    <img src="assets/img/meat_3.png" class="img-fluid" data-toggle="modal" data-target="#exampleModal" style="width:100%; ">
-                                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog" role="document">
-                                                            <div class="modal-content" style="width:700px;">
-                                                                <div class="modal-header" style="width: 100%;">
-                                                                    <h4 class="modal-title" id="exampleModalLabel"><b>Máy Hút Chân Không</b></h4>
-                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                        <span aria-hidden="true">&times;</span>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="modal-body" style="padding-left: 100px;">
-                                                                    <div class="room-gallery">
-                                                                        
-                                                                        <div class="w3-content w3-display-container">
-                                                                            <img class="my-Slides" id="gallery-hightlight3" src="assets/img/meat_3.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            <img class="my-Slides" id="gallery-hightlight3" src="assets/img/meat_2.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            <img class="my-Slides" id="gallery-hightlight3"src="assets/img/meat_4.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            <img class="my-Slides" id="gallery-hightlight3" src="assets/img/meat_5.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            
-                                                                            <img class="my-Slides" id="gallery-hightlight3" src="assets/img/meat_1.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            
-                                                                            
-                                                                            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                                                                            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-                                                                        </div>
-                                                                        
-                                                                        <script>
-                                                                            var slideIndex = 1;
-                                                                            showDivs(slideIndex);
-                                                                            
-                                                                            function plusDivs(n) {
-                                                                                showDivs(slideIndex += n);
-                                                                            }
-                                                                            
-                                                                            function showDivs(n) {
-                                                                                var i;
-                                                                                var x = document.getElementsByClassName("my-Slides");
-                                                                                if (n > x.length) {slideIndex = 1}
-                                                                                if (n < 1) {slideIndex = x.length}
-                                                                                for (i = 0; i < x.length; i++) {
-                                                                                    x[i].style.display = "none";  
-                                                                                }
-                                                                                x[slideIndex-1].style.display = "block";  
-                                                                            }
-                                                                        </script>
-                                                                        
-                                                                        <div class="pt-3 room-preview">
-                                                                            <img src="assets/img/meat_3.png" class="img-fluid room-active" alt="" >
-                                                                            <img src="assets/img/meat_2.png" class="img-fluid" alt="" />
-                                                                            <img src="assets/img/meat_4.png" class="img-fluid" alt="" />
-                                                                            <img src="assets/img/meat_5.png" class="img-fluid" alt="" />
-                                                                            
-                                                                            <img src="assets/img/meat_1.png" class="img-fluid" alt="" />
-                                                                            
-                                                                        </div>
-                                                                    </div>
-                                                                    
-                                                                </div>
-                                                                
-                                                            </div>
+                                                        <div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails">
+                                                            <a href="assets/img/meat_3.png" >
+                                                                <img src="assets/img/meat_3.png" class="img-fluid" alt="" width="400" height="380" />
+                                                             </a>
                                                         </div>
-                                                    </div>
-                                                    <script>
-                                                        function imageGallery() {
-                                                            const highlight = document.querySelector("#gallery-hightlight3");
-                                                            const previews = document.querySelectorAll(".room-preview img");
-                                                            
-                                                            previews.forEach(preview => {
-                                                                preview.addEventListener("click", function() {
-                                                                    const smallSrc = this.src;
-                                                                    const bigSrc = smallSrc.replace("small", "big");
-                                                                    previews.forEach(preview => preview.classList.remove("room-active"));
-                                                                    highlight.src = bigSrc;
-                                                                    preview.classList.add("room-active");
-                                                                });
-                                                            });
-                                                        }
-                                                        
-                                                        imageGallery();
-                                                        
-                                                    </script>
                                                 </div>
                                                 <!-- END IMG MEAT-3 -->
                                                 
                                                 <!-- IMG MEAT_4 -->
                                                 <div class="mySlides">
-                                                    <img src="assets/img/meat_4.png" class="img-fluid" data-toggle="modal" data-target="#exampleModal-4" style="width:100%; ">
-                                                    <div class="modal fade" id="exampleModal-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                        <div class="modal-dialog" role="document">
-                                                            <div class="modal-content" style="width:700px;">
-                                                                <div class="modal-header" style="width: 100%;">
-                                                                    <h4 class="modal-title" id="exampleModalLabel"><b>Máy Hút Chân Không</b></h4>
-                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                        <span aria-hidden="true">&times;</span>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="modal-body" style="padding-left: 100px;">
-                                                                    <div class="room-gallery">
-                                                                        
-                                                                        <div class="w3-content w3-display-container">
-                                                                            <img class="my-Slides4" id="gallery-hightlight4" src="assets/img/meat_4.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            <img class="my-Slides4" id="gallery-hightlight4" src="assets/img/meat_2.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            <img class="my-Slides4" id="gallery-hightlight4"src="assets/img/meat_3.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            <img class="my-Slides4" id="gallery-hightlight4" src="assets/img/meat_1.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            <img class="my-Slides4" id="gallery-hightlight4" src="assets/img/meat_5.png" style="width:578px; height: 531px; margin-left: 191px;;">
-                                                                            
-                                                                            
-                                                                            
-                                                                            <button class="w3-button w3-black w3-display-left" onclick="plusDivs4(-1)">&#10094;</button>
-                                                                            <button class="w3-button w3-black w3-display-right" onclick="plusDivs4(1)">&#10095;</button>
-                                                                        </div>
-                                                                        
-                                                                        <script>
-                                                                            var slideIndex = 1;
-                                                                            showDivs4(slideIndex);
-                                                                            
-                                                                            function plusDivs4(n) {
-                                                                                showDivs4(slideIndex += n);
-                                                                            }
-                                                                            
-                                                                            function showDivs4(n) {
-                                                                                var i;
-                                                                                var x = document.getElementsByClassName("my-Slides4");
-                                                                                if (n > x.length) {slideIndex = 1}
-                                                                                if (n < 1) {slideIndex = x.length}
-                                                                                for (i = 0; i < x.length; i++) {
-                                                                                    x[i].style.display = "none";  
-                                                                                }
-                                                                                x[slideIndex-1].style.display = "block";  
-                                                                            }
-                                                                        </script>
-                                                                        
-                                                                        <div class="pt-3 room-preview">
-                                                                            <img src="assets/img/meat_4.png" class="img-fluid room-active" alt="" >
-                                                                            <img src="assets/img/meat_2.png" class="img-fluid" alt="" />
-                                                                            <img src="assets/img/meat_3.png" class="img-fluid" alt="" />
-                                                                            <img src="assets/img/meat_1.png" class="img-fluid" alt="" />
-                                                                            <img src="assets/img/meat_5.png" class="img-fluid"alt="" />
-                                                                            
-                                                                            
-                                                                        </div>
-                                                                    </div>
-                                                                    
-                                                                </div>
-                                                                
-                                                            </div>
+                                                        <div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails">
+                                                            <a href="assets/img/meat_4.png" >
+                                                                <img src="assets/img/meat_4.png" class="img-fluid" alt="" width="400" height="380" />
+                                                             </a>
                                                         </div>
-                                                    </div>
-                                                    <script>
-                                                        function imageGallery() {
-                                                            const highlight = document.querySelector("#gallery-hightlight4");
-                                                            const previews = document.querySelectorAll(".room-preview img");
-                                                            
-                                                            previews.forEach(preview => {
-                                                                preview.addEventListener("click", function() {
-                                                                    const smallSrc = this.src;
-                                                                    const bigSrc = smallSrc.replace("small", "big");
-                                                                    previews.forEach(preview => preview.classList.remove("room-active"));
-                                                                    highlight.src = bigSrc;
-                                                                    preview.classList.add("room-active");
-                                                                });
-                                                            });
-                                                        }
-                                                        
-                                                        imageGallery();
-                                                        
-                                                    </script>
                                                 </div>
                                                 <!-- End IMG MEAT_4-->
-                                                
-                                                
-                                                
-                                                
-                                                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                                                <a class="next" onclick="plusSlides(1)">❯</a>
-                                                
-                                                <script>
-                                                    // Get the modal
-                                                    var modal = document.getElementById("myModal");
-                                                    
-                                                    // Get the image and insert it inside the modal - use its "alt" text as a caption
-                                                    var img = document.getElementById("my-Img");
-                                                    var modalImg = document.getElementById("img01");
-                                                    var captionText = document.getElementById("caption");
-                                                    img.onclick = function(){
-                                                        modal.style.display = "block";
-                                                        modalImg.src = this.src;
-                                                        captionText.innerHTML = this.alt;
-                                                    }
-                                                    
-                                                    // Get the <span> element that closes the modal
-                                                     var span = document.getElementsByClassName("close")[0];
                                                         
-                                                        // When the user clicks on <span> (x), close the modal
-                                                    span.onclick = function() { 
-                                                    modal.style.display = "none";
-                                                     }
-                                                </script>
-                                                        
-                                                <script>
-                                                            // Get the modal
-                                                            var modal = document.getElementById("myModal");
-                                                            
-                                                            // Get the image and insert it inside the modal - use its "alt" text as a caption
-                                                            var img = document.getElementById("my-Img01");
-                                                            var modalImg = document.getElementById("img01");
-                                                            var captionText = document.getElementById("caption");
-                                                            img.onclick = function()
-                                                            {
-                                                             modal.style.display = "block";
-                                                             modalImg.src = this.src;
-                                                            captionText.innerHTML = this.alt;
-                                                            }
-                                                            // Get the <span> element that closes the modal
-                                                            var span = document.getElementsByClassName("close")[0];
-                                                                // When the user clicks on <span> (x), close the modal
-                                                             span.onclick = function()
-                                                            {
-                                                            modal.style.display = "none";
-                                                             }
-                                                 </script>
+                                            
                                                  <!-- Category horizontal -->
                                                 <div class="pt-3 owl-carousel owl-theme" id='carousel_horizontal1'>
                                                                     
@@ -2928,7 +2581,39 @@
 <script src="assets/js/core/jquery.3.2.1.min.js"></script>
 <script src="assets/js/core/popper.min.js"></script>
 <script src="assets/js/core/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="EasyZoom/dist/easyzoom.js"></script>
+<script>
+    // Instantiate EasyZoom instances
+    var $easyzoom = $('.easyzoom').easyZoom();
 
+    // Setup thumbnails example
+    var api1 = $easyzoom.filter('.easyzoom--with-thumbnails').data('easyZoom');
+
+    $('.thumbnails').on('click', 'a', function(e) {
+        var $this = $(this);
+
+        e.preventDefault();
+
+        // Use EasyZoom's `swap` method
+        api1.swap($this.data('standard'), $this.attr('href'));
+    });
+
+    // Setup toggles example
+    var api2 = $easyzoom.filter('.easyzoom--with-toggle').data('easyZoom');
+
+    $('.toggle').on('click', function() {
+        var $this = $(this);
+
+        if ($this.data("active") === true) {
+            $this.text("Switch on").data("active", false);
+            api2.teardown();
+        } else {
+            $this.text("Switch off").data("active", true);
+            api2._init();
+        }
+    });
+</script>
 <script>
 $('#product_carousel').owlCarousel({
     loop:true,

@@ -1339,7 +1339,7 @@ margin-top: 15px;
  }
 
  #multiple-button{
-    margin-left: 80px;
+    margin-left: 122px;
  }
 .cart-information #img_pink{
    z-index: 1;
@@ -1347,6 +1347,19 @@ margin-top: 15px;
    width: 92%;
    height: 38%;
 
+}
+#text-discount{
+color: rgb(170, 170, 170);
+}
+
+#total-cost{
+   color:#ff9500 ;
+}
+#date p{
+margin-bottom: 0px;
+}
+#number-code{
+   color: rgb(97, 153, 255);
 }
 
 .infor-cart-details{
@@ -1582,6 +1595,73 @@ color: white;
     clear: left;
     
  }
+ /**
+ * EasyZoom core styles
+ */
+.easyzoom {
+	position: relative;
+
+	/* 'Shrink-wrap' the element */
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	z-index: 1;
+}
+
+.easyzoom img {
+	vertical-align: bottom;
+}
+
+.easyzoom.is-loading img {
+	cursor: progress;
+}
+
+.easyzoom.is-ready img {
+	cursor: crosshair;
+}
+
+.easyzoom.is-error  img {
+	cursor: not-allowed;
+}
+
+.easyzoom-notice {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 150;
+	width: 10em;
+	margin: -1em 0 0 -5em;
+	line-height: 2em;
+	text-align: center;
+	background: #FFF;
+	box-shadow: 0 0 10px #888;
+}
+
+.easyzoom-flyout {
+	position:absolute;
+	z-index: 100;
+	overflow: hidden;
+	background: #FFF;
+}
+
+/**
+ * EasyZoom layout variations
+ */
+.easyzoom--overlay .easyzoom-flyout {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.easyzoom--adjacent .easyzoom-flyout {
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	margin-left: 20px;
+}
+
  
  .dropdown-hover:hover .dropdown-content {
     display: block;
