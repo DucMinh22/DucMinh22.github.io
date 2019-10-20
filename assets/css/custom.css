@@ -381,8 +381,7 @@ text-decoration: none;
  }
 
  .item .img-fluid{
-   height: 90px;
-   width: 60px;
+ 
    cursor: pointer;
   
  }
@@ -663,6 +662,7 @@ color: transparent;
    z-index: 999;
   
 }
+
 
 .collapsible {
    background: #EDE574;  /* fallback for old browsers */
@@ -1402,6 +1402,49 @@ color: white;
  #carousel_horizontal .owl-dots{
     display: none;
  }
+
+ #carousel_post .owl-prev{
+    border-radius: 0 !important;
+    background: none !important;
+    border: none ;
+    box-shadow: none ;
+    left: 93% ;
+    top: -7% ;
+    font-size: 27px !important;
+ }
+ #carousel_post .owl-next{
+   border-radius: 0 !important;
+   background: none !important;
+   border: none ;
+   box-shadow: none ;
+   top: -7% ;
+   right: -1%;
+   font-size: 27px !important;
+ }
+#title-post a {
+   text-decoration: none;
+   color: black;
+
+}
+
+#title-post a:hover {
+   color: #f08c00;
+}
+ .author{
+    display: flex;
+ }
+
+ .author .by-author{
+border-left: 2px solid rgb(177, 177, 177);
+padding-left: 7px;
+ }
+ .author .cmt{
+    color: #f08c00;
+ }
+
+ .author p{
+    margin-right: 10px;
+ }
  .btn-gradient2{
     background: #7b4397;  /* fallback for old browsers */
  background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
@@ -1594,6 +1637,18 @@ color: white;
     margin-left: 20px;
     clear: left;
     
+ }
+ .time-post{
+    display: flex;
+    color: rgb(184, 181, 181);
+ }
+ .time-post p{
+    margin-bottom: 2px;
+ }
+ .time-post .date{
+    margin-right: 7px;
+    border-right: 1px solid gainsboro;
+    padding-right: 5px;
  }
  /**
  * EasyZoom core styles
