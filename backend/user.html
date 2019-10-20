@@ -21,9 +21,11 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/azzara.min.css">
+    <link rel="stylesheet" href="../assets/css/backendCustom.css">
     
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link rel="stylesheet" href="../assets/css/demo.css">
+    
 </head>
 <body>
     <div class="wrapper">
@@ -365,6 +367,53 @@
                                         </div>
                                     </div>
                                     
+                                    <div class="private-information">
+                                        <div class="row py-3">
+                                            <div class="col-2 pr-0">
+                                                <input type="email" class="form-control" id="email2" placeholder="Tên">
+                                            </div>
+                                            <div class="col-2 px-0">
+                                                <div class="form-group py-0">
+                                                    <select class="form-control input-square" id="squareSelect">
+                                                        <option>Danh mục</option>
+                                                        <option>Đã hủy-Chờ hoàn tiền</option>
+                                                        <option>Đã thanh toán-Chờ đối soát</option>
+                                                        <option>Đã thanh toán-Chờ xác nhận</option>
+                                                        <option>Đã thanh toán-Chờ kiểm duyệt</option>
+                                                        <option>Đã hủy</option>
+                                                        <option>Chờ thanh toán</option>
+                                                        <option>Đang mua hàng</option>
+                                                        <option>Hàng đã giao</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-1 pl-0  text-right">
+                                               <p class="mt-2"> Số lượng</p>
+                                            </div>
+                                            <div class="col-1 pl-0" id="number">
+                                                <input type="email" class="form-control" id="email2" placeholder="Từ"> 
+                                            </div>
+                                            <div class="col-1 pl-0" >
+                                                <input type="email" class="form-control" id="email2" placeholder="Đến"> 
+                                            </div>
+                                            
+                                            <div class="col-1 pl-0 text-right">
+                                               <p class="mt-2">Giá</p> 
+                                            </div>
+                                            <div class="col-1 pl-0" id="number">
+                                                <input type="email" class="form-control" id="email2" placeholder="Từ"> 
+                                            </div>
+                                            <div class="col-1 pl-0" >
+                                                <input type="email" class="form-control" id="email2" placeholder="Đến"> 
+                                            </div>
+                                            
+                                            <div class="col-2 pl-2">
+                                                <a href="checkout.html"> <button type="button" class="btn-gradient17" style="width: 200x; margin-left:60px;">Tìm kiếm</button> </a>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
                                     
                                     <table id="multi-filter-select" class="display table table-striped table-hover">
                                         <!-- Example single danger button -->
@@ -597,7 +646,7 @@
 <script>
     //== Class definition
     var SweetAlert2Demo = function() {
-
+        
         //== Demos
         var initDemos = function() {
             $('.btn-danger').click(function(e) {
@@ -634,7 +683,7 @@
                 });
             });
         };
-
+        
         return {
             //== Init
             init: function() {
@@ -642,7 +691,7 @@
             },
         };
     }();
-
+    
     //== Class Initialization
     jQuery(document).ready(function() {
         SweetAlert2Demo.init();
