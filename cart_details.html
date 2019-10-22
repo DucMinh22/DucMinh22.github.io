@@ -165,19 +165,20 @@
                             <div class="text-center col-6" id="details-order" >
                                 
                                 <p><b>Chi tiết đơn hàng AM161019-283509</b></p>
-                                <p><i>Ngày đặt hàng: 16-10-2019 13:27:14</i> / <span style="color: #b9232e;">Đã bị hủy</span> </p>
+                                <p><i style="color: rgb(172, 169, 169);">Ngày đặt hàng: 16-10-2019 13:27:14</i> / <span style="color: #b9232e;">Đã bị hủy</span> </p>
+                                <p id="abondon"><span style="color:#b9232e ;">X</span> Hủy đơn hàng</p>
                                 
                             </div>
-                            <div class="col-3" >
-                                In đơn hàng
+                            <div class="col-3 text-right" id="print-cart" >
+                              <p class="ml-5"><i class="fas fa-print"></i> In đơn hàng </p>
                             </div>
                             <hr>
                         </div>
                         <div class="row py-2 mx-3">
                             <div class="col-4 pt-2 " style="background-color: #fffeee; border-right: 3px solid white;">
-                                <p style="border-left: 3px solid #f09819; padding-left: 5px;">Thông tin người mua</p>
+                                <p style="border-left: 3px solid #f09819; padding-left: 5px;"><b>Thông tin người mua</b></p>
                                 <div class="row">
-                                    <div class="col-5 text-right">
+                                    <div class="col-5 text-right" id="grey-text-infor">
                                         <p>Họ và tên:</p>
                                     </div>
                                     <div class="col-7 px-0">
@@ -185,7 +186,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-5 text-right">
+                                    <div class="col-5 text-right" id="grey-text-infor">
                                         <p>Số điện thoại:</p>
                                     </div>
                                     <div class="col-7 px-0">
@@ -193,7 +194,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-5 text-right">
+                                    <div class="col-5 text-right" id="grey-text-infor">
                                         <p>Email:</p>
                                     </div>
                                     <div class="col-7 px-0">
@@ -201,7 +202,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-5 text-right">
+                                    <div class="col-5 text-right" id="grey-text-infor">
                                         <p>Địa chỉ:</p>
                                     </div>
                                     <div class="col-7 px-0">
@@ -211,9 +212,9 @@
                             </div> 
                             
                             <div class="col-4 pt-2" style="background-color: #fffeee;  border-right: 3px solid white;">
-                                <p style="border-left: 3px solid #f09819; padding-left: 5px;">Thông tin người nhận</p>
+                                <p style="border-left: 3px solid #f09819; padding-left: 5px;"><b>Thông tin người nhận</b></p>
                                 <div class="row">
-                                    <div class="col-5 text-right">
+                                    <div class="col-5 text-right" id="grey-text-infor">
                                         <p>Họ và tên:</p>
                                     </div>
                                     <div class="col-7 px-0">
@@ -221,7 +222,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-5 text-right">
+                                    <div class="col-5 text-right" id="grey-text-infor">
                                         <p>Số điện thoại:</p>
                                     </div>
                                     <div class="col-7 px-0">
@@ -229,7 +230,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-5 text-right">
+                                    <div class="col-5 text-right" id="grey-text-infor">
                                         <p>Email:</p>
                                     </div>
                                     <div class="col-7 px-0">
@@ -237,7 +238,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-5 text-right">
+                                    <div class="col-5 text-right" id="grey-text-infor">
                                         <p>Địa chỉ:</p>
                                     </div>
                                     <div class="col-7 px-0">
@@ -246,17 +247,17 @@
                                 </div>
                             </div>
                             <div class="col-4 pt-2" style="background-color: #fffeee; ">
-                                <p style="border-left: 3px solid #f09819; padding-left: 5px;">Thông tin thanh toán</p>
+                                <p style="border-left: 3px solid #f09819; padding-left: 5px;"><b>Thông tin thanh toán</b></p>
                                 <div class="row">
-                                    <div class="col-5 text-right">
+                                    <div class="col-5 text-right" id="grey-text-infor">
                                         <p>Phương thức:</p>
                                     </div>
                                     <div class="col-7 px-0">
-                                        <p>Chuyển khoản</p>
+                                        <p>Chuyển khoản  / <a href=""><i>Thay đổi</i></a></p>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-5 text-right">
+                                    <div class="col-5 text-right" id="grey-text-infor">
                                         <p>Hình thức:</p>
                                     </div>
                                     <div class="col-7 px-0">
@@ -264,22 +265,22 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-5 text-right">
+                                    <div class="col-5 text-right" id="grey-text-infor">
                                         <p>Trạng thái:</p>
                                     </div>
                                     <div class="col-7 px-0">
-                                        <p><span style="color: #b9232e;">Đã bị hủy</span>/<a href=""><i>Hướng dẫn</i></a></p>
+                                        <p><span style="color: #b9232e;">Đã bị hủy</span> / <a href=""><i>Hướng dẫn</i></a></p>
                                     </div>
                                 </div>   
                             </div>
                         </div> 
                         <div class="row mx-3 py-2" style="background-color: #fffeee;" >
-                            <div class="text-center col-5" >
+                            <div class="text-center col-4">
                                <b> Thông tin sản phẩm</b>
                             </div>
                             
-                            <div class="col-7">
-                                <div class="row pr-5">
+                            <div class="col-8">
+                                <div class="row">
                                     <div class="col">
                                         <b>Đơn giá</b>
                                     </div>
@@ -299,12 +300,12 @@
                             </div>
                         </div>
                         <div class="row py-2">
-                            <div class="col-5">
+                            <div class="col-4">
                                 <div class="row ml-2">
                                     <div class="col-3 pr-0">
                                         <img src="assets/img/meat_1.png"  class="img-fluid" alt="..." width="60px" height="60px;">
                                     </div>
-                                    <div class="col-9 px-0"  id="details-order">
+                                    <div class="col-9 pl-2 pr-0"  id="details-order">
                                         <a href="productpage.html"><p>YAZOLE Classic Business Men Watches Quartz Male Watch 3ATM Water-resistant Luminous Man Watch Time Display</p></a>
                                         <p>Mã sản phẩm: <b>J2823WBR</b></p> 
                                         
@@ -312,7 +313,7 @@
                                 </div>
                             </div>
                             
-                            <div class="col-7">
+                            <div class="col-8">
                                 <div class="row pr-5">
                                     <div class="col text-center">
                                         0đ
@@ -321,13 +322,14 @@
                                         1
                                     </div>
                                     <div class="col text-center">
-                                        0đ
+                                        <b> 289.000đ </b>
                                     </div>
                                     <div class="col text-center" style="color: #b9232e;">
                                         Đã hủy
                                     </div>
-                                    <div class="col text-center"> 
-                                        Theo dõi
+                                    <div class="col text-center" id="follow"> 
+                                        <p><i class="mr-1 fas fa-trash-alt"></i>Hủy</p>
+                                       <p> <i class=" fas fa-eye"></i>Theo dõi</p>
                                     </div>
                                 </div>
                             </div>

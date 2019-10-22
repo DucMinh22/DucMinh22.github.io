@@ -374,7 +374,32 @@ text-decoration: none;
    margin-top: 0px;
  
  }
+#print-cart p{
+   border: 1px solid rgb(172, 169, 169);
+   border-radius: 3px;
+   padding: 5px 12px;
+   color: rgb(172, 169, 169);
+}
 
+#print-cart p:hover{
+   background-color: rgb(172, 169, 169);
+   color: white;
+   cursor: pointer;
+}
+
+#grey-text-infor{
+   color: rgb(172, 169, 169);
+}
+#follow p{
+   border: 1px solid black;
+   border-radius: 3px;
+  margin-bottom: 5px;
+
+}
+#follow p:hover{
+   cursor: pointer;
+   background-color: rgb(235, 235, 235);
+}
  .mySlides .img-thumbnail{
     height: 380px;
     width: 400px;
@@ -520,6 +545,19 @@ margin-left: 107%;;
 #details-order p{
    margin-bottom: 3px;
 
+}
+
+#details-order #abondon{
+   background-color: rgb(233, 233, 233);
+   padding: 5px 0px;
+   width: 40%;
+   border-radius: 3px;
+   margin-left: 100px;
+}
+
+#details-order #abondon:hover{
+   background-color: rgb(211, 208, 208);
+   cursor: pointer;
 }
 
  #details-bank-pay p{
