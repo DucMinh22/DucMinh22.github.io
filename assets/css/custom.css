@@ -584,12 +584,13 @@ width: 85%;
    opacity: 0.6;
  }
 
- #cursor-img1{
-   opacity: 1;
- }
- #cursor-img1:hover{
+ #cursor-img.active{
    border: 1px solid #f09819;
  }
+ #cursor-img{
+   opacity: 1;
+ }
+
 
  #cursor-img:hover {
    opacity: 1;
@@ -835,8 +836,16 @@ color: transparent;
      width: 0px;
  }
 
+ #text-hidden-category a{
+    text-decoration: none;
+    color: black;
+ }
+#fee{
+   color: #f09819;
+}
  #text-hidden-category a:hover{
    color: #f09819;
+   
  }
  .checked{
     color: #f09819;
