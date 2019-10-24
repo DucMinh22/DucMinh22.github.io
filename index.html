@@ -37,10 +37,10 @@
 </head>
 <body>
     <div class="wrapper">
-        <!-- Navbar Header -->
+           <!-- Navbar Header -->
         <div class="header">
             <div class="nav_top">
-                <div class="col">
+                <div class="container">
                     <div class="row" >      
                         <div class="col-12 col-md-4 col-sm-4">
                             <div class="nav_top_left">
@@ -63,57 +63,25 @@
             <!-- Navbar content -->
             <div class="" id="navbar">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" >
-                    <div class="col">
+                    <div class="container">
                         <a  class="navbar-brand" href="index.html"> <img src="assets/img/final-logo.png" class="img-fluid" alt="..." style="width: 250px; height: 60px; "></a>
-                        <div class="search">
+                        <div class="search pr-5">
                             <form class="search-form" action="resultbysearch.html">
                                 <input type="text" placeholder="Tìm kiếm..." >
-                                <a href="resultbysearch.html"><i class="fa fa-search search-icon" style="padding:13px; background-color:#f09819; color: white;"></i></a>
+                                <a href="resultbysearch.html"><i class="fa fa-search search-icon" style="padding:13px; margin-top: 9px; background-color:#f09819; color: white; border-radius: 3px;"></i></a>
                             </form>
                         </div>
-                        <ul class="navbar-nav navbar-brand" >
+                        <ul class="navbar-nav navbar-brand">
                             <div class="row">
-                                <div class="col-lg-4">
-                                    <li class="nav-item dropdown hidden-caret">
-                                        <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
-                                            <div class="avatar-sm">
-                                                <img src="assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
-                                            </div>
-                                        </a>
-                                        <ul class="dropdown-menu dropdown-user animated fadeIn" id="notice">
-                                            <li>
-                                                <div class="user-box" >
-                                                    <div class="avatar-lg"><img src="assets/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
-                                                    <div class="u-text">
-                                                        <h4>Hizrian</h4>
-                                                        <p class="text-muted">hello@example.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a> 
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li id="line-notice">
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">My Profile</a>
-                                                <a class="dropdown-item" href="#">My Balance</a>
-                                                <a class="dropdown-item" href="#" style="border-bottom: 1px solid rgb(233, 232, 232);">Inbox</a>
-                                                
-                                                <a class="dropdown-item" href="#" style="border-bottom: 1px solid rgb(233, 232, 232);">Account Setting</a>
-                                                
-                                                <a class="dropdown-item" href="#">Logout</a>
-                                            </li>
-                                            
-                                        </ul>
-                                    </li>
-                                </div>
                                 <div class="pt-2 col-6 col-lg-4">
-                                    
                                     <li class="nav-item">
                                         <a class="nav-link"  href="#">Đăng Nhập</a>
                                     </li>
                                 </div>
-                                <div class="pt-2 col-6 col-lg-4">
+                                <div class="pt-2 col-6 col-lg-8">
                                     <li class="nav-item">
                                         <div class="cart-icon">
-                                            <i class="fas fa-cart-plus" style="margin-right: 3px; margin-top: 10px; "></i>
+                                            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
                                             <a href="#">Giỏ Hàng</a>
                                         </div>
                                     </li>
@@ -142,6 +110,7 @@
             <!-- end category sticky -->
             
         </div>
+        <!-- End-Navbar Header -->
         <!-- End-Navbar Header -->
         
         
@@ -823,7 +792,7 @@
                             <div class="card-image">
                                 <a href="category.html"> <img src="assets/img/san-pham-hot_1.png" class="img-fluid" alt="..."  style= " border-radius: 5px; width: 70px; height: 70px; "> </a> 
                             </div>
-                            <div class="card-text" >   
+                            <div class="card-text"  id="text-hidden-category" >   
                                 <a href="productpage.html" style="color: #000;"><h4>Sản Phẩm Hot</h4></a>
                             </div>    
                         </div>   
@@ -835,7 +804,7 @@
                             <div class="card-image">
                                 <img src="assets/img/thoi-trang-nam_1.png" class="img-fluid" alt="..." style= " border-radius: 5px; width: 70px; height: 70px; ">  
                             </div>
-                            <div class="card-text" >   
+                            <div class="card-text"  id="text-hidden-category" >   
                                 <a href="productpage.html"style="color: #000;"><h4>Thời Trang Nam</h4></a>
                             </div>
                         </div>
@@ -848,7 +817,7 @@
                             <div class="card-image">
                                 <img src="assets/img/thoi-trang-nu_1.png" class="img-fluid" alt="..." style= " border-radius: 5px; width: 70px; height: 70px; ">  
                             </div>
-                            <div class="card-text" >   
+                            <div class="card-text" id="text-hidden-category" >   
                                 <a href="productpage.html" style="color: #000;"><h4>Thời Trang Nữ</h4></a>
                             </div>
                         </div>
@@ -861,7 +830,7 @@
                             <div class="card-image">
                                 <img src="assets/img/cong-nghe_1.png" class="img-fluid" alt="..." style= " border-radius: 5px; width: 70px; height: 70px; ">  
                             </div>
-                            <div class="card-text" >   
+                            <div class="card-text" id="text-hidden-category">   
                                 <a href="productpage.html"style="color: #000;"><h4>Công Nghệ</h4></a>
                             </div>
                         </div>
@@ -874,7 +843,7 @@
                             <div class="card-image">
                                 <img src="assets/img/gia-dung_1.png" class="img-fluid" alt="..." style= " border-radius: 5px; width: 70px; height: 70px; ">  
                             </div>
-                            <div class="card-text" >   
+                            <div class="card-text" id="text-hidden-category">   
                                 <a href="productpage.html" style="color: #000;"><h4>Gia Dụng</h4></a>
                             </div>
                         </div>
@@ -887,7 +856,7 @@
                             <div class="card-image">
                                 <img src="assets/img/suc-khoe_1.png" class="img-fluid" alt="..." style= " border-radius: 5px; width: 70px; height: 70px; ">  
                             </div>
-                            <div class="card-text" >   
+                            <div class="card-text" id="text-hidden-category">   
                                 <a href="productpage.html" style="color: #000;"><h4>Sức Khỏe-Làm Đẹp</h4></a>
                             </div>
                         </div>
@@ -900,7 +869,7 @@
                             <div class="card-image">
                                 <img src="assets/img/me-va-be_1.png" class="img-fluid" alt="..." style= " border-radius: 5px; width: 70px; height: 70px; ">  
                             </div>
-                            <div class="card-text" >   
+                            <div class="card-text" id="text-hidden-category" >   
                                 <a href="productpage.html" style="color: #000;"><h4>Mẹ & Bé</h4></a>
                             </div>
                         </div>
@@ -913,7 +882,7 @@
                             <div class="card-image">
                                 <img src="assets/img/nha-cua_1.png" class="img-fluid" alt="..." style= " border-radius: 5px; width: 70px; height: 70px; ">  
                             </div>
-                            <div class="card-text" >   
+                            <div class="card-text"id="text-hidden-category" >   
                                 <a href="productpage.html" style="color: #000;"><h4>Nhà Cửa - Đời Sống</h4></a>
                             </div>
                         </div>
@@ -926,7 +895,7 @@
                             <div class="card-image">
                                 <img src="assets/img/the-thao_1.png" class="img-fluid" alt="..." style= " border-radius: 5px; width: 70px; height: 70px; ">  
                             </div>
-                            <div class="card-text" >   
+                            <div class="card-text" id="text-hidden-category">   
                                 <a href="productpage.html" style="color: #000;"><h4>Thể Thao-Dã Ngoại</h4></a>
                             </div>
                         </div>
@@ -939,7 +908,7 @@
                             <div class="card-image">
                                 <img src="assets/img/bach-hoa-tong-hop_1.png" class="img-fluid" alt="..." style= " border-radius: 5px; width: 70px; height: 70px; ">  
                             </div>
-                            <div class="card-text" >   
+                            <div class="card-text" id="text-hidden-category" >   
                                 <a href="productpage.html" style="color: #000;"><h4>Bách Hóa Tổng Hợp</h4></a>
                             </div>
                         </div>
@@ -952,7 +921,7 @@
                             <div class="card-image">
                                 <img src="assets/img/do-lam-banh_1.png" class="img-fluid" alt="..." style= " border-radius: 5px; width: 70px; height: 70px; ">  
                             </div>
-                            <div class="card-text" >   
+                            <div class="card-text" id="text-hidden-category" >   
                                 <a href="productpage.html" style="color: #000;" ><h4>Đồ Làm Bánh</h4></a>
                             </div>
                         </div>
