@@ -1060,16 +1060,23 @@ min-height: 55px;
     width: 130px;
  }
  
+ #text-code-product{
+    display: flex;
+ }
+
+ #text-code-product .status{
+margin-left: 80px;
+ }
  .shiping-free{
    border-style: dashed;
    padding: 15px;
    background-color: #fffab4;
-   height: 65px;
+ display: flex;
+margin-right: 30px;
  }
-
- #box-shipping{
-    
-    height: 0px;
+ .shiping-free img{
+    height: 35px;
+    margin-right: 5px;
  }
 
  #v-pills-tab-with-icon{
@@ -1265,9 +1272,9 @@ background: white;
  
  #cost{
     background-color: ghostwhite;
-    padding: 5px 0px;
-    padding-left: 20px;
-    height: 80px;
+    padding: 10px 20px;
+    padding-bottom: 10px;
+  
  }
  #cost .row{
     margin-left: 1px;
@@ -1724,7 +1731,7 @@ padding-left: 7px;
 	*zoom: 1;
    z-index: 1;
    max-width: 530px;
-   height: 370px;
+   height: 450px;
    
 }
 
