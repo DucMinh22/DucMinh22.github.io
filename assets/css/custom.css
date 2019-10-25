@@ -999,7 +999,18 @@ color:white;
  .post .row {
     margin: 10px -16px;
  }
- 
+ .img-blog{
+   
+
+ }
+
+ .title-post{
+min-height: 55px;
+ }
+
+.post-paragraph{
+   min-height: 65px;
+}
  .post .row,
  .post .row > .column_img {
     padding: 8px;
@@ -1713,12 +1724,13 @@ padding-left: 7px;
 	*zoom: 1;
    z-index: 1;
    max-width: 530px;
-   height: 480px;
+   height: 370px;
    
 }
 
 .easyzoom img {
-	vertical-align: bottom;
+   vertical-align: bottom;
+  
 }
 
 .easyzoom.is-loading img {
