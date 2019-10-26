@@ -617,11 +617,7 @@ width: 85%;
    opacity: 0.6;
  }
 
- #product{
-   max-width: 90px;
-   height: 90px;
 
- }
 #product:hover {
   opacity: 1;
   border: 2px solid #f09819;
@@ -1060,53 +1056,71 @@ min-height: 55px;
     width: 130px;
  }
 
- h1 {
-   font-size: 50px;
-   word-break: break-all;
- }
- 
- .row {
-   margin: 8px -16px;
+ .frame{
+   margin: 10px -16px;
  }
  
  /* Add padding BETWEEN each column */
- .row,
- .row > .column {
+ .frame,
+ .frame > .box-img {
    padding: 8px;
  }
- 
- /* Create four equal columns that floats next to each other */
- .column {
-   float: left;
-   width: 25%;
+ /*  
+ .img-center{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 40%;
+ }
+ */
+ /* Create three equal columns that floats next to each other */
+ .box-img {
+ width: 85vh;
+ text-align: center;
  }
  
+
  /* Clear floats after rows */ 
- .row:after {
+ .frame:after {
    content: "";
    display: table;
    clear: both;
  }
- 
- /* Content */
- .content {
-   background-color: white;
-   padding: 10px;
+
+
+
+ #product .box-img-cursor{
+    padding: 3px;
  }
- 
+ .box-img-cursor{
+   text-align: center;
+ }
+ /* Content */
+ #product:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
  /* Responsive layout - makes a two column-layout instead of four columns */
- @media screen and (max-width: 900px) {
-   .column {
+@media screen and (max-width: 900px) {
+   .box-img {
      width: 50%;
+     height: 50%;
    }
  }
  
  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
  @media screen and (max-width: 600px) {
-   .column {
+   .box-img {
      width: 100%;
    }
  }
+ /* The "show" class is added to the filtered elements */
+ .show {
+   display: block;
+ }
+ 
  
  #text-code-product{
     display: flex;
