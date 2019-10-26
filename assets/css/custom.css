@@ -93,7 +93,6 @@ font-size: 16px;
  
  #navbar a {
     float: left;
-    color: white;
     text-align: center;
     text-decoration: none;
     line-height: 25px;
@@ -1075,8 +1074,11 @@ min-height: 55px;
  */
  /* Create three equal columns that floats next to each other */
  .box-img {
- width: 75vh;
+max-width: 117vh;
  text-align: center;
+ display: block;
+ justify-content: center;
+
  }
  
 
