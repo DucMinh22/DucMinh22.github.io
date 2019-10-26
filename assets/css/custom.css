@@ -1055,13 +1055,10 @@ min-height: 55px;
     width: 130px;
  }
 
- .frame{
-   margin: 10px -16px;
- }
+ 
  
  /* Add padding BETWEEN each column */
- .frame,
- .frame > .box-img {
+.box-img {
    padding: 8px;
  }
  /*  
@@ -1083,11 +1080,7 @@ max-width: 117vh;
  
 
  /* Clear floats after rows */ 
- .frame:after {
-   content: "";
-   display: table;
-   clear: both;
- }
+ 
 
 
 
