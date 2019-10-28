@@ -141,7 +141,7 @@
                         <h4><i class="mr-2 fas fa-cart-arrow-down" style="color: #f09819;"></i><b>Giỏ hàng của quý khách</b><span style="color: rgb(185, 184, 184);"><b> [1 Sản phẩm]</b></span></h4>
                     </div>
                     <div class="row mx-3 py-2" style="background-color: #fffeee;" >
-                        <div class="text-center col-4">
+                        <div class="text-center col-3">
                             <b> Thông tin sản phẩm</b>
                         </div>
                         
@@ -150,26 +150,24 @@
                                 <div class="col-3">
                                     <b>Hình thức giao hàng</b>
                                 </div>
-                                <div class="col">
+                                <div class="col-3">
                                     <b>Đơn giá</b>
                                 </div>
-                                <div class="col">
+                                <div class="col-3 text-center">
                                     <b> Số lượng</b>
                                 </div>
-                                <div class="col">
+                                <div class="col-2">
                                     <b>Thành tiền</b>
                                 </div>
-                                <div class="col">
-                                    <b>Trạng thái</b>
-                                </div>
-                                <div class="col"> 
+                                
+                                <div class="pl-2"> 
                                     <b>Thao tác</b>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row py-2">
-                        <div class="col-4">
+                        <div class="col-3">
                             <div class="row ml-2">
                                 <div class="col-3 pr-0">
                                     <img src="assets/img/meat_1.png"  class="img-fluid" alt="..." width="60px" height="60px;">
@@ -183,25 +181,89 @@
                         </div>
                         
                         <div class="col-8">
-                            <div class="row pr-5">
+                            <div class="row">
                                 <div class="col-3 text-center">
-                                    Giao hàng mặc định
+                                    <div class="dropdown">
+                                        Phân loại hàng<i class="ml-2 fas fa-caret-down"></i>
+                                        <div class="dropdown-cart-content">
+                                            <div class="row pl-3 pt-3">
+                                                <div class="col-2">Màu</div>
+                                                <div class="col-10 pl-0">
+                                                    <div class="radio-toolbar">
+                                                        <input type="radio" id="radio1" name="radios" value="all" checked>
+                                                        <label for="radio1">Đen</label>
+                                                        
+                                                        <input type="radio" id="radio2" name="radios" value="false">
+                                                        <label for="radio2">Trắng </label>
+                                                        
+                                                        <input type="radio" id="radio3" name="radios" value="true">
+                                                        <label for="radio3">Hồng</label>
+
+                                                        <input type="radio" id="radio4" name="radios" value="all">
+                                                        <label for="radio4">Vàng+Đen</label>
+                                                        
+                                                        <input type="radio" id="radio5" name="radios" value="false">
+                                                        <label for="radio5">Xanh+Hồng </label>
+                                                        
+                                                        <input type="radio" id="radio6" name="radios" value="true">
+                                                        <label for="radio6">Xanh lam</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row py-3 pl-3">
+                                                <div class="col-2">Size</div>
+                                                <div class="col-10 pl-0">
+                                                    <div class="radio-toolbar">
+                                                        <input type="radio" id="radio11" name="size" value="all" checked>
+                                                        <label for="radio11">34</label>
+                                                        
+                                                        <input type="radio" id="radio22" name="size" value="false">
+                                                        <label for="radio22">35 </label>
+                                                        
+                                                        <input type="radio" id="radio33" name="size" value="true">
+                                                        <label for="radio33">36</label>
+
+                                                        <input type="radio" id="radio44" name="size" value="all">
+                                                        <label for="radio44">37</label>
+                                                        
+                                                        <input type="radio" id="radio55" name="size" value="false">
+                                                        <label for="radio55">38 </label>
+                                                        
+                                                        <input type="radio" id="radio66" name="size" value="true">
+                                                        <label for="radio66">39</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row py-3" id="multiple-button">
+                                                <a href="checkout.html"> <button type="button" class="btn-gradient18" style="width: 200x;">Trở lại</button> </a>
+                                                <a href="checkout.html"> <button type="button" class="btn-gradient17" style="width: 200x; ">Xác nhận</button> </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col text-center">
-                                    289.000đ
+                                <div class="col-3">
+                                   <span style="text-decoration:line-through; font-size: 12px;">300.000đ</span> 289.000đ
                                 </div>
-                                <div class="col text-center">
-                                    1
+                                <div class="col-3">
+                                    <div class="input-group">
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-default btn-number" id="small-plus-btn" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                <span class="glyphicon glyphicon-minus">-</span>
+                                            </button>
+                                        </span>
+                                        <span style="width:50px;"><input type="text" name="quant[1]" class="form-control input-number" id="small-form-control"  value="1" min="1" max="100000" ></span>
+                                        <span class="input-group-btn pr-2">
+                                            <button type="button" class="btn btn-default btn-number" id="small-plus-btn" data-type="plus" data-field="quant[1]">
+                                                <span class="glyphicon glyphicon-plus">+</span>
+                                            </button>
+                                        </span>
+                                    </div> 
                                 </div>
-                                <div class="col text-center">
+                                <div class="col-2 ">
                                     <b> 289.000đ </b>
                                 </div>
-                                <div class="col text-center" style="color: #b9232e;">
-                                    Đã hủy
-                                </div>
-                                <div class="col text-center" id="follow"> 
-                                    <p><i class="mr-1 fas fa-trash-alt"></i>Hủy</p>
-                                    <p><i class="mr-1 fas fa-cart-arrow-down"></i>Mua sau</p>
+                                <div class="" id="follow"> 
+                                    <p><i class="mr-1 fas fa-trash-alt"></i>Xóa</p>
                                 </div>
                                 
                             </div>
@@ -547,5 +609,78 @@
         
         <!-- Azzara JS -->
         <script src="assets/js/ready.min.js"></script>
+        <script>
+            $('.btn-number').click(function(e){
+                e.preventDefault();
+                
+                fieldName = $(this).attr('data-field');
+                type      = $(this).attr('data-type');
+                var input = $("input[name='"+fieldName+"']");
+                var currentVal = parseInt(input.val());
+                if (!isNaN(currentVal)) {
+                    if(type == 'minus') {
+                        
+                        if(currentVal > input.attr('min')) {
+                            input.val(currentVal - 1).change();
+                        } 
+                        if(parseInt(input.val()) == input.attr('min')) {
+                            $(this).attr('disabled', true);
+                        }
+                        
+                    } else if(type == 'plus') {
+                        
+                        if(currentVal < input.attr('max')) {
+                            input.val(currentVal + 1).change();
+                        }
+                        if(parseInt(input.val()) == input.attr('max')) {
+                            $(this).attr('disabled', true);
+                        }
+                        
+                    }
+                } else {
+                    input.val(0);
+                }
+            });
+            $('.input-number').focusin(function(){
+                $(this).data('oldValue', $(this).val());
+            });
+            $('.input-number').change(function() {
+                
+                minValue =  parseInt($(this).attr('min'));
+                maxValue =  parseInt($(this).attr('max'));
+                valueCurrent = parseInt($(this).val());
+                
+                name = $(this).attr('name');
+                if(valueCurrent >= minValue) {
+                    $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+                } else {
+                    alert('Sorry, the minimum value was reached');
+                    $(this).val($(this).data('oldValue'));
+                }
+                if(valueCurrent <= maxValue) {
+                    $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+                } else {
+                    alert('Sorry, the maximum value was reached');
+                    $(this).val($(this).data('oldValue'));
+                }
+                
+                
+            });
+            $(".input-number").keydown(function (e) {
+                // Allow: backspace, delete, tab, escape, enter and .
+                if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+                // Allow: Ctrl+A
+                (e.keyCode == 65 && e.ctrlKey === true) || 
+                // Allow: home, end, left, right
+                (e.keyCode >= 35 && e.keyCode <= 39)) {
+                    // let it happen, don't do anything
+                    return;
+                }
+                // Ensure that it is a number and stop the keypress
+                if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                    e.preventDefault();
+                }
+            });
+        </script>
     </body>
     </html>

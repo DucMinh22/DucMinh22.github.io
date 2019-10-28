@@ -191,6 +191,71 @@ opacity: 0.6;
  .comment h4{
     margin-left: 95px;
  }
+.dropdown-cart-content{
+   display: none;
+   position: absolute;
+   background-color: white;
+   min-width: 420px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+   right: -180%;
+  color: black;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-cart-content {display: block;}
+
+.dropdown-cart-content a {
+   color: black;
+   text-decoration: none;
+   display: block;
+ }
+ .dropdown-main-content {
+   display: none;
+   position: absolute;
+   background-color: white;
+   min-width: 420px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+  right: 0%;
+  color: black;
+  font-size: 15px;
+  border-radius: 3px;
+ }
+ 
+ /* Links inside the dropdown */
+ .dropdown-main-content a {
+   color: black;
+   text-decoration: none;
+   display: block;
+ }
+
+ * Change color of dropdown links on hover */
+.dropdown-main-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-main-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropbtn {
+   border: 1px solid white;
+   border-radius: 5px;
+   color: white;
+   padding: 12px;
+   border: none;
+   cursor: pointer;
+   font-size: 15px;
+ }
+ 
+ /* The container <div> - needed to position the dropdown content */
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ }
  
  .side-bar a {
     padding: 8px 8px 8px 32px;
@@ -384,10 +449,15 @@ text-decoration: none;
 #grey-text-infor{
    color: rgb(172, 169, 169);
 }
+
+#follow{
+   max-width: 60px;
+}
 #follow p{
    border: 1px solid black;
    border-radius: 3px;
   margin-bottom: 5px;
+  padding: 3px 9px;
 
 }
 #follow p:hover{
@@ -1039,7 +1109,19 @@ min-height: 55px;
     
     /* Hide all elements by default */
  }
-
+#small-form-control{
+   height: 34px;
+}
+ #small-plus-btn{
+   background-color:white !important;
+   color: #000 !important;
+   border: 1px solid rgb(238, 237, 237);
+   font-size: 9px;
+ }
+ #small-plus-btn:disabled, #small-plus-btn:focus, #small-plus-btn:hover{
+   background-color: #ff9500 !important;
+   color: white !important;
+ }
  .btn-default:disabled, .btn-default:focus, .btn-default:hover{
     background-color: #ff9500 !important;
  }
