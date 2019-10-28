@@ -579,6 +579,18 @@ width: 85%;
 #warning4 p{
    margin-bottom: 0px;
 }
+
+#warning5 {
+   background-color: #fffeee;
+   border: 1px solid #ffcd87;
+   border-radius: 3px;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+#warning5 p {
+   margin-bottom: 0px;
+}
 .help-support p{
    margin-bottom: 2px;
 
@@ -617,10 +629,12 @@ width: 85%;
  }
 
 
-#product:hover {
+#product:hover{
   opacity: 1;
   border: 2px solid #f09819;
+  cursor: pointer;
 }
+
  #cursor-img{
    opacity: 1;
  }
@@ -1377,22 +1391,6 @@ margin-top: 15px;
    
    width: 190px;
    
-   
-}
-.btn-color{
-   background-color: white;
-   padding: .4rem 1.7rem;
-   border: 1px solid rgb(238, 237, 237);
-   cursor: pointer;
-   border-radius: 2px;
-   margin-bottom: 3px;
-}
-.btn-color::before {
-  
-}
-.btn-color:disabled, .btn-color:focus, .btn-color:hover{
-   color:#ff9500 ;
-   border: 1px solid #ff9500;
 }
 
 .btn-size{
@@ -1403,7 +1401,30 @@ margin-top: 15px;
    border-radius: 2px;
    margin-bottom: 3px;
 }
+.radio-toolbar input[type="radio"] {
+   display: none;
+ }
+ 
+ .radio-toolbar label {
+   display: inline-block;
+   background-color: #ddd;
+   padding: .4rem 1.7rem;
+   background-color: white;
+   cursor: pointer;
+   border: 1px solid rgb(238, 237, 237);
+   border-radius: 2px;
+   margin-bottom: 3px;
+ }
+ .radio-toolbar label:hover {
+   color:#ff9500 ;
+   border: 1px solid #ff9500;
+ }
+ .radio-toolbar input[type="radio"]:checked+label {
+   color:#ff9500 ;
+   border: 1px solid #ff9500;
+ }
 
+ 
 .btn-size:focus, .btn-size:hover{
    color:#ff9500 ;
    border: 1px solid #ff9500;
@@ -1659,6 +1680,30 @@ padding-left: 7px;
 
  }
 
+ .btn-gradient16:hover{
+   background: #fe8c00;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #f83600, #fe8c00);
+   color: white;
+ }
+
+ .btn-gradient19{
+   background: #fe8c00;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #f83600, #fe8c00);
+   padding: 10px 15px ;
+   border: none;
+   border: 1px solid  #fe8c00; ;
+   border-radius: 30px;
+   cursor: pointer;
+   width: 200px;
+   margin-left: 10px !important;
+   color: white;
+
+ }
+ .btn-gradient19:hover{
+    opacity: 0.8;
+ }
  .btn-gradient17{
    background: #fe8c00;  /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */

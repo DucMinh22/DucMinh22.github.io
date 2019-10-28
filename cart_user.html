@@ -118,7 +118,6 @@
             <div class="product pt-2 pb-lg-2">
                 <!-- breadcum -->
                 <div class="row"> 
-                    
                     <ul class="breadcrumbs">
                         <li class="nav-home">
                             <a href="#">
@@ -129,202 +128,99 @@
                             <i class="flaticon-right-arrow"></i>
                         </li>
                         <li class="nav-item">
-                            <a href="#">Chi tiết đơn hàng</a>
+                            <a href="#">Giỏ hàng</a>
                         </li>
                         <li class="separator">
                             <i class="flaticon-right-arrow"></i>
                         </li>
-                        
                     </ul>
                 </div>
                 <!-- end breadcum -->
-                <div class="row py-2 mt-2 px-4" style="background-color: gainsboro; border-radius: 3px;">
-                    <img src="assets/img/profile2.jpg" class="rounded-circle" alt="Cinque Terre" width="" height=""> 
-                    <div id="pesonal-infor">
-                        <p >Xin chào <b>Đặng Trường</b></p>
-                        <p><i class="fas fa-pen" style="margin-right: 3px;"></i>Sửa hồ sơ</p>
+                <div class="card px-4">
+                    <div class="card-header">
+                        <h4><i class="mr-2 fas fa-cart-arrow-down" style="color: #f09819;"></i><b>Giỏ hàng của quý khách</b><span style="color: rgb(185, 184, 184);"><b> [1 Sản phẩm]</b></span></h4>
                     </div>
-                </div>
-                <div class="row">
-                    
-                    <!-- left category -->
-                    <div class=" py-4 col-3">
-                        
-                        <div class="list-group" id="text-hidden-category">
-                            <a href="#" class="list-group-item list-group-item-action"><b><i class="fas fa-user" style="margin-right:10px;"></i>Thông tin tài khoản của quý khách</b></a>
-                            <a href="user_profile.html" class="list-group-item list-group-item-action" ><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Thông tin cá nhân</a>
-                            <a href="user_change_password.html" class="list-group-item list-group-item-action"><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Thay đổi mật khẩu</a>
-                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-file-invoice-dollar" style="margin-right:10px;" ></i>Quản lý mua hàng</a>
-                            <a href="cart_history.html" class="list-group-item list-group-item-action"><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Lịch sử đơn hàng</a>
-                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Yêu cầu báo giá</a>
-                            <a href="#" class="list-group-item list-group-item-action" style="color: #f09819;"><i class="fas fa-caret-right" style="margin: 5px 5px 0px 0px; color: #f09819;"></i><b>Dich Vụ Khuyến Mãi</b></a>
-                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check"  style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Mua nhiều giảm giá</a>
-                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check"  style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Đang giảm giá</a>
-                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check"  style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Miễn phí vận chuyển</a>
-                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check"  style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Rẻ vô địch</a>
+                    <div class="row mx-3 py-2" style="background-color: #fffeee;" >
+                        <div class="text-center col-4">
+                            <b> Thông tin sản phẩm</b>
                         </div>
                         
-                    </div>
-                    
-                    <div class="card col-9 mt-4">
-                        <div class="row no-gutters">
-                            <div class="px-2 pt-3 col-md-12" >
-                                <h3 style="border-left: 3px solid #f09819; padding-left:5px;"><b>Thông tin cá nhân </b></h3>
-                                <hr width=100%>
-                                <!-- <img src="assets/img/tick.png" class="card-img" alt="..." style="padding:10px; width: 70px; height:70px;" > -->
-                            </div>
-                            <div class="col-12">
-                                <div class="private-information">
-                                    <div class="row">
-                                        <div class="px-0 col-12 pl-0">
-                                            <div class="row">
-                                                <div class="text-right col-3" style=" margin-top: 20px;">
-                                                    Họ và tên *
-                                                </div>
-                                                
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">   
-                                                            <input type="text" class="form-control" id="uname" placeholder="VD: Nguyễn Văn A" name="uname" required>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="  margin-top: 20px;">
-                                                    Điện thoại *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">                   
-                                                            <input type="text" class="form-control" id="uname" placeholder="VD: 0978485015" name="uname" required>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="  margin-top: 20px;">
-                                                    Email *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control" id="uname" placeholder="VD: ducdudu@gmail..." name="uname" required>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row py-2">
-                                                <div class="text-right col-3 pl-0" style="  margin-top: 20px;">
-                                                    Ngày sinh * 
-                                                </div>
-                                                <div class="col-9">
-                                                    <div class="row pl-2">
-                                                        <input id="datepicker" width="300" />
-                                                        <p class="pl-3 pt-2" style="color: rgb(187, 187, 187); margin-bottom: 2px;"><i>Cập nhập thông tin ngày sinh để nhận được nhiều ưu đãi </i></p>
-                                                    </div>
-                                                </div>
-                                                
-                                                <script>
-                                                    $('#datepicker').datepicker({
-                                                        uiLibrary: 'bootstrap4'
-                                                    });
-                                                </script>
-                                            </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="  margin-top: 20px;">
-                                                    Giới tính *
-                                                </div>
-                                                <div class="col-6 px-0 pt-3 pb-2 pl-3">
-                                                    <label class="form-radio-label">
-                                                        <input class="form-radio-input" type="radio" name="optionsRadios" value=""  checked="">
-                                                        <span class="form-radio-sign">Nam</span>
-                                                    </label>
-                                                    <label class="form-radio-label ml-3">
-                                                        <input class="form-radio-input" type="radio" name="optionsRadios" value="">
-                                                        <span class="form-radio-sign">Nữ</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="margin-top: 20px; ">
-                                                    Tỉnh / TP *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">
-                                                            <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px; " >
-                                                                <option value="left" selected="">Tỉnh/Thành phố</option>
-                                                                <option value="right" >Hà Nội</option>
-                                                                <option value="center">Phú Thọ</option>
-                                                                <option value="center">Vĩnh Phúc</option>
-                                                            </select>   
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="margin-top: 20px;" >
-                                                    Quận / Huyện *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">
-                                                            <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px;  " >
-                                                                <option value="left" selected="">Quận/Huyện</option>
-                                                                <option value="right" >Hà Nội</option>
-                                                                <option value="center">Phú Thọ</option>
-                                                                <option value="center">Vĩnh Phúc</option>
-                                                            </select>   
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="margin-top: 20px;">
-                                                    Phường / Xã *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">
-                                                            <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px; " >
-                                                                <option value="left" selected="">Phường/Xã</option>
-                                                                <option value="right" >Hà Nội</option>
-                                                                <option value="center">Phú Thọ</option>
-                                                                <option value="center">Vĩnh Phúc</option>
-                                                            </select>   
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="margin-top: 20px;">
-                                                    Địa chỉ chi tiết *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">
-                                                            <textarea class="form-control" aria-label="With textarea"></textarea>
-                                                            
-                                                            <div class="invalid-feedback">Đây là trường bắt buộc</div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>    
-                                    </div>
-                                    <!-- button -->
-                                    <div class="py-3 col-md-12" id="multiple-button">
-                                        <a href="checkout.html"> <button type="button" class="btn-gradient18" style="width: 200x; margin-left:60px;">Nhập lại</button> </a>
-                                        <a href="checkout.html"> <button type="button" class="btn-gradient17" style="width: 200x; margin-left:60px;">Xác nhận</button> </a>
-                                    </div>
-                                    <!-- end button -->
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col-3">
+                                    <b>Hình thức giao hàng</b>
+                                </div>
+                                <div class="col">
+                                    <b>Đơn giá</b>
+                                </div>
+                                <div class="col">
+                                    <b> Số lượng</b>
+                                </div>
+                                <div class="col">
+                                    <b>Thành tiền</b>
+                                </div>
+                                <div class="col">
+                                    <b>Trạng thái</b>
+                                </div>
+                                <div class="col"> 
+                                    <b>Thao tác</b>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>    
+                    <div class="row py-2">
+                        <div class="col-4">
+                            <div class="row ml-2">
+                                <div class="col-3 pr-0">
+                                    <img src="assets/img/meat_1.png"  class="img-fluid" alt="..." width="60px" height="60px;">
+                                </div>
+                                <div class="col-9 pl-2 pr-0"  id="details-order">
+                                    <a href="productpage.html"><p>YAZOLE Classic Business Men Watches Quartz Male Watch 3ATM Water-resistant Luminous Man Watch Time Display</p></a>
+                                    <p>Mã sản phẩm: <b>J2823WBR</b></p> 
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-8">
+                            <div class="row pr-5">
+                                <div class="col-3 text-center">
+                                    Giao hàng mặc định
+                                </div>
+                                <div class="col text-center">
+                                    289.000đ
+                                </div>
+                                <div class="col text-center">
+                                    1
+                                </div>
+                                <div class="col text-center">
+                                    <b> 289.000đ </b>
+                                </div>
+                                <div class="col text-center" style="color: #b9232e;">
+                                    Đã hủy
+                                </div>
+                                <div class="col text-center" id="follow"> 
+                                    <p><i class="mr-1 fas fa-trash-alt"></i>Hủy</p>
+                                    <p><i class="mr-1 fas fa-cart-arrow-down"></i>Mua sau</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-right" id="warning5">
+                        <p>Miễn phí giao hàng trong nước cho đơn hàng từ 1,000,000 đ</p>
+                    </div>
+                    <div class="text-right py-4">
+                        <b>Tổng tiền: </b><span style="color: #f09819; font-size: 20px;"><b>  289.000đ</b></span>
+                    </div>
+                    <div class="pb-3 text-right">
+                        <button type="button" class="btn-gradient16" style="width: 500x; margin-left:60px;">Tiếp tục mua hàng</button>   
+                        <button type="button" class="btn-gradient19" style="width: 500x; margin-left:60px;">Tiến hành đặt hàng <i class="fas fa-angle-double-right"></i></button>   
+                    </div>
+                    <div class="text-right">
+                        <p><i>* Quý khách nên thanh toán ngay để tránh sản phẩm bị tăng giá</i></p>
+                    </div>
+                </div>
             </div>
         </div>
         <!--COMPUTER FOOTER-->
