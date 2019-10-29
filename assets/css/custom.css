@@ -240,15 +240,18 @@ opacity: 0.6;
 .dropdown:hover .dropdown-main-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {}
 .dropbtn {
-   border: 1px solid white;
+   border: 1px solid white !important;
    border-radius: 5px;
    color: white;
    padding: 12px;
    border: none;
    cursor: pointer;
    font-size: 15px;
+   background-color:#ffcc33 ;
+    background: -webkit-linear-gradient(to right, #ffb347, #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffb347, );
  }
  
  /* The container <div> - needed to position the dropdown content */
@@ -1625,7 +1628,33 @@ margin-bottom: 0px;
 background-color: #f09819;
 color: white;
  }
+.btn-btn-cart{
+   border-radius: 50%;
+   cursor: pointer;
+   background-color: rgb(177, 176, 176);
+ color:rgb(73, 65, 65);
+ border: 1px solid transparent;
+height: 28px;
+}
 
+.btn-btn-delete{
+   border-radius: 5px;
+ cursor: pointer;
+ background-color: #fff;
+ border: 1px solid rgb(177, 176, 176);
+}
+ .btn-btn-tags{
+   padding: 5px 20px;
+   margin-bottom: 5px;
+   border-radius: 3px;
+   cursor: pointer;
+   background-color: rgb(177, 176, 176);
+ color: white;
+ border: 1px solid transparent;
+ }
+ .btn-btn-tags:hover{
+    opacity: 0.7;
+ }
  .navbar .navbar-nav .nav-item .nav-link:hover {
     background: #f09819 !important;
  }
