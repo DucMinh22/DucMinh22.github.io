@@ -15,11 +15,60 @@ body, h1, h2, h3, h4, h5, h6, p{
     
     
  }
+ #header{
+   background: #ffb347; /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #ffb347, #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #ffb347, );
+   min-height: 120px ;
+}
+.fb:hover {
+   opacity: 0.8;
+   color: white;
+}
 
+.google:hover {
+   opacity: 0.8;
+   color: white;
+}
+.fb {
+	background-color: #3B5998;
+   color: white;
+   width: 300px;
+  }
+ #login-bar{
+    margin-left: 28px;
+ } 
+  .twitter {
+	background-color: #55ACEE;
+	color: white;
+  }
+  #header-login{
+padding: 30px;
+  }
+
+  #card-login{
+     margin-left: 95px;
+  }
+  .google {
+	background-color: #dd4b39;
+   color: white;
+   width: 300px;
+  }
+.fa-user-circle{
+padding: 13px;
+border: 1px solid gainsboro;
+}
+.fa-key{
+   padding: 13px;
+   border: 1px solid gainsboro;  
+}
  .form-control{
     max-width: 300px;
  }
-
+ .login .show-password{
+    top: 37% !important;
+    right: 43px !important;
+ }
 
 
  .bg-secondary{
@@ -476,7 +525,6 @@ text-decoration: none;
  .mySlides {
    display: none;
    margin-top: 0px;
- 
  }
 #print-cart p{
    border: 1px solid rgb(172, 169, 169);
@@ -1499,13 +1547,13 @@ margin-top: 15px;
  
  #alert_demo_1{
    background-color: #fdedc4 !important;
-    padding: 13px 15px;
     color: #f09819;
     border:none;
     border-radius: 5px;
     cursor: pointer;
     border: 1px solid #f09819 !important;
     width: 190px;
+    padding: 13px;
 
  }
 
