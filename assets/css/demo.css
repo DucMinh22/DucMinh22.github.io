@@ -255,6 +255,47 @@
 	}
 }
 
+.login .wrapper.wrapper-login .container-login, .login .wrapper.wrapper-login .container-signup{
+	width: auto !important;
+	box-shadow: none !important;
+  }
+  #header{
+	  background: #ffb347; /* fallback for old browsers */
+	  background: -webkit-linear-gradient(to right, #ffb347, #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
+	  background: linear-gradient(to right, #ffb347, );
+	  min-height: 120px ;
+  }
+  
+  #header img{
+  margin: 20px 0px 0px 68px;
+  }
+  .login .wrapper.wrapper-login{
+	  position: absolute;
+	  top: 15%;
+	  left: 18%;
+  }
+  
+ #icon {
+	 border: 1px solid rgb(235, 233, 233) ;
+	 
+ }
+ #icon1 {
+	border: 1px solid rgb(235, 233, 233) ;
+	margin-top: 18px !important;
+	
+}
+
+#icon1 .fa-key{
+	padding: 8px 0px;
+	font-size: 20px ;
+	margin-right: 5px;
+	
+}
+#icon .fa-user-circle{
+	padding: 8px 0px;
+	font-size: 20px ;
+	margin-right: 5px;
+}
 @media screen and (max-width: 576px){
 	.custom-template .custom-content {
 		overflow: auto;
