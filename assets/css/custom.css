@@ -181,7 +181,7 @@ opacity: 0.6;
    @media (max-width : 768px) {
    
       .navbar-expand-lg .navbar-nav .dropdown-menu{
-         left: 0 !important;
+         left: -54px !important;
        }
       .nav_top_right ul li{
          margin-left: 0;
@@ -200,10 +200,12 @@ opacity: 0.6;
       #alert_demo_1{
          width: 156px !important;
          padding: 13px 0px !important;
+         font-size: 12px;
       }
       .btn-pay{
          width: 156px !important;
          padding: 13px 0px !important;
+         font-size: 12px;
       }
    }
 
