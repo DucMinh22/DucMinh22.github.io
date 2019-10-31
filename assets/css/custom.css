@@ -44,6 +44,11 @@ body, h1, h2, h3, h4, h5, h6, p{
   }
   #header-login{
 padding: 20px;
+width: 100%;
+  }
+
+  .notification{
+     margin: 12px 0px 0px 0px;
   }
 
   #card-login{
@@ -336,7 +341,10 @@ color: rgb(155, 152, 152);
    border: 1px solid white !important;
    border-radius: 5px;
    color: white;
-   padding: 12px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-right: 30px;
+  width: 120px;
    border: none;
    cursor: pointer;
    font-size: 15px;
@@ -344,7 +352,7 @@ color: rgb(155, 152, 152);
     background: -webkit-linear-gradient(to right, #ffb347, #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ffb347, );
  }
- 
+
  /* The container <div> - needed to position the dropdown content */
  .dropdown {
    position: relative;
@@ -1815,6 +1823,16 @@ padding-left: 7px;
  #check-cart{
     font-size: 13px;
  }
+
+ .register-btn{
+    position: absolute;
+    right: 106px;
+    top: 28px;
+ }
+#logo-login{
+   margin-left: 45px;
+}
+
  .btn-gradient2{
     background: #7b4397;  /* fallback for old browsers */
  background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
@@ -1826,6 +1844,18 @@ padding-left: 7px;
  color: white;
  width: 130px;
  }
+
+ .btn-gradient21{
+   background: #1488CC;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   padding: 10px 15px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   color: white;
+ }
+ 
  .btn-gradient3{
     background: #43cea2;  /* fallback for old browsers */
  background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
