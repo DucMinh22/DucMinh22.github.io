@@ -1252,12 +1252,16 @@ min-height: 55px;
     width: 130px;
  }
 
- 
- 
+
  /* Add padding BETWEEN each column */
 .box-img {
    padding: 8px;
-   height: 60vh;
+   width: 450px;
+text-align: center;
+ }
+
+ .box-img .img {
+    max-width: 450px;
  }
  /*  
  .img-center{
@@ -1268,13 +1272,6 @@ min-height: 55px;
  }
  */
  /* Create three equal columns that floats next to each other */
- .box-img {
-max-width: 117vh;
- text-align: center;
- display: block;
- justify-content: center;
-
- }
  
 
  /* Clear floats after rows */ 
@@ -1303,7 +1300,9 @@ max-width: 117vh;
    display: block;
  }
  
- 
+ #change_address{
+  padding-left: 128px;
+}
  #text-code-product{
     display: flex;
  }
