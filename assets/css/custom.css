@@ -1257,6 +1257,7 @@ min-height: 55px;
  /* Add padding BETWEEN each column */
 .box-img {
    padding: 8px;
+   height: 60vh;
  }
  /*  
  .img-center{
@@ -1826,12 +1827,9 @@ padding-left: 7px;
 
  .register-btn{
     position: absolute;
-    right: 106px;
+    right: 50px;
     top: 28px;
  }
-#logo-login{
-   margin-left: 45px;
-}
 
  .btn-gradient2{
     background: #7b4397;  /* fallback for old browsers */
