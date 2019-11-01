@@ -112,8 +112,8 @@
             <div class="card">
                 <div class="row pt-4 px-4">
                     <div class="col-6" style="color: #f09819; font-size: 16px;">
-                            <i class="mr-1 fas fa-map-marker-alt"></i>
-                            Địa chỉ nhận hàng
+                        <i class="mr-1 fas fa-map-marker-alt"></i>
+                        Địa chỉ nhận hàng
                     </div>
                     <div class="col-6" id="change_address">
                         <button type="button" class="btn-gradient16" style="width: 500x; margin-left:60px;"><i class="mr-1 fas fa-plus"></i>Thêm địa chỉ mới </button>   
@@ -131,217 +131,358 @@
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
                         <label class="form-check-label" for="exampleRadios2">
-                                <b> Phạm Văn Hưng (+84) 978485015</b >D4, Đại học Hà Nội, Km9 Nguyễn Trãi, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Hà Nội
-                        </label>
+                            <b> Phạm Văn Hưng (+84) 978485015</b >D4, Đại học Hà Nội, Km9 Nguyễn Trãi, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Hà Nội
+                            </label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="row ml-1">
-                    <div class="col-8">
-                        <div class="pt-3 pb-2 px-4 row">
-                            <div class="px-0 col-3" id="cart-title">
-                                <a href="#" style="color: #f09819"><b> Giỏ hàng của quý khách</b></a>
+                <div class="card">
+                    <div class="row ml-1">
+                        <div class="col-8">
+                            <div class="pt-3 pb-2 px-4 row">
+                                <div class="px-0 col-3" id="cart-title">
+                                    <a href="#" style="color: #f09819"><b> Giỏ hàng của quý khách</b></a>
+                                </div>
+                                <div class="col-9 text-center" id="header-pay">
+                                    <h3><b>Thanh toán đơn hàng</b></h3>
+                                    <p>Cám ơn đã lựa chọn VanChuyenMy để trải nghiệm mua sắm thông minh</p>
+                                </div>
                             </div>
-                            <div class="col-9 text-center" id="header-pay">
-                                <h3><b>Thanh toán đơn hàng</b></h3>
-                                <p>Cám ơn đã lựa chọn VanChuyenMy để trải nghiệm mua sắm thông minh</p>
-                            </div>
-                        </div>
-                        <div class="row" style="" >
-                            <div class="pr-0 col-2" id="Step" >
-                                <img src="assets/img/arrow.png"  class="img-fluid" alt="...">
-                                <h5>Bước 1</h5>
-                            </div>
-                            <div class="pl-5 mt-1  col-8" style=" padding: 10px; background-color: #fffab4">
-                                <b style=" color: #f09819;">Quý khách vui lòng cung cấp thông tin mua hàng</b>
-                            </div>
-                            
-                            <div class="mt-1 col-2" style=" padding: 10px; background-color: #fffab4">
-                                <a  href="#" style="color: #f09819"> <i><b>Đăng nhập</b></i></a>
-                            </div>
-                        </div>
-                        <div class="private-information">
-                            <div class="row">
-                                <div class="px-0 col-7 pl-0">
-                                    <div class="row">
-                                        <div class="text-right col-4" style=" margin-top: 20px;">
-                                            Họ và tên *
-                                        </div>
-                                        
-                                        <div class="col-8 px-0">
-                                            <form action="/action_page.php" class="was-validated">
-                                                <div class="form-group">   
-                                                    <input type="text" class="form-control" id="uname" placeholder="VD: Nguyễn Văn A" name="uname" required>
-                                                    <div class="valid-feedback">Hợp lệ</div>
-                                                    <div class="invalid-feedback">Đây là trường bắt buộc</div>    
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="text-right col-4 pl-0" style="  margin-top: 20px;">
-                                            Điện thoại *
-                                        </div>
-                                        <div class="col-8 px-0">
-                                            <form action="/action_page.php" class="was-validated">
-                                                <div class="form-group">                   
-                                                    <input type="text" class="form-control" id="uname" placeholder="VD: 0978485015" name="uname" required>
-                                                    <div class="valid-feedback">Hợp lệ</div>
-                                                    <div class="invalid-feedback">Đây là trường bắt buộc</div>  
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="text-right col-4 pl-0" style="  margin-top: 20px;">
-                                            Email *
-                                        </div>
-                                        <div class="col-8 px-0">
-                                            <form action="/action_page.php" class="was-validated">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="uname" placeholder="VD: ducdudu@gmail..." name="uname" required>
-                                                    <div class="valid-feedback">Hợp lệ</div>
-                                                    <div class="invalid-feedback">Đây là trường bắt buộc</div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="text-right col-4 pl-0" style="margin-top: 20px; ">
-                                            Tỉnh / TP *
-                                        </div>
-                                        <div class="col-8 px-0">
-                                            <form action="/action_page.php" class="was-validated">
-                                                <div class="form-group">
-                                                    <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px; " >
-                                                        <option value="left" selected="">Tỉnh/Thành phố</option>
-                                                        <option value="right" >Hà Nội</option>
-                                                        <option value="center">Phú Thọ</option>
-                                                        <option value="center">Vĩnh Phúc</option>
-                                                    </select>   
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="text-right col-4 pl-0" style="margin-top: 20px;" >
-                                            Quận / Huyện *
-                                        </div>
-                                        <div class="col-8 px-0">
-                                            <form action="/action_page.php" class="was-validated">
-                                                <div class="form-group">
-                                                    <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px;  " >
-                                                        <option value="left" selected="">Quận/Huyện</option>
-                                                        <option value="right" >Hà Nội</option>
-                                                        <option value="center">Phú Thọ</option>
-                                                        <option value="center">Vĩnh Phúc</option>
-                                                    </select>   
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="text-right col-4 pl-0" style="margin-top: 20px;">
-                                            Phường / Xã *
-                                        </div>
-                                        <div class="col-8 px-0">
-                                            <form action="/action_page.php" class="was-validated">
-                                                <div class="form-group">
-                                                    <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px; " >
-                                                        <option value="left" selected="">Phường/Xã</option>
-                                                        <option value="right" >Hà Nội</option>
-                                                        <option value="center">Phú Thọ</option>
-                                                        <option value="center">Vĩnh Phúc</option>
-                                                    </select>   
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="text-right col-4 pl-0" style="margin-top: 20px;">
-                                            Địa chỉ chi tiết *
-                                        </div>
-                                        <div class="col-8 px-0">
-                                            <form action="/action_page.php" class="was-validated">
-                                                <div class="form-group">
-                                                    <textarea class="form-control" aria-label="With textarea"></textarea>
-                                                    
-                                                    <div class="invalid-feedback">Đây là trường bắt buộc</div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
+                            <div class="row" style="" >
+                                <div class="pr-0 col-2" id="Step" >
+                                    <img src="assets/img/arrow.png"  class="img-fluid" alt="...">
+                                    <h5>Bước 1</h5>
+                                </div>
+                                <div class="pl-5 mt-1  col-8" style=" padding: 10px; background-color: #fffab4">
+                                    <b style=" color: #f09819;">Quý khách vui lòng cung cấp thông tin mua hàng</b>
                                 </div>
                                 
-                                <div class="px-0 col-md-5" id="message">
-                                    <p><i>VanChuyenMy sẽ liên hệ quý khách theo số điện thoại này
-                                        để xác nhận hoặc thông báo giao hàng</i>
-                                    </p>
+                                <div class="mt-1 col-2" style=" padding: 10px; background-color: #fffab4">
+                                    <a  href="#" style="color: #f09819"> <i><b>Đăng nhập</b></i></a>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="pb-3 row" style="" >
-                            <div class="pr-0 col-2" id="Step" >
-                                <img src="assets/img/arrow.png"  class="img-fluid" alt="...">
-                                <h5>Bước 2</h5>
-                            </div>
-                            <div class="pl-5 mt-1 col-8" style="padding: 10px; background-color: #fffab4">
-                                <b style="color: #f09819;">Vui lòng chọn hình thức thanh toán phù hợp với Quý Khách</b>
-                            </div>
-                            
-                        </div>
-                        <div class=" ml-2 col" style="background-color: #fffab4;  padding: 10px; ">
-                            <b>* Lưu ý:</b> Quý khách nên thanh toán ngay để tránh sản phẩm bị tăng giá
-                        </div>
-                        <!-- Các phương thức thanh toán -->
-                        <div class="row">
-                            <div class="col">
-                                <div class="pl-2" >
-                                    <div class="row pt-3">
-                                        <div class="col-5 pr-0 col-md-3">
-                                            <div class="nav flex-column nav-pills nav-secondary nav-pills-no-bd nav-pills-icons" id="v-pills-tab-with-icon" role="tablist" aria-orientation="vertical" style="">
-                                                <a class="nav-link active" id="v-pills-home-tab-icons" data-toggle="pill" href="#v-pills-home-icons" role="tab" aria-controls="v-pills-home-icons" aria-selected="true" style="height:80px; ">
-                                                    <div class="pt-1 row">                                            
-                                                        <div class="col" id="category-title">
-                                                            <p>Chuyển khoản trực tiếp </p>
-                                                            <p>cho VanchuyenMy</p>
-                                                        </div>  
+                            <div class="private-information">
+                                <div class="row">
+                                    <div class="px-0 col-7 pl-0">
+                                        <div class="row">
+                                            <div class="text-right col-4" style=" margin-top: 20px;">
+                                                Họ và tên *
+                                            </div>
+                                            
+                                            <div class="col-8 px-0">
+                                                <form action="/action_page.php" class="was-validated">
+                                                    <div class="form-group">   
+                                                        <input type="text" class="form-control" id="uname" placeholder="VD: Nguyễn Văn A" name="uname" required>
+                                                        <div class="valid-feedback">Hợp lệ</div>
+                                                        <div class="invalid-feedback">Đây là trường bắt buộc</div>    
                                                     </div>
-                                                </a>
-                                                <a class="nav-link" id="v-pills-profile-tab-icons" data-toggle="pill" href="#v-pills-profile-icons" role="tab" aria-controls="v-pills-profile-icons" aria-selected="false" style="height:80px; "> 
-                                                    <div class="pt-1 row">                                            
-                                                        <div class="col" id="category-title">
-                                                            <p> Thanh toán trực tiếp </p>
-                                                            <p>tại Văn phòng VanchuyenMy </p>  
-                                                        </div>  
-                                                    </div>
-                                                </a>
-                                                <a class="nav-link" id="v-pills-cod-tab-icons" data-toggle="pill" href="#v-pills-cod-icons" role="tab" aria-controls="v-pills-cod-icons" aria-selected="false" style="height:80px;"> 
-                                                    <div class="pt-1 row">                                            
-                                                        <div class="col" id="category-title">
-                                                            <p> Thanh toán trực tiếp </p>
-                                                            <p> tại nhà của quý khách(COD) </p>  
-                                                        </div>  
-                                                    </div>
-                                                </a>
+                                                </form>
                                             </div>
                                         </div>
-                                        
-                                        <div class="col-7 col-md-9" >
-                                            <div class="tab-content" id="v-pills-with-icon-tabContent">
-                                                <!-- chuyển khoản trực tiếp -->
-                                                <div class="tab-pane fade show active" id="v-pills-home-icons" role="tabpanel" aria-labelledby="v-pills-home-tab-icons">
-                                                    <div class="pr-2 pl-0 col" >
-                                                        <div class="paying-method">
-                                                            <h5>Quý Khách có thể chuyển khoản bằng Internet Banking, tại máy ATM hoặc Quầy giao dịch ngân hàng, hoặc chuyển khoản qua điện thoại. </h5>
-                                                            <h5>* Lưu ý: Vui lòng chuyển tiền chính xác theo thông tin tài khoản ngân hàng và nội dung chuyển khoản. Sẽ được hiển thị sau khi quý khách hoàn click Xác nhận đặt hàng bên dưới</h5>
-                                                            <h5>- Đơn hàng được thanh toán tại máy ATM, vì không thể ghi chú nội dung thanh toán nên qúy khách vui lòng thông báo qua email hoặc gọi trực tiếp tổng đài Fado để được hỗ trợ</h5>
-                                                            <h5>- Đơn hàng được của quý khách chỉ được xác nhận thanh toán sau khi Fado nhận được thông báo từ Ngân hàng với nội dung thanh toán đầy đủ. Bất cập: một số Ngân hàng không hỗ trợ kiểm tra sau 19h00: Agribank, Đông Á, Sacombank, Vietinbank,...</h5>
+                                        <div class="row">
+                                            <div class="text-right col-4 pl-0" style="  margin-top: 20px;">
+                                                Điện thoại *
+                                            </div>
+                                            <div class="col-8 px-0">
+                                                <form action="/action_page.php" class="was-validated">
+                                                    <div class="form-group">                   
+                                                        <input type="text" class="form-control" id="uname" placeholder="VD: 0978485015" name="uname" required>
+                                                        <div class="valid-feedback">Hợp lệ</div>
+                                                        <div class="invalid-feedback">Đây là trường bắt buộc</div>  
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="text-right col-4 pl-0" style="  margin-top: 20px;">
+                                                Email *
+                                            </div>
+                                            <div class="col-8 px-0">
+                                                <form action="/action_page.php" class="was-validated">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="uname" placeholder="VD: ducdudu@gmail..." name="uname" required>
+                                                        <div class="valid-feedback">Hợp lệ</div>
+                                                        <div class="invalid-feedback">Đây là trường bắt buộc</div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="text-right col-4 pl-0" style="margin-top: 20px; ">
+                                                Tỉnh / TP *
+                                            </div>
+                                            <div class="col-8 px-0">
+                                                <form action="/action_page.php" class="was-validated">
+                                                    <div class="form-group">
+                                                        <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px; " >
+                                                            <option value="left" selected="">Tỉnh/Thành phố</option>
+                                                            <option value="right" >Hà Nội</option>
+                                                            <option value="center">Phú Thọ</option>
+                                                            <option value="center">Vĩnh Phúc</option>
+                                                        </select>   
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="text-right col-4 pl-0" style="margin-top: 20px;" >
+                                                Quận / Huyện *
+                                            </div>
+                                            <div class="col-8 px-0">
+                                                <form action="/action_page.php" class="was-validated">
+                                                    <div class="form-group">
+                                                        <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px;  " >
+                                                            <option value="left" selected="">Quận/Huyện</option>
+                                                            <option value="right" >Hà Nội</option>
+                                                            <option value="center">Phú Thọ</option>
+                                                            <option value="center">Vĩnh Phúc</option>
+                                                        </select>   
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="text-right col-4 pl-0" style="margin-top: 20px;">
+                                                Phường / Xã *
+                                            </div>
+                                            <div class="col-8 px-0">
+                                                <form action="/action_page.php" class="was-validated">
+                                                    <div class="form-group">
+                                                        <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px; " >
+                                                            <option value="left" selected="">Phường/Xã</option>
+                                                            <option value="right" >Hà Nội</option>
+                                                            <option value="center">Phú Thọ</option>
+                                                            <option value="center">Vĩnh Phúc</option>
+                                                        </select>   
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="text-right col-4 pl-0" style="margin-top: 20px;">
+                                                Địa chỉ chi tiết *
+                                            </div>
+                                            <div class="col-8 px-0">
+                                                <form action="/action_page.php" class="was-validated">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                                                        
+                                                        <div class="invalid-feedback">Đây là trường bắt buộc</div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="px-0 col-md-5" id="message">
+                                        <p><i>VanChuyenMy sẽ liên hệ quý khách theo số điện thoại này
+                                            để xác nhận hoặc thông báo giao hàng</i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="pb-3 row" style="" >
+                                <div class="pr-0 col-2" id="Step" >
+                                    <img src="assets/img/arrow.png"  class="img-fluid" alt="...">
+                                    <h5>Bước 2</h5>
+                                </div>
+                                <div class="pl-5 mt-1 col-8" style="padding: 10px; background-color: #fffab4">
+                                    <b style="color: #f09819;">Vui lòng chọn hình thức thanh toán phù hợp với Quý Khách</b>
+                                </div>
+                                
+                            </div>
+                            <div class=" ml-2 col" style="background-color: #fffab4;  padding: 10px; ">
+                                <b>* Lưu ý:</b> Quý khách nên thanh toán ngay để tránh sản phẩm bị tăng giá
+                            </div>
+                            <!-- Các phương thức thanh toán -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="pl-2" >
+                                        <div class="row pt-3">
+                                            <div class="col-5 pr-0 col-md-3">
+                                                <div class="nav flex-column nav-pills nav-secondary nav-pills-no-bd nav-pills-icons" id="v-pills-tab-with-icon" role="tablist" aria-orientation="vertical" style="">
+                                                    <a class="nav-link active" id="v-pills-home-tab-icons" data-toggle="pill" href="#v-pills-home-icons" role="tab" aria-controls="v-pills-home-icons" aria-selected="true" style="height:80px; ">
+                                                        <div class="pt-1 row">                                            
+                                                            <div class="col" id="category-title">
+                                                                <p>Chuyển khoản trực tiếp </p>
+                                                                <p>cho VanchuyenMy</p>
+                                                            </div>  
                                                         </div>
-                                                        <div class="pt-3">
+                                                    </a>
+                                                    <a class="nav-link" id="v-pills-profile-tab-icons" data-toggle="pill" href="#v-pills-profile-icons" role="tab" aria-controls="v-pills-profile-icons" aria-selected="false" style="height:80px; "> 
+                                                        <div class="pt-1 row">                                            
+                                                            <div class="col" id="category-title">
+                                                                <p> Thanh toán trực tiếp </p>
+                                                                <p>tại Văn phòng VanchuyenMy </p>  
+                                                            </div>  
+                                                        </div>
+                                                    </a>
+                                                    <a class="nav-link" id="v-pills-cod-tab-icons" data-toggle="pill" href="#v-pills-cod-icons" role="tab" aria-controls="v-pills-cod-icons" aria-selected="false" style="height:80px;"> 
+                                                        <div class="pt-1 row">                                            
+                                                            <div class="col" id="category-title">
+                                                                <p> Thanh toán trực tiếp </p>
+                                                                <p> tại nhà của quý khách(COD) </p>  
+                                                            </div>  
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-7 col-md-9" >
+                                                <div class="tab-content" id="v-pills-with-icon-tabContent">
+                                                    <!-- chuyển khoản trực tiếp -->
+                                                    <div class="tab-pane fade show active" id="v-pills-home-icons" role="tabpanel" aria-labelledby="v-pills-home-tab-icons">
+                                                        <div class="pr-2 pl-0 col" >
+                                                            <div class="paying-method">
+                                                                <h5>Quý Khách có thể chuyển khoản bằng Internet Banking, tại máy ATM hoặc Quầy giao dịch ngân hàng, hoặc chuyển khoản qua điện thoại. </h5>
+                                                                <h5>* Lưu ý: Vui lòng chuyển tiền chính xác theo thông tin tài khoản ngân hàng và nội dung chuyển khoản. Sẽ được hiển thị sau khi quý khách hoàn click Xác nhận đặt hàng bên dưới</h5>
+                                                                <h5>- Đơn hàng được thanh toán tại máy ATM, vì không thể ghi chú nội dung thanh toán nên qúy khách vui lòng thông báo qua email hoặc gọi trực tiếp tổng đài Fado để được hỗ trợ</h5>
+                                                                <h5>- Đơn hàng được của quý khách chỉ được xác nhận thanh toán sau khi Fado nhận được thông báo từ Ngân hàng với nội dung thanh toán đầy đủ. Bất cập: một số Ngân hàng không hỗ trợ kiểm tra sau 19h00: Agribank, Đông Á, Sacombank, Vietinbank,...</h5>
+                                                            </div>
+                                                            <div class="pt-3">
+                                                                
+                                                                <h4> <b>1, Quý khách muốn thanh toán trước:</b></h4>
+                                                            </div>
                                                             
+                                                            <button type="button" class="collapsible">Thanh toán toàn bộ chi phí đơn hàng</button>
+                                                            
+                                                            <div class="content">
+                                                                <div class="col" id="title-pay">
+                                                                    <p><i class="fas fa-check" style="color: rgb(119, 197, 1);"></i> Quý khách được miễn phí xử lý giao dịch</p>
+                                                                </div>
+                                                                <div class="py-2 px-4 row">
+                                                                    <div class="text-left col">
+                                                                        Tổng giá trị các sản phẩm:
+                                                                    </div>
+                                                                    <div class="text-right col">
+                                                                        289.000đ
+                                                                    </div>
+                                                                </div>
+                                                                <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(223, 220, 220);">
+                                                                    <div class="text-left pr-0 col-2">
+                                                                        Mã giảm giá:
+                                                                    </div>
+                                                                    <div class="col-3" id="code-discount">
+                                                                        <i class="fas fa-ticket-alt" style="margin-right: 2px; color: #f09819;"></i><i>Sử dụng mã giảm giá</i>
+                                                                    </div>
+                                                                    <div class="text-right col" style="color: rgb(119, 197, 1);">
+                                                                        -0đ
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="px-4 row" id="text-sum-cost">
+                                                                    <div class="text-left col">
+                                                                        <p><b>Tổng giá trị đơn hàng:</b></p>
+                                                                    </div>
+                                                                    <div class="text-right col">
+                                                                        <p><b>289.000 đ</b></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="px-4 mb-2 row" id="text-sum-cost">
+                                                                    <div class="text-left col">
+                                                                        <p><b>Số tiền cần được thanh toán:</b></p>
+                                                                    </div>
+                                                                    <div class="text-right col" style="color: #f09819;">
+                                                                        <p><b>289.000 đ</b></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <button type="button" class="collapsible">Thanh toán trước 50% giá trị đơn hàng</button>
+                                                            <div class="content">
+                                                                <div class="py-2 px-4">
+                                                                    <div class="col-12 py-2 " id="warning">
+                                                                        <p> <i class="fas fa-exclamation-triangle" style="color: #f09819;"></i> Nếu quý khách thanh toán trước 50%. VanChuyenMy sẽ cộng thêm phí bù trừ thanh toán: 2.2% của tổng giá sản phẩm trong đơn hàng của quý khách.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="py-2 px-4 row">
+                                                                    <div class="text-left col">
+                                                                        Tổng giá trị các sản phẩm:
+                                                                    </div>
+                                                                    <div class="text-right col">
+                                                                        289.000đ
+                                                                    </div>
+                                                                </div>
+                                                                <div class="py-2 px-4 row">
+                                                                    <div class="text-left col">
+                                                                        Phí bù trừ thanh toán tương ứng:
+                                                                    </div>
+                                                                    <div class="text-right col">
+                                                                        +18.030đ
+                                                                    </div>
+                                                                </div>
+                                                                <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(223, 220, 220);">
+                                                                    <div class="text-left pr-0 col-2">
+                                                                        Mã giảm giá:
+                                                                    </div>
+                                                                    <div class="col-3" id="code-discount">
+                                                                        <i class="fas fa-ticket-alt" style="margin-right: 2px; color: #f09819;"></i><i>Sử dụng mã giảm giá</i>
+                                                                    </div>
+                                                                    <div class="text-right col" style="color: rgb(119, 197, 1);">
+                                                                        -0đ
+                                                                    </div>
+                                                                </div>
+                                                                <div class="px-4 row" id="text-sum-cost">
+                                                                    <div class="text-left col">
+                                                                        <p><b>Tổng giá trị đơn hàng:</b></p>
+                                                                    </div>
+                                                                    <div class="text-right col">
+                                                                        <p><b>289.000 đ</b></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="px-4 mb-2 row" id="text-sum-cost">
+                                                                    <div class="text-left col-9">
+                                                                        <p><b>Số tiền cần được thanh toán để đặt hàng:</b></p>
+                                                                    </div>
+                                                                    <div class="text-right col-3" style="color: #f09819;">
+                                                                        <p><b>289.000 đ</b></p>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="pb-2 px-4 row" id="text-sum-cost">
+                                                                    <div class="text-left col">
+                                                                        Còn lại phải thanh toán khi nhận hàng
+                                                                    </div>
+                                                                    <div class="text-right col">
+                                                                        135.000 đ
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="pt-3">
+                                                                <h4> <b>2, Vui lòng chọn ngân hàng thanh toán:</b></h4>
+                                                                
+                                                            </div>
+                                                            
+                                                            <div class="py-2 mx-4 infor-banking" style="border-bottom: 1px solid rgb(223, 220, 220);">
+                                                                
+                                                                <img class="img-fluid" src="assets/img/vietcombank2.jpg" alt="Chania" style="margin-right: 25px; height: 40px;  border: 1px solid rgb(223, 220, 220); border-radius: 3px; ">
+                                                                
+                                                                
+                                                                <p>Thông tin tài khoản ngân hàng và nội dung chuyển khoản. Sẽ được hiển thị sau khi quý khách click nút [Xác nhận đặt hàng] bên dưới</p>
+                                                                
+                                                            </div>
+                                                            
+                                                            <div class="warning2 py-2 px-4" >
+                                                                <p> <b>Lưu ý:</b> VanChuyenMy đảm bảo giá sản phẩm không thay đổi trong vòng 60 phút. Căn cứ vào thời điểm quý khách [Xác nhận đặt hàng] thành công.
+                                                                    Đối với giao dịch phát sinh từ 22h, VanChuyenMy sẽ xử lý sau 8h sáng ngày hôm sau. Quý khách vui lòng lựa chọn thanh toán online để được giữ giá đã chọn
+                                                                </p>
+                                                            </div>
+                                                            <div class="pt-3 px-3 row">
+                                                                <label class="checkbox-inline mr-2 mt-1"><input type="checkbox" value="" checked></label>
+                                                                <p>Đồng ý với <a href="#"> Điều khoản & điều kiện </a> giao dịch của VanChuyenMy </p>
+                                                            </div>
+                                                            <div class="pl-5  col-3">
+                                                                <a href="checkout.html"> <button type="button" class="btn-gradient15" style="width: 500x; margin-left:60px;">Xác nhận đặt hàng <i class="fas fa-angle-double-right"></i></button> </a>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <!-- End chuyển khoản trực tiếp -->
+                                                    
+                                                    <!-- thanh toán tại văn phòng -->
+                                                    <div class="tab-pane fade" id="v-pills-profile-icons" role="tabpanel" aria-labelledby="v-pills-profile-tab-icons">
+                                                        <div class=" pt-3">
                                                             <h4> <b>1, Quý khách muốn thanh toán trước:</b></h4>
                                                         </div>
                                                         
@@ -391,6 +532,7 @@
                                                         
                                                         <button type="button" class="collapsible">Thanh toán trước 50% giá trị đơn hàng</button>
                                                         <div class="content">
+                                                            
                                                             <div class="py-2 px-4">
                                                                 <div class="col-12 py-2 " id="warning">
                                                                     <p> <i class="fas fa-exclamation-triangle" style="color: #f09819;"></i> Nếu quý khách thanh toán trước 50%. VanChuyenMy sẽ cộng thêm phí bù trừ thanh toán: 2.2% của tổng giá sản phẩm trong đơn hàng của quý khách.</p>
@@ -450,17 +592,18 @@
                                                             </div>
                                                         </div>
                                                         <div class="pt-3">
-                                                            <h4> <b>2, Vui lòng chọn ngân hàng thanh toán:</b></h4>
-                                                            
+                                                            <h4> <b>2,Thông tin đóng tiền mặt:</b></h4>  
+                                                        </div>
+                                                        <div class="pt-2 px-4 row">
+                                                            <p>- Quý khách vui lòng đến trực tiếp tại một trong các địa chỉ sau để thực hiện thanh toán:</p>
                                                         </div>
                                                         
-                                                        <div class="py-2 mx-4 infor-banking" style="border-bottom: 1px solid rgb(223, 220, 220);">
-                                                            
-                                                            <img class="img-fluid" src="assets/img/vietcombank2.jpg" alt="Chania" style="margin-right: 25px; height: 40px;  border: 1px solid rgb(223, 220, 220); border-radius: 3px; ">
-                                                            
-                                                            
-                                                            <p>Thông tin tài khoản ngân hàng và nội dung chuyển khoản. Sẽ được hiển thị sau khi quý khách click nút [Xác nhận đặt hàng] bên dưới</p>
-                                                            
+                                                        <div class=" px-4 row">
+                                                            <p><b>TP. Hồ Chí Minh:</b> 21Bis Hậu Giang, Phường 4, Quận Tân Bình, TP. HCM</p>
+                                                            <p><b>TP. Hà Nội: </b>Tầng 3, tháp A, tòa nhà D2 Giảng Võ, đường Giảng Võ, P.Giảng Võ, Q.Ba Đình, TP.Hà Nội</p>
+                                                        </div>
+                                                        <div class="pb-2 px-4 row">
+                                                            <a href="#">Xem Thêm Chi Nhánh</a>  
                                                         </div>
                                                         
                                                         <div class="warning2 py-2 px-4" >
@@ -468,466 +611,188 @@
                                                                 Đối với giao dịch phát sinh từ 22h, VanChuyenMy sẽ xử lý sau 8h sáng ngày hôm sau. Quý khách vui lòng lựa chọn thanh toán online để được giữ giá đã chọn
                                                             </p>
                                                         </div>
-                                                        <div class="pt-3 px-3 row">
+                                                        <div class=" pt-2 px-4 row">
                                                             <label class="checkbox-inline mr-2 mt-1"><input type="checkbox" value="" checked></label>
-                                                            <p>Đồng ý với <a href="#"> Điều khoản & điều kiện </a> giao dịch của VanChuyenMy </p>
+                                                            <p>Đồng ý với <a href="#"> Điều khoản & điều kiện </a> giao dịch của VanhuyenMy</p>
                                                         </div>
                                                         <div class="pl-5  col-3">
-                                                            <a href="checkout.html"> <button type="button" class="btn-gradient15" style="width: 500x; margin-left:60px;">Xác nhận đặt hàng <i class="fas fa-angle-double-right"></i></button> </a>
+                                                            <a href="checkout.html"><button type="button" class="btn-gradient15" style="width: 500x; margin-left:60px;">Xác nhận đặt hàng <i class="fas fa-angle-double-right"></i></button></a>     
                                                         </div>
                                                         
                                                     </div>
-                                                </div>
-                                                <!-- End chuyển khoản trực tiếp -->
-                                                
-                                                <!-- thanh toán tại văn phòng -->
-                                                <div class="tab-pane fade" id="v-pills-profile-icons" role="tabpanel" aria-labelledby="v-pills-profile-tab-icons">
-                                                    <div class=" pt-3">
-                                                        <h4> <b>1, Quý khách muốn thanh toán trước:</b></h4>
-                                                    </div>
+                                                    <!-- end thanh toán tại văn phòng -->
                                                     
-                                                    <button type="button" class="collapsible">Thanh toán toàn bộ chi phí đơn hàng</button>
-                                                    
-                                                    <div class="content">
-                                                        <div class="col" id="title-pay">
-                                                            <p><i class="fas fa-check" style="color: rgb(119, 197, 1);"></i> Quý khách được miễn phí xử lý giao dịch</p>
+                                                    <!-- thanh toán COD -->
+                                                    <div class="tab-pane fade" id="v-pills-cod-icons" role="tabpanel" aria-labelledby="v-pills-cod-tab-icons">
+                                                        <div class=" pt-3">
+                                                            <h4> <b>1, Quý khách muốn thanh toán trước:</b></h4>
                                                         </div>
-                                                        <div class="py-2 px-4 row">
-                                                            <div class="text-left col">
-                                                                Tổng giá trị các sản phẩm:
+                                                        
+                                                        <button type="button" class="collapsible">Thanh toán toàn bộ chi phí đơn hàng</button>
+                                                        
+                                                        <div class="content">
+                                                            <div class="col" id="title-pay">
+                                                                <p><i class="fas fa-check" style="color: rgb(119, 197, 1);"></i> Quý khách được miễn phí xử lý giao dịch</p>
                                                             </div>
-                                                            <div class="text-right col">
-                                                                289.000đ
+                                                            <div class="py-2 pl-4 row">
+                                                                <div class="col style: margin-left: 30px;">
+                                                                    Tổng giá trị các sản phẩm:
+                                                                </div>
+                                                                <div class="text-right col">
+                                                                    289.000đ
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(223, 220, 220);">
-                                                            <div class="text-left pr-0 col-2">
-                                                                Mã giảm giá:
+                                                            <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(223, 220, 220);">
+                                                                <div class="text-left pr-0 col-2">
+                                                                    Mã giảm giá:
+                                                                </div>
+                                                                <div class="col-3" id="code-discount">
+                                                                    <i class="fas fa-ticket-alt" style="margin-right: 2px; color: #f09819;"></i><i>Sử dụng mã giảm giá</i>
+                                                                </div>
+                                                                <div class="text-right col" style="color: rgb(119, 197, 1);">
+                                                                    -0đ
+                                                                </div>
                                                             </div>
-                                                            <div class="col-3" id="code-discount">
-                                                                <i class="fas fa-ticket-alt" style="margin-right: 2px; color: #f09819;"></i><i>Sử dụng mã giảm giá</i>
+                                                            
+                                                            <div class="px-4 row" id="text-sum-cost">
+                                                                <div class="text-left col">
+                                                                    <p><b>Tổng giá trị đơn hàng:</b></p>
+                                                                </div>
+                                                                <div class="text-right col">
+                                                                    <p><b>289.000 đ</b></p>
+                                                                </div>
                                                             </div>
-                                                            <div class="text-right col" style="color: rgb(119, 197, 1);">
-                                                                -0đ
+                                                            <div class="px-4 mb-2 row" id="text-sum-cost">
+                                                                <div class="text-left col">
+                                                                    <p><b>Số tiền cần được thanh toán:</b></p>
+                                                                </div>
+                                                                <div class="text-right col" style="color: #f09819;">
+                                                                    <p><b>289.000 đ</b></p>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                         
-                                                        <div class="px-4 row" id="text-sum-cost">
-                                                            <div class="text-left col">
-                                                                <p><b>Tổng giá trị đơn hàng:</b></p>
+                                                        <button type="button" class="collapsible">Thanh toán trước 50% giá trị đơn hàng</button>
+                                                        <div class="content">
+                                                            
+                                                            <div class="py-2 px-4">
+                                                                <div class="col-12 py-2 " id="warning">
+                                                                    <p> <i class="fas fa-exclamation-triangle" style="color: #f09819;"></i> Nếu quý khách thanh toán trước 50%. VanChuyenMy sẽ cộng thêm phí bù trừ thanh toán: 2.2% của tổng giá sản phẩm trong đơn hàng của quý khách.</p>
+                                                                </div>
                                                             </div>
-                                                            <div class="text-right col">
-                                                                <p><b>289.000 đ</b></p>
+                                                            <div class="py-2 px-4 row">
+                                                                <div class="text-left col">
+                                                                    Tổng giá trị các sản phẩm:
+                                                                </div>
+                                                                <div class="text-right col">
+                                                                    289.000đ
+                                                                </div>
+                                                            </div>
+                                                            <div class="py-2 px-4 row">
+                                                                <div class="text-left col">
+                                                                    Phí bù trừ thanh toán tương ứng:
+                                                                </div>
+                                                                <div class="text-right col">
+                                                                    +18.030đ
+                                                                </div>
+                                                            </div>
+                                                            <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(223, 220, 220);">
+                                                                <div class="text-left pr-0 col-2">
+                                                                    Mã giảm giá:
+                                                                </div>
+                                                                <div class="col-3" id="code-discount">
+                                                                    <i class="fas fa-ticket-alt" style="margin-right: 2px; color: #f09819;"></i><i>Sử dụng mã giảm giá</i>
+                                                                </div>
+                                                                <div class="text-right col" style="color: rgb(119, 197, 1);">
+                                                                    -0đ
+                                                                </div>
+                                                            </div>
+                                                            <div class="px-4 row" id="text-sum-cost">
+                                                                <div class="text-left col">
+                                                                    <p><b>Tổng giá trị đơn hàng:</b></p>
+                                                                </div>
+                                                                <div class="text-right col">
+                                                                    <p><b>289.000 đ</b></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="px-4 mb-2 row" id="text-sum-cost">
+                                                                <div class="text-left col-9">
+                                                                    <p><b>Số tiền cần được thanh toán để đặt hàng:</b></p>
+                                                                </div>
+                                                                <div class="text-right col-3" style="color: #f09819;">
+                                                                    <p><b>289.000 đ</b></p>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="pb-2 px-4 row" id="text-sum-cost">
+                                                                <div class="text-left col">
+                                                                    Còn lại phải thanh toán khi nhận hàng
+                                                                </div>
+                                                                <div class="text-right col">
+                                                                    135.000 đ
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="px-4 mb-2 row" id="text-sum-cost">
-                                                            <div class="text-left col">
-                                                                <p><b>Số tiền cần được thanh toán:</b></p>
-                                                            </div>
-                                                            <div class="text-right col" style="color: #f09819;">
-                                                                <p><b>289.000 đ</b></p>
-                                                            </div>
+                                                        <div class="pt-3">
+                                                            <h4> <b>2, Thông tin thu tiền tại nhà:</b></h4>  
                                                         </div>
-                                                    </div>
-                                                    
-                                                    <button type="button" class="collapsible">Thanh toán trước 50% giá trị đơn hàng</button>
-                                                    <div class="content">
+                                                        <div class=" px-4 row" id="paying-COD">
+                                                            <p>Nhân Viên Fado sẽ đến nhận thanh toán trước tại địa chỉ quý khách yêu cầu, hình thức này chỉ áp dụng cho TP.HCM và Hà Nội.</p>
+                                                            <p>Phí thu tiền tại nhà: <b>30,000 đ</b></p>
+                                                        </div>
                                                         
-                                                        <div class="py-2 px-4">
-                                                            <div class="col-12 py-2 " id="warning">
-                                                                <p> <i class="fas fa-exclamation-triangle" style="color: #f09819;"></i> Nếu quý khách thanh toán trước 50%. VanChuyenMy sẽ cộng thêm phí bù trừ thanh toán: 2.2% của tổng giá sản phẩm trong đơn hàng của quý khách.</p>
-                                                            </div>
+                                                        <div class="warning2 py-2 px-4" >
+                                                            <p> <b>Lưu ý:</b> VanChuyenMy đảm bảo giá sản phẩm không thay đổi trong vòng 60 phút. Căn cứ vào thời điểm quý khách [Xác nhận đặt hàng] thành công.
+                                                                Đối với giao dịch phát sinh từ 22h, VanChuyenMy sẽ xử lý sau 8h sáng ngày hôm sau. Quý khách vui lòng lựa chọn thanh toán online để được giữ giá đã chọn
+                                                            </p>
                                                         </div>
-                                                        <div class="py-2 px-4 row">
-                                                            <div class="text-left col">
-                                                                Tổng giá trị các sản phẩm:
-                                                            </div>
-                                                            <div class="text-right col">
-                                                                289.000đ
-                                                            </div>
+                                                        <div class="pt-2 px-4 row">
+                                                            <label class="checkbox-inline mr-2 mt-1"><input type="checkbox" value="" checked></label>
+                                                            <p>Đồng ý với <a href="#"> Điều khoản & điều kiện </a> giao dịch của VanChuyenMy</p>
                                                         </div>
-                                                        <div class="py-2 px-4 row">
-                                                            <div class="text-left col">
-                                                                Phí bù trừ thanh toán tương ứng:
-                                                            </div>
-                                                            <div class="text-right col">
-                                                                +18.030đ
-                                                            </div>
-                                                        </div>
-                                                        <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(223, 220, 220);">
-                                                            <div class="text-left pr-0 col-2">
-                                                                Mã giảm giá:
-                                                            </div>
-                                                            <div class="col-3" id="code-discount">
-                                                                <i class="fas fa-ticket-alt" style="margin-right: 2px; color: #f09819;"></i><i>Sử dụng mã giảm giá</i>
-                                                            </div>
-                                                            <div class="text-right col" style="color: rgb(119, 197, 1);">
-                                                                -0đ
-                                                            </div>
-                                                        </div>
-                                                        <div class="px-4 row" id="text-sum-cost">
-                                                            <div class="text-left col">
-                                                                <p><b>Tổng giá trị đơn hàng:</b></p>
-                                                            </div>
-                                                            <div class="text-right col">
-                                                                <p><b>289.000 đ</b></p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="px-4 mb-2 row" id="text-sum-cost">
-                                                            <div class="text-left col-9">
-                                                                <p><b>Số tiền cần được thanh toán để đặt hàng:</b></p>
-                                                            </div>
-                                                            <div class="text-right col-3" style="color: #f09819;">
-                                                                <p><b>289.000 đ</b></p>
-                                                            </div>
+                                                        <div class="pl-5  col-3">
+                                                            <a href="checkout.html"><button type="button" class="btn-gradient15" style="width: 500x; margin-left:60px;">Xác nhận đặt hàng <i class="fas fa-angle-double-right"></i></button></a>     
                                                         </div>
                                                         
-                                                        <div class="pb-2 px-4 row" id="text-sum-cost">
-                                                            <div class="text-left col">
-                                                                Còn lại phải thanh toán khi nhận hàng
-                                                            </div>
-                                                            <div class="text-right col">
-                                                                135.000 đ
-                                                            </div>
-                                                        </div>
                                                     </div>
-                                                    <div class="pt-3">
-                                                        <h4> <b>2,Thông tin đóng tiền mặt:</b></h4>  
-                                                    </div>
-                                                    <div class="pt-2 px-4 row">
-                                                        <p>- Quý khách vui lòng đến trực tiếp tại một trong các địa chỉ sau để thực hiện thanh toán:</p>
-                                                    </div>
-                                                    
-                                                    <div class=" px-4 row">
-                                                        <p><b>TP. Hồ Chí Minh:</b> 21Bis Hậu Giang, Phường 4, Quận Tân Bình, TP. HCM</p>
-                                                        <p><b>TP. Hà Nội: </b>Tầng 3, tháp A, tòa nhà D2 Giảng Võ, đường Giảng Võ, P.Giảng Võ, Q.Ba Đình, TP.Hà Nội</p>
-                                                    </div>
-                                                    <div class="pb-2 px-4 row">
-                                                        <a href="#">Xem Thêm Chi Nhánh</a>  
-                                                    </div>
-                                                    
-                                                    <div class="warning2 py-2 px-4" >
-                                                        <p> <b>Lưu ý:</b> VanChuyenMy đảm bảo giá sản phẩm không thay đổi trong vòng 60 phút. Căn cứ vào thời điểm quý khách [Xác nhận đặt hàng] thành công.
-                                                            Đối với giao dịch phát sinh từ 22h, VanChuyenMy sẽ xử lý sau 8h sáng ngày hôm sau. Quý khách vui lòng lựa chọn thanh toán online để được giữ giá đã chọn
-                                                        </p>
-                                                    </div>
-                                                    <div class=" pt-2 px-4 row">
-                                                        <label class="checkbox-inline mr-2 mt-1"><input type="checkbox" value="" checked></label>
-                                                        <p>Đồng ý với <a href="#"> Điều khoản & điều kiện </a> giao dịch của VanhuyenMy</p>
-                                                    </div>
-                                                    <div class="pl-5  col-3">
-                                                        <a href="checkout.html"><button type="button" class="btn-gradient15" style="width: 500x; margin-left:60px;">Xác nhận đặt hàng <i class="fas fa-angle-double-right"></i></button></a>     
-                                                    </div>
+                                                    <!-- END thanh toán COD -->
                                                     
                                                 </div>
-                                                <!-- end thanh toán tại văn phòng -->
-                                                
-                                                <!-- thanh toán COD -->
-                                                <div class="tab-pane fade" id="v-pills-cod-icons" role="tabpanel" aria-labelledby="v-pills-cod-tab-icons">
-                                                    <div class=" pt-3">
-                                                        <h4> <b>1, Quý khách muốn thanh toán trước:</b></h4>
-                                                    </div>
-                                                    
-                                                    <button type="button" class="collapsible">Thanh toán toàn bộ chi phí đơn hàng</button>
-                                                    
-                                                    <div class="content">
-                                                        <div class="col" id="title-pay">
-                                                            <p><i class="fas fa-check" style="color: rgb(119, 197, 1);"></i> Quý khách được miễn phí xử lý giao dịch</p>
-                                                        </div>
-                                                        <div class="py-2 pl-4 row">
-                                                            <div class="col style: margin-left: 30px;">
-                                                                Tổng giá trị các sản phẩm:
-                                                            </div>
-                                                            <div class="text-right col">
-                                                                289.000đ
-                                                            </div>
-                                                        </div>
-                                                        <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(223, 220, 220);">
-                                                            <div class="text-left pr-0 col-2">
-                                                                Mã giảm giá:
-                                                            </div>
-                                                            <div class="col-3" id="code-discount">
-                                                                <i class="fas fa-ticket-alt" style="margin-right: 2px; color: #f09819;"></i><i>Sử dụng mã giảm giá</i>
-                                                            </div>
-                                                            <div class="text-right col" style="color: rgb(119, 197, 1);">
-                                                                -0đ
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="px-4 row" id="text-sum-cost">
-                                                            <div class="text-left col">
-                                                                <p><b>Tổng giá trị đơn hàng:</b></p>
-                                                            </div>
-                                                            <div class="text-right col">
-                                                                <p><b>289.000 đ</b></p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="px-4 mb-2 row" id="text-sum-cost">
-                                                            <div class="text-left col">
-                                                                <p><b>Số tiền cần được thanh toán:</b></p>
-                                                            </div>
-                                                            <div class="text-right col" style="color: #f09819;">
-                                                                <p><b>289.000 đ</b></p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <button type="button" class="collapsible">Thanh toán trước 50% giá trị đơn hàng</button>
-                                                    <div class="content">
-                                                        
-                                                        <div class="py-2 px-4">
-                                                            <div class="col-12 py-2 " id="warning">
-                                                                <p> <i class="fas fa-exclamation-triangle" style="color: #f09819;"></i> Nếu quý khách thanh toán trước 50%. VanChuyenMy sẽ cộng thêm phí bù trừ thanh toán: 2.2% của tổng giá sản phẩm trong đơn hàng của quý khách.</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="py-2 px-4 row">
-                                                            <div class="text-left col">
-                                                                Tổng giá trị các sản phẩm:
-                                                            </div>
-                                                            <div class="text-right col">
-                                                                289.000đ
-                                                            </div>
-                                                        </div>
-                                                        <div class="py-2 px-4 row">
-                                                            <div class="text-left col">
-                                                                Phí bù trừ thanh toán tương ứng:
-                                                            </div>
-                                                            <div class="text-right col">
-                                                                +18.030đ
-                                                            </div>
-                                                        </div>
-                                                        <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(223, 220, 220);">
-                                                            <div class="text-left pr-0 col-2">
-                                                                Mã giảm giá:
-                                                            </div>
-                                                            <div class="col-3" id="code-discount">
-                                                                <i class="fas fa-ticket-alt" style="margin-right: 2px; color: #f09819;"></i><i>Sử dụng mã giảm giá</i>
-                                                            </div>
-                                                            <div class="text-right col" style="color: rgb(119, 197, 1);">
-                                                                -0đ
-                                                            </div>
-                                                        </div>
-                                                        <div class="px-4 row" id="text-sum-cost">
-                                                            <div class="text-left col">
-                                                                <p><b>Tổng giá trị đơn hàng:</b></p>
-                                                            </div>
-                                                            <div class="text-right col">
-                                                                <p><b>289.000 đ</b></p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="px-4 mb-2 row" id="text-sum-cost">
-                                                            <div class="text-left col-9">
-                                                                <p><b>Số tiền cần được thanh toán để đặt hàng:</b></p>
-                                                            </div>
-                                                            <div class="text-right col-3" style="color: #f09819;">
-                                                                <p><b>289.000 đ</b></p>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="pb-2 px-4 row" id="text-sum-cost">
-                                                            <div class="text-left col">
-                                                                Còn lại phải thanh toán khi nhận hàng
-                                                            </div>
-                                                            <div class="text-right col">
-                                                                135.000 đ
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="pt-3">
-                                                        <h4> <b>2, Thông tin thu tiền tại nhà:</b></h4>  
-                                                    </div>
-                                                    <div class=" px-4 row" id="paying-COD">
-                                                        <p>Nhân Viên Fado sẽ đến nhận thanh toán trước tại địa chỉ quý khách yêu cầu, hình thức này chỉ áp dụng cho TP.HCM và Hà Nội.</p>
-                                                        <p>Phí thu tiền tại nhà: <b>30,000 đ</b></p>
-                                                    </div>
-                                                    
-                                                    <div class="warning2 py-2 px-4" >
-                                                        <p> <b>Lưu ý:</b> VanChuyenMy đảm bảo giá sản phẩm không thay đổi trong vòng 60 phút. Căn cứ vào thời điểm quý khách [Xác nhận đặt hàng] thành công.
-                                                            Đối với giao dịch phát sinh từ 22h, VanChuyenMy sẽ xử lý sau 8h sáng ngày hôm sau. Quý khách vui lòng lựa chọn thanh toán online để được giữ giá đã chọn
-                                                        </p>
-                                                    </div>
-                                                    <div class="pt-2 px-4 row">
-                                                        <label class="checkbox-inline mr-2 mt-1"><input type="checkbox" value="" checked></label>
-                                                        <p>Đồng ý với <a href="#"> Điều khoản & điều kiện </a> giao dịch của VanChuyenMy</p>
-                                                    </div>
-                                                    <div class="pl-5  col-3">
-                                                        <a href="checkout.html"><button type="button" class="btn-gradient15" style="width: 500x; margin-left:60px;">Xác nhận đặt hàng <i class="fas fa-angle-double-right"></i></button></a>     
-                                                    </div>
-                                                    
-                                                </div>
-                                                <!-- END thanh toán COD -->
-                                                
                                             </div>
                                         </div>
-                                    </div>
-                                    
-                                    <script>
-                                        var coll = document.getElementsByClassName("collapsible");
-                                        var i;
                                         
-                                        for (i = 0; i < coll.length; i++) {
-                                            coll[i].addEventListener("click", function() {
-                                                this.classList.toggle("active");
-                                                var content = this.nextElementSibling;
-                                                if (content.style.display === "block") {
-                                                    content.style.display = "none";
-                                                } else {
-                                                    content.style.display = "block";
-                                                }
-                                            });
-                                        }
-                                    </script>
+                                        <script>
+                                            var coll = document.getElementsByClassName("collapsible");
+                                            var i;
+                                            
+                                            for (i = 0; i < coll.length; i++) {
+                                                coll[i].addEventListener("click", function() {
+                                                    this.classList.toggle("active");
+                                                    var content = this.nextElementSibling;
+                                                    if (content.style.display === "block") {
+                                                        content.style.display = "none";
+                                                    } else {
+                                                        content.style.display = "block";
+                                                    }
+                                                });
+                                            }
+                                        </script>
+                                    </div>
                                 </div>
+                                
                             </div>
-                            
+                            <!-- Ênd Các phương thức thanh toán -->
                         </div>
-                        <!-- Ênd Các phương thức thanh toán -->
-                    </div>
-                    <!-- sao kê thanh toán -->
-                    <div class="px-0 col-4">
-                        <div class="px-0 mt-3 mr-4 py-4 stamp" id="pink-stamp">
-                            <div class="cart-information py-3 px-2">
-                                <img src="assets/img/pink_background.png" id="img_pink" class="img-fluid" alt="...">
-                                <div class="infor-cart-details">
-                                    <div class="text-center pt-3" >
-                                        <h4><b>Đơn hàng của quý khách</b></h4>
-                                    </div>
-                                    <div class="row px-5">
-                                        <table class="table table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col"></th>
-                                                    <th scope="col">Máy hút chân không ikl4ud8h</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><a href="productpage.html"><img class="img-fluid" style="width: 45px;" src="assets/img/meat_2.png" alt="Chania"></a></td>
-                                                    <td>
-                                                        <div class="" id="final-price">
-                                                            <p id="p1">289.000đ</p> 
-                                                            <p id="p2">299.000đ</p>   
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <div class="">
-                                            <table class="table mt-3">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">Hình thức giao hàng </th>
-                                                        <th scope="col text-right" style="color:#0080ff">Giao hàng mặc định</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Mã Sản Phẩm</td>
-                                                        <td class="text-right" style="color:#0080ff">B01B2HGAIA</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Số lượng</td>
-                                                        <td class="text-right" style="color:#0080ff">1</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                        <!-- sao kê thanh toán -->
+                        <div class="px-0 col-4">
+                            <div class="px-0 mt-3 mr-4 py-4 stamp" id="pink-stamp">
+                                <div class="cart-information py-3 px-2">
+                                    <img src="assets/img/pink_background.png" id="img_pink" class="img-fluid" alt="...">
+                                    <div class="infor-cart-details">
+                                        <div class="text-center pt-3" >
+                                            <h4><b>Đơn hàng của quý khách</b></h4>
                                         </div>
-                                        <div class="row" >
-                                            <h5 style="margin-left: 25px;"><b>Tổng giá trị sản phẩm:</b></h5>
-                                            <h5 style="color: #f09819; font-size: 18px; margin-left: 100px;"><b>289.000đ</b></h5>
-                                        </div>
-                                    </div>
-                                    <div class="row px-5">
-                                        <table class="table table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col"></th>
-                                                    <th scope="col">Máy hút chân không ikl4ud8h</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><a href="productpage.html"><img class="img-fluid" style="width: 45px;" src="assets/img/meat_2.png" alt="Chania"></a></td>
-                                                    <td>
-                                                        <div class="" id="final-price">
-                                                            <p id="p1">289.000đ</p> 
-                                                            <p id="p2">299.000đ</p>   
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <div class="">
-                                            <table class="table mt-3">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">Hình thức giao hàng </th>
-                                                        <th scope="col text-right" style="color:#0080ff">Giao hàng mặc định</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Mã Sản Phẩm</td>
-                                                        <td class="text-right" style="color:#0080ff">B01B2HGAIA</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Số lượng</td>
-                                                        <td class="text-right" style="color:#0080ff">1</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="row" >
-                                            <h5 style="margin-left: 25px;"><b>Tổng giá trị sản phẩm:</b></h5>
-                                            <h5 style="color: #f09819; font-size: 18px; margin-left: 100px;"><b>289.000đ</b></h5>
-                                        </div>
-                                    </div>
-                                    <div class="row px-5">
-                                        <table class="table table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col"></th>
-                                                    <th scope="col">Máy hút chân không ikl4ud8h</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><a href="productpage.html"><img class="img-fluid" style="width: 45px;" src="assets/img/meat_2.png" alt="Chania"></a></td>
-                                                    <td>
-                                                        <div class="" id="final-price">
-                                                            <p id="p1">289.000đ</p> 
-                                                            <p id="p2">299.000đ</p>   
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <div class="">
-                                            <table class="table mt-3">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">Hình thức giao hàng </th>
-                                                        <th scope="col text-right" style="color:#0080ff">Giao hàng mặc định</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Mã Sản Phẩm</td>
-                                                        <td class="text-right" style="color:#0080ff">B01B2HGAIA</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Số lượng</td>
-                                                        <td class="text-right" style="color:#0080ff">1</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="row" >
-                                            <h5 style="margin-left: 25px;"><b>Tổng giá trị sản phẩm:</b></h5>
-                                            <h5 style="color: #f09819; font-size: 18px; margin-left: 100px;"><b>289.000đ</b></h5>
-                                        </div>
-                                    </div>
-                                    <div class="row px-5">
+                                        <div class="row px-5">
                                             <table class="table table-striped">
                                                 <thead>
                                                     <tr>
@@ -973,352 +838,487 @@
                                             </div>
                                         </div>
                                         <div class="row px-5">
-                                                <table class="table table-striped">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Máy hút chân không ikl4ud8h</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="productpage.html"><img class="img-fluid" style="width: 45px;" src="assets/img/meat_2.png" alt="Chania"></a></td>
+                                                        <td>
+                                                            <div class="" id="final-price">
+                                                                <p id="p1">289.000đ</p> 
+                                                                <p id="p2">299.000đ</p>   
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="">
+                                                <table class="table mt-3">
                                                     <thead>
                                                         <tr>
-                                                            <th scope="col"></th>
-                                                            <th scope="col">Máy hút chân không ikl4ud8h</th>
+                                                            <th scope="col">Hình thức giao hàng </th>
+                                                            <th scope="col text-right" style="color:#0080ff">Giao hàng mặc định</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><a href="productpage.html"><img class="img-fluid" style="width: 45px;" src="assets/img/meat_2.png" alt="Chania"></a></td>
-                                                            <td>
-                                                                <div class="" id="final-price">
-                                                                    <p id="p1">289.000đ</p> 
-                                                                    <p id="p2">299.000đ</p>   
-                                                                </div>
-                                                            </td>
+                                                            <td>Mã Sản Phẩm</td>
+                                                            <td class="text-right" style="color:#0080ff">B01B2HGAIA</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Số lượng</td>
+                                                            <td class="text-right" style="color:#0080ff">1</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
-                                                <div class="">
-                                                    <table class="table mt-3">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col">Hình thức giao hàng </th>
-                                                                <th scope="col text-right" style="color:#0080ff">Giao hàng mặc định</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Mã Sản Phẩm</td>
-                                                                <td class="text-right" style="color:#0080ff">B01B2HGAIA</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Số lượng</td>
-                                                                <td class="text-right" style="color:#0080ff">1</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <div class="row" >
-                                                    <h5 style="margin-left: 25px;"><b>Tổng giá trị sản phẩm:</b></h5>
-                                                    <h5 style="color: #f09819; font-size: 18px; margin-left: 100px;"><b>289.000đ</b></h5>
-                                                </div>
                                             </div>
-                                            <div class="row px-5">
-                                                    <table class="table table-striped">
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col"></th>
-                                                                <th scope="col">Máy hút chân không ikl4ud8h</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td><a href="productpage.html"><img class="img-fluid" style="width: 45px;" src="assets/img/meat_2.png" alt="Chania"></a></td>
-                                                                <td>
-                                                                    <div class="" id="final-price">
-                                                                        <p id="p1">289.000đ</p> 
-                                                                        <p id="p2">299.000đ</p>   
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <div class="">
-                                                        <table class="table mt-3">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="col">Hình thức giao hàng </th>
-                                                                    <th scope="col text-right" style="color:#0080ff">Giao hàng mặc định</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>Mã Sản Phẩm</td>
-                                                                    <td class="text-right" style="color:#0080ff">B01B2HGAIA</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Số lượng</td>
-                                                                    <td class="text-right" style="color:#0080ff">1</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <div class="row" >
-                                                        <h5 style="margin-left: 25px;"><b>Tổng giá trị sản phẩm:</b></h5>
-                                                        <h5 style="color: #f09819; font-size: 18px; margin-left: 100px;"><b>289.000đ</b></h5>
-                                                    </div>
-                                                </div>
-                                </div>  
+                                            <div class="row" >
+                                                <h5 style="margin-left: 25px;"><b>Tổng giá trị sản phẩm:</b></h5>
+                                                <h5 style="color: #f09819; font-size: 18px; margin-left: 100px;"><b>289.000đ</b></h5>
+                                            </div>
+                                        </div>
+                                        <div class="row px-5">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Máy hút chân không ikl4ud8h</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="productpage.html"><img class="img-fluid" style="width: 45px;" src="assets/img/meat_2.png" alt="Chania"></a></td>
+                                                        <td>
+                                                            <div class="" id="final-price">
+                                                                <p id="p1">289.000đ</p> 
+                                                                <p id="p2">299.000đ</p>   
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="">
+                                                <table class="table mt-3">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Hình thức giao hàng </th>
+                                                            <th scope="col text-right" style="color:#0080ff">Giao hàng mặc định</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Mã Sản Phẩm</td>
+                                                            <td class="text-right" style="color:#0080ff">B01B2HGAIA</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Số lượng</td>
+                                                            <td class="text-right" style="color:#0080ff">1</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="row" >
+                                                <h5 style="margin-left: 25px;"><b>Tổng giá trị sản phẩm:</b></h5>
+                                                <h5 style="color: #f09819; font-size: 18px; margin-left: 100px;"><b>289.000đ</b></h5>
+                                            </div>
+                                        </div>
+                                        <div class="row px-5">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Máy hút chân không ikl4ud8h</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="productpage.html"><img class="img-fluid" style="width: 45px;" src="assets/img/meat_2.png" alt="Chania"></a></td>
+                                                        <td>
+                                                            <div class="" id="final-price">
+                                                                <p id="p1">289.000đ</p> 
+                                                                <p id="p2">299.000đ</p>   
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="">
+                                                <table class="table mt-3">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Hình thức giao hàng </th>
+                                                            <th scope="col text-right" style="color:#0080ff">Giao hàng mặc định</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Mã Sản Phẩm</td>
+                                                            <td class="text-right" style="color:#0080ff">B01B2HGAIA</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Số lượng</td>
+                                                            <td class="text-right" style="color:#0080ff">1</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="row" >
+                                                <h5 style="margin-left: 25px;"><b>Tổng giá trị sản phẩm:</b></h5>
+                                                <h5 style="color: #f09819; font-size: 18px; margin-left: 100px;"><b>289.000đ</b></h5>
+                                            </div>
+                                        </div>
+                                        <div class="row px-5">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Máy hút chân không ikl4ud8h</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="productpage.html"><img class="img-fluid" style="width: 45px;" src="assets/img/meat_2.png" alt="Chania"></a></td>
+                                                        <td>
+                                                            <div class="" id="final-price">
+                                                                <p id="p1">289.000đ</p> 
+                                                                <p id="p2">299.000đ</p>   
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="">
+                                                <table class="table mt-3">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Hình thức giao hàng </th>
+                                                            <th scope="col text-right" style="color:#0080ff">Giao hàng mặc định</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Mã Sản Phẩm</td>
+                                                            <td class="text-right" style="color:#0080ff">B01B2HGAIA</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Số lượng</td>
+                                                            <td class="text-right" style="color:#0080ff">1</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="row" >
+                                                <h5 style="margin-left: 25px;"><b>Tổng giá trị sản phẩm:</b></h5>
+                                                <h5 style="color: #f09819; font-size: 18px; margin-left: 100px;"><b>289.000đ</b></h5>
+                                            </div>
+                                        </div>
+                                        <div class="row px-5">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Máy hút chân không ikl4ud8h</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="productpage.html"><img class="img-fluid" style="width: 45px;" src="assets/img/meat_2.png" alt="Chania"></a></td>
+                                                        <td>
+                                                            <div class="" id="final-price">
+                                                                <p id="p1">289.000đ</p> 
+                                                                <p id="p2">299.000đ</p>   
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="">
+                                                <table class="table mt-3">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Hình thức giao hàng </th>
+                                                            <th scope="col text-right" style="color:#0080ff">Giao hàng mặc định</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Mã Sản Phẩm</td>
+                                                            <td class="text-right" style="color:#0080ff">B01B2HGAIA</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Số lượng</td>
+                                                            <td class="text-right" style="color:#0080ff">1</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="row" >
+                                                <h5 style="margin-left: 25px;"><b>Tổng giá trị sản phẩm:</b></h5>
+                                                <h5 style="color: #f09819; font-size: 18px; margin-left: 100px;"><b>289.000đ</b></h5>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
                             </div>
                         </div>
+                        
+                        
+                        <!--End sao kê thanh toán -->
                     </div>
-                    
-                    
-                    <!--End sao kê thanh toán -->
                 </div>
             </div>
-        </div>
-        <!--COMPUTER FOOTER-->
-        <div class="px-0 col-sm-12 col-12 d-none d-lg-block" >
-            <div class="text-center" id="main-footer-computer">
-                <div class="container">
-                    <div class="row">
-                        <div class="py-5 col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                            <img src="assets/img/store.jpg" alt="" style="width:150px; height:150px; padding-bottom: 20px;">
+            <!--COMPUTER FOOTER-->
+            <div class="px-0 col-sm-12 col-12 d-none d-lg-block" >
+                <div class="text-center" id="main-footer-computer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="py-5 col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                <img src="assets/img/store.jpg" alt="" style="width:150px; height:150px; padding-bottom: 20px;">
+                                <div class="col">
+                                    <button type="button" class="btn btn-warning">TÌM CỬA HÀNG</button>
+                                </div>
+                            </div>
                             <div class="col">
-                                <button type="button" class="btn btn-warning">TÌM CỬA HÀNG</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="row">
-                                <div class="text-left px-0  py-5 col-xs-2 col-sm-2 col-md-2 col-lg-4">
-                                    <div class="col" style="height: 30px; ">
-                                        <a  href="#" style="color: #000;"><b>LIÊN HỆ</b></a>
+                                <div class="row">
+                                    <div class="text-left px-0  py-5 col-xs-2 col-sm-2 col-md-2 col-lg-4">
+                                        <div class="col" style="height: 30px; ">
+                                            <a  href="#" style="color: #000;"><b>LIÊN HỆ</b></a>
+                                        </div>
+                                        <div class="col">
+                                            <div class="text-footer">
+                                                <a  href="#" ><p>Liên hệ Quảng Cáo</p></a>
+                                                <a  href="#" ><p>Đối tác</p></a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col">
-                                        <div class="text-footer">
-                                            <a  href="#" ><p>Liên hệ Quảng Cáo</p></a>
-                                            <a  href="#" ><p>Đối tác</p></a>
+                                    <div class="text-left px-0 py-5 col-xs-2 col-sm-2 col-md-2 col-lg-4">
+                                        <div class="col" style="height: 30px;">
+                                            <a  href="#" style="color: #000;"><b>CHÍNH SÁCH KHÁCH HÀNG</b></a>
+                                        </div>
+                                        <div class="col">
+                                            <div class="text-footer">
+                                                <a  href="#" ><p>Chế độ ưu đãi</p></a>
+                                                <a  href="#" ><p>Chính sách mua bán</p></a>
+                                                <a  href="#" ><p></p></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-left px-0  py-5 col-xs-2 col-sm-2 col-md-2 col-lg-4">
+                                        <div class="col" style="height: 30px;">
+                                            <a  href="#" style="color: #000;"><b>THÔNG TIN HỮU ÍCH</b></a>
+                                        </div>
+                                        <div class="col">
+                                            <div class="text-footer">
+                                                <a  href="#" ><p>FAQS</p></a>
+                                                <a  href="#" ><p>Chính sách chung</p></a>
+                                                <a  href="#" ><p>Tra cứu đơn hàng</p></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="text-left px-0 py-5 col-xs-2 col-sm-2 col-md-2 col-lg-4">
-                                    <div class="col" style="height: 30px;">
-                                        <a  href="#" style="color: #000;"><b>CHÍNH SÁCH KHÁCH HÀNG</b></a>
-                                    </div>
-                                    <div class="col">
-                                        <div class="text-footer">
-                                            <a  href="#" ><p>Chế độ ưu đãi</p></a>
-                                            <a  href="#" ><p>Chính sách mua bán</p></a>
-                                            <a  href="#" ><p></p></a>
-                                        </div>
-                                    </div>
+                            </div>
+                            
+                            <div class="text-left px-0  py-5 col-xs-2 col-sm-2 col-md-2 col-lg-3">
+                                <div class="col" style="height: 30px;">
+                                    <a  href="#" style="color: #000;;"><b>THẺ PHỔ BIẾN</b></a>
                                 </div>
-                                <div class="text-left px-0  py-5 col-xs-2 col-sm-2 col-md-2 col-lg-4">
-                                    <div class="col" style="height: 30px;">
-                                        <a  href="#" style="color: #000;"><b>THÔNG TIN HỮU ÍCH</b></a>
-                                    </div>
-                                    <div class="col">
-                                        <div class="text-footer">
-                                            <a  href="#" ><p>FAQS</p></a>
-                                            <a  href="#" ><p>Chính sách chung</p></a>
-                                            <a  href="#" ><p>Tra cứu đơn hàng</p></a>
-                                        </div>
+                                <div class="col">
+                                    <div class="text-footer">
+                                        <button type="button" class="btn-btn-footer">Thể thao</button>
+                                        <button type="button" class="btn-btn-footer">Làm đẹp</button>
+                                        <button type="button" class="btn-btn-footer">Gia dụng</button>
+                                        <button type="button" class="btn-btn-footer">Công nghệ</button>
+                                        <button type="button" class="btn-btn-footer">Giải trí</button>
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                         
-                        <div class="text-left px-0  py-5 col-xs-2 col-sm-2 col-md-2 col-lg-3">
-                            <div class="col" style="height: 30px;">
-                                <a  href="#" style="color: #000;;"><b>THẺ PHỔ BIẾN</b></a>
-                            </div>
-                            <div class="col">
-                                <div class="text-footer">
-                                    <button type="button" class="btn-btn-footer">Thể thao</button>
-                                    <button type="button" class="btn-btn-footer">Làm đẹp</button>
-                                    <button type="button" class="btn-btn-footer">Gia dụng</button>
-                                    <button type="button" class="btn-btn-footer">Công nghệ</button>
-                                    <button type="button" class="btn-btn-footer">Giải trí</button>
+                    </div>
+                    <div class="py-4 text-center" id="copyright-company">
+                        <p>VanChuyenMy.vn - một sản phẩm của VESTA GLOBAL</p>
+                        <p>Giấy chứng nhận Đăng ký doanh nghiệp số: 0107797701 do Sở Kế hoạch và Đầu tư Tp Hà Nội cấp ngày 23/5/2015.</p>
+                        <p> Hotline: 0911333222, Email: support@vanchuyenmy.vn</p>
+                    </div>
+                </div>
+            </div>
+            <!--END COMPUTER FOOTER-->
+            <!--MOBILE FOOTER-->
+            <div class="col-sm-12 d-block d-lg-none">
+                <div class="jumbotron" style="background-color: #f09819;">
+                    <div class="col-12" style="padding-bottom: 20px;">
+                        <div class="row">
+                            
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                                <a class="navbar-brand" style="color: white;" href="#"><h4>SẢN PHẨM</h4></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent6" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fas fa-angle-down"></i>
+                                </button>
+                                
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent6">
+                                    <ul class="navbar-nav mr-auto">
+                                        
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Thời trang & phụ kiện</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Thời trang nam</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Saleoff</a>
+                                        </li>   
+                                    </ul> 
                                 </div>
-                            </div>
-                        </div>
-                        
+                            </nav>
+                        </div>  
                     </div>
-                    
-                </div>
-                <div class="py-4 text-center" id="copyright-company">
-                    <p>VanChuyenMy.vn - một sản phẩm của VESTA GLOBAL</p>
-                    <p>Giấy chứng nhận Đăng ký doanh nghiệp số: 0107797701 do Sở Kế hoạch và Đầu tư Tp Hà Nội cấp ngày 23/5/2015.</p>
-                    <p> Hotline: 0911333222, Email: support@vanchuyenmy.vn</p>
-                </div>
-            </div>
-        </div>
-        <!--END COMPUTER FOOTER-->
-        <!--MOBILE FOOTER-->
-        <div class="col-sm-12 d-block d-lg-none">
-            <div class="jumbotron" style="background-color: #f09819;">
-                <div class="col-12" style="padding-bottom: 20px;">
-                    <div class="row">
-                        
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
-                            <a class="navbar-brand" style="color: white;" href="#"><h4>SẢN PHẨM</h4></a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent6" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fas fa-angle-down"></i>
-                            </button>
+                    <div class="col-12" style="padding-bottom: 20px; " >
+                        <div class="row" >
                             
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent6">
-                                <ul class="navbar-nav mr-auto">
-                                    
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Thời trang & phụ kiện</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Thời trang nam</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Saleoff</a>
-                                    </li>   
-                                </ul> 
-                            </div>
-                        </nav>
-                    </div>  
-                </div>
-                <div class="col-12" style="padding-bottom: 20px; " >
-                    <div class="row" >
-                        
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
-                            <a class="navbar-brand" style="color: white;" href="#"><h4>VỀ CÔNG TY</h4></a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent7" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fas fa-angle-down"></i>
-                            </button>
-                            
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent7">
-                                <ul class="navbar-nav mr-auto">
-                                    
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Liên hệ Quảng Cáo</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Đối tác</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Đại lý</a>
-                                    </li>
-                                </ul> 
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-                <div class="col-12" style="padding-bottom: 20px;">
-                    <div class="row">
-                        
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
-                            <a class="navbar-brand" style="color: white;" href="#"><h4>HỖ TRỢ</h4></a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent8" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fas fa-angle-down"></i>
-                            </button>
-                            
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent8">
-                                <ul class="navbar-nav mr-auto">
-                                    
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">FAQS</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Chính sách chung</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Tra cứu đơn hàng</a>
-                                    </li> 
-                                </ul>   
-                            </div>
-                        </nav>
-                    </div>  
-                </div>
-            </div>
-        </div>
-        <!--END MOBILE FOOTER-->
-        
-        
-        
-        
-        
-        <!-- Custom template | don't include it in your project! -->
-        <div class="custom-template">
-            <div class="title">Settings</div>
-            <div class="custom-content">
-                <div class="switcher">
-                    <div class="switch-block">
-                        <h4>Topbar</h4>
-                        <div class="btnSwitch">
-                            <button type="button" class="changeMainHeaderColor" data-color="blue"></button>
-                            <button type="button" class="selected changeMainHeaderColor" data-color="purple"></button>
-                            <button type="button" class="changeMainHeaderColor" data-color="light-blue"></button>
-                            <button type="button" class="changeMainHeaderColor" data-color="green"></button>
-                            <button type="button" class="changeMainHeaderColor" data-color="orange"></button>
-                            <button type="button" class="changeMainHeaderColor" data-color="red"></button>
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                                <a class="navbar-brand" style="color: white;" href="#"><h4>VỀ CÔNG TY</h4></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent7" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fas fa-angle-down"></i>
+                                </button>
+                                
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent7">
+                                    <ul class="navbar-nav mr-auto">
+                                        
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Liên hệ Quảng Cáo</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Đối tác</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Đại lý</a>
+                                        </li>
+                                    </ul> 
+                                </div>
+                            </nav>
                         </div>
                     </div>
-                    <div class="switch-block">
-                        <h4>Background</h4>
-                        <div class="btnSwitch">
-                            <button type="button" class="changeBackgroundColor" data-color="bg2"></button>
-                            <button type="button" class="changeBackgroundColor selected" data-color="bg1"></button>
-                            <button type="button" class="changeBackgroundColor" data-color="bg3"></button>
+                    <div class="col-12" style="padding-bottom: 20px;">
+                        <div class="row">
+                            
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                                <a class="navbar-brand" style="color: white;" href="#"><h4>HỖ TRỢ</h4></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent8" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fas fa-angle-down"></i>
+                                </button>
+                                
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent8">
+                                    <ul class="navbar-nav mr-auto">
+                                        
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">FAQS</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Chính sách chung</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Tra cứu đơn hàng</a>
+                                        </li> 
+                                    </ul>   
+                                </div>
+                            </nav>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <!--END MOBILE FOOTER-->
+            
+            
+            
+            
+            
+            <!-- Custom template | don't include it in your project! -->
+            <div class="custom-template">
+                <div class="title">Settings</div>
+                <div class="custom-content">
+                    <div class="switcher">
+                        <div class="switch-block">
+                            <h4>Topbar</h4>
+                            <div class="btnSwitch">
+                                <button type="button" class="changeMainHeaderColor" data-color="blue"></button>
+                                <button type="button" class="selected changeMainHeaderColor" data-color="purple"></button>
+                                <button type="button" class="changeMainHeaderColor" data-color="light-blue"></button>
+                                <button type="button" class="changeMainHeaderColor" data-color="green"></button>
+                                <button type="button" class="changeMainHeaderColor" data-color="orange"></button>
+                                <button type="button" class="changeMainHeaderColor" data-color="red"></button>
+                            </div>
+                        </div>
+                        <div class="switch-block">
+                            <h4>Background</h4>
+                            <div class="btnSwitch">
+                                <button type="button" class="changeBackgroundColor" data-color="bg2"></button>
+                                <button type="button" class="changeBackgroundColor selected" data-color="bg1"></button>
+                                <button type="button" class="changeBackgroundColor" data-color="bg3"></button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="custom-toggle">
+                    <i class="flaticon-settings"></i>
+                </div>
             </div>
-            <div class="custom-toggle">
-                <i class="flaticon-settings"></i>
-            </div>
+            <!-- End Custom template -->
         </div>
-        <!-- End Custom template -->
     </div>
-</div>
-<!--   Core JS Files   -->
-<script src="assets/js/core/jquery.3.2.1.min.js"></script>
-<script src="assets/js/core/popper.min.js"></script>
-<script src="assets/js/core/bootstrap.min.js"></script>
-
-<!-- jQuery UI -->
-<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-<script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
-
-<!-- jQuery Scrollbar -->
-<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-
-<!-- Moment JS -->
-<script src="assets/js/plugin/moment/moment.min.js"></script>
-
-<!-- Chart JS -->
-<script src="assets/js/plugin/chart.js/chart.min.js"></script>
-
-<!-- jQuery Sparkline -->
-<script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
-
-<!-- Chart Circle -->
-<script src="assets/js/plugin/chart-circle/circles.min.js"></script>
-
-<!-- Datatables -->
-<script src="assets/js/plugin/datatables/datatables.min.js"></script>
-
-<!-- Bootstrap Notify -->
-<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
-
-<!-- Bootstrap Toggle -->
-<script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-
-<!-- jQuery Vector Maps -->
-<script src="assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
-<script src="assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
-
-<!-- Google Maps Plugin -->
-<script src="assets/js/plugin/gmaps/gmaps.js"></script>
-
-<!-- Sweet Alert -->
-<script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
-
-<!-- Azzara JS -->
-<script src="assets/js/ready.min.js"></script>
-
-<!-- Azzara DEMO methods, don't include it in your project! -->
-<script src="assets/js/setting-demo.js"></script>
-<script src="assets/js/demo.js"></script>
+    <!--   Core JS Files   -->
+    <script src="assets/js/core/jquery.3.2.1.min.js"></script>
+    <script src="assets/js/core/popper.min.js"></script>
+    <script src="assets/js/core/bootstrap.min.js"></script>
+    
+    <!-- jQuery UI -->
+    <script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    
+    <!-- jQuery Scrollbar -->
+    <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    
+    <!-- Moment JS -->
+    <script src="assets/js/plugin/moment/moment.min.js"></script>
+    
+    <!-- Chart JS -->
+    <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+    
+    <!-- jQuery Sparkline -->
+    <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+    
+    <!-- Chart Circle -->
+    <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+    
+    <!-- Datatables -->
+    <script src="assets/js/plugin/datatables/datatables.min.js"></script>
+    
+    <!-- Bootstrap Notify -->
+    <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+    
+    <!-- Bootstrap Toggle -->
+    <script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+    
+    <!-- jQuery Vector Maps -->
+    <script src="assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+    <script src="assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+    
+    <!-- Google Maps Plugin -->
+    <script src="assets/js/plugin/gmaps/gmaps.js"></script>
+    
+    <!-- Sweet Alert -->
+    <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+    
+    <!-- Azzara JS -->
+    <script src="assets/js/ready.min.js"></script>
+    
+    <!-- Azzara DEMO methods, don't include it in your project! -->
+    <script src="assets/js/setting-demo.js"></script>
+    <script src="assets/js/demo.js"></script>
 </body>
 </html>
