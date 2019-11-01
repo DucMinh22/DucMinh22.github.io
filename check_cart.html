@@ -113,7 +113,6 @@
         </div>
         <!-- End-Navbar Header -->
         
-        
         <div class="container">
             <div class="product pt-2 pb-lg-2">
                 <!-- breadcum -->
@@ -129,7 +128,7 @@
                             <i class="flaticon-right-arrow"></i>
                         </li>
                         <li class="nav-item">
-                            <a href="#">Chi tiết đơn hàng</a>
+                            <a href="#">Kiểm tra đơn hàng</a>
                         </li>
                         <li class="separator">
                             <i class="flaticon-right-arrow"></i>
@@ -138,193 +137,130 @@
                     </ul>
                 </div>
                 <!-- end breadcum -->
-                <div class="row py-2 mt-2 px-4" style="background-color: gainsboro; border-radius: 3px;">
-                    <img src="assets/img/profile2.jpg" class="rounded-circle" alt="Cinque Terre" width="" height=""> 
-                    <div id="pesonal-infor">
-                        <p >Xin chào <b>Đặng Trường</b></p>
-                        <p><i class="fas fa-pen" style="margin-right: 3px;"></i>Sửa hồ sơ</p>
-                    </div>
-                </div>
-                <div class="row">
-                    
-                    <!-- left category -->
-                    <div class=" py-4 col-3">
-                        
-                        <div class="list-group" id="text-hidden-category">
-                            <a href="#" class="list-group-item list-group-item-action"><b><i class="fas fa-user" style="margin-right:10px;"></i>Thông tin tài khoản của quý khách</b></a>
-                            <a href="user_profile.html" class="list-group-item list-group-item-action" ><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Thông tin cá nhân</a>
-                            <a href="user_change_password.html" class="list-group-item list-group-item-action"><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Thay đổi mật khẩu</a>
-                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-file-invoice-dollar" style="margin-right:10px;" ></i>Quản lý mua hàng</a>
-                            <a href="cart_history.html" class="list-group-item list-group-item-action"><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Lịch sử đơn hàng</a>
-                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Yêu cầu báo giá</a>
-                            <a href="#" class="list-group-item list-group-item-action" style="color: #f09819;"><i class="fas fa-caret-right" style="margin: 5px 5px 0px 0px; color: #f09819;"></i><b>Dich Vụ Khuyến Mãi</b></a>
-                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check"  style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Mua nhiều giảm giá</a>
-                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check"  style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Đang giảm giá</a>
-                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check"  style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Miễn phí vận chuyển</a>
-                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check"  style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Rẻ vô địch</a>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="card col-9 mt-4">
-                        <div class="row no-gutters">
-                            <div class="px-2 pt-3 col-md-12" >
-                                <h3 style="border-left: 3px solid #f09819; padding-left:5px;"><b>Thông tin cá nhân </b></h3>
-                                <hr width=100%>
-                                <!-- <img src="assets/img/tick.png" class="card-img" alt="..." style="padding:10px; width: 70px; height:70px;" > -->
-                            </div>
-                            <div class="col-12">
-                                <div class="private-information">
-                                    <div class="row">
-                                        <div class="px-0 col-12 pl-0">
-                                            <div class="row">
-                                                <div class="text-right col-3" style=" margin-top: 20px;">
-                                                    Họ và tên *
-                                                </div>
-                                                
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">   
-                                                            <input type="text" class="form-control" id="uname" placeholder="VD: Nguyễn Văn A" name="uname" required>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="  margin-top: 20px;">
-                                                    Điện thoại *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">                   
-                                                            <input type="text" class="form-control" id="uname" placeholder="VD: 0978485015" name="uname" required>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="  margin-top: 20px;">
-                                                    Email *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control" id="uname" placeholder="VD: ducdudu@gmail..." name="uname" required>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row py-2">
-                                                <div class="text-right col-3 pl-0" style="  margin-top: 20px;">
-                                                    Ngày sinh * 
-                                                </div>
-                                                <div class="col-9">
-                                                    <div class="row pl-2">
-                                                        <input id="datepicker" width="300" />
-                                                        <p class="pl-3 pt-2" style="color: rgb(187, 187, 187); margin-bottom: 2px;"><i>Cập nhập thông tin ngày sinh để nhận được nhiều ưu đãi </i></p>
-                                                    </div>
-                                                </div>
-                                                
-                                                <script>
-                                                    $('#datepicker').datepicker({
-                                                        uiLibrary: 'bootstrap4'
-                                                    });
-                                                </script>
-                                            </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="  margin-top: 20px;">
-                                                    Giới tính *
-                                                </div>
-                                                <div class="col-6 px-0 pt-3 pb-2 pl-3">
-                                                    <label class="form-radio-label">
-                                                        <input class="form-radio-input" type="radio" name="optionsRadios" value=""  checked="">
-                                                        <span class="form-radio-sign">Nam</span>
-                                                    </label>
-                                                    <label class="form-radio-label ml-3">
-                                                        <input class="form-radio-input" type="radio" name="optionsRadios" value="">
-                                                        <span class="form-radio-sign">Nữ</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="margin-top: 20px; ">
-                                                    Tỉnh / TP *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">
-                                                            <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px; " >
-                                                                <option value="left" selected="">Tỉnh/Thành phố</option>
-                                                                <option value="right" >Hà Nội</option>
-                                                                <option value="center">Phú Thọ</option>
-                                                                <option value="center">Vĩnh Phúc</option>
-                                                            </select>   
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="margin-top: 20px;" >
-                                                    Quận / Huyện *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">
-                                                            <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px;  " >
-                                                                <option value="left" selected="">Quận/Huyện</option>
-                                                                <option value="right" >Hà Nội</option>
-                                                                <option value="center">Phú Thọ</option>
-                                                                <option value="center">Vĩnh Phúc</option>
-                                                            </select>   
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="margin-top: 20px;">
-                                                    Phường / Xã *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">
-                                                            <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px; " >
-                                                                <option value="left" selected="">Phường/Xã</option>
-                                                                <option value="right" >Hà Nội</option>
-                                                                <option value="center">Phú Thọ</option>
-                                                                <option value="center">Vĩnh Phúc</option>
-                                                            </select>   
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="text-right col-3 pl-0" style="margin-top: 20px;">
-                                                    Địa chỉ chi tiết *
-                                                </div>
-                                                <div class="col-6 px-0">
-                                                    <form action="/action_page.php" class="was-validated">
-                                                        <div class="form-group">
-                                                            <textarea class="form-control" aria-label="With textarea"></textarea>
-                                                            
-                                                            <div class="invalid-feedback">Đây là trường bắt buộc</div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>    
+                <h2 class="pt-4 mx-3"><b>Kiểm tra đơn hàng</b></h2>
+                <div class="row py-3 mx-3" id="stamp-check-cart">
+                    <div class="col-4 pl-0">
+                        <div class="card px-2 py-3">
+                            <div class="box-check-cart">
+                                <div class="text-center">
+                                    <h5><i class="mr-1 pb-2 fas fa-search"></i><b>Kiểm tra đơn hàng của bạn</b></h5>
+                                </div>
+                                <p class="pl-2">Phương thức kiểm tra</p>
+                                
+                                <div class="form-check">
+										<label class="form-radio-label">
+											<input class="form-radio-input" type="radio" name="optionsRadios" value="" checked="">
+											<span class="form-radio-sign">Số điện thoại</span>
+										</label>
+										<label class="form-radio-label ml-3">
+											<input class="form-radio-input" type="radio" name="optionsRadios" value="">
+											<span class="form-radio-sign">Email</span>
+										</label>
+									</div>
+                                
+                                <form action="/action_page.php" class="was-validated">
+                                    <div class="form-group">  
+                                        <label for="email2">Số điện thoại</label>
+                                        <input type="text" class="form-control" id="uname" placeholder="097848xxxx" name="uname" required>
                                     </div>
-                                    <!-- button -->
-                                    <div class="py-3 col-md-12" id="multiple-button">
-                                        <a href="checkout.html"> <button type="button" class="btn-gradient18" style="width: 200x; margin-left:60px;">Nhập lại</button> </a>
-                                        <a href="checkout.html"> <button type="button" class="btn-gradient17" style="width: 200x; margin-left:60px;">Xác nhận</button> </a>
-                                    </div>
-                                    <!-- end button -->
+                                </form>
+                                <p class="pl-2">Nếu quý khách có bất kỳ thắc mắc nào, xin vui lòng gọi 0888.227.837</p>
+                                <div class="text-right pb-3 pr-5">
+                                    <a href="checkout.html"> <button type="button" class="btn-gradient18" style="width: 200x; ">Xem ngay</button> </a>
                                 </div>
                             </div>
                         </div>
+                    </div> 
+                    
+                    <div class="col-4 pt-2" style="background-color: white;  border-right: 3px solid white;">
+                        <p style="border-left: 3px solid #f09819; padding-left: 5px;"><b>Mã đơn hàng #OC821156</b></p>
+                        <div class="row">
+                            <div class="col-5 text-right" id="grey-text-infor">
+                                <p>Họ và tên:</p>
+                            </div>
+                            <div class="col-7 px-0">
+                                <p>Dang Truong</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5 text-right" id="grey-text-infor">
+                                <p>Số điện thoại:</p>
+                            </div>
+                            <div class="col-7 px-0">
+                                <p>0978485015</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5 text-right" id="grey-text-infor">
+                                <p>Email:</p>
+                            </div>
+                            <div class="col-7 px-0">
+                                <p>haitruongvn90@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5 text-right" id="grey-text-infor">
+                                <p>Địa chỉ:</p>
+                            </div>
+                            <div class="col-7 px-0">
+                                <p>dại học hà nội, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Hà Nội</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5 text-right" id="grey-text-infor">
+                                <p>Trạng thái:</p>
+                            </div>
+                            <div class="col-7 px-0">
+                                <p><span style="color: #b9232e;">Đã bị hủy</span> / <a href=""><i>Hướng dẫn</i></a></p>
+                            </div>
+                        </div>   
                     </div>
-                </div>    
+                    <div class="col-4 pt-2" style="background-color: white; ">
+                        <div class="row px-5">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Máy hút chân không ikl4ud8h</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="productpage.html"><img class="img-fluid" style="width: 45px;" src="assets/img/meat_2.png" alt="Chania"></a></td>
+                                        <td>
+                                            <div class="" id="final-price">
+                                                <p id="p1">289.000đ</p> 
+                                                <p id="p2">299.000đ</p>   
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                
+                            </table>
+                            <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">Máy hút chân không ikl4ud8h</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="productpage.html"><img class="img-fluid" style="width: 45px;" src="assets/img/meat_2.png" alt="Chania"></a></td>
+                                            <td>
+                                                <div class="" id="final-price">
+                                                    <p id="p1">289.000đ</p> 
+                                                    <p id="p2">299.000đ</p>   
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    
+                                </table>
+                        </div>
+                    </div>
+                </div> 
+               
             </div>
         </div>
         <!--COMPUTER FOOTER-->
@@ -653,41 +589,3 @@
         <script src="assets/js/ready.min.js"></script>
     </body>
     </html>
-    <h2 class="pt-5"><b>Kiểm tra đơn hàng</b></h2>
-            
-            <div class="row py-3">
-                <div class="col-4">
-                    <div class="card px-2 py-3">
-                        <div class="box-check-cart">
-                            <div class="text-center">
-                                <h5><i class="mr-1 fas fa-search"></i>Kiểm tra đơn hàng của bạn</h5>
-                            </div>
-                            <p class="pl-2">Phương thức kiểm tra</p>
-                            <div class="row pl-4 ">
-                                <div class="form-check" >
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                    <label class="form-check-label"  for="exampleRadios1"><b> Số điện thoại
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                    <label class="form-check-label" for="exampleRadios2"><b> Email
-                                    </label>
-                                </div>
-                            </div>
-                            <form action="/action_page.php" class="was-validated">
-                                <div class="form-group">  
-                                    <label for="email2">Số điện thoại</label>
-                                    <input type="text" class="form-control" id="uname" placeholder="097848xxxx" name="uname" required>
-                                </div>
-                            </form>
-                            <p class="pl-2">Nếu quý khách có bất kỳ thắc mắc nào, xin vui lòng gọi 0888.227.837</p>
-                            <div class="text-right pr-5">
-                                <a href="checkout.html"> <button type="button" class="btn-gradient18" style="width: 200x; ">Xem ngay</button> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col"></div>
-                <div class="col"></div>
-            </div>

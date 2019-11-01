@@ -1277,7 +1277,9 @@ text-align: center;
  /* Clear floats after rows */ 
  
 
-
+#stamp-check-cart p{
+margin-bottom: 0px;
+}
 
  #product .box-img-cursor{
     padding: 3px;
@@ -1709,9 +1711,11 @@ margin-bottom: 0px;
 #number-code{
    color: rgb(97, 153, 255);
 }
-
+#pink-stamp{
+   position: relative;
+}
 .infor-cart-details{
-   position: absolute;
+  position: relative;
    z-index: 3;
    margin-top: 30px;
 }
