@@ -398,6 +398,7 @@ margin-bottom: 0px;
 
  }
 
+ 
  #final-price #p2{
     text-decoration: line-through;
     color: #000;
@@ -708,6 +709,11 @@ margin-left: 107%;;
    margin-left: 10px;
    margin-bottom: 2px;
  }
+.edit{
+margin-right:40px;
+margin-top: 30px;
+float: right;
+}
 
  #single-text-pay p{
    padding-top: 90px;
@@ -894,7 +900,7 @@ color: transparent;
 .collapsible {
    background: #EDE574;  /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, rgb(229, 243, 208), rgb(240, 239, 230));  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, rgb(234, 248, 212), rgb(243, 241, 225)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: linear-gradient(to right, rgb(234, 248, 212), rgb(243, 241, 225)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Oa 12+, Safari 7+ */
    
    color: #000;
    cursor: pointer;
@@ -973,6 +979,7 @@ color: transparent;
 
  }
 
+
  .infor-banking{
     display: inline-flex;
  }
@@ -980,12 +987,15 @@ color: transparent;
     margin-bottom: 2px !important;
 
  }
+ #credit-card p{
+margin-bottom: 0px;
+ }
 
  #code-discount{
 
-    border: 1px solid rgb(165, 165, 255);
+   
     border-radius: 3px;
-    padding: 4px 20px;
+   
     color: rgb(184, 180, 180);
  }
 
@@ -1400,7 +1410,7 @@ margin-right: 30px;
     border-top: 41px solid transparent;
     border-bottom: 40px solid transparent;
     border-left: 11px solid #FD8700;
-    top: 7%;
+    top: 41px;
     left: 100%;
     margin-top: 47px;
    
@@ -1423,7 +1433,7 @@ margin-right: 30px;
     border-top: 41px solid transparent;
     border-bottom: 40px solid transparent;
     border-left: 11px solid #FD8700;
-    top: 14%;
+    top: 69px;
     left: 100%;
     margin-top: 110px;
    
@@ -1654,7 +1664,10 @@ margin-top: 15px;
      
    }
 
-  
+   #background-infor{
+     background-color: rgb(241, 247, 255);
+      
+    }
  
  
  #caption h4 {
@@ -2036,17 +2049,26 @@ padding-left: 7px;
     width: 100%;
     z-index: 10;
  }
- 
+ .text-footer a {
+    display: flex;
+    color:#f08c00;
+ }
  .text-footer a p{
     color: #000;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
    
+ }
+ .text-footer a .fa-angle-right{
+margin-top: 5px !important;
  }
 
  .text-footer a p:hover{
     color:#f08c00;
  }
-
+ .text-footer a p:hover{
+    transition: all .5s ease;
+    margin-left: 15px !important;
+ }
  .text-footer a{
    text-decoration: none;
  }

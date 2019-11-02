@@ -919,3 +919,207 @@
     <script src="assets/js/ready.min.js"></script>
 </body>
 </html>
+<div class="wrapper">
+        <!-- Navbar Header -->
+        <div class="header">
+            <div class="nav_top">
+                <div class="container">
+                    <div class="row" >      
+                        <div class="col-12 col-md-4 col-sm-4">
+                            <div class="nav_top_left">
+                                <a href="#">Hotline: 0978.485.015</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-sm-8 col-md-8 ">
+                            <div class="nav_top_right">
+                                <ul class="top-menu">
+                                    <li><a href="#">Tra cứu đơn hàng </a></li>
+                                    <li><a href="#">Câu hỏi thường gặp </a></li>
+                                    <li><a href="#">Thông báo </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar content -->
+            <div class="" id="navbar">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" >
+                    <div class="container">
+                        <a  class="navbar-brand" href="index.html"> <img src="assets/img/final-logo.png" class="img-fluid" alt="..." style="width: 250px; height: 60px; "></a>
+                        <div class="search pr-5">
+                            <form class="search-form" action="resultbysearch.html">
+                                <input type="text" placeholder="Tìm kiếm..." >
+                                <a href="resultbysearch.html"><i class="fa fa-search search-icon" style="padding:13px; margin-top: 9px; background-color:#f09819; color: white; border-radius: 3px;"></i></a>
+                            </form>
+                        </div>
+                        <ul class="navbar-nav navbar-brand">
+                            <div class="row">
+                                <div class="pt-2 col-6 col-lg-4">
+                                    <li class="nav-item">
+                                        <a class="nav-link"  href="#">Đăng Nhập</a>
+                                    </li>
+                                </div>
+                                <div class="pt-2 col-6 col-lg-8">
+                                    <li class="nav-item">
+                                        <div class="cart-icon">
+                                            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+                                            <a href="#">Giỏ Hàng</a>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- Navbar content -->
+            
+            <script>
+                window.onscroll = function() {myFunction()};
+                
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                
+                function myFunction() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+            </script>
+            <!-- end category sticky -->
+            
+        </div>
+        <!-- End-Navbar Header -->
+        
+        <div class="container">
+            <div class="product pt-2 pb-lg-2">
+                <!-- breadcum -->
+                <div class="row"> 
+                    
+                    <ul class="breadcrumbs">
+                        <li class="nav-home">
+                            <a href="#">
+                                <a href="index.html"><i class="flaticon-home"></i></a>
+                            </a>
+                        </li>
+                        <li class="separator">
+                            <i class="flaticon-right-arrow"></i>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Thiết lập địa chỉ</a>
+                        </li>
+                        <li class="separator">
+                            <i class="flaticon-right-arrow"></i>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- end breadcum -->
+                <div class="row py-2 mt-2 px-4" style="background-color: gainsboro; border-radius: 3px;">
+                    <img src="assets/img/profile2.jpg" class="rounded-circle" alt="Cinque Terre" width="" height=""> 
+                    <div id="pesonal-infor">
+                        <p >Xin chào <b>Đặng Trường</b></p>
+                        <p><i class="fas fa-pen" style="margin-right: 3px;"></i>Sửa hồ sơ</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- left category -->
+                    <div class=" py-4 col-3">
+                        <div class="list-group" id="text-hidden-category">
+                            <a href="#" class="list-group-item list-group-item-action"><b><i class="fas fa-user" style="margin-right:10px;"></i>Thông tin tài khoản của quý khách</b></a>
+                            <a href="user_profile.html" class="list-group-item list-group-item-action" ><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Thông tin cá nhân</a>
+                            <a href="user_profile.html" class="list-group-item list-group-item-action"><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Thay đổi mật khẩu</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-file-invoice-dollar" style="margin-right:10px;" ></i>Quản lý mua hàng</a>
+                            <a href="cart_history.html" class="list-group-item list-group-item-action"><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Lịch sử đơn hàng</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Yêu cầu báo giá</a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-9 mt-4" >
+                        <div class="card">
+                            <div class="row no-gutters" >
+                                <div class="pl-4 pt-4 col-md-6" >
+                                    <h3 style="border-left: 3px solid #f09819; padding-left:5px;"><b>Địa chỉ của tôi</b></h3>
+                                </div>
+                                <div class="col-6" id="change_address">
+                                    <button type="button" class="mt-3 btn-gradient16" style="width: 500x; margin-left:60px;"><i class="mr-1 fas fa-plus"></i>Thêm địa chỉ mới </button>   
+                                </div>
+                                <hr width=100%>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 pl-4">
+                                    <table class="table mt-3">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Tên</th>
+                                                <th scope="col text-left" >Nguyễn Minh Đức</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Số điện thoại</td>
+                                                <td class="text-leftt" >(+84) 978485015</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Địa chỉ</td>
+                                                <td class="text-left">
+                                                    D4, Đại học Hà Nội, Km9 Nguyễn Trãi
+                                                    Phường Thanh Xuân Bắc
+                                                    Quận Thanh Xuân
+                                                    Hà Nội
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row edit">
+                                        <h4><a class="mr-4" href="#">Sửa</a></h4> 
+                                        <h4><a href="#">Xóa</a></h4> 
+                                    </div>
+                                </div>
+                            </div>
+                            <hr width=100%>
+                            <div class="row">
+                                <div class="col-6 pl-4">
+                                    <table class="table mt-3">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Tên</th>
+                                                <th scope="col text-left" >Nguyễn Thanh Tùng</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Số điện thoại</td>
+                                                <td class="text-leftt" >(+84) 978485015</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Địa chỉ</td>
+                                                <td class="text-left">
+                                                    D4, Đại học Hà Nội, Km9 Nguyễn Trãi
+                                                    Phường Thanh Xuân Bắc
+                                                    Quận Thanh Xuân
+                                                    Hà Nội
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row edit">
+                                        <h4><a class="mr-4" href="#">Sửa</a></h4> 
+                                        <h4><a href="#">Xóa</a></h4> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
