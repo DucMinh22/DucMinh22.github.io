@@ -1744,11 +1744,11 @@ color: white;
 .btn-btn-cart{
    border-radius: 50%;
    cursor: pointer;
-   background-color: rgb(177, 176, 176);
- color:rgb(73, 65, 65);
- border: 1px solid transparent;
+   background-color:white;
+ border: 1px solid #f09819;
 height: 28px;
 }
+
 
 .btn-btn-delete{
    border-radius: 5px;
@@ -2055,8 +2055,16 @@ padding-left: 7px;
  }
  .text-footer a p{
     color: #000;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
    
+ }
+
+ .table{
+    margin-bottom: 0;
+ }
+
+ .table th, .table td{
+    padding: 6px !important;
  }
  .text-footer a .fa-angle-right{
 margin-top: 5px !important;
