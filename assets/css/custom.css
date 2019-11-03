@@ -231,6 +231,11 @@ opacity: 0.6;
    position: absolute !important;
     }
    
+    @media (max-width : 556px) {
+      .input-fixed{
+         width: 228px !important;
+      }
+    }
 
    @media (max-width : 768px) {
    
@@ -247,7 +252,24 @@ opacity: 0.6;
         .comment h4{
          margin-left: 49px !important;
       }
-        
+
+      #change_address{
+         text-align: left !important;
+      }
+
+      .btn-gradient16{
+         width: 45% !important;
+      }
+      #Step img{
+         margin-left: 0px !important;
+         max-width: 129% !important;
+         height: 90% !important;
+      }
+
+      #Step h5{
+         padding-top: 24px !important;
+      padding-left: 28px !important;
+      }
    }
    @media (max-width : 1300px) {
 
@@ -261,6 +283,7 @@ opacity: 0.6;
          padding: 13px 0px !important;
          font-size: 12px;
       }
+      
    }
 
    @media (max-width : 1300px) {
@@ -272,6 +295,10 @@ opacity: 0.6;
      
    }
 
+
+.form-check label, .form-group label{
+   white-space: normal !important;
+   }
  .side-bar {
     height: 1000px;
     width: 0;
@@ -916,11 +943,27 @@ color: transparent;
   
  }
  
+.open-bar-pay{
+   background: #EDE574;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, rgb(229, 243, 208), rgb(240, 239, 230));  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, rgb(234, 248, 212), rgb(243, 241, 225)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Oa 12+, Safari 7+ */
+   color: #000;
+   cursor: pointer;
+   padding: 10px;
+   width: 100%;
+   border: none;
+   text-align: left;
+   outline: none;
+   font-size: 15px;
+   border: 1px solid rgb(223, 220, 220);
+   border-radius: 3px;
+  margin-top: 10px;
+ }
  .active, .collapsible:hover {
    background-color: #555;
  }
  
- .content {
+.content {
    
    display: none;
    overflow: hidden;
@@ -931,7 +974,56 @@ color: transparent;
  }
 
 
-
+ .form-popup {
+   display: none;
+   position: fixed;
+   bottom: 0;
+   right: 15px;
+   border: 3px solid #f1f1f1;
+   z-index: 9;
+ }
+ .form-container {
+   max-width: 300px;
+   padding: 10px;
+   background-color: white;
+ }
+ 
+ /* Full-width input fields */
+ .form-container input[type=text], .form-container input[type=password] {
+   width: 100%;
+   padding: 15px;
+   margin: 5px 0 22px 0;
+   border: none;
+   background: #f1f1f1;
+ }
+ 
+ /* When the inputs get focus, do something */
+ .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+   background-color: #ddd;
+   outline: none;
+ }
+ 
+ /* Set a style for the submit/login button */
+ .form-container .btn {
+   background-color: #4CAF50;
+   color: white;
+   padding: 16px 20px;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+   margin-bottom:10px;
+   opacity: 0.8;
+ }
+ 
+ /* Add a red background color to the cancel button */
+ .form-container .cancel {
+   background-color: red;
+ }
+ 
+ /* Add some hover effects to buttons */
+ .form-container .btn:hover, .open-button:hover {
+   opacity: 1;
+ }
  .paying-method{
    
    background-color: #fffeee;
@@ -1309,9 +1401,7 @@ margin-bottom: 0px;
    display: block;
  }
  
- #change_address{
-  padding-left: 128px;
-}
+
  #text-code-product{
     display: flex;
  }

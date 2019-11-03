@@ -179,12 +179,35 @@
                                     <td style="color: #f09819;"><h3>289.000đ</h3></td>
                                     <td id="follow" style="width:12%">
                                         <button type="button" class="my-2 btn-btn-delete"><i class="mr-1 fas fa-trash-alt"></i>Xóa</button>
-                                        <button type="button" class="btn-btn-delete"><i class="mr-1 fas fa-edit"></i>Chỉnh sửa</button>
+                                        <button type="button" onclick="openForm()" class="btn-btn-delete"><i class="mr-1 fas fa-edit"></i>Chỉnh sửa</button>
+                                        <div class="form-popup" id="myForm">
+                                            <form action="/action_page.php" class="form-container">
+                                                <h1>Login</h1>
+                                                
+                                                <label for="email"><b>Email</b></label>
+                                                <input type="text" placeholder="Enter Email" name="email" required>
+                                                
+                                                <label for="psw"><b>Password</b></label>
+                                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                                
+                                                <button type="submit" class="btn">Login</button>
+                                                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                            </form>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <script>
+                        function openForm() {
+                            document.getElementById("myForm").style.display = "block";
+                        }
+                        
+                        function closeForm() {
+                            document.getElementById("myForm").style.display = "none";
+                        }
+                    </script>
                     <div class="text-right" id="warning5">
                         <p>Miễn phí giao hàng trong nước cho đơn hàng từ 1,000,000 đ</p>
                     </div>
@@ -201,8 +224,8 @@
                 </div>
             </div>
         </div>
-     <!--COMPUTER FOOTER-->
-     <div class="px-0 col-sm-12 col-12 d-none d-lg-block" >
+        <!--COMPUTER FOOTER-->
+        <div class="px-0 col-sm-12 col-12 d-none d-lg-block" >
             <div class="text-center" id="main-footer-computer">
                 <div class="container">
                     <div class="col">
