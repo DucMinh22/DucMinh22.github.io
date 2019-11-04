@@ -1685,9 +1685,13 @@ margin-top: 15px;
    margin-bottom: 3px;
 }
 .radio-toolbar input[type="radio"] {
-   display: none;
+  display: none;
  }
- 
+
+ /* .radio-cart input[type="radio"] {
+    display: block;
+ }
+  */
  .radio-toolbar label {
    display: inline-block;
    background-color: #ddd;

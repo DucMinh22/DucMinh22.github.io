@@ -284,21 +284,25 @@
                             <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(223, 220, 220);">
                                 <div class="col">
                                     <div class="row">
-                                        <div class="text-left pt-3 pr-0 col-2">
-                                            Mã giảm giá:
-                                        </div>
-                                        <div class="col-3 px-0" id="code-discount">
-                                            <div class="form-group form-floating-label">
-                                                <input id="inputFloatingLabel" type="text" class="form-control input-border-bottom" required>
-                                                <label for="inputFloatingLabel" class="placeholder"> <i class="mr-2 fas fa-ticket-alt" style="color: #f09819;"></i><i>Sử dụng mã giảm giá</i></label>
-                                            </div>
-                                        </div>
-                                        <div class="pt-3 pl-0 col-2" >
-                                            <button type="button" class="btn-gradient18" style="width: 200x;">Áp dụng</button>
-                                        </div>
-                                        <div class="pt-3 pl-0 col-1" style="color: rgb(119, 197, 1);">
-                                            -0đ
-                                        </div>
+                                        <table class="table table-striped mt-3">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" style="width: 15%">Mã giảm giá:</th>
+                                                    <th scope="col" style="width: 30%">
+                                                        <div class="" id="code-discount">
+                                                            <div class="form-group form-floating-label">
+                                                                <input id="inputFloatingLabel" type="text" class="form-control input-border-bottom" required>
+                                                                <label for="inputFloatingLabel" class="placeholder"> <i class="mr-2 fas fa-ticket-alt" style="color: #f09819;"></i><i>Sử dụng mã giảm giá</i></label>
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th scope="col" style="width: 20%">
+                                                        <button type="button" class="btn-gradient18" style="width: 200x;">Áp dụng</button>
+                                                    </th>
+                                                    <th scope="col" style="color: rgb(119, 197, 1);">-100.đ</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
                                     </div>
                                 </div>
                                 <!-- <div class="col-5"></div> -->
@@ -367,7 +371,7 @@
                                                                     <h4> <b>1, Quý khách muốn thanh toán trước:</b></h4>
                                                                 </div>
                                                                 
-                                                                <button type="button" class="collapsible">Thanh toán toàn bộ chi phí đơn hàng</button>
+                                                                <button type="radio" id="radio1" name="radios" class="collapsible">Thanh toán toàn bộ chi phí đơn hàng</button>
                                                                 
                                                                 <div class="content">
                                                                     <div class="col" id="title-pay">
@@ -401,7 +405,7 @@
                                                                     </div>
                                                                 </div>
                                                                 
-                                                                <button type="button" class="collapsible">Thanh toán trước 50% giá trị đơn hàng</button>
+                                                                <button type="radio" id="radio2" name="radios" class="collapsible">Thanh toán trước 50% giá trị đơn hàng</button>
                                                                 <div class="content">
                                                                     <div class="py-2 px-4">
                                                                         <div class="col-12 py-2 " id="warning">

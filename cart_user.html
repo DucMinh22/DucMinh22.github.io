@@ -197,6 +197,49 @@
                                     </td>
                                 </tr>
                             </tbody>
+                            <tbody>
+                                    <tr class="text-center">
+                                        <th scope="row"><img src="assets/img/meat_1.png"  class="img-fluid" alt="..." width="60px" height="60px;"></th>
+                                        <td class="text-left"> 
+                                            <a href="productpage.html"><p>YAZOLE Classic Business Men Watches </p></a>
+                                            <p>Mã sản phẩm: <b>J2823WBR</b></p>
+                                        </td>
+                                        <td> Phân loại hàng<i class="ml-2 fas fa-caret-down"></i></td>
+                                        <td>  <h3 style="color:rgb(64, 64, 206) ;"> 289.000đ </h3> <span style="text-decoration:line-through; font-size: 12px;">300.000đ</span></td>
+                                        <td>
+                                            <div class="input-group pl-4">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-default btn-number" id="small-plus-btn" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                        <span class="glyphicon glyphicon-minus">-</span>
+                                                    </button>
+                                                </span>
+                                                <span style="width:50px;"><input type="text" name="quant[1]" class="form-control input-number" id="small-form-control"  value="1" min="1" max="100000" ></span>
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-default btn-number" id="small-plus-btn" data-type="plus" data-field="quant[1]">
+                                                        <span class="glyphicon glyphicon-plus">+</span>
+                                                    </button>
+                                                </span>
+                                            </div> 
+                                        </td>
+                                        <td style="color: #f09819;"><h3>289.000đ</h3></td>
+                                        <td id="follow" style="width:12%">
+                                            <button type="button" class="my-2 btn-btn-delete"><i class="mr-1 fas fa-trash-alt"></i>Xóa</button>
+                                            <button type="button" onclick="openForm1()" class="btn-btn-delete"><i class="mr-1 fas fa-edit"></i>Chỉnh sửa</button>
+                                            <div class="form-popup" id="myForm1">
+                                                <form action="/action_page.php" class="form-container">
+                                                    <h1>Login</h1>
+                                                
+                                                    
+                                                    <label for="psw"><b>Password</b></label>
+                                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                                    
+                                                    <button type="submit" class="btn">Login</button>
+                                                    <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+                                                </form>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
                         </table>
                     </div>
                     <script>
@@ -208,6 +251,15 @@
                             document.getElementById("myForm").style.display = "none";
                         }
                     </script>
+                    <script>
+                            function openForm1() {
+                                document.getElementById("myForm1").style.display = "block";
+                            }
+                            
+                            function closeForm1() {
+                                document.getElementById("myForm1").style.display = "none";
+                            }
+                        </script>
                     <div class="text-right" id="warning5">
                         <p>Miễn phí giao hàng trong nước cho đơn hàng từ 1,000,000 đ</p>
                     </div>
