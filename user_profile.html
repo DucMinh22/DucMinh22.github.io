@@ -215,21 +215,23 @@
                                                 </div>
                                             </div>
                                             <div class="row py-2">
-                                                <div class="text-right col-lg-3 col-4" style="  margin-top: 20px;">
+                                                <div class="text-right pt-1 col-lg-3 col-4" style="">
                                                     Ngày sinh * 
                                                 </div>
                                                 <div class="col-lg-9 col-7">
                                                     <div class="row pl-2">
-                                                        <input id="datepicker" width="300" />
+                                                        <input id="datepicker" placeholder="dd-mm-yyyy" width="300" />
                                                         <p class="pl-3 pt-2" style="color: rgb(187, 187, 187); margin-bottom: 2px;"><i>Cập nhập thông tin ngày sinh để nhận được nhiều ưu đãi </i></p>
                                                     </div>
                                                 </div>
-                                                
                                                 <script>
+                                                    $('#datepicker').datepicker({ format: 'dd-mm-yyyy' });
+                                                </script>
+                                                <!-- <script>
                                                     $('#datepicker').datepicker({
                                                         uiLibrary: 'bootstrap4'
                                                     });
-                                                </script>
+                                                </script> -->
                                             </div>
                                             <div class="row">
                                                 <div class="text-right col-lg-3 col-4" style="  margin-top: 20px;">
@@ -327,8 +329,8 @@
                 </div>    
             </div>
         </div>
-     <!--COMPUTER FOOTER-->
-     <div class="px-0 col-sm-12 col-12 d-none d-lg-block" >
+        <!--COMPUTER FOOTER-->
+        <div class="px-0 col-sm-12 col-12 d-none d-lg-block" >
             <div class="text-center" id="main-footer-computer">
                 <div class="container">
                     <div class="col">

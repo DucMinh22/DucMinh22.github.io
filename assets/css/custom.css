@@ -440,7 +440,7 @@ float: left;
    padding-top: 10px;
    padding-bottom: 10px;
    padding-right: 30px;
-   width: 120px;
+   width: 126px;
    border: none;
    cursor: pointer;
    font-size: 15px;
@@ -1985,9 +1985,8 @@ img.room-active {
    cursor: pointer;
    background-color:white;
    border: 1px solid #f09819;
-   height: 28px;
+   height: 30px;
 }
-
 
 .btn-btn-delete{
    border-radius: 5px;
