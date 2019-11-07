@@ -79,7 +79,24 @@ body{
    right: 43px !important;
 }
 
+.bc-line{
+   float: none;
+   width: auto;
+   padding: 8px 0;
+   line-height: 0;
+}
 
+.bc-line span{
+   display: inline-block;
+   background: rgb(255, 179, 92);
+   width: 5px;
+   height: 5px;
+   border-radius: 50%;
+   margin: 0 5px;
+}
+.bc-line .bc-danger{
+   background: rgb(233, 3, 3);
+}
 .bg-secondary{
    background: -webkit-linear-gradient(to right, #ffb347, #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
    background: linear-gradient(to right, #ffb347, #ffcc33);
@@ -2165,6 +2182,9 @@ img.room-active {
    width: 200px;
    
 }
+.btn-gradient15:hover{
+   opacity: 0.8;
+}
 .btn-gradient16{
    
    padding: 10px 15px ;
@@ -2233,6 +2253,18 @@ img.room-active {
    cursor: pointer;
    color: white;
    width: 130px;
+}
+
+.btn-gradient22{
+   background: #ffac46;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #f56841, #ffa332);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #ff6034, #fda437); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   padding: 10px 20px;
+   border: none;
+   border-radius: 30px;
+   cursor: pointer;
+   color: white;
+  
 }
 .img-zoom-container {
    position: relative;
