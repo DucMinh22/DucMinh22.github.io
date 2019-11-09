@@ -65,6 +65,11 @@
                 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" >
                     <div class="container">
                         <a  class="navbar-brand" href="index.html"> <img src="assets/img/final-logo.png" class="img-fluid" alt="..." style="width: 250px; height: 60px; "></a>
+                        <div class="d-lg-none d-block">
+                            <div id="main-btn">
+                                <button class="openbtn" onclick="openNav()">☰</button>  
+                            </div>
+                        </div>
                         <div class="search">
                             <form class="search-form" action="resultbysearch.html">
                                 <input type="text" placeholder="Tìm kiếm..." >
@@ -196,7 +201,7 @@
             
         </div>
         <!-- End-Navbar Header -->
-       
+        
         <!-- Sidebar -->
         
         <!-- End Sidebar -->
@@ -456,10 +461,8 @@
                 </div>
             </div>
             
-            <div id="main-btn">
-                <button class="openbtn" onclick="openNav()">☰ DANH MỤC </button>  
-            </div>
         </div>
+        <!-- open-hidden-btn -->
         <script>
             function openNav() {
                 document.getElementById("mySide-bar").style.width = "300px";
@@ -471,6 +474,7 @@
                 
             }
         </script>
+        <!-- end-hidden-btn -->
         <!--End Menu mobile-->
         
         <div class="container">
@@ -4734,7 +4738,28 @@
         <div id="mySidenav" class="sidenav d-lg-block d-none">
             <a href="user_address.html" id="about">YÊU CẦU BÁO GiÁ</a>
         </div>
-        
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
         <!--COMPUTER FOOTER-->
         <div class="px-0 col-sm-12 col-12 d-none d-lg-block" >
             <div class="text-center" id="main-footer-computer">
