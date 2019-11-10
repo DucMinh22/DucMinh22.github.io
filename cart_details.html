@@ -128,7 +128,7 @@
                     </ul>
                 </div>
                 <!-- end breadcum -->
-                <div class="row py-2 mt-2 px-5 mx-1" id="background-infor">
+                <div class="row py-2 mt-2 px-lg-5 mx-1" id="background-infor">
                     <img src="assets/img/profile2.jpg" class="rounded-circle" alt="Cinque Terre" width="125px" height=""> 
                     <div id="pesonal-infor">
                         <p >Xin chào <b>Đặng Trường</b></p>
@@ -177,7 +177,7 @@
                             <hr>
                         </div>
                         <div class="row py-2 mx-3">
-                            <div class="col-6 pt-2 " style="background-color: #fffeee; border-right: 3px solid white;">
+                            <div class="col-lg-6 col-12 pt-2 " style="background-color: #fffeee; border-right: 3px solid white;">
                                 <p style="border-left: 3px solid #f09819; padding-left: 5px;"><b>Thông tin người mua</b></p>
                                 <div class="row">
                                     <div class="col-5 text-right" id="grey-text-infor">
@@ -248,7 +248,7 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <div class="col-6 pt-2" style="background-color: #fffeee; ">
+                            <div class="col-lg-6 col-12 pt-2" style="background-color: #fffeee; ">
                                 <p style="border-left: 3px solid #f09819; padding-left: 5px;"><b>Thông tin thanh toán</b></p>
                                 <div class="row">
                                     <div class="col-5 text-right" id="grey-text-infor">
@@ -276,7 +276,7 @@
                                 </div>   
                             </div>
                         </div> 
-                        <div class="table-responsive">
+                        <div class="table-responsive d-lg-block d-none">
                             <table class="table table-bordered">
                                 <thead>
                                     <tr class="text-center" style="background-color: #fffeee;">
@@ -309,6 +309,33 @@
                                 </tbody>
                             </table>
                         </div>
+                        <!-- for Mobile -->
+                        <div class="col-12 d-lg-none d-block" id="table-mobile">
+                            <h4><b>Danh sách sản phẩm</b></h4>
+                            <div class="col">
+                                <table class="table table-striped mt-3" >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"><img src="assets/img/meat_1.png"  class="img-fluid" alt="..." width="60px" height="60px;"></th>
+                                            <th scope="col"> <a href="productpage.html"><p>YAZOLE Classic Business Men Watches </p></a></th>
+                                            <th class="text-center" scope="col"> <button type="button" class="btn-btn-delete"><i class="fas fa-trash-alt"></i></button></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td id="category-title">
+                                              <p>Số lượng: 1</p> 
+                                              <p>Kích cỡ: Vừa</p>  
+                                               <p>Màu: Đỏ + trắng</p> 
+                                            </td>
+                                            <td style="color: #f09819;"><b>289.000đ</b></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End for Mobile -->
                         
                         <div class=" px-4 table-responsive">
                             <table class="table">
@@ -565,37 +592,7 @@
     </div>
     
     
-    <!-- Custom template | don't include it in your project! -->
-    <div class="custom-template">
-        <div class="title">Settings</div>
-        <div class="custom-content">
-            <div class="switcher">
-                <div class="switch-block">
-                    <h4>Topbar</h4>
-                    <div class="btnSwitch">
-                        <button type="button" class="changeMainHeaderColor" data-color="blue"></button>
-                        <button type="button" class="selected changeMainHeaderColor" data-color="purple"></button>
-                        <button type="button" class="changeMainHeaderColor" data-color="light-blue"></button>
-                        <button type="button" class="changeMainHeaderColor" data-color="green"></button>
-                        <button type="button" class="changeMainHeaderColor" data-color="orange"></button>
-                        <button type="button" class="changeMainHeaderColor" data-color="red"></button>
-                    </div>
-                </div>
-                <div class="switch-block">
-                    <h4>Background</h4>
-                    <div class="btnSwitch">
-                        <button type="button" class="changeBackgroundColor" data-color="bg2"></button>
-                        <button type="button" class="changeBackgroundColor selected" data-color="bg1"></button>
-                        <button type="button" class="changeBackgroundColor" data-color="bg3"></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="custom-toggle">
-            <i class="flaticon-settings"></i>
-        </div>
-    </div>
-    <!-- End Custom template -->
+    
 </div>
 </div>
 <!--   Core JS Files   -->
