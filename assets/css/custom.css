@@ -48,11 +48,63 @@ body, h1, h2, h3, h4, h5, h6, p{
    padding: 20px;
    width: 100%;
 }
-
-.notification{
-   margin: 12px 0px 0px 0px;
+.border_email{
+   padding: 0px 280px;
 }
-
+.email-pay{
+   text-align: center;
+}
+#email-btn-pay{
+border: 1px solid transparent;
+cursor: pointer;
+color: white;
+}
+#mark-bar-email{
+text-align: left;
+background: #ffffcc;
+}
+.notification{
+   margin: 12px 5px 0px 0px;
+}
+.infor_email{
+   display: flex;
+   padding: 30px 70px;
+}
+.policy_email {
+   display: flex;
+   padding: 30px 70px;
+   
+}
+.policy_email .col-4{
+   padding-right: 90px;
+}
+.dear_email{
+   padding: 20px 70px;
+}
+#card-main-email{
+   margin: 20px 70px ;
+   padding: 20px;
+}
+.main-email-left{
+   width: 400px;
+}
+.main-email-right{
+   width: 400px;
+}
+.main-email{
+   display: flex;
+}
+.infor_email .My_account{
+   width: 300px;
+}
+.infor_email .email_icon{
+   width: 300px;
+   text-align: center;
+}
+.infor_email .email_phone{
+   width: 300px;
+   text-align: right;
+}
 #card-login{
    margin-left: 95px;
 }
@@ -256,7 +308,7 @@ body, h1, h2, h3, h4, h5, h6, p{
       width: 228px !important;
    }
    .nav_top_right ul{
-float: left;
+      float: left;
    }
 }
 
@@ -305,11 +357,11 @@ float: left;
    #btn-cart-user{
       text-align: left !important;
    }
-
+   
    .sticky{
       position: static !important;
    }
-
+   
    .box-img-cursor img{
       height: 140px !important;
    }
@@ -318,6 +370,10 @@ float: left;
    }
    #warning5 p{
       text-align: left !important;
+   }
+   .border_email{
+      padding: 0px  !important;
+      width: 104%;
    }
    
 }
@@ -337,6 +393,9 @@ float: left;
       margin-right: 0px !important;
       text-align: right !important;
    }
+   .border_email{
+      padding: 0px 142px;
+   }
    
 }
 
@@ -351,24 +410,24 @@ float: left;
 
 
 #myBtn {
-  display: none;
-  position: fixed;
-  bottom: 40px;
-  right: 30px;
-  z-index: 99;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  background: #0575E6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
-  cursor: pointer;
-  padding: 11px;
-  border-radius: 50%;
-  height: 44px;
-  width: 44px;
-
+   display: none;
+   position: fixed;
+   bottom: 40px;
+   right: 30px;
+   z-index: 99;
+   font-size: 16px;
+   border: none;
+   outline: none;
+   background: #0575E6;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   color: white;
+   cursor: pointer;
+   padding: 11px;
+   border-radius: 50%;
+   height: 44px;
+   width: 44px;
+   
 }
 
 
@@ -401,20 +460,20 @@ float: left;
    color: white;
    border-radius: 0 25px 25px 0;
    line-height: 18px;
+   
+}
 
- }
- 
- #mySidenav a:hover {
+#mySidenav a:hover {
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
    background-color: #FD8700;
- }
- #about {
-    position: relative;
+}
+#about {
+   position: relative;
    top: 50%;
    background: #ffb347; /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #ffb347, #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
    background: linear-gradient(to right, #ffb347, );
- }
+}
 .comment h4{
    margin-left: 70px;
 }
@@ -2289,7 +2348,7 @@ img.room-active {
    border-radius: 30px;
    cursor: pointer;
    color: white;
-  
+   
 }
 .img-zoom-container {
    position: relative;
