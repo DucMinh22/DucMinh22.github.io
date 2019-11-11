@@ -330,10 +330,6 @@ background: #ffffcc;
       margin-left: 49px !important;
    }
    
-   #change_address{
-      text-align: left !important;
-   }
-   
    .btn-gradient16{
       width: 46% !important;
    }
@@ -375,7 +371,16 @@ background: #ffffcc;
       padding: 0px  !important;
       width: 104%;
    }
+   #card-login{
+      margin: 0;
+   }
    
+   .dear_email{
+      padding: 20px 40px;
+   }
+   #card-main-email{
+      margin: 20px 40px !important; 
+   }
 }
 @media (max-width : 1300px) {
    
@@ -396,7 +401,9 @@ background: #ffffcc;
    .border_email{
       padding: 0px 142px;
    }
-   
+   #card-login{
+      margin: 0;
+   }
 }
 
 @media (max-width : 1300px) {
@@ -2281,7 +2288,22 @@ img.room-active {
    margin-left: 10px !important;
    
 }
-
+.btn-gradient23{
+   padding: 10px 15px ;
+   border: none;
+   border: 1px solid  #fe8c00; ;
+   border-radius: 30px;
+   cursor: pointer;
+   width: 200px;
+   background-color: white;
+   margin-left: 10px !important;
+}
+.btn-gradient23:hover{
+   background: #fe8c00;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #f83600, #fe8c00);
+   color: white;
+}
 .btn-gradient16:hover{
    background: #fe8c00;  /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
