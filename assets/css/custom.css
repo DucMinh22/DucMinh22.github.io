@@ -381,6 +381,13 @@ background: #ffffcc;
    #card-main-email{
       margin: 20px 40px !important; 
    }
+   #carousel_post .owl-prev{
+      left: 85% !important;
+   }
+
+   #carousel_post .owl-next{
+      right: -5% !important;
+   }
 }
 @media (max-width : 1300px) {
    
@@ -599,7 +606,7 @@ background: #ffffcc;
    padding-top: 10px;
    padding-bottom: 10px;
    padding-right: 30px;
-   width: 126px;
+   width: 134px;
    border: none;
    cursor: pointer;
    font-size: 15px;
