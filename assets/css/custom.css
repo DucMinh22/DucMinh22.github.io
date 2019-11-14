@@ -700,6 +700,7 @@ background: #ffffcc;
    background-color: #fefefe;
    border-radius: 5px;
    cursor: pointer;
+   border: 1px solid transparent;
 }
 
 .card-product:hover {
