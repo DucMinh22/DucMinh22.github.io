@@ -248,6 +248,18 @@ background: #ffffcc;
    
 }
 
+.btn-search{
+   border: 1px solid transparent;
+   margin: 0;
+   background-color: transparent;
+   padding: 6px 14px;
+ cursor: pointer;
+   margin-top: 10px;
+    background-color:#f09819; 
+    color: white; 
+    border-radius: 3px;
+}
+
 .input-fixed{
    width: 330px !important; 
 }
@@ -428,7 +440,7 @@ background: #ffffcc;
    position: fixed;
    bottom: 40px;
    right: 30px;
-   z-index: 99;
+   z-index: 100;
    font-size: 16px;
    border: none;
    outline: none;
@@ -483,7 +495,7 @@ background: #ffffcc;
 }
 #about {
    position: relative;
-   top: 26%;
+   top: 165px;
    background: #ffb347; /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #ffb347, #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
    background: linear-gradient(to right, #ffb347, );
@@ -495,7 +507,35 @@ background: #ffffcc;
    height: 31px;
    margin-top: 5px;
 }
+.btn-mobile-collapse{
+border: 1px solid transparent;
+color: white;
+background-color: #ffb347;
+padding: 0px 36px;
+font-size: 14px;
+cursor: pointer;
+text-align: left;
+}
 
+#collapseOne{
+   background-color: #ffb347;  
+   
+}
+
+#collapseOne a{
+   font-size: 14px;
+   color: white;
+}
+
+#collapseTwo{
+   background-color: #ffb347;  
+   
+}
+
+#collapseTwo a{
+   font-size: 14px;
+   color: white;
+}
 .dropbtn2 {
    background: #2b96b6; /* fallback for old browsers */
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
@@ -506,7 +546,7 @@ background: #ffffcc;
    border: none;
    position: fixed;
    z-index: 20;
-   top: 37%;
+   top: 236px;
    border-radius: 0 25px 25px 0;
    cursor: pointer;
  }
