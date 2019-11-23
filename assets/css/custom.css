@@ -310,10 +310,7 @@ background: #ffffcc;
    }
    
 }
-.navbar-expand-lg .navbar-nav .dropdown-menu{
-   
-   position: absolute !important;
-}
+
 
 @media (max-width : 556px) {
    .input-fixed{
@@ -321,6 +318,10 @@ background: #ffffcc;
    }
    .nav_top_right ul{
       float: left;
+   }
+   .navbar-expand-lg .navbar-nav .dropdown-menu{
+   
+      position: absolute !important;
    }
 }
 
@@ -2176,15 +2177,18 @@ img.room-active {
    z-index: 3;
    margin-top: 30px;
 }
-.btn-btn-footer{
+
+.button-footer{
    padding: 5px 10px;
    margin-bottom: 5px;
    border-radius: 5px;
    cursor: pointer;
    background-color: #fff;
    border: 1px solid rgb(177, 176, 176);
+   margin-right: 5px;
+  
 }
-.btn-btn-footer:hover{
+.button-footer:hover{
    background-color: #f09819;
    color: white;
 }
