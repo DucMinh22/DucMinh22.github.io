@@ -2214,7 +2214,7 @@ img.room-active {
    cursor: pointer;
    background-color:white;
    border: 1px solid #f09819;
-   height: 30px;
+   padding: 4px 6px;
 }
 
 .btn-btn-delete{
