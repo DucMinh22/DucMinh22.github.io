@@ -323,6 +323,10 @@ background: #ffffcc;
    
       position: absolute !important;
    }
+
+   .card-product img{
+      height: 175px !important;
+      }
 }
 
 @media (max-width : 768px) {
@@ -457,7 +461,11 @@ background: #ffffcc;
    
 }
 
-
+#product-btn{
+   padding: 4px 6px;
+   border: 1px solid #f09819;
+   border-radius: 50%;
+}
 .form-check label, .form-group label{
    white-space: normal !important;
 }
@@ -747,6 +755,10 @@ text-align: left;
 .card-product:hover {
    border: 1px solid #f09819;
    cursor: pointer;
+}
+
+.card-product img{
+height: 210px;
 }
 .active_header{
    display: flex;
