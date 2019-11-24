@@ -319,6 +319,10 @@ background: #ffffcc;
    .nav_top_right ul{
       float: left;
    }
+
+   .sticky{
+      position: static !important;
+   }
    .navbar-expand-lg .navbar-nav .dropdown-menu{
    
       position: absolute !important;
@@ -376,9 +380,6 @@ background: #ffffcc;
       text-align: left !important;
    }
    
-   .sticky{
-      position: static !important;
-   }
    
    .box-img-cursor img{
       height: 140px !important;
@@ -466,7 +467,7 @@ background: #ffffcc;
    
 }
 
-#product-btn{
+.product-btn{
    padding: 4px 6px;
    border: 1px solid #f09819;
    border-radius: 50%;
@@ -771,24 +772,24 @@ height: 210px;
    
 }
 
-#title-card {
+.title-card {
    height: 40px; 
    width: 100%;
 }
 
-#title-card h4{
+.title-card h4{
    color: #000;
 }
 
-#title-card a {
+.title-card a {
    text-decoration: none;
 }
 
-#title-card a h4:hover {
+.title-card a h4:hover {
    color: #f08c00;
 }
 
-#icon-view-details a{
+.icon-view-details a{
    color: #f08c00;
    
 }
@@ -797,11 +798,11 @@ height: 210px;
    color: #f09819;
 }
 
-#common-cost{
+.common-cost{
    width:100%; 
    
 }
-#common-cost .main-cost{
+.common-cost .main-cost{
    color: #f09819;
    font-size: 16px;
    margin-right: 10px;
@@ -810,7 +811,7 @@ height: 210px;
    
 }
 
-#common-cost .main-cost p{
+.common-cost .main-cost p{
    margin-bottom: 0px;
    
    
@@ -827,9 +828,10 @@ height: 210px;
    text-decoration: none;
 }
 
-#abondon-text-cost {
+.abondon-text-cost {
    text-decoration: line-through;
    margin-bottom: 0px;
+
    
 }
 .card-category .card-text{
