@@ -327,6 +327,11 @@ background: #ffffcc;
    .card-product img{
       height: 175px !important;
       }
+
+      .img-blog img{
+         height: 214px !important;
+         
+      }
 }
 
 @media (max-width : 768px) {
@@ -1656,8 +1661,8 @@ img.room-active {
 .post .row {
    margin: 10px -16px;
 }
-.img-blog{
-   
+.img-blog img{
+   height: 280px;
    
 }
 
