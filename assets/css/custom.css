@@ -195,15 +195,17 @@ background: #ffffcc;
    
    
 }
+.sticky {
+   position: fixed;
+   top: 0;
+   width: 100%;
+}
 
 .nav_top_right ul li a {
    text-decoration: none;
    color: white;
    
 }
-
-
-
 
 #navbar {
    overflow: hidden;
@@ -319,6 +321,7 @@ background: #ffffcc;
    .sticky{
       position: static !important;
    }
+
    .navbar-expand-lg .navbar-nav .dropdown-menu{
    
       position: absolute !important;
