@@ -37,174 +37,165 @@
 </head>
 <body>
     <div class="wrapper">
-        <!-- Navbar Header -->
-        <div class="header">
-            <div class="nav_top d-lg-block d-none">
-                <div class="container">
-                    <div class="row" >      
-                        <div class="col-12 col-md-4 col-sm-4">
-                            <div class="nav_top_left">
-                                <p><a href="#">Hotline: 0978.485.015</a></p>
+         <!-- Navbar Header -->
+         <div class="header">
+                <div class="nav_top d-lg-block d-none">
+                    <div class="container">
+                        <div class="row" >      
+                            <div class="col-12 col-md-4 col-sm-4">
+                                <div class="nav_top_left">
+                                    <p><a href="#">Hotline: 0978.485.015</a></p>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="col-12 col-sm-8 col-md-8 ">
-                            <div class="nav_top_right">
-                                <ul class="top-menu">
-                                    <li><p><a href="#">Tra cứu đơn hàng </a></p> </li>
-                                    <li><p> <a href="#">Câu hỏi thường gặp </a></p></li>
-                                    <li><p><a href="#">Thông báo </a></p></li>
-                                </ul>
+                            
+                            <div class="col-12 col-sm-8 col-md-8 ">
+                                <div class="nav_top_right">
+                                    <ul class="top-menu">
+                                        <li><p><a href="#">Tra cứu đơn hàng </a></p> </li>
+                                        <li><p> <a href="#">Câu hỏi thường gặp </a></p></li>
+                                        <li><p><a href="#">Thông báo </a></p></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Navbar content -->
-            <div class="" id="navbar">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" >
-                    <div class="container">
-                        <a  class="navbar-brand" href="index.html"> <img src="assets/img/final-logo.png" class="img-fluid" alt="..." style="width: 250px; height: 60px; "></a>
-                        <div class="d-lg-none d-block">
-                            <div id="main-btn">
-                                <button class="openbtn" onclick="openNav()">☰</button>  
+                <!-- Navbar content -->
+                <div class="" id="navbar">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" >
+                        <div class="container">
+                            <a  class="navbar-brand" href="index.html"> <img src="assets/img/final-logo.png" class="img-fluid" alt="..." style="width: 250px; height: 60px; "></a>
+                            <div class="search">
+                                <form class="search-form" action="resultbysearch.html">
+                                    <input type="text" placeholder="Tìm kiếm..." >
+                                    <a href="resultbysearch.html"><i class="fa fa-search search-icon" style="padding:13px; margin-top: 9px; background-color:#f09819; color: white; border-radius: 3px;"></i></a>
+                                </form>
                             </div>
-                        </div>
-                        <div class="search">
-                            <form class="search-form" action="resultbysearch.html">
-                                <input type="text" placeholder="Tìm kiếm..." >
-                                <a href="resultbysearch.html"><button type="button" class="btn-search"><i class="fa fa-search search-icon" ></i></button></a> 
-                            </form>
-                        </div>
-                        <ul class="navbar-nav navbar-brand">
-                            <div class="row">
-                                <div class="pt-2 col-6 col-lg-4">
-                                    <li class="nav-item dropdown hidden-caret">
-                                        <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
-                                            <div class="avatar-sm">
-                                                <img src="assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
-                                            </div>
-                                        </a>
-                                        <ul class="dropdown-menu dropdown-user animated fadeIn">
-                                            <li>
-                                                <div class="user-box">
-                                                    <div class="avatar-lg"><img src="assets/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
-                                                    <div class="u-text">
-                                                        <h4>Hizrian</h4>
-                                                        <p class="text-muted">hello@example.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
+                            <ul class="navbar-nav navbar-brand">
+                                <div class="row">
+                                    <div class="pt-2 col-6 col-lg-4">
+                                        <li class="nav-item dropdown hidden-caret">
+                                            <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
+                                                <div class="avatar-sm">
+                                                    <img src="assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+                                                </div>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-user animated fadeIn">
+                                                <li>
+                                                    <div class="user-box">
+                                                        <div class="avatar-lg"><img src="assets/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
+                                                        <div class="u-text">
+                                                            <h4>Hizrian</h4>
+                                                            <p class="text-muted">hello@example.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">My Profile</a>
+                                                    <a class="dropdown-item" href="#">My Balance</a>
+                                                    <a class="dropdown-item" href="#">Inbox</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Account Setting</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Logout</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </div>
+                                    <div class="pt-2 col-6 col-lg-8">
+                                        <li>
+                                            <div class="dropdown">
+                                                <div class="text-left" id="notice-cart">
+                                                    <button class="dropbtn"> 
+                                                        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+                                                        Giỏ hàng
+                                                    </button>
+                                                    <span class="notification">0</span>
+                                                </div>
+                                                <div class="dropdown-main-content">
+                                                    <div class="col py-3">
+                                                        Sản phẩm mới thêm
+                                                    </div>
+                                                    <div class="row pl-2 pb-3 mx-1" id="hover-cart">
+                                                        <div class="col-2 pr-0">
+                                                            <img src="assets/img/meat_1.png"  class="img-fluid" alt="..." width="90px" height="90px;">
+                                                        </div>
+                                                        <div class="col-10">
+                                                            <div class="row">
+                                                                <div class="col-9">
+                                                                    Máy hút chân không chất lượng...
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <p style="color:#f09819;">289.00đ</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-9" id="clasify">
+                                                                    Phân loại hàng: Đỏ 40
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <button type="button" class="btn-btn-delete"><i class="mr-1 fas fa-trash-alt"></i>Xóa</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row pl-2 pb-3 mx-1" id="hover-cart">
+                                                        <div class="col-2 pr-0">
+                                                            <img src="assets/img/meat_1.png"  class="img-fluid" alt="..." width="90px" height="90px;">
+                                                        </div>
+                                                        <div class="col-10">
+                                                            <div class="row">
+                                                                <div class="col-9">
+                                                                    Máy hút chân không chất lượng...
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <p style="color:#f09819;">289.00đ</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-9" id="clasify">
+                                                                    Phân loại hàng: Đỏ 40
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <button type="button" class="btn-btn-delete"><i class="mr-1 fas fa-trash-alt"></i>Xóa</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row pl-2 pb-3 mx-1" id="check-cart">
+                                                        16 Thêm vào giỏ hàng
+                                                        <button type="button" class="btn-gradient20">Xem giỏ hàng</button>
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="user_profile.html">My Profile</a>
-                                                <a class="dropdown-item" href="#">My Balance</a>
-                                                <a class="dropdown-item" href="#">Inbox</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Account Setting</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Logout</a>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                            </div>
+                                        </li>
+                                    </div>
                                 </div>
-                                <div class="pt-2 col-6 col-lg-8">
-                                    <li>
-                                        <div class="dropdown">
-                                            <div class="text-left" id="notice-cart">
-                                                <button class="dropbtn"> 
-                                                    <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-                                                    Giỏ hàng
-                                                </button>
-                                                <span class="notification">0</span>
-                                            </div>
-                                            <div class="dropdown-main-content">
-                                                <div class="col py-3">
-                                                    Sản phẩm mới thêm
-                                                </div>
-                                                <div class="row pl-2 pb-3 mx-1" id="hover-cart">
-                                                    <div class="col-2 pr-0">
-                                                        <img src="assets/img/meat_1.png"  class="img-fluid" alt="..." width="90px" height="90px;">
-                                                    </div>
-                                                    <div class="col-10">
-                                                        <div class="row">
-                                                            <div class="col-9">
-                                                                Máy hút chân không chất lượng...
-                                                            </div>
-                                                            <div class="col-3">
-                                                                <p style="color:#f09819;">289.00đ</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-9" id="clasify">
-                                                                Phân loại hàng: Đỏ 40
-                                                            </div>
-                                                            <div class="col-3">
-                                                                <button type="button" class="btn-btn-delete"><i class="mr-1 fas fa-trash-alt"></i>Xóa</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row pl-2 pb-3 mx-1" id="hover-cart">
-                                                    <div class="col-2 pr-0">
-                                                        <img src="assets/img/meat_1.png"  class="img-fluid" alt="..." width="90px" height="90px;">
-                                                    </div>
-                                                    <div class="col-10">
-                                                        <div class="row">
-                                                            <div class="col-9">
-                                                                Máy hút chân không chất lượng...
-                                                            </div>
-                                                            <div class="col-3">
-                                                                <p style="color:#f09819;">289.00đ</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-9" id="clasify">
-                                                                Phân loại hàng: Đỏ 40
-                                                            </div>
-                                                            <div class="col-3">
-                                                                <button type="button" class="btn-btn-delete"><i class="mr-1 fas fa-trash-alt"></i>Xóa</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row pl-2 pb-3 mx-1" id="check-cart">
-                                                    16 Thêm vào giỏ hàng
-                                                    <a href="cart_user.html"><button type="button" class="btn-gradient20">Xem giỏ hàng</button></a>   
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </div>
-                            </div>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <!-- Navbar content -->
-            
-            <script>
-                window.onscroll = function() {myFunction()};
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <!-- Navbar content -->
                 
-                var navbar = document.getElementById("navbar");
-                var sticky = navbar.offsetTop;
-                
-                function myFunction() {
-                    if (window.pageYOffset >= sticky) {
-                        navbar.classList.add("sticky")
-                    } else {
-                        navbar.classList.remove("sticky");
+                <script>
+                    window.onscroll = function() {myFunction()};
+                    
+                    var navbar = document.getElementById("navbar");
+                    var sticky = navbar.offsetTop;
+                    
+                    function myFunction() {
+                        if (window.pageYOffset >= sticky) {
+                            navbar.classList.add("sticky")
+                        } else {
+                            navbar.classList.remove("sticky");
+                        }
                     }
-                }
-            </script>
-            <!-- end category sticky -->
-            
-        </div>
-        <!-- End-Navbar Header -->
-        
-        <!-- Sidebar -->
-        
-        <!-- End Sidebar -->
+                </script>
+                <!-- end category sticky -->
+                
+            </div>
+            <!-- End-Navbar Header -->
         
         <!-- POLICY & RULE -->
         <div class="container">
