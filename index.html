@@ -179,7 +179,7 @@
             </div>
             <!-- Navbar content -->
             
-           
+            
             <!-- end category sticky -->
             
         </div>
@@ -4682,6 +4682,22 @@
                 document.documentElement.scrollTop = 0;
             }
         </script>
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
         <!--End Scroll go to top -->
         <!--COMPUTER FOOTER-->
         <div class="px-0 col-sm-12 col-12 d-none d-lg-block" >
@@ -5003,21 +5019,8 @@
             }
         }, 1000);
     </script>
-
-<script>
-        window.onscroll = function() {myFunction()};
-        
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-        
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
-    </script>
+    
+   
     <!--END- COUNTDOWN-->
     <!--   Core JS Files   -->
     <script src="assets/js/core/jquery.3.2.1.min.js"></script>
