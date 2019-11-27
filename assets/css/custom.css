@@ -55,13 +55,13 @@ body, h1, h2, h3, h4, h5, h6, p{
    text-align: center;
 }
 #email-btn-pay{
-border: 1px solid transparent;
-cursor: pointer;
-color: white;
+   border: 1px solid transparent;
+   cursor: pointer;
+   color: white;
 }
 #mark-bar-email{
-text-align: left;
-background: #ffffcc;
+   text-align: left;
+   background: #ffffcc;
 }
 .notification{
    margin: 12px 5px 0px 0px;
@@ -251,11 +251,11 @@ background: #ffffcc;
    margin: 0;
    background-color: transparent;
    padding: 6px 14px;
- cursor: pointer;
+   cursor: pointer;
    margin-top: 10px;
-    background-color:#f09819; 
-    color: white; 
-    border-radius: 3px;
+   background-color:#f09819; 
+   color: white; 
+   border-radius: 3px;
 }
 
 .input-fixed{
@@ -317,24 +317,24 @@ background: #ffffcc;
    .nav_top_right ul{
       float: left;
    }
-
+   
    .sticky{
       position: static !important;
    }
-
-   .navbar-expand-lg .navbar-nav .dropdown-menu{
    
+   .navbar-expand-lg .navbar-nav .dropdown-menu{
+      
       position: absolute !important;
    }
-
+   
    .card-product img{
       height: 175px !important;
-      }
-
-      .img-blog img{
-         height: 214px !important;
-         
-      }
+   }
+   
+   .img-blog img{
+      height: 214px !important;
+      
+   }
 }
 
 @media (max-width : 768px) {
@@ -406,7 +406,7 @@ background: #ffffcc;
    #carousel_post .owl-prev{
       left: 85% !important;
    }
-
+   
    #carousel_post .owl-next{
       right: -5% !important;
    }
@@ -445,25 +445,57 @@ background: #ffffcc;
 }
 
 
-#myBtn {
-   display: none;
-   position: fixed;
-   bottom: 40px;
-   right: 30px;
-   z-index: 100;
-   font-size: 16px;
-   border: none;
-   outline: none;
+#button {
+   display: inline-block;
    background: #0575E6;  /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   color: white;
-   cursor: pointer;
-   padding: 11px;
+   width: 50px;
+   height: 50px;
+   text-align: center;
    border-radius: 50%;
-   height: 44px;
-   width: 44px;
-   
+   position: fixed;
+   bottom: 30px;
+   right: 20px;
+   transition: background-color .3s, 
+   opacity .5s, visibility .5s;
+   opacity: 0;
+   visibility: hidden;
+   z-index: 1000;
+   cursor: pointer;
+}
+
+#button.show {
+   opacity: 1;
+   visibility: visible;
+}
+
+/* Styles for the content section */
+
+.content {
+   width: 77%;
+   margin: 50px auto;
+   font-family: 'Merriweather', serif;
+   font-size: 17px;
+   color: #6c767a;
+   line-height: 1.9;
+}
+@media (min-width: 500px) {
+   .content {
+      width: 43%;
+   }
+   #button {
+      margin: 30px;
+   }
+}
+.content h1 {
+   margin-bottom: -10px;
+   color: #03a9f4;
+   line-height: 1.5;
+}
+.content h3 {
+   font-style: italic;
+   color: #96a2a7;
 }
 
 .product-btn{
@@ -522,13 +554,13 @@ background: #ffffcc;
    margin-top: 5px;
 }
 .btn-mobile-collapse{
-border: 1px solid transparent;
-color: white;
-background-color: #ffb347;
-padding: 0px 36px;
-font-size: 14px;
-cursor: pointer;
-text-align: left;
+   border: 1px solid transparent;
+   color: white;
+   background-color: #ffb347;
+   padding: 0px 36px;
+   font-size: 14px;
+   cursor: pointer;
+   text-align: left;
 }
 
 #collapseOne{
@@ -563,14 +595,14 @@ text-align: left;
    top: 236px;
    border-radius: 0 25px 25px 0;
    cursor: pointer;
- }
- 
- .dropdown2 {
+}
+
+.dropdown2 {
    position: relative;
    display: inline-block;
- }
- 
- .dropdown_content {
+}
+
+.dropdown_content {
    display: none;
    position: fixed;
    top: 287px;
@@ -579,20 +611,20 @@ text-align: left;
    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
    z-index: 1;
    border-radius: 3px;
- }
- 
- .dropdown_content a {
+}
+
+.dropdown_content a {
    color: black;
    padding: 12px 16px;
    text-decoration: none;
    display: block;
- }
- 
- .dropdown_content a:hover {background-color: #ddd;}
- 
- .dropdown2:hover .dropdown_content {display: block;}
- 
- .dropdown2:hover .dropbtn2 {background-color: #3e8e41;}
+}
+
+.dropdown_content a:hover {background-color: #ddd;}
+
+.dropdown2:hover .dropdown_content {display: block;}
+
+.dropdown2:hover .dropbtn2 {background-color: #3e8e41;}
 
 .comment h4{
    margin-left: 70px;
@@ -763,7 +795,7 @@ text-align: left;
 }
 
 .card-product img{
-height: 210px;
+   height: 210px;
 }
 .active_header{
    display: flex;
@@ -830,7 +862,7 @@ height: 210px;
 .abondon-text-cost {
    text-decoration: line-through;
    margin-bottom: 0px;
-
+   
    
 }
 .card-category .card-text{
@@ -2204,7 +2236,7 @@ img.room-active {
    background-color: #fff;
    border: 1px solid rgb(177, 176, 176);
    margin-right: 5px;
-  
+   
 }
 .button-footer:hover{
    background-color: #f09819;

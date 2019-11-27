@@ -168,6 +168,7 @@
                                                     16 Thêm vào giỏ hàng
                                                     <button type="button" class="btn-gradient20">Xem giỏ hàng</button>
                                                 </div>
+                                                
                                             </div>
                                         </div>
                                     </li>
@@ -177,6 +178,20 @@
                     </div>
                 </nav>
             </div>
+            <script>
+                window.onscroll = function() {myFunction()};
+                
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                
+                function myFunction() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+            </script>
             <!-- Navbar content -->
             
             
@@ -4660,44 +4675,25 @@
             </div>
         </div>
         <!-- Scroll go to top -->
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+        <a id="button"><i class="fas fa-arrow-up" style="color:white; padding-top:20px;"></i></a>
         <script>
-            //Get the button
-            var mybutton = document.getElementById("myBtn");
+            var btn = $('#button');
             
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
-            
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    mybutton.style.display = "block";
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 300) {
+                    btn.addClass('show');
                 } else {
-                    mybutton.style.display = "none";
+                    btn.removeClass('show');
                 }
-            }
+            });
             
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
+            btn.on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({scrollTop:0}, '300');
+            });
+            
         </script>
-
-
-<script>
-    window.onscroll = function() {myFunction()};
-    
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-    
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
-    }
-</script>
+        
         <!--End Scroll go to top -->
         <!--COMPUTER FOOTER-->
         <div class="px-0 col-sm-12 col-12 d-none d-lg-block" >
@@ -5020,7 +5016,7 @@
         }, 1000);
     </script>
     
-   
+    
     <!--END- COUNTDOWN-->
     <!--   Core JS Files   -->
     <script src="assets/js/core/jquery.3.2.1.min.js"></script>
