@@ -473,17 +473,13 @@ body, h1, h2, h3, h4, h5, h6, p{
 /* Styles for the content section */
 
 .content {
-   width: 77%;
-   margin: 50px auto;
    font-family: 'Merriweather', serif;
    font-size: 17px;
    color: #6c767a;
    line-height: 1.9;
 }
 @media (min-width: 500px) {
-   .content {
-      width: 43%;
-   }
+  
    #button {
       margin: 30px;
    }
@@ -595,6 +591,7 @@ body, h1, h2, h3, h4, h5, h6, p{
    top: 236px;
    border-radius: 0 25px 25px 0;
    cursor: pointer;
+   transition: 0.3s;
 }
 
 .dropdown2 {
