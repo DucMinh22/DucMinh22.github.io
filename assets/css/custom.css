@@ -1426,7 +1426,7 @@ label
    display: none;
    position: fixed;
    bottom: 0;
-   right: 15px;
+   right: 500px;
    border: 3px solid #f1f1f1;
    z-index: 9;
 }
@@ -1453,7 +1453,7 @@ label
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-   background-color: #4CAF50;
+   background-color: #f09819;
    color: white;
    padding: 16px 20px;
    border: none;
@@ -1461,6 +1461,7 @@ label
    width: 100%;
    margin-bottom:10px;
    opacity: 0.8;
+   margin-top: 12px;
 }
 
 /* Add a red background color to the cancel button */
