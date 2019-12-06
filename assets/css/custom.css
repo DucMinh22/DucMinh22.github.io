@@ -1425,7 +1425,7 @@ label
 .form-popup {
    display: none;
    position: fixed;
-   bottom: 78px;
+   bottom: 117px;
    right: 500px;
    border: 3px solid #f1f1f1;
    z-index: 99;
@@ -1438,8 +1438,8 @@ label
 
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=password] {
-   width: 100%;
-   padding: 15px;
+   width: 75%;
+   padding: 10px;
    margin: 5px 0 22px 0;
    border: none;
    background: #f1f1f1;
@@ -1455,13 +1455,15 @@ label
 .form-container .btn {
    background-color: #f09819;
    color: white;
-   padding: 16px 20px;
+   padding: 12px 20px;
    border: none;
    cursor: pointer;
-   width: 100%;
-   margin-bottom:10px;
+   width: 34%;
+   margin-right: 20px;
+   margin-left: 22px;
+  
    opacity: 0.8;
-   margin-top: 12px;
+   margin-top: 8px;
 }
 
 /* Add a red background color to the cancel button */

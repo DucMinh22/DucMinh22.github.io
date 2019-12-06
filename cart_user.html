@@ -232,9 +232,10 @@
                                                 
                                                 <label for="psw"><b>Password</b></label>
                                                 <input type="password" placeholder="Enter Password" name="psw" required>
-                                                
-                                                <button type="submit" class="btn">Login</button>
-                                                <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+                                                <div class="row">
+                                                    <button type="submit" class="btn">Login</button>
+                                                    <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+                                                </div>
                                             </form>
                                         </div>
                                     </td>
@@ -281,18 +282,18 @@
                                                 <p>Kích cỡ: Vừa</p>  
                                                 <p>Màu: Đỏ + trắng</p> 
                                                 <div class="input-group pt-2">
-                                                        <span class="input-group-btn">
-                                                            <button type="button" class="btn btn-default btn-number" id="small-plus-btn" disabled="disabled" data-type="minus" data-field="quant[1]">
-                                                                <span class="glyphicon glyphicon-minus">-</span>
-                                                            </button>
-                                                        </span>
-                                                        <span style="width:50px;"><input type="text" name="quant[1]" class="form-control input-number" id="small-form-control"  value="1" min="1" max="100000" ></span>
-                                                        <span class="input-group-btn">
-                                                            <button type="button" class="btn btn-default btn-number" id="small-plus-btn" data-type="plus" data-field="quant[1]">
-                                                                <span class="glyphicon glyphicon-plus">+</span>
-                                                            </button>
-                                                        </span>
-                                                    </div>
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" id="small-plus-btn" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-minus">-</span>
+                                                        </button>
+                                                    </span>
+                                                    <span style="width:50px;"><input type="text" name="quant[1]" class="form-control input-number" id="small-form-control"  value="1" min="1" max="100000" ></span>
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default btn-number" id="small-plus-btn" data-type="plus" data-field="quant[1]">
+                                                            <span class="glyphicon glyphicon-plus">+</span>
+                                                        </button>
+                                                    </span>
+                                                </div>
                                             </td>
                                             <td style="color: #f09819;"><b>289.000đ</b></td>
                                         </tr>
