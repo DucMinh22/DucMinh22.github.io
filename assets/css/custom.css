@@ -1425,7 +1425,7 @@ label
 .form-popup {
    display: none;
    position: fixed;
-   bottom: 117px;
+   bottom: 210px;
    right: 500px;
    border: 3px solid #f1f1f1;
    z-index: 99;
