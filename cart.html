@@ -328,7 +328,7 @@
                                                     
                                                     <div class="col-8 col-md-9" >
                                                         <div class="tab-content" id="v-pills-with-icon-tabContent">
-                                                           
+                                                            
                                                             <!-- thanh toán COD -->
                                                             <div class="tab-pane fade show active" id="v-pills-home-icons" role="tabpanel" aria-labelledby="v-pills-home-tab-icons">
                                                                 <div class="pr-2 pl-0 col">
@@ -383,7 +383,7 @@
                                                             </div>
                                                             <!-- end thanh toán tại văn phòng -->
                                                             
-                                                             <!-- chuyển khoản trực tiếp -->
+                                                            <!-- chuyển khoản trực tiếp -->
                                                             <div class="tab-pane fade" id="v-pills-cod-icons" role="tabpanel" aria-labelledby="v-pills-cod-tab-icons">
                                                                 
                                                                 <div class="pr-2 pl-0 col" >
@@ -535,7 +535,7 @@
                                                                     </div>   
                                                                 </div>
                                                             </div>
-                                                             <!--ÊND chuyển khoản trực tiếp -->
+                                                            <!--ÊND chuyển khoản trực tiếp -->
                                                             
                                                         </div>
                                                     </div>
@@ -562,28 +562,101 @@
                                             </script>
                                             <!-- Các phương thức thanh toán hiển thị điện thoại-->
                                             <div class="px-0 col-sm-12 d-block d-lg-none">
+                                                <!-- Mã giảm giá -->
+                                                <div class="py-3">
+                                                    <div class="col-12">
+                                                        <div class="row pl-2">
+                                                            <div class="pt-3 mt-1"><b><i>Mã giảm giá</i></b></div>
+                                                            <div class="" id="code-discount">
+                                                                <div class="form-group form-floating-label">
+                                                                    <input id="inputFloatingLabel1" type="text" class="form-control input-border-bottom" required>
+                                                                    <label for="inputFloatingLabel1" class="placeholder"> <i class="mr-2 fas fa-ticket-alt" style="color: #f09819;"></i><i>Sử dụng mã giảm giá</i></label>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <button type="button" class="mt-3 btn-gradient18" style="width: 200x;">Áp dụng</button>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col"  style="color: rgb(119, 197, 1);">
+                                                        Giá giảm: -100.000đ
+                                                    </div>
+                                                </div>
+                                                <!-- END Mã giảm giá -->
                                                 <ul class="nav nav-pills nav-secondary  nav-pills-no-bd nav-pills-icons justify-content-center" id="pills-tab-with-icon" role="tablist">
                                                     <li class="nav-item">
                                                         <a class="nav-link active" id="pills-home-tab-icon" data-toggle="pill" href="#pills-home-icon" role="tab" aria-controls="pills-home-icon" aria-selected="true">
-                                                            <i class="flaticon-home"></i>
+                                                            Chuyển khoản trực tiếp tại nhà 
                                                             <!-- Chuyển khoản trực tiếp cho VanChuyenMy -->
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
                                                         <a class="nav-link" id="pills-profile-tab-icon" data-toggle="pill" href="#pills-profile-icon" role="tab" aria-controls="pills-profile-icon" aria-selected="false">
-                                                            <i class="flaticon-user-4"></i>
-                                                            Profile
+                                                            Thanh toán trực tiếp tại văn phòng
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
                                                         <a class="nav-link" id="pills-contact-tab-icon" data-toggle="pill" href="#pills-contact-icon" role="tab" aria-controls="pills-contact-icon" aria-selected="false">
-                                                            <i class="flaticon-mailbox"></i>
-                                                            Contact
+                                                            Chuyển khoản trực tiếp
                                                         </a>
                                                     </li>
                                                 </ul>
                                                 <div class="tab-content mt-2 mb-3" id="pills-with-icon-tabContent">
                                                     <div class="tab-pane fade show active" id="pills-home-icon" role="tabpanel" aria-labelledby="pills-home-tab-icon">
+                                                        <div class="pr-2 pl-0 col">
+                                                            <div class="pt-2">
+                                                                <h4> <b>Thông tin thu tiền tại nhà:</b></h4>  
+                                                            </div>
+                                                            <div class=" px-4 row" id="paying-COD">
+                                                                <p>Nhân Viên VanChuyenMy sẽ đến nhận thanh toán trước tại địa chỉ quý khách yêu cầu, hình thức này chỉ áp dụng cho Tp.Hà Nội và Hà Nam.</p>
+                                                                <p>Phí thu tiền tại nhà: <b>30,000 đ</b></p>
+                                                            </div>
+                                                            
+                                                            <div class="warning2 py-2 px-4" >
+                                                                <p> <b>Lưu ý:</b> VanChuyenMy đảm bảo giá sản phẩm không thay đổi trong vòng 60 phút. Căn cứ vào thời điểm quý khách [Xác nhận đặt hàng] thành công.
+                                                                    Đối với giao dịch phát sinh từ 22h, VanChuyenMy sẽ xử lý sau 8h sáng ngày hôm sau. Quý khách vui lòng lựa chọn thanh toán online để được giữ giá đã chọn
+                                                                </p>
+                                                            </div>
+                                                            <div class="pt-2 px-4 row">
+                                                                <label class="checkbox-inline mr-2 mt-1"><input type="checkbox" value="" checked></label>
+                                                                <p>Đồng ý với <a href="#"> Điều khoản & điều kiện </a> giao dịch của VanChuyenMy</p>
+                                                            </div>
+                                                            <div class="pl-5  col-3">
+                                                                <a href="checkout.html"><button type="button" class="btn-gradient15" style="width: 500x; margin-left:60px;">Xác nhận đặt hàng <i class="fas fa-angle-double-right"></i></button></a>     
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="pills-profile-icon" role="tabpanel" aria-labelledby="pills-profile-tab-icon">
+                                                        <div class="pr-2 pl-0 col">
+                                                            <div class="pt-2">
+                                                                <h4> <b>Thông tin đóng tiền mặt:</b></h4>  
+                                                            </div>
+                                                            <div class="pt-2 px-4 row">
+                                                                <p>- Quý khách vui lòng đến trực tiếp tại một trong các địa chỉ sau để thực hiện thanh toán:</p>
+                                                            </div>
+                                                            
+                                                            <div class=" px-4 row">
+                                                                <p><b>TP. Hà Nội: </b>Số 32-Lô A11-Khu đô thị Lê Trọng Tấn, An Khánh, Hoài Đức, Hà Nội</p>
+                                                                <p><b>Hà Nam:</b> Phố Cà, Thanh Nguyên, Thanh Liêm (gần cây xăng Phố Cà)</p>
+                                                            </div>
+                                                            
+                                                            <div class="warning2 py-2 px-4" >
+                                                                <p> <b>Lưu ý:</b> VanChuyenMy đảm bảo giá sản phẩm không thay đổi trong vòng 60 phút. Căn cứ vào thời điểm quý khách [Xác nhận đặt hàng] thành công.
+                                                                    Đối với giao dịch phát sinh từ 22h, VanChuyenMy sẽ xử lý sau 8h sáng ngày hôm sau. Quý khách vui lòng lựa chọn thanh toán online để được giữ giá đã chọn
+                                                                </p>
+                                                            </div>
+                                                            <div class=" pt-2 px-4 row">
+                                                                <label class="checkbox-inline mr-2 mt-1"><input type="checkbox" value="" checked></label>
+                                                                <p>Đồng ý với <a href="#"> Điều khoản & điều kiện </a> giao dịch của VanhuyenMy</p>
+                                                            </div>
+                                                            <div class="pl-5  col-3">
+                                                                <a href="checkout.html"><button type="button" class="btn-gradient15" style="width: 500x; margin-left:60px;">Xác nhận đặt hàng <i class="fas fa-angle-double-right"></i></button></a>     
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="tab-pane fade" id="pills-contact-icon" role="tabpanel" aria-labelledby="pills-contact-tab-icon">
                                                         <div class="pr-2 pl-0 col" >
                                                             <div class="paying-method">
                                                                 <h5>Quý Khách có thể chuyển khoản bằng Internet Banking, tại máy ATM hoặc Quầy giao dịch ngân hàng, hoặc chuyển khoản qua điện thoại. </h5>
@@ -596,7 +669,7 @@
                                                                 <h4> <b>1, Quý khách muốn thanh toán trước:</b></h4>
                                                             </div>
                                                             
-                                                            <button type="button" class="open-bar-pay">Thanh toán toàn bộ chi phí đơn hàng</button>
+                                                            <input type="radio" name="demo" value="one" id="radio-one" class="form-radio" checked><label for="radio-one"><h4><b>Thanh toán toàn bộ chi phí đơn hàng</b></h4></label>
                                                             
                                                             <div class="content">
                                                                 <div class="col" id="title-pay">
@@ -610,21 +683,6 @@
                                                                         289.000đ
                                                                     </div>
                                                                 </div>
-                                                                <!-- <div class="py-2 px-4 row" style="border-bottom: 1px solid  rgb(223, 220, 220);">
-                                                                    <div class="text-left pt-3 pr-0 col-3">
-                                                                        Mã giảm giá:
-                                                                    </div>
-                                                                    <!-- <div class="col-6" id="code-discount">
-                                                                        <div class="form-group form-floating-label">
-                                                                            <input id="inputFloatingLabel" type="text" class="form-control input-border-bottom" required>
-                                                                            <label for="inputFloatingLabel" class="placeholder"> <i class="mr-2 fas fa-ticket-alt" style="color: #f09819;"></i><i>Sử dụng mã giảm giá</i></label>
-                                                                        </div>
-                                                                    </div> -->
-                                                                    <!-- <div class="text-right pt-3 col" style="color: rgb(119, 197, 1);">
-                                                                        -0đ
-                                                                    </div>
-                                                                </div> --> 
-                                                                
                                                                 <div class="px-4 row" id="text-sum-cost">
                                                                     <div class="text-left col-7 col-lg-6">
                                                                         <p><b>Tổng giá trị đơn hàng:</b></p>
@@ -642,8 +700,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            
-                                                            <button type="button" class="open-bar-pay">Thanh toán trước 50% giá trị đơn hàng</button>
+                                                            <input type="radio" name="demo" value="one" id="radio-one" class="form-radio"><label for="radio-one"><h4><b>Thanh toán trước 50% giá trị đơn hàng</b></h4></label>
                                                             <div class="content">
                                                                 <div class="py-2 px-4">
                                                                     <div class="col-12 py-2 " id="warning">
@@ -763,58 +820,7 @@
                                                             
                                                         </div>
                                                     </div>
-                                                    <div class="tab-pane fade" id="pills-profile-icon" role="tabpanel" aria-labelledby="pills-profile-tab-icon">
-                                                        <div class="pr-2 pl-0 col">
-                                                            <div class="pt-2">
-                                                                <h4> <b>Thông tin đóng tiền mặt:</b></h4>  
-                                                            </div>
-                                                            <div class="pt-2 px-4 row">
-                                                                <p>- Quý khách vui lòng đến trực tiếp tại một trong các địa chỉ sau để thực hiện thanh toán:</p>
-                                                            </div>
-                                                            
-                                                            <div class=" px-4 row">
-                                                                <p><b>TP. Hà Nội: </b>Số 32-Lô A11-Khu đô thị Lê Trọng Tấn, An Khánh, Hoài Đức, Hà Nội</p>
-                                                                <p><b>Hà Nam:</b> Phố Cà, Thanh Nguyên, Thanh Liêm (gần cây xăng Phố Cà)</p>
-                                                            </div>
-                                                            
-                                                            <div class="warning2 py-2 px-4" >
-                                                                <p> <b>Lưu ý:</b> VanChuyenMy đảm bảo giá sản phẩm không thay đổi trong vòng 60 phút. Căn cứ vào thời điểm quý khách [Xác nhận đặt hàng] thành công.
-                                                                    Đối với giao dịch phát sinh từ 22h, VanChuyenMy sẽ xử lý sau 8h sáng ngày hôm sau. Quý khách vui lòng lựa chọn thanh toán online để được giữ giá đã chọn
-                                                                </p>
-                                                            </div>
-                                                            <div class=" pt-2 px-4 row">
-                                                                <label class="checkbox-inline mr-2 mt-1"><input type="checkbox" value="" checked></label>
-                                                                <p>Đồng ý với <a href="#"> Điều khoản & điều kiện </a> giao dịch của VanhuyenMy</p>
-                                                            </div>
-                                                            <div class="pl-5  col-3">
-                                                                <a href="checkout.html"><button type="button" class="btn-gradient15" style="width: 500x; margin-left:60px;">Xác nhận đặt hàng <i class="fas fa-angle-double-right"></i></button></a>     
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="tab-pane fade" id="pills-contact-icon" role="tabpanel" aria-labelledby="pills-contact-tab-icon">
-                                                        <div class="pr-2 pl-0 col">
-                                                            <div class="pt-2">
-                                                                <h4> <b>Thông tin thu tiền tại nhà:</b></h4>  
-                                                            </div>
-                                                            <div class=" px-4 row" id="paying-COD">
-                                                                <p>Nhân Viên VanChuyenMy sẽ đến nhận thanh toán trước tại địa chỉ quý khách yêu cầu, hình thức này chỉ áp dụng cho Tp.Hà Nội và Hà Nam.</p>
-                                                                <p>Phí thu tiền tại nhà: <b>30,000 đ</b></p>
-                                                            </div>
-                                                            
-                                                            <div class="warning2 py-2 px-4" >
-                                                                <p> <b>Lưu ý:</b> VanChuyenMy đảm bảo giá sản phẩm không thay đổi trong vòng 60 phút. Căn cứ vào thời điểm quý khách [Xác nhận đặt hàng] thành công.
-                                                                    Đối với giao dịch phát sinh từ 22h, VanChuyenMy sẽ xử lý sau 8h sáng ngày hôm sau. Quý khách vui lòng lựa chọn thanh toán online để được giữ giá đã chọn
-                                                                </p>
-                                                            </div>
-                                                            <div class="pt-2 px-4 row">
-                                                                <label class="checkbox-inline mr-2 mt-1"><input type="checkbox" value="" checked></label>
-                                                                <p>Đồng ý với <a href="#"> Điều khoản & điều kiện </a> giao dịch của VanChuyenMy</p>
-                                                            </div>
-                                                            <div class="pl-5  col-3">
-                                                                <a href="checkout.html"><button type="button" class="btn-gradient15" style="width: 500x; margin-left:60px;">Xác nhận đặt hàng <i class="fas fa-angle-double-right"></i></button></a>     
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                             <!-- End hiển thị điện thoại-->
@@ -935,6 +941,7 @@
                                                 
                                             </div>
                                             <!-- Mã giảm giá -->
+                                            <div class="d-lg-block d-none">
                                             <div class="col-12">
                                                 <div class="row pl-2">
                                                     <div class="pt-3 mt-1"><b><i>Mã giảm giá</i></b></div>
@@ -952,6 +959,7 @@
                                             </div>
                                             <div class="col"  style="color: rgb(119, 197, 1);">
                                                 Giá giảm: -100.000đ
+                                            </div>
                                             </div>
                                             <!-- END Mã giảm giá -->
                                         </div>  
