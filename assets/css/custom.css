@@ -411,6 +411,11 @@ body, h1, h2, h3, h4, h5, h6, p{
    #carousel_post .owl-next{
       right: -5% !important;
    }
+
+   #button{
+      right: 31px !important;
+      bottom: 95px !important;
+   }
 }
 @media (max-width : 1300px) {
    
