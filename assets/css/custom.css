@@ -565,25 +565,15 @@ body, h1, h2, h3, h4, h5, h6, p{
    text-align: left;
 }
 
-#collapseOne{
-   background-color: #ffb347;  
-   
+.fixformText{
+   background-color: #ffb347;
 }
 
-#collapseOne a{
-   font-size: 14px;
+.fixformText a{
+   font-size: 14px !important;
    color: white;
 }
 
-#collapseTwo{
-   background-color: #ffb347;  
-   
-}
-
-#collapseTwo a{
-   font-size: 14px;
-   color: white;
-}
 .dropbtn2 {
    background: #2b96b6; /* fallback for old browsers */
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
