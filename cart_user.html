@@ -263,18 +263,52 @@
                                                 <th scope="col"> <a href="productpage.html"><p>YAZOLE Classic Business Men Watches </p></a></th>
                                                 <th class="text-center" scope="col"> <button type="button" class="btn-btn-delete"><i class="fas fa-trash-alt"></i></button></th>
                                                 <button type="button" onclick="openForm()" class="btn-btn-delete"><i class="mr-1 fas fa-edit"></i>Chỉnh sửa</button>
-                                                <div class="form-popup" id="myForm">
-                                                    <form action="/action_page.php" class="form-container">
-                                                        <h2>Login</h2>
-                                                        
-                                                        <label for="email"><b>Email</b></label>
-                                                        <input type="text" placeholder="Enter Email" name="email" required>
-                                                        
-                                                        <label for="psw"><b>Password</b></label>
-                                                        <input type="password" placeholder="Enter Password" name="psw" required>
-                                                        
-                                                        <button type="submit" class="btn">Login</button>
-                                                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                                <div class="form-popup-mobile" id="myForm">
+                                                    <form action="/action_page.php">
+                                                        <div class="text-center"><h2>Thay đổi thông tin đơn hàng</h2></div>
+                                                        <div class="row">
+                                                            <div class="col-4">
+                                                                <a href="productpage.html"><img class="img-fluid" style="width: 55px;" src="assets/img/meat_2.png" alt="Chania"></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <a href="productpage.html" >Máy hút chân không ikl4ud8h svdvssfcdvdvđv</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="col-4 text-left">
+                                                                <b>Số lượng:</b>
+                                                            </div>
+                                                            <div class="col text-left">
+                                                                <input type="number" class="form-control" name="quantity" value="1" required="" min="1" max="100">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="col-4 text-left">
+                                                                <b>Màu:</b>
+                                                            </div>
+                                                            <div class="col radio-toolbar text-left">
+                                                                <input type="radio" id="Trắng15" name="color" value="Trắng" checked="">
+                                                                <label for="Trắng15">Trắng</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="col-4 text-left">
+                                                                <b>Size:</b>
+                                                            </div>
+                                                            <div class="col radio-toolbar text-left">
+                                                                <input type="radio" id="S15" name="size" value="S" checked="">
+                                                                <label for="S15">S</label>
+                                                                <input type="radio" id=" X15" name="size" value=" X">
+                                                                <label for=" X15"> X</label> 
+                                                                <input type="radio" id=" XL15" name="size" value=" XL">
+                                                                <label for=" XL15"> XL</label> 
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <button type="submit" class="btn-confirm">Xác nhận</button>
+                                                            <button type="button" class="btn-cancel" onclick="closeForm()">Hủy</button>
+                                                        </div>
                                                     </form>
                                                 </div>
                                             </tr>

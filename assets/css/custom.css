@@ -1415,8 +1415,42 @@ label
    -moz-osx-font-smoothing: grayscale;
    cursor: pointer;
 } 
+.form-popup-mobile{
+   display: none;
+   position: fixed;
+   bottom: 298px;
+   right: 28px;
+   border: 3px solid #f1f1f1;
+   z-index: 103;
+   background: white;
+   padding: 20px;
+   width: 364px;
+}
+.btn-confirm{
+   background-color: #f09819;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   cursor: pointer;
+   width: 34%;
+   margin-right: 50px;
+   margin-left: 25px;
+   opacity: 0.8;
+   margin-top: 8px;
+}
 
-
+.btn-cancel{
+   background-color: red;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   cursor: pointer;
+   width: 34%;
+   margin-right: 20px;
+   margin-left: 10px;
+   opacity: 0.8;
+   margin-top: 8px;
+}
 .form-popup {
    display: none;
    position: fixed;
