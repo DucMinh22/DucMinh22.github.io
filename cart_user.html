@@ -247,106 +247,202 @@
                         }
                     </script>
                     <!-- For mobile -->
-                    <div class="card pt-2">
-                        <div class="col-12 d-lg-none d-block" id="table-mobile">
+                    <div class="pt-2">
+                        <div class="col-12 px-0 d-lg-none d-block" id="table-mobile">
                             <h4><b>Danh sách sản phẩm</b></h4>
-                            <div class="col px-0">
-                                <div class="card pt-3 px-3">
-                                    <table class="table table-striped mt-2" >
-                                        <thead>
-                                            
-                                        </thead>
-                                        <tbody>
-                                            <p> Mã sản phẩm: <b>J2823WBR</b></p>  
-                                            <tr id="credit-card">
-                                                <th scope="col"><img src="assets/img/meat_1.png"  class="img-fluid" alt="..." width="60px" height="60px;"></th>
-                                                <th scope="col"> <a href="productpage.html"><p>YAZOLE Classic Business Men Watches </p></a></th>
-                                                <th class="text-center" scope="col"> <button type="button" class="btn-btn-delete"><i class="fas fa-trash-alt"></i></button></th>
-                                                <button type="button" onclick="openForm()" class="btn-btn-delete"><i class="mr-1 fas fa-edit"></i>Chỉnh sửa</button>
-                                                <div class="form-popup-mobile" id="myForm">
-                                                    <form action="/action_page.php">
-                                                        <div class="text-center"><h2>Thay đổi thông tin đơn hàng</h2></div>
-                                                        <div class="row">
-                                                            <div class="col-4">
-                                                                <a href="productpage.html"><img class="img-fluid" style="width: 55px;" src="assets/img/meat_2.png" alt="Chania"></a>
-                                                            </div>
-                                                            <div class="col-8">
-                                                                <a href="productpage.html" >Máy hút chân không ikl4ud8h svdvssfcdvdvđv</a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <div class="col-4 text-left">
-                                                                <b>Số lượng:</b>
-                                                            </div>
-                                                            <div class="col text-left">
-                                                                <input type="number" class="form-control" name="quantity" value="1" required="" min="1" max="100">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <div class="col-4 text-left">
-                                                                <b>Màu:</b>
-                                                            </div>
-                                                            <div class="col radio-toolbar text-left">
-                                                                <input type="radio" id="Trắng15" name="color" value="Trắng" checked="">
-                                                                <label for="Trắng15">Trắng</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <div class="col-4 text-left">
-                                                                <b>Size:</b>
-                                                            </div>
-                                                            <div class="col radio-toolbar text-left">
-                                                                <input type="radio" id="S15" name="size" value="S" checked="">
-                                                                <label for="S15">S</label>
-                                                                <input type="radio" id=" X15" name="size" value=" X">
-                                                                <label for=" X15"> X</label> 
-                                                                <input type="radio" id=" XL15" name="size" value=" XL">
-                                                                <label for=" XL15"> XL</label> 
-                                                                
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <button type="submit" class="btn-confirm">Xác nhận</button>
-                                                            <button type="button" class="btn-cancel" onclick="closeForm()">Hủy</button>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td id="category-title">
-                                                    <p>Số lượng: 1</p> 
-                                                    <p>Kích cỡ: Vừa</p>  
-                                                    <p>Màu: Đỏ + trắng</p> 
-                                                    <div class="input-group pt-2">
-                                                        <span class="input-group-btn">
-                                                            <button type="button" class="btn btn-default btn-number" id="small-plus-btn" disabled="disabled" data-type="minus" data-field="quant[1]">
-                                                                <span class="glyphicon glyphicon-minus">-</span>
-                                                            </button>
-                                                        </span>
-                                                        <span style="width:50px;"><input type="text" name="quant[1]" class="form-control input-number" id="small-form-control"  value="1" min="1" max="100000" ></span>
-                                                        <span class="input-group-btn">
-                                                            <button type="button" class="btn btn-default btn-number" id="small-plus-btn" data-type="plus" data-field="quant[1]">
-                                                                <span class="glyphicon glyphicon-plus">+</span>
-                                                            </button>
-                                                        </span>
-                                                    </div>
-                                                </td>
-                                                <td style="color: #f09819;"><b>289.000đ</b></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                            <div class="card py-2 px-2">
+                                <div class="">
+                                    Mã sản phẩm: <b>J2823WBR</b>
                                 </div>
-                                <script>
-                                    function openForm() {
-                                        document.getElementById("myForm").style.display = "block";
-                                    }
-                                    
-                                    function closeForm() {
-                                        document.getElementById("myForm").style.display = "none";
-                                    }
-                                </script>
+                                <div class="row py-2">
+                                    <div class="col-2 pr-0">
+                                        <img src="assets/img/meat_1.png"  class="img-fluid" alt="..." width="60px" height="60px;">
+                                    </div>
+                                    <div class="col-6 pr-0">
+                                        <a href="productpage.html"><p>YAZOLE Classic Business Men Watches </p></a>
+                                    </div>
+                                    <div class="col-4 pl-0 text-center">
+                                        <button type="button" onclick="openForm()" class="btn-btn-delete"><i class="mr-1 fas fa-edit"></i>Chỉnh sửa</button>
+                                        <div class="form-popup-mobile" id="myForm">
+                                            <form action="/action_page.php">
+                                                <div class="text-center"><h2>Thay đổi thông tin đơn hàng</h2></div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <a href="productpage.html"><img class="img-fluid" style="width: 55px;" src="assets/img/meat_2.png" alt="Chania"></a>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <a href="productpage.html" >Máy hút chân không ikl4ud8h svdvssfcdvdvđv</a>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-4 text-left">
+                                                        <b>Số lượng:</b>
+                                                    </div>
+                                                    <div class="col text-left">
+                                                        <input type="number" class="form-control" name="quantity" value="1" required="" min="1" max="100">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-4 text-left">
+                                                        <b>Màu:</b>
+                                                    </div>
+                                                    <div class="col radio-toolbar text-left">
+                                                        <input type="radio" id="Trắng15" name="color" value="Trắng" checked="">
+                                                        <label for="Trắng15">Trắng</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-4 text-left">
+                                                        <b>Size:</b>
+                                                    </div>
+                                                    <div class="col radio-toolbar text-left">
+                                                        <input type="radio" id="S15" name="size" value="S" checked="">
+                                                        <label for="S15">S</label>
+                                                        <input type="radio" id=" X15" name="size" value=" X">
+                                                        <label for=" X15"> X</label> 
+                                                        <input type="radio" id=" XL15" name="size" value=" XL">
+                                                        <label for=" XL15"> XL</label> 
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <button type="submit" class="btn-confirm">Xác nhận</button>
+                                                    <button type="button" class="btn-cancel" onclick="closeForm()">Hủy</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="py-2">
+                                            <button type="button" class="btn-btn-delete"><i class="fas fa-trash-alt"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4" id="category-title">
+                                        <p>Số lượng: 1</p>
+                                        <p>Kích cỡ: vừa</p>
+                                        <p>Màu: Đỏ + Trắng</p>
+                                    </div>
+                                    <div class="col-5 px-0">
+                                        <div class="input-group pt-3">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-default btn-number" id="small-plus-btn" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                    <span class="glyphicon glyphicon-minus">-</span>
+                                                </button>
+                                            </span>
+                                            <span style="width:50px;"><input type="text" name="quant[1]" class="form-control input-number" id="small-form-control"  value="1" min="1" max="100000" ></span>
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-default btn-number" id="small-plus-btn" data-type="plus" data-field="quant[1]">
+                                                    <span class="glyphicon glyphicon-plus">+</span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 pt-3">
+                                        <p style="color: #f09819;"><b>289.000đ</b></p>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="card py-2 px-2">
+                                <div class="">
+                                    Mã sản phẩm: <b>J2823WBR</b>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="col-2 pr-0">
+                                        <img src="assets/img/meat_1.png"  class="img-fluid" alt="..." width="60px" height="60px;">
+                                    </div>
+                                    <div class="col-6 pr-0">
+                                        <a href="productpage.html"><p>YAZOLE Classic Business Men Watches </p></a>
+                                    </div>
+                                    <div class="col-4 pl-0 text-center">
+                                        <button type="button" onclick="openForm()" class="btn-btn-delete"><i class="mr-1 fas fa-edit"></i>Chỉnh sửa</button>
+                                        <div class="form-popup-mobile" id="myForm">
+                                            <form action="/action_page.php">
+                                                <div class="text-center"><h2>Thay đổi thông tin đơn hàng</h2></div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <a href="productpage.html"><img class="img-fluid" style="width: 55px;" src="assets/img/meat_2.png" alt="Chania"></a>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <a href="productpage.html" >Máy hút chân không ikl4ud8h svdvssfcdvdvđv</a>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-4 text-left">
+                                                        <b>Số lượng:</b>
+                                                    </div>
+                                                    <div class="col text-left">
+                                                        <input type="number" class="form-control" name="quantity" value="1" required="" min="1" max="100">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-4 text-left">
+                                                        <b>Màu:</b>
+                                                    </div>
+                                                    <div class="col radio-toolbar text-left">
+                                                        <input type="radio" id="Trắng15" name="color" value="Trắng" checked="">
+                                                        <label for="Trắng15">Trắng</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-4 text-left">
+                                                        <b>Size:</b>
+                                                    </div>
+                                                    <div class="col radio-toolbar text-left">
+                                                        <input type="radio" id="S15" name="size" value="S" checked="">
+                                                        <label for="S15">S</label>
+                                                        <input type="radio" id=" X15" name="size" value=" X">
+                                                        <label for=" X15"> X</label> 
+                                                        <input type="radio" id=" XL15" name="size" value=" XL">
+                                                        <label for=" XL15"> XL</label> 
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <button type="submit" class="btn-confirm">Xác nhận</button>
+                                                    <button type="button" class="btn-cancel" onclick="closeForm()">Hủy</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="py-2">
+                                            <button type="button" class="btn-btn-delete"><i class="fas fa-trash-alt"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4" id="category-title">
+                                        <p>Số lượng: 1</p>
+                                        <p>Kích cỡ: vừa</p>
+                                        <p>Màu: Đỏ + Trắng</p>
+                                    </div>
+                                    <div class="col-5 px-0">
+                                        <div class="input-group pt-3">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-default btn-number" id="small-plus-btn" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                    <span class="glyphicon glyphicon-minus">-</span>
+                                                </button>
+                                            </span>
+                                            <span style="width:50px;"><input type="text" name="quant[1]" class="form-control input-number" id="small-form-control"  value="1" min="1" max="100000" ></span>
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-default btn-number" id="small-plus-btn" data-type="plus" data-field="quant[1]">
+                                                    <span class="glyphicon glyphicon-plus">+</span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 pt-3">
+                                        <p style="color: #f09819;"><b>289.000đ</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                function openForm() {
+                                    document.getElementById("myForm").style.display = "block";
+                                }
+                                
+                                function closeForm() {
+                                    document.getElementById("myForm").style.display = "none";
+                                }
+                            </script>
                         </div>
                     </div>
                     <div class="" id="warning5">
