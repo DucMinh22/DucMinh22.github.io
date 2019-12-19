@@ -260,7 +260,7 @@ body, h1, h2, h3, h4, h5, h6, p{
 }
 
 .input-fixed{
-   width: 330px !important; 
+   width: 100% !important; 
 }
 #form-price{
    display: flex;
@@ -313,7 +313,7 @@ body, h1, h2, h3, h4, h5, h6, p{
 
 @media (max-width : 556px) {
    .input-fixed{
-      width: 228px !important;
+      width: 100% !important;
    }
    .nav_top_right ul{
       float: left;
@@ -357,10 +357,10 @@ body, h1, h2, h3, h4, h5, h6, p{
    }
    
    .btn-gradient16{
-      width: 46% !important;
+      width: 40% !important;
    }
    .btn-gradient19{
-      width: 47% !important;
+      width: 40% !important;
    }
    #Step img{
       margin-left: 0px !important;
@@ -2273,7 +2273,7 @@ img.room-active {
 }
 
 #multiple-button{
-   margin-left: 122px;
+   margin-left: 20px;
 }
 .cart-information #img_pink{
    z-index: 1;
