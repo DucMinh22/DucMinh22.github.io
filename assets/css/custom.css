@@ -319,6 +319,9 @@ body, h1, h2, h3, h4, h5, h6, p{
       float: left;
    }
    
+   #range-price{
+      width: 150px !important;
+   }
    .sticky{
       position: static !important;
    }
@@ -2545,7 +2548,7 @@ img.room-active {
    background: #fe8c00;  /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
    background: linear-gradient(to right, #f83600, #fe8c00);
-   padding: 10px 15px ;
+   padding: 10px 5px ;
    border: none;
    border: 1px solid  #fe8c00; ;
    border-radius: 30px;
