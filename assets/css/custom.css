@@ -480,6 +480,10 @@ body, h1, h2, h3, h4, h5, h6, p{
    cursor: pointer;
 }
 
+#change_address a{
+text-decoration: none;
+color: #000;
+}
 #button.show {
    opacity: 1;
    visibility: visible;
@@ -808,7 +812,7 @@ width: 100%;
 
 #message p{
    color: rgb(177, 177, 177);
-   margin: 90px 30px 0px 0px;
+   margin: 90px 0px 0px 13px;
    font-size: 12px;
 }
 /* #pills-profile-tab:hover{
@@ -1623,10 +1627,6 @@ img.room-active {
    opacity: 1;
 }
 
-
-#text-sum-cost{
-   height: 30px;
-}
 #text-sum-cost p{
    font-size: 15px;
    margin-top: 5px;
@@ -2519,7 +2519,7 @@ img.room-active {
 }
 .btn-gradient16{
    
-   padding: 10px 15px ;
+   padding: 10px 5px ;
    border: none;
    border: 1px solid  #fe8c00; ;
    border-radius: 30px;
@@ -2549,7 +2549,7 @@ img.room-active {
    background: #fe8c00;  /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
    background: linear-gradient(to right, #f83600, #fe8c00);
-   color: white;
+   color: white !important;
 }
 
 .btn-gradient19{
