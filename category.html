@@ -166,40 +166,42 @@
                 
                 <div class="px-0 col-md-12">
                     <div class="card-header" style="margin: 0px">
-                        <ul class="nav nav-pills nav-secondary" id="pills-tab" role="tablist">
-                            <li class="nav-item">
-                                
-                                <a class="nav-link active" id="pills-popular-tab" data-toggle="pill" href="#pills-popular" role="tab" aria-controls="pills-popular" aria-selected="true">Phổ Biến</a>
-                                
-                            </li>
-                            <li class="nav-item">
-                                
-                                <a class="nav-link" id="pills-newest-tab" data-toggle="pill" href="#pills-newest" role="tab" aria-controls="pills-newest" aria-selected="false">Mới Nhất</a>
-                                
-                            </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" id="pills-topsale-tab" data-toggle="pill" href="#pills-topsale" role="tab" aria-controls="pills-topsale" aria-selected="false">Bán Chạy</a>
-                            </li> -->
-                            <li class="nav-item" >
-                                <select class="form-control input-fixed" id="range-price" style="margin-top: 5px; width: 200px;" >
-                                    <option value="left" selected="">Giá</option>
-                                    <option value="right" >Giá: Thấp đến cao</option>
-                                    <option value="center">Giá: Cao đến thấp</option>
-                                </select>
-                            </li>
-                            <li class="nav-item" >
-                                <select class="form-control input-fixed" id="range-price" style="margin-top: 5px; width: 200px;" >
-                                    <option value="left" selected="">Khoảng giá</option>
-                                    <option value="right" >0-200.000đ</option>
-                                    <option value="center">200.000-500.000đ</option>
-                                    <option value="center">500.000-1.000.000đ</option>
-                                    <option value="center">>1.000.000đ</option>
-                                </select>
-                            </li>
-                            <li>
-                                <button type="button" class="ml-3 my-1 btn btn-primary">Lọc</button>
-                            </li>
-                        </ul>
+                        <form action="">
+                            <ul class="nav nav-pills nav-secondary" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    
+                                    <a class="nav-link active" id="pills-popular-tab" data-toggle="pill" href="#pills-popular" role="tab" aria-controls="pills-popular" aria-selected="true">Phổ Biến</a>
+                                    
+                                </li>
+                                <li class="nav-item">
+                                    
+                                    <a class="nav-link" id="pills-newest-tab" data-toggle="pill" href="#pills-newest" role="tab" aria-controls="pills-newest" aria-selected="false">Mới Nhất</a>
+                                    
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" id="pills-topsale-tab" data-toggle="pill" href="#pills-topsale" role="tab" aria-controls="pills-topsale" aria-selected="false">Bán Chạy</a>
+                                </li> -->
+                                <li class="nav-item" >
+                                    <select class="form-control input-fixed" id="range-price" style="margin-top: 5px; width: 200px;" >
+                                        <option value="left" selected="">Giá</option>
+                                        <option value="right" >Giá: Thấp đến cao</option>
+                                        <option value="center">Giá: Cao đến thấp</option>
+                                    </select>
+                                </li>
+                                <li class="nav-item" >
+                                    <select class="form-control input-fixed" id="range-price" style="margin-top: 5px; width: 200px;" >
+                                        <option value="left" selected="">Khoảng giá</option>
+                                        <option value="right" >0-200.000đ</option>
+                                        <option value="center">200.000-500.000đ</option>
+                                        <option value="center">500.000-1.000.000đ</option>
+                                        <option value="center">>1.000.000đ</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <button type="button" class="ml-3 my-1 btn btn-primary">Lọc</button>
+                                </li>
+                            </ul>
+                        </form>
                     </div>
                     
                     
@@ -229,21 +231,21 @@
                                 </div>
                                 <div class="col-lg-9 col-12">
                                     <!--for computer-->
-                                    <div class="col d-none d-lg-block">
+                                    <div class="col ">
                                         <div class="row" >
-                                            <div class="px-2 col-lg-3" >
+                                            <div class="px-2 col-lg-3 col-7" >
                                                 <div class="card-product">  
                                                     <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/gia-kep-đt.png" alt="Chania"></a>
                                                     <div class="col">
-                                                        <div class="pt-3"   id="title-card" style="height: 55px;">
-                                                            <a  class="card-title" style="height: 50px;"  href="productpage.html"><h4>Giá đỡ điện thoại cao cấp sony 7502</h4></a>
+                                                        <div class="pt-3"   id="title-card" >
+                                                            <a  class="card-title"  href="productpage.html"><h4>Giá đỡ điện thoại cao cấp sony 7502</h4></a>
                                                         </div>
                                                         <div class="text-left" id="common-cost" >
                                                             <div class="col">
                                                                 <div class="row">
                                                                     <p class="main-cost" ><b>70.000.000đ</b></p>
                                                                     
-                                                                    <p class="pt-1" id="abondon-text-cost">280.000đ</p>
+                                                                    <p class="lg-pt-1 pl-3 " id="abondon-text-cost">280.000đ</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -359,270 +361,10 @@
                                             </div>
                                             
                                         </div>
-                                        <div class="row" >
-                                            <div class="px-2 col-lg-3" >
-                                                <div class="card-product">  
-                                                    <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/gia-kep-đt.png" alt="Chania"></a>
-                                                    <div class="col">
-                                                        <div class="pt-3"   id="title-card" style="height: 55px;">
-                                                            <a  class="card-title" style="height: 50px;"  href="productpage.html"><h4>Giá đỡ điện thoại cao cấp sony 7502</h4></a>
-                                                        </div>
-                                                        <div class="text-left" id="common-cost" >
-                                                            <div class="col">
-                                                                <div class="row">
-                                                                    <p class="main-cost" ><b>70.000.000đ</b></p>
-                                                                    
-                                                                    <p class="pt-1" id="abondon-text-cost">280.000đ</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="rating-star pb-2">
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star" id="star"></span>
-                                                            <span class="fa fa-star" id="star"></span>
-                                                        </div>
-                                                        <div class="row pb-3" id="icon-view-details">
-                                                            <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                            
-                                                            <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="px-2 col-lg-3"> 
-                                                <div class="card-product">  
-                                                    <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/bacnoi.png" alt="Chania"></a>
-                                                    <div class="col">
-                                                        <div class="pt-3"   id="title-card" style="height: 55px;">
-                                                            <a  class="card-title" style="height: 50px;" href="productpage.html"><h4>Bộ tay bắt nồi cao cấp</h4></a>
-                                                        </div>
-                                                        <div class="text-left" id="common-cost">
-                                                            <div class="col">
-                                                                <div class="row">
-                                                                    <p class="main-cost" ><b>70.000.000đ</b></p>
-                                                                    
-                                                                    <p class="pt-1" id="abondon-text-cost">280.000đ</p>
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="rating-star pb-2">
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star" id="star"></span>
-                                                            <span class="fa fa-star" id="star"></span>
-                                                        </div>
-                                                        <div class="row pb-3" id="icon-view-details">
-                                                            <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                            
-                                                            <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="px-2 col-lg-3">
-                                                <div class="card-product">  
-                                                    <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/box-store.png" alt="Chania"></a>
-                                                    <div class="col">
-                                                        <div class="pt-3"   id="title-card" style="height: 55px;">
-                                                            <a  class="card-title" style="height: 50px;"  href="productpage.html"><h4>Hộp đựng đồng hồ</h4></a>
-                                                        </div>
-                                                        <div class="text-left" id="common-cost">
-                                                            <div class="col">
-                                                                <div class="row">
-                                                                    <p class="main-cost" ><b>70.000.000đ</b></p>
-                                                                    
-                                                                    <p class="pt-1" id="abondon-text-cost">280.000đ</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="rating-star pb-2">
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star" id="star"></span>
-                                                            <span class="fa fa-star" id="star"></span>
-                                                        </div>
-                                                        <div class="row pb-3" id="icon-view-details">
-                                                            <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                            
-                                                            <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="px-2 col-lg-3">
-                                                <div class="card-product">  
-                                                    <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/ke-de-giay.png" alt="Chania"></a>
-                                                    <div class="col">
-                                                        <div class="pt-3"   id="title-card" style="height: 55px;">
-                                                            <a  class="card-title" style="height: 50px;" href="productpage.html"><h4>Kệ đệ giày cao cấp</h4></a>
-                                                        </div>
-                                                        <div class="text-left" id="common-cost">
-                                                            <div class="col">
-                                                                <div class="row">
-                                                                    <p class="main-cost" ><b>70.000.000đ</b></p>
-                                                                    
-                                                                    <p class="pt-1" id="abondon-text-cost">280.000đ</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="rating-star pb-2">
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star" id="star"></span>
-                                                            <span class="fa fa-star" id="star"></span>
-                                                        </div>
-                                                        <div class="row pb-3" id="icon-view-details">
-                                                            <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                            
-                                                            <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="row" >
-                                            <div class="px-2 col-lg-3" >
-                                                <div class="card-product">  
-                                                    <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/gia-kep-đt.png" alt="Chania"></a>
-                                                    <div class="col">
-                                                        <div class="pt-3"   id="title-card" style="height: 55px;">
-                                                            <a  class="card-title" style="height: 50px;"  href="productpage.html"><h4>Giá đỡ điện thoại cao cấp sony 7502</h4></a>
-                                                        </div>
-                                                        <div class="text-left" id="common-cost" >
-                                                            <div class="col">
-                                                                <div class="row">
-                                                                    <p class="main-cost" ><b>70.000.000đ</b></p>
-                                                                    
-                                                                    <p class="pt-1" id="abondon-text-cost">280.000đ</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="rating-star pb-2">
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star" id="star"></span>
-                                                            <span class="fa fa-star" id="star"></span>
-                                                        </div>
-                                                        <div class="row pb-3" id="icon-view-details">
-                                                            <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                            
-                                                            <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="px-2 col-lg-3"> 
-                                                <div class="card-product">  
-                                                    <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/bacnoi.png" alt="Chania"></a>
-                                                    <div class="col">
-                                                        <div class="pt-3"   id="title-card" style="height: 55px;">
-                                                            <a  class="card-title" style="height: 50px;" href="productpage.html"><h4>Bộ tay bắt nồi cao cấp</h4></a>
-                                                        </div>
-                                                        <div class="text-left" id="common-cost">
-                                                            <div class="col">
-                                                                <div class="row">
-                                                                    <p class="main-cost" ><b>70.000.000đ</b></p>
-                                                                    
-                                                                    <p class="pt-1" id="abondon-text-cost">280.000đ</p>
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="rating-star pb-2">
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star" id="star"></span>
-                                                            <span class="fa fa-star" id="star"></span>
-                                                        </div>
-                                                        <div class="row pb-3" id="icon-view-details">
-                                                            <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                            
-                                                            <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="px-2 col-lg-3">
-                                                <div class="card-product">  
-                                                    <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/box-store.png" alt="Chania"></a>
-                                                    <div class="col">
-                                                        <div class="pt-3"   id="title-card" style="height: 55px;">
-                                                            <a  class="card-title" style="height: 50px;"  href="productpage.html"><h4>Hộp đựng đồng hồ</h4></a>
-                                                        </div>
-                                                        <div class="text-left" id="common-cost">
-                                                            <div class="col">
-                                                                <div class="row">
-                                                                    <p class="main-cost" ><b>70.000.000đ</b></p>
-                                                                    
-                                                                    <p class="pt-1" id="abondon-text-cost">280.000đ</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="rating-star pb-2">
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star" id="star"></span>
-                                                            <span class="fa fa-star" id="star"></span>
-                                                        </div>
-                                                        <div class="row pb-3" id="icon-view-details">
-                                                            <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                            
-                                                            <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="px-2 col-lg-3">
-                                                <div class="card-product">  
-                                                    <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/ke-de-giay.png" alt="Chania"></a>
-                                                    <div class="col">
-                                                        <div class="pt-3"   id="title-card" style="height: 55px;">
-                                                            <a  class="card-title" style="height: 50px;" href="productpage.html"><h4>Kệ đệ giày cao cấp</h4></a>
-                                                        </div>
-                                                        <div class="text-left" id="common-cost">
-                                                            <div class="col">
-                                                                <div class="row">
-                                                                    <p class="main-cost" ><b>70.000.000đ</b></p>
-                                                                    
-                                                                    <p class="pt-1" id="abondon-text-cost">280.000đ</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="rating-star pb-2">
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star checked" id="star"></span>
-                                                            <span class="fa fa-star" id="star"></span>
-                                                            <span class="fa fa-star" id="star"></span>
-                                                        </div>
-                                                        <div class="row pb-3" id="icon-view-details">
-                                                            <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                            
-                                                            <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
                                     </div>
                                     <!--end for computer-->
                                     <!--for MOBILE PHONE-->
-                                    <div class="col-sm-12 d-block d-lg-none">
+                                    <!-- <div class="col-sm-12 d-block d-lg-none">
                                         <div class="scroll-menu">
                                             <div class="card" style="width:250px;">   
                                                 <img class="img-fluid" style="height: 150px;" src="assets/img/noodle-machine.png" alt="Chania">
@@ -783,13 +525,13 @@
                                             </div>
                                             
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!--for End MOBILE PHONE-->
                                     
                                     <!-- page trasition -->
                                     <div class="card-body">
                                         <div class="row">
-                                            <div class="col-4"></div>  
+                                            <div class="col-lg-4 col-2"></div>  
                                             <div class="col-4">
                                                 <nav aria-label="Page navigation example">
                                                     <ul class="pagination">
@@ -820,7 +562,7 @@
                         <!-- Mới nhất -->
                         <div class="tab-pane fade"  id="pills-newest" role="tabpanel" aria-labelledby="pills-newest-tab">
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-3 d-lg-block d-none">
                                     <div class="list-group">
                                         <a href="#" class="list-group-item list-group-item-action"><b><i class="fas fa-align-left" style="margin-right:10px;"></i>Tất Cả Các Danh Mục</b></a>
                                         <a href="#" class="list-group-item list-group-item-action" style="color: #f09819;"><i class="fas fa-caret-right" style="margin: 5px 5px 0px 0px; color: #f09819;"></i><b>Thời Trang Nữ</b></a>
@@ -1233,7 +975,7 @@
                                     <!-- page trasition -->
                                     <div class="card-body">
                                         <div class="row">
-                                            <div class="col-4"></div>  
+                                            <div class="col-lg-4 col-2"></div>  
                                             <div class="col-4">
                                                 <nav aria-label="Page navigation example">
                                                     <ul class="pagination">
@@ -1258,274 +1000,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row" >
-                                <div class="px-2 col-lg-3" >
-                                    <div class="card-product">  
-                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/gia-kep-đt.png" alt="Chania"></a>
-                                        <div class="col">
-                                            <div class="pt-3"   id="title-card" style="height: 55px;">
-                                                <a  class="card-title" style="height: 50px;"  href="productpage.html"><h4>Giá đỡ điện thoại cao cấp sony 7502</h4></a>
-                                            </div>
-                                            <div class="text-left" id="common-cost" >
-                                                <div class="col">
-                                                    <div class="row">
-                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
-                                                        
-                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="rating-star pb-2">
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star" id="star"></span>
-                                                <span class="fa fa-star" id="star"></span>
-                                            </div>
-                                            <div class="row pb-3" id="icon-view-details">
-                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                
-                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-2 col-lg-3"> 
-                                    <div class="card-product">  
-                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/bacnoi.png" alt="Chania"></a>
-                                        <div class="col">
-                                            <div class="pt-3"   id="title-card" style="height: 55px;">
-                                                <a  class="card-title" style="height: 50px;" href="productpage.html"><h4>Bộ tay bắt nồi cao cấp</h4></a>
-                                            </div>
-                                            <div class="text-left" id="common-cost">
-                                                <div class="col">
-                                                    <div class="row">
-                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
-                                                        
-                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
-                                                    </div>
-                                                    
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="rating-star pb-2">
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star" id="star"></span>
-                                                <span class="fa fa-star" id="star"></span>
-                                            </div>
-                                            <div class="row pb-3" id="icon-view-details">
-                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                
-                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-2 col-lg-3">
-                                    <div class="card-product">  
-                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/box-store.png" alt="Chania"></a>
-                                        <div class="col">
-                                            <div class="pt-3"   id="title-card" style="height: 55px;">
-                                                <a  class="card-title" style="height: 50px;"  href="productpage.html"><h4>Hộp đựng đồng hồ</h4></a>
-                                            </div>
-                                            <div class="text-left" id="common-cost">
-                                                <div class="col">
-                                                    <div class="row">
-                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
-                                                        
-                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="rating-star pb-2">
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star" id="star"></span>
-                                                <span class="fa fa-star" id="star"></span>
-                                            </div>
-                                            <div class="row pb-3" id="icon-view-details">
-                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                
-                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-2 col-lg-3">
-                                    <div class="card-product">  
-                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/ke-de-giay.png" alt="Chania"></a>
-                                        <div class="col">
-                                            <div class="pt-3"   id="title-card" style="height: 55px;">
-                                                <a  class="card-title" style="height: 50px;" href="productpage.html"><h4>Kệ đệ giày cao cấp</h4></a>
-                                            </div>
-                                            <div class="text-left" id="common-cost">
-                                                <div class="col">
-                                                    <div class="row">
-                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
-                                                        
-                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="rating-star pb-2">
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star" id="star"></span>
-                                                <span class="fa fa-star" id="star"></span>
-                                            </div>
-                                            <div class="row pb-3" id="icon-view-details">
-                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                
-                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="row" >
-                                <div class="px-2 col-lg-3" >
-                                    <div class="card-product">  
-                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/gia-kep-đt.png" alt="Chania"></a>
-                                        <div class="col">
-                                            <div class="pt-3"   id="title-card" style="height: 55px;">
-                                                <a  class="card-title" style="height: 50px;"  href="productpage.html"><h4>Giá đỡ điện thoại cao cấp sony 7502</h4></a>
-                                            </div>
-                                            <div class="text-left" id="common-cost" >
-                                                <div class="col">
-                                                    <div class="row">
-                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
-                                                        
-                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="rating-star pb-2">
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star" id="star"></span>
-                                                <span class="fa fa-star" id="star"></span>
-                                            </div>
-                                            <div class="row pb-3" id="icon-view-details">
-                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                
-                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-2 col-lg-3"> 
-                                    <div class="card-product">  
-                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/bacnoi.png" alt="Chania"></a>
-                                        <div class="col">
-                                            <div class="pt-3"   id="title-card" style="height: 55px;">
-                                                <a  class="card-title" style="height: 50px;" href="productpage.html"><h4>Bộ tay bắt nồi cao cấp</h4></a>
-                                            </div>
-                                            <div class="text-left" id="common-cost">
-                                                <div class="col">
-                                                    <div class="row">
-                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
-                                                        
-                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
-                                                    </div>
-                                                    
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="rating-star pb-2">
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star" id="star"></span>
-                                                <span class="fa fa-star" id="star"></span>
-                                            </div>
-                                            <div class="row pb-3" id="icon-view-details">
-                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                
-                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-2 col-lg-3">
-                                    <div class="card-product">  
-                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/box-store.png" alt="Chania"></a>
-                                        <div class="col">
-                                            <div class="pt-3"   id="title-card" style="height: 55px;">
-                                                <a  class="card-title" style="height: 50px;"  href="productpage.html"><h4>Hộp đựng đồng hồ</h4></a>
-                                            </div>
-                                            <div class="text-left" id="common-cost">
-                                                <div class="col">
-                                                    <div class="row">
-                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
-                                                        
-                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="rating-star pb-2">
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star" id="star"></span>
-                                                <span class="fa fa-star" id="star"></span>
-                                            </div>
-                                            <div class="row pb-3" id="icon-view-details">
-                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                
-                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-2 col-lg-3">
-                                    <div class="card-product">  
-                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/ke-de-giay.png" alt="Chania"></a>
-                                        <div class="col">
-                                            <div class="pt-3"   id="title-card" style="height: 55px;">
-                                                <a  class="card-title" style="height: 50px;" href="productpage.html"><h4>Kệ đệ giày cao cấp</h4></a>
-                                            </div>
-                                            <div class="text-left" id="common-cost">
-                                                <div class="col">
-                                                    <div class="row">
-                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
-                                                        
-                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="rating-star pb-2">
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star checked" id="star"></span>
-                                                <span class="fa fa-star" id="star"></span>
-                                                <span class="fa fa-star" id="star"></span>
-                                            </div>
-                                            <div class="row pb-3" id="icon-view-details">
-                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
-                                                
-                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
                         </div>
                         <!-- End Mới nhất -->
                         
                         
                         
                         <!--Bán chạy-->
-                        <div class="tab-pane fade" id="pills-topsale" role="tabpanel" aria-labelledby="pills-topsale-tab">
-                            
+                        <!-- <div class="tab-pane fade" id="pills-topsale" role="tabpanel" aria-labelledby="pills-topsale-tab">
                             <div class="row">
                                 <div class="col-3">
                                     <div class="list-group" id="text-hidden-category">
@@ -1938,7 +1419,7 @@
                                         
                                     </div>
                                     <!-- page trasition -->
-                                    <div class="card-body">
+                                    <!-- <div class="card-body">
                                         <div class="row">
                                             <div class="col-4"></div>  
                                             <div class="col-4">
@@ -1962,282 +1443,282 @@
                                             </div>
                                             <div class="col-4"></div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>   
-                        <!--end bán chạy--> 
-                    </div>  
-                </div>       
-            </div> 
-        </div>
-        
-        
-        <!--COMPUTER FOOTER-->
-        <div class="px-0 col-sm-12 col-12 d-none d-lg-block" >
-            <div class="text-center" id="main-footer-computer">
-                <div class="container">
-                    <div class="col">
-                        <div class="row">
-                            <div class="pt-5 col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                                <img src="assets/img/store.jpg" alt="" style="width:150px; height:150px; padding-bottom: 20px;">
+                                    </div> -->
+                                    <!-- </div>
+                                    </div> -->
+                                    <!-- </div>    -->
+                                    <!--end bán chạy--> 
+                                </div>  
+                            </div>       
+                        </div> 
+                    </div>
+                    
+                    
+                    <!--COMPUTER FOOTER-->
+                    <div class="px-0 col-sm-12 col-12 d-none d-lg-block" >
+                        <div class="text-center" id="main-footer-computer">
+                            <div class="container">
                                 <div class="col">
-                                    <button type="button" class="btn btn-warning">TÌM CỬA HÀNG</button>
+                                    <div class="row">
+                                        <div class="pt-5 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                            <img src="assets/img/store.jpg" alt="" style="width:150px; height:150px; padding-bottom: 20px;">
+                                            <div class="col">
+                                                <button type="button" class="btn btn-warning">TÌM CỬA HÀNG</button>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row">
+                                                <div class="text-left px-0  pt-5 col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="col" style="height: 30px; ">
+                                                        <a  href="#" style="color: #000;"><b>HỐ TRỢ</b></a>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="text-footer">
+                                                            <a  href="#" >
+                                                                <i class=" mr-1 fas fa-angle-right"></i>
+                                                                <p>Về VanChuyenMy</p>
+                                                            </a>
+                                                            <a  href="#" >
+                                                                <i class="mr-1 fas fa-angle-right"></i>
+                                                                <p>Bài viết, tin tức</p>
+                                                            </a>
+                                                            <a  href="#" >
+                                                                <i class="mr-1 fas fa-angle-right"></i>
+                                                                <p>Qui trình đặt hàng</p>
+                                                            </a>
+                                                            <a  href="#" >
+                                                                <i class="mr-1 fas fa-angle-right"></i>
+                                                                <p>Vận chuyển</p>
+                                                            </a>
+                                                            <a  href="#" >
+                                                                <i class="mr-1 fas fa-angle-right"></i>
+                                                                <p>Các điều khoản và điều kiện</p>
+                                                            </a>
+                                                            <a  href="#" >
+                                                                <i class="mr-1 fas fa-angle-right"></i>
+                                                                <p>Chính sách bảo hành, hỗ trợ</p>
+                                                            </a>
+                                                            <a  href="#" >
+                                                                <i class="mr-1 fas fa-angle-right"></i>
+                                                                <p>Bảo hành</p>
+                                                            </a>
+                                                            <a  href="#" >
+                                                                <i class="mr-1 fas fa-angle-right"></i>
+                                                                <p>Các mặt hàng cấm</p>
+                                                            </a>
+                                                            <a  href="#" >
+                                                                <i class="mr-1 fas fa-angle-right"></i>
+                                                                <p>Chính sách bảo mật</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-left px-0  py-5 col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="col" style="height: 30px;">
+                                                        <a  href="#" style="color: #000;"><b>LIÊN HỆ</b></a>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="text-footer">
+                                                            <a  href="#" >
+                                                                <i class="mr-1 fas fa-angle-right"></i>
+                                                                <p>Văn phòng Hà Nội :Số 32-Lô A11-Khu đô thị Lê Trọng Tấn </p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="mr-1 fas fa-angle-right"></i>
+                                                                <p> Văn phòng Hà Nam :  Phố cà, Thanh Nguyên, Thanh Liêm, Hà Nam</p>
+                                                            </a>
+                                                            <a  href="#" >
+                                                                <i class="mr-1 fas fa-angle-right"></i>
+                                                                <p> <i class="mr-1 fas fa-phone"></i>0373892381 </p>
+                                                            </a>
+                                                            <a  href="#" >
+                                                                <i class="mr-1 fas fa-angle-right"></i>
+                                                                <p><i class="fas fa-envelope"></i> Hotro.VanChuyenMy@gmail.com  </p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-left px-0  py-5 col-xs-2 col-sm-2 col-md-2 col-lg-3">
+                                            <div class="col" style="height: 30px;">
+                                                <a  href="#" style="color: #000;;"><b>THẺ PHỔ BIẾN</b></a>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-footer">
+                                                    <button type="button" class="btn-btn-footer">Thể thao</button>
+                                                    <button type="button" class="btn-btn-footer">Làm đẹp</button>
+                                                    <button type="button" class="btn-btn-footer">Gia dụng</button>
+                                                    <button type="button" class="btn-btn-footer">Công nghệ</button>
+                                                    <button type="button" class="btn-btn-footer">Giải trí</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="py-4 text-center" id="copyright-company">
+                                <div class="container">
+                                    <p>VanChuyenMy.vn - một sản phẩm của VESTA GLOBAL</p>
+                                    <p>Giấy chứng nhận Đăng ký doanh nghiệp số: 0107797701 do Sở Kế hoạch và Đầu tư Tp Hà Nội cấp ngày 23/5/2015.</p>
+                                    <p> Hotline: 0911333222, Email: support@vanchuyenmy.vn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END COMPUTER FOOTER-->
+                    
+                    <!--MOBILE FOOTER-->
+                    <div class="col-sm-12 d-block d-lg-none">
+                        <div class="jumbotron" style="background-color: #f09819;">
+                            <div class="col-12" style="padding-bottom: 20px;">
                                 <div class="row">
-                                    <div class="text-left px-0  pt-5 col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                        <div class="col" style="height: 30px; ">
-                                            <a  href="#" style="color: #000;"><b>HỐ TRỢ</b></a>
+                                    
+                                    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                                        <a class="navbar-brand" style="color: white;" href="#"><h4>SẢN PHẨM</h4></a>
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent6" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <i class="fas fa-angle-down"></i>
+                                        </button>
+                                        
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent6">
+                                            <ul class="navbar-nav mr-auto">
+                                                
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Thời trang & phụ kiện</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Thời trang nam</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Saleoff</a>
+                                                </li>
+                                                
+                                                
+                                            </ul>
+                                            
                                         </div>
-                                        <div class="col">
-                                            <div class="text-footer">
-                                                <a  href="#" >
-                                                    <i class=" mr-1 fas fa-angle-right"></i>
-                                                    <p>Về VanChuyenMy</p>
-                                                </a>
-                                                <a  href="#" >
-                                                    <i class="mr-1 fas fa-angle-right"></i>
-                                                    <p>Bài viết, tin tức</p>
-                                                </a>
-                                                <a  href="#" >
-                                                    <i class="mr-1 fas fa-angle-right"></i>
-                                                    <p>Qui trình đặt hàng</p>
-                                                </a>
-                                                <a  href="#" >
-                                                    <i class="mr-1 fas fa-angle-right"></i>
-                                                    <p>Vận chuyển</p>
-                                                </a>
-                                                <a  href="#" >
-                                                    <i class="mr-1 fas fa-angle-right"></i>
-                                                    <p>Các điều khoản và điều kiện</p>
-                                                </a>
-                                                <a  href="#" >
-                                                    <i class="mr-1 fas fa-angle-right"></i>
-                                                    <p>Chính sách bảo hành, hỗ trợ</p>
-                                                </a>
-                                                <a  href="#" >
-                                                    <i class="mr-1 fas fa-angle-right"></i>
-                                                    <p>Bảo hành</p>
-                                                </a>
-                                                <a  href="#" >
-                                                    <i class="mr-1 fas fa-angle-right"></i>
-                                                    <p>Các mặt hàng cấm</p>
-                                                </a>
-                                                <a  href="#" >
-                                                    <i class="mr-1 fas fa-angle-right"></i>
-                                                    <p>Chính sách bảo mật</p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-left px-0  py-5 col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                        <div class="col" style="height: 30px;">
-                                            <a  href="#" style="color: #000;"><b>LIÊN HỆ</b></a>
-                                        </div>
-                                        <div class="col">
-                                            <div class="text-footer">
-                                                <a  href="#" >
-                                                    <i class="mr-1 fas fa-angle-right"></i>
-                                                    <p>Văn phòng Hà Nội :Số 32-Lô A11-Khu đô thị Lê Trọng Tấn </p>
-                                                </a>
-                                                <a href="#">
-                                                    <i class="mr-1 fas fa-angle-right"></i>
-                                                    <p> Văn phòng Hà Nam :  Phố cà, Thanh Nguyên, Thanh Liêm, Hà Nam</p>
-                                                </a>
-                                                <a  href="#" >
-                                                    <i class="mr-1 fas fa-angle-right"></i>
-                                                    <p> <i class="mr-1 fas fa-phone"></i>0373892381 </p>
-                                                </a>
-                                                <a  href="#" >
-                                                    <i class="mr-1 fas fa-angle-right"></i>
-                                                    <p><i class="fas fa-envelope"></i> Hotro.VanChuyenMy@gmail.com  </p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </nav>
                                 </div>
+                                
                             </div>
-                            
-                            <div class="text-left px-0  py-5 col-xs-2 col-sm-2 col-md-2 col-lg-3">
-                                <div class="col" style="height: 30px;">
-                                    <a  href="#" style="color: #000;;"><b>THẺ PHỔ BIẾN</b></a>
+                            <div class="col-12" style="padding-bottom: 20px; " >
+                                <div class="row" >
+                                    
+                                    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                                        <a class="navbar-brand" style="color: white;" href="#"><h4>VỀ CÔNG TY</h4></a>
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent7" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <i class="fas fa-angle-down"></i>
+                                        </button>
+                                        
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent7">
+                                            <ul class="navbar-nav mr-auto">
+                                                
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Liên hệ Quảng Cáo</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Đối tác</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Đại lý</a>
+                                                </li>
+                                                
+                                                
+                                            </ul>
+                                            
+                                        </div>
+                                    </nav>
                                 </div>
-                                <div class="col">
-                                    <div class="text-footer">
-                                        <button type="button" class="btn-btn-footer">Thể thao</button>
-                                        <button type="button" class="btn-btn-footer">Làm đẹp</button>
-                                        <button type="button" class="btn-btn-footer">Gia dụng</button>
-                                        <button type="button" class="btn-btn-footer">Công nghệ</button>
-                                        <button type="button" class="btn-btn-footer">Giải trí</button>
-                                    </div>
+                                
+                            </div>
+                            <div class="col-12" style="padding-bottom: 20px;">
+                                <div class="row">
+                                    
+                                    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
+                                        <a class="navbar-brand" style="color: white;" href="#"><h4>HỖ TRỢ</h4></a>
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent8" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <i class="fas fa-angle-down"></i>
+                                        </button>
+                                        
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent8">
+                                            <ul class="navbar-nav mr-auto">
+                                                
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">FAQS</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Chính sách chung</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Tra cứu đơn hàng</a>
+                                                </li>
+                                                
+                                                
+                                            </ul>
+                                            
+                                        </div>
+                                    </nav>
                                 </div>
+                                
                             </div>
                             
                         </div>
-                        
                     </div>
-                </div>
-                <div class="py-4 text-center" id="copyright-company">
-                    <div class="container">
-                        <p>VanChuyenMy.vn - một sản phẩm của VESTA GLOBAL</p>
-                        <p>Giấy chứng nhận Đăng ký doanh nghiệp số: 0107797701 do Sở Kế hoạch và Đầu tư Tp Hà Nội cấp ngày 23/5/2015.</p>
-                        <p> Hotline: 0911333222, Email: support@vanchuyenmy.vn</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--END COMPUTER FOOTER-->
-        
-        <!--MOBILE FOOTER-->
-        <div class="col-sm-12 d-block d-lg-none">
-            <div class="jumbotron" style="background-color: #f09819;">
-                <div class="col-12" style="padding-bottom: 20px;">
-                    <div class="row">
-                        
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
-                            <a class="navbar-brand" style="color: white;" href="#"><h4>SẢN PHẨM</h4></a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent6" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fas fa-angle-down"></i>
-                            </button>
-                            
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent6">
-                                <ul class="navbar-nav mr-auto">
-                                    
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Thời trang & phụ kiện</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Thời trang nam</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Saleoff</a>
-                                    </li>
-                                    
-                                    
-                                </ul>
-                                
-                            </div>
-                        </nav>
-                    </div>
+                    <!--END MOBILE FOOTER-->
+                    
                     
                 </div>
-                <div class="col-12" style="padding-bottom: 20px; " >
-                    <div class="row" >
-                        
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
-                            <a class="navbar-brand" style="color: white;" href="#"><h4>VỀ CÔNG TY</h4></a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent7" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fas fa-angle-down"></i>
-                            </button>
-                            
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent7">
-                                <ul class="navbar-nav mr-auto">
-                                    
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Liên hệ Quảng Cáo</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Đối tác</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Đại lý</a>
-                                    </li>
-                                    
-                                    
-                                </ul>
-                                
-                            </div>
-                        </nav>
-                    </div>
-                    
-                </div>
-                <div class="col-12" style="padding-bottom: 20px;">
-                    <div class="row">
-                        
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;">
-                            <a class="navbar-brand" style="color: white;" href="#"><h4>HỖ TRỢ</h4></a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent8" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fas fa-angle-down"></i>
-                            </button>
-                            
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent8">
-                                <ul class="navbar-nav mr-auto">
-                                    
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">FAQS</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Chính sách chung</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Tra cứu đơn hàng</a>
-                                    </li>
-                                    
-                                    
-                                </ul>
-                                
-                            </div>
-                        </nav>
-                    </div>
-                    
-                </div>
+                <!--   Core JS Files   -->
+                <script src="assets/js/core/jquery.3.2.1.min.js"></script>
+                <script src="assets/js/core/popper.min.js"></script>
+                <script src="assets/js/core/bootstrap.min.js"></script>
                 
-            </div>
-        </div>
-        <!--END MOBILE FOOTER-->
-        
-        
-    </div>
-    <!--   Core JS Files   -->
-    <script src="assets/js/core/jquery.3.2.1.min.js"></script>
-    <script src="assets/js/core/popper.min.js"></script>
-    <script src="assets/js/core/bootstrap.min.js"></script>
-    
-    <!-- jQuery UI -->
-    <script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-    <script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
-    
-    <!-- jQuery Scrollbar -->
-    <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-    
-    <!-- Moment JS -->
-    <script src="assets/js/plugin/moment/moment.min.js"></script>
-    
-    <!-- Chart JS -->
-    <script src="assets/js/plugin/chart.js/chart.min.js"></script>
-    
-    <!-- jQuery Sparkline -->
-    <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
-    
-    <!-- Chart Circle -->
-    <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
-    
-    <!-- Datatables -->
-    <script src="assets/js/plugin/datatables/datatables.min.js"></script>
-    
-    <!-- Bootstrap Notify -->
-    <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
-    
-    <!-- Bootstrap Toggle -->
-    <script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-    
-    <!-- jQuery Vector Maps -->
-    <script src="assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
-    <script src="assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
-    
-    <!-- Google Maps Plugin -->
-    <script src="assets/js/plugin/gmaps/gmaps.js"></script>
-    
-    <!-- Sweet Alert -->
-    <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
-    
-    <!-- Azzara JS -->
-    <script src="assets/js/ready.min.js"></script>
-    
-    <!-- Azzara DEMO methods, don't include it in your project! -->
-    <script src="assets/js/setting-demo.js"></script>
-    <script src="assets/js/demo.js"></script>
-</body>
-</html>
+                <!-- jQuery UI -->
+                <script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+                <script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+                
+                <!-- jQuery Scrollbar -->
+                <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+                
+                <!-- Moment JS -->
+                <script src="assets/js/plugin/moment/moment.min.js"></script>
+                
+                <!-- Chart JS -->
+                <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+                
+                <!-- jQuery Sparkline -->
+                <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+                
+                <!-- Chart Circle -->
+                <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+                
+                <!-- Datatables -->
+                <script src="assets/js/plugin/datatables/datatables.min.js"></script>
+                
+                <!-- Bootstrap Notify -->
+                <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+                
+                <!-- Bootstrap Toggle -->
+                <script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+                
+                <!-- jQuery Vector Maps -->
+                <script src="assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+                <script src="assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+                
+                <!-- Google Maps Plugin -->
+                <script src="assets/js/plugin/gmaps/gmaps.js"></script>
+                
+                <!-- Sweet Alert -->
+                <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+                
+                <!-- Azzara JS -->
+                <script src="assets/js/ready.min.js"></script>
+                
+                <!-- Azzara DEMO methods, don't include it in your project! -->
+                <script src="assets/js/setting-demo.js"></script>
+                <script src="assets/js/demo.js"></script>
+            </body>
+            </html>
