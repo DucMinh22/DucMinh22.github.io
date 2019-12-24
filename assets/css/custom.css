@@ -326,10 +326,6 @@ body, h1, h2, h3, h4, h5, h6, p{
       position: static !important;
    }
    
-   .navbar-expand-lg .navbar-nav .dropdown-menu{
-      
-      position: absolute !important;
-   }
    
    .card-product img{
       height: 175px !important;
@@ -345,9 +341,7 @@ body, h1, h2, h3, h4, h5, h6, p{
    body{
       width: 101%;
    }
-   .navbar-expand-lg .navbar-nav .dropdown-menu{
-      left: -54px !important;
-   }
+  
    .nav_top_right ul li{
       margin-left: 0;
    }
@@ -427,6 +421,15 @@ body, h1, h2, h3, h4, h5, h6, p{
    }
 }
 @media (max-width : 1300px) {
+
+   .navbar-expand-lg .navbar-nav .dropdown-menu{
+      
+      position: absolute !important;
+   }
+
+   .navbar-expand-lg .navbar-nav .dropdown-menu{
+      left: -54px !important;
+   }
    
    #alert_demo_1{
       width: 156px !important;
