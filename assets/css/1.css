@@ -2,7 +2,7 @@
     height: 100px;
     line-height: 100px ;
     background-color: white;
-    border-bottom: 2px solid ;
+    border-bottom: 3px solid #44a4d7;
 }
 .list-menu{
     display: flex;
@@ -23,17 +23,134 @@ font-weight: bold;
 }
 
 .dathang-nutsave {
-    width: 170px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
+    width: 210px;
+    height: 50px;
+    font-size: 14px;
     font-weight: 700;
     color: #FFF;
-    background-color: #ff6600;
+    background-color: #ff7f0b;
     border: none;
     cursor: pointer;
     font-size: 16px;
     font-weight: 400;
-    border-radius: 19px;
+    border-radius: 45px;
+    text-align: center;
+   margin-top: 25px;
+  margin-left: 60px;
 }
 
+.dathang-nutsave p{
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+.box-category{
+    border: 2px solid #44a4d7;
+}
+.category-product .head-title{
+    text-transform: uppercase;
+    background-color: #44a4d7;
+    color: white;
+    font-weight: bold;
+  
+}
+.detail-cate{
+    border-bottom: 0.5px solid rgb(231, 228, 228);
+    margin: 0 2px 0 2px;
+    padding: 2px 0;
+}
+.detail-cate p{
+margin-bottom: 0;
+}
+.detail-cate p2{
+font-size: 11px;
+}
+
+
+form.example input[type=text] {
+    padding: 8px;
+    font-size: 13px;
+    border: 2px solid #44a4d7;
+    float: left;
+    width: 80%;
+    background: white;
+  }
+  
+  form.example button {
+    float: left;
+    width: 10%;
+    padding: 6px;
+    background: #44a4d7;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #44a4d7;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .notice{
+      background-color: rgb(235, 235, 235);
+      padding: 8px 20px;
+      border-radius: 5px;
+      border: 1px solid rgb(211, 210, 210);
+  }
+  .shop-adress{
+    color: #0b7dda;  
+  }
+
+  .contact{
+      border-style: dashed ;
+      color: #1e99fd;
+  }
+.text-info{
+color: #0b7dda;
+}
+
+.text-info .bold-text{
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.text-info p1{
+    font-size: 11px;
+    color: black;
+}
+
+.headline-title .text-left{
+    color: #0b7dda ;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.product-popular {
+    border-top: 3px solid #ff7f0b;
+}
+.product-info{
+    border: 1px solid rgb(211, 210, 210);
+    padding-bottom: 30px;
+}
+.product-info .text-product p{
+margin-bottom: 0px;
+
+}
+.product-info .text-product .abondon-price{
+    text-decoration: line-through;
+}
+.product-info .text-product .current-price{
+    color: red;
+}
+
+.cf-buy{
+    background-color:  #0b7dda ;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
