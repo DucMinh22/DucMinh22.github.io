@@ -37,3 +37,47 @@ font-weight: bold;
     border-radius: 19px;
 }
 
+.cate1 {
+    font-weight: 1000;
+    font-size: large;
+}
+
+.cate2 {
+    font-size: medium;
+}
+
+.more {
+    color: black;
+    font-size: medium;
+}
+
+.top-border {
+    border-top: 3px solid #ff6600;
+}
+
+.price {
+    color: red;
+}
+
+.crossword {
+    text-decoration: line-through;
+}
+
+.divnani {
+    height: 30px;
+}
+
+.logo {
+    width: 80%;
+    height: 80%;
+}
+
+.blackhref {
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+}
+
+a:hover {
+    color:black;
+}
