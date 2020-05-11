@@ -81,3 +81,8 @@ font-weight: bold;
 a:hover {
     color:black;
 }
+
+.white-href a {
+    color: white;
+    display: block
+}
