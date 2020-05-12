@@ -1,3 +1,6 @@
+body{
+   background-color: white;
+}
 .menu{
     height: 100px;
     line-height: 100px ;
@@ -10,6 +13,7 @@
 
 .list-menu ul{
     display: flex;
+    padding-left: 83px;
 }
 
 .list-menu ul li{
@@ -17,9 +21,9 @@
     text-transform: uppercase;
 }
 .list-menu ul li a{
-color: black;
-padding-right: 35px;
-font-weight: bold;
+    color: black;
+    padding-right: 35px;
+    font-weight: bold;
 }
 
 .dathang-nutsave {
@@ -35,8 +39,8 @@ font-weight: bold;
     font-weight: 400;
     border-radius: 45px;
     text-align: center;
-   margin-top: 25px;
-  margin-left: 60px;
+    margin-top: 25px;
+    margin-left: 117px;
 }
 
 .dathang-nutsave p{
@@ -51,7 +55,7 @@ font-weight: bold;
     background-color: #44a4d7;
     color: white;
     font-weight: bold;
-  
+    
 }
 .detail-cate{
     border-bottom: 0.5px solid rgb(231, 228, 228);
@@ -59,10 +63,10 @@ font-weight: bold;
     padding: 2px 0;
 }
 .detail-cate p{
-margin-bottom: 0;
+    margin-bottom: 0;
 }
 .detail-cate p2{
-font-size: 11px;
+    font-size: 11px;
 }
 
 
@@ -71,11 +75,11 @@ form.example input[type=text] {
     font-size: 13px;
     border: 2px solid #44a4d7;
     float: left;
-    width: 80%;
+    width: 90%;
     background: white;
-  }
-  
-  form.example button {
+}
+
+form.example button {
     float: left;
     width: 10%;
     padding: 6px;
@@ -85,34 +89,40 @@ form.example input[type=text] {
     border: 1px solid #44a4d7;
     border-left: none;
     cursor: pointer;
-  }
-  
-  form.example button:hover {
+}
+
+form.example button:hover {
     background: #0b7dda;
-  }
-  
-  form.example::after {
+}
+
+form.example::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
 
-  .notice{
-      background-color: rgb(235, 235, 235);
-      padding: 8px 20px;
-      border-radius: 5px;
-      border: 1px solid rgb(211, 210, 210);
-  }
-  .shop-adress{
+.notice{
+    background-color: rgb(235, 235, 235);
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 210, 210); 
+}
+.notice i{
+    color: #0b7dda; 
+}
+
+.shop-adress{
     color: #0b7dda;  
-  }
-
-  .contact{
-      border-style: dashed ;
-      color: #1e99fd;
-  }
+}
+.support-contact{
+    padding-top: 9px;
+}
+.contact{
+    border-style: dashed ;
+    color: #1e99fd;
+}
 .text-info{
-color: #0b7dda;
+    color: #0b7dda;
 }
 
 .text-info .bold-text{
@@ -124,33 +134,118 @@ color: #0b7dda;
     font-size: 11px;
     color: black;
 }
-
+.headline-title{
+    width: 100%;
+}
 .headline-title .text-left{
     color: #0b7dda ;
     font-weight: bold;
     text-transform: uppercase;
 }
+.headline-title .text-left p{
+margin-bottom: 3px;
+}
 .product-popular {
     border-top: 3px solid #ff7f0b;
 }
-.product-info{
+.hot-product{
     border: 1px solid rgb(211, 210, 210);
-    padding-bottom: 30px;
+}
+.product-info{
+    padding: 20px;
 }
 .product-info .text-product p{
-margin-bottom: 0px;
-
+    margin-bottom: 0px;
+    
 }
 .product-info .text-product .abondon-price{
     text-decoration: line-through;
 }
 .product-info .text-product .current-price{
     color: red;
+    font-weight: bold;
+    padding-top: 8px;
 }
 
 .cf-buy{
-    background-color:  #0b7dda ;
+    background-color: #44a4d7;
     color: white;
     border-radius: 5px;
     border: none;
+    font-size: 11px;
 }
+
+.feedback{
+    border-top: 3px solid #ff7f0b;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-top: 106px;
+}
+.feedback img{
+    border: 3px solid #ff7f0b;
+    width: 80px;
+}
+.title-right{
+    text-transform: uppercase;
+    background-color: #ff7f0b;
+    color: white;
+}
+.title-category{
+    border-bottom: 3px solid #ff7f0b;
+    display: flex;
+}
+.title-category a{
+color: #0b7dda ;
+padding: 0 10px;
+}
+.title-category h4{
+    color:#0b7dda ;
+    padding-right: 50px;
+}
+.news{
+    border: 1px solid rgb(211, 210, 210);
+}
+.title-news{
+    background-color: #ff7f0b;
+    color: white;
+}
+.title-news h5{
+    background-color: #ff7f0b;
+    color: white;
+    margin-bottom: 0;
+}
+.text-box-news a{
+font-weight: bold;
+color: #44a4d7 ;
+}
+.product-show img {
+width: 140px;
+}
+.title-product-show{
+    height: 70px;
+}
+
+.curent-price-product{
+    color: red;
+}
+.abondon-price-product{
+text-decoration: line-through;
+}
+
+.list-cate-footer a{
+display: block;
+color: gray;
+margin-bottom: 8px;
+}
+
+.footer{
+    background-color: #44a4d7;
+    color: white;
+}
+.personal-info a{
+color: white;
+display: block;
+margin-bottom: 8px;
+}
+/* rank */
