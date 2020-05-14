@@ -194,6 +194,8 @@ margin-bottom: 3px;
 .title-category{
     border-bottom: 3px solid #ff7f0b;
     display: flex;
+    overflow: auto;
+    white-space: nowrap;
 }
 .title-category a{
 color: #0b7dda ;
