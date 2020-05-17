@@ -1,5 +1,5 @@
 body{
-   background-color: white;
+    background-color: white;
 }
 .menu{
     height: 100px;
@@ -22,14 +22,14 @@ body{
 }
 .list-menu ul li a{
     color: black;
-    padding-right: 35px;
+    padding-right: 25px;
     font-weight: bold;
 }
 
 .dathang-nutsave {
     width: 210px;
     height: 50px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     color: #FFF;
     background-color: #ff7f0b;
@@ -41,6 +41,13 @@ body{
     text-align: center;
     margin-top: 25px;
     margin-left: 117px;
+    line-height: 23px !important;
+}
+@media (max-width : 556px) {
+    .dathang-nutsave{
+        margin-right: 10px;
+        margin-left: 20px ;
+    }
 }
 
 .dathang-nutsave p{
@@ -103,7 +110,7 @@ form.example::after {
 
 .notice{
     background-color: rgb(235, 235, 235);
-    padding: 8px 20px;
+    padding: 8px 10px;
     border-radius: 5px;
     border: 1px solid rgb(211, 210, 210); 
 }
@@ -120,6 +127,7 @@ form.example::after {
 .contact{
     border-style: dashed ;
     color: #1e99fd;
+    padding: 0 10px;
 }
 .text-info{
     color: #0b7dda;
@@ -143,7 +151,7 @@ form.example::after {
     text-transform: uppercase;
 }
 .headline-title .text-left p{
-margin-bottom: 3px;
+    margin-bottom: 3px;
 }
 .product-popular {
     border-top: 3px solid #ff7f0b;
@@ -173,6 +181,7 @@ margin-bottom: 3px;
     border-radius: 5px;
     border: none;
     font-size: 11px;
+    cursor: pointer;
 }
 
 .feedback{
@@ -180,7 +189,7 @@ margin-bottom: 3px;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 20px;
-    margin-top: 106px;
+    margin-top: 72px;
 }
 .feedback img{
     border: 3px solid #ff7f0b;
@@ -198,10 +207,10 @@ margin-bottom: 3px;
     white-space: nowrap;
 }
 .title-category a{
-color: #0b7dda ;
-padding: 0 10px;
+    color: #0b7dda ;
+    padding: 0 10px;
 }
-.title-category h4{
+.title-category h5{
     color:#0b7dda ;
     padding-right: 50px;
 }
@@ -218,11 +227,12 @@ padding: 0 10px;
     margin-bottom: 0;
 }
 .text-box-news a{
-font-weight: bold;
-color: #44a4d7 ;
+    font-weight: bold;
+    color: #44a4d7 ;
+    font-size: 12px;
 }
 .product-show img {
-width: 140px;
+    width: 140px;
 }
 .title-product-show{
     height: 70px;
@@ -232,13 +242,13 @@ width: 140px;
     color: red;
 }
 .abondon-price-product{
-text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 .list-cate-footer a{
-display: block;
-color: gray;
-margin-bottom: 8px;
+    display: block;
+    color: gray;
+    margin-bottom: 8px;
 }
 
 .footer{
@@ -246,8 +256,8 @@ margin-bottom: 8px;
     color: white;
 }
 .personal-info a{
-color: white;
-display: block;
-margin-bottom: 8px;
+    color: white;
+    display: block;
+    margin-bottom: 8px;
 }
 /* rank */
