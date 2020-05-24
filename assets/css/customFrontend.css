@@ -66,12 +66,74 @@ body{
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {}
+.card-dropbtn {
+    cursor: pointer;
+    color: black;
+    padding: 0;
+    font-size: 16px;
+    border: none;
+}
+
+.card-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.card-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fafafa;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: -220px;
+    margin-top: 1px;
+    padding: 10px 0;
+}
+.btn-btn-delete{
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    background-color: transparent;
+
+}
+.btn-card{
+    border: none !important;
+    background-color: white;
+}
+.btn-card a{
+    background-color: #0b7dda;
+    color: white !important;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.info-card{
+    font-size: 14px;
+}
+.card-dropdown-content a {
+    color: rgb(74, 74, 74);
+    font-weight: 500;
+    padding: 12px 16px;
+    text-decoration: none;
+
+    display: block;
+    margin: 8px 0;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.card-dropdown-content a:hover {opacity: 0.9;}
+
+.card-dropdown:hover .card-dropdown-content {display: block;}
+
+
 
 input:hover,
 .btn:hover {
     opacity: 1;
 }
+
 
 /* add appropriate colors to fb, twitter and google buttons */
 .fb {
@@ -300,7 +362,30 @@ form.example::after {
     position: absolute !important;
     z-index: 3 !important;
 }
-
+.img-news img{
+height: 100px;
+}
+.post-news .text-news .title-post{
+color: #0b7dda;
+font-weight: bold;
+}
+.author-post{
+    font-size: 12px;
+    color: gray;
+}
+.content-post p{
+    font-weight: bold;
+    font-size:13px ;
+    margin-bottom: 2px;
+}
+.content-post p1{
+color: #ff7f0b;
+font-size:13px ;
+cursor: pointer;
+}
+.content-post a:hover{
+    text-decoration: none;
+}
 .show{
     display: block;
 }
@@ -345,6 +430,7 @@ form.example::after {
 }
 .product-show img {
     width: 140px;
+    height: 140px;
 }
 .title-product-show{
     height: 97px;
