@@ -129,6 +129,7 @@ input:hover,
     background-color: #44a4d7;
     color: white;
     font-weight: bold;
+    cursor: pointer;
     
 }
 .detail-cate{
@@ -143,7 +144,24 @@ input:hover,
     font-size: 11px;
 }
 
-
+.small-text-product{
+    font-size: 13px;
+}
+.price-products{
+    display: flex;
+}
+.price-products .origin-products-price h5{
+    color: red;
+    margin-right: 7px;
+}
+.thumnails{
+    display: flex;
+}
+.price-products .abondon-products-price{
+text-decoration: line-through;
+font-weight: 500;
+font-size: 14px;
+}
 form.example input[type=text] {
     padding: 8px;
     font-size: 13px;
@@ -272,6 +290,33 @@ form.example::after {
     display: flex;
     overflow: auto;
     white-space: nowrap;
+}
+.content-pr{
+    display: none;
+}
+.list-cate{
+    display: none;
+    transition: 0.4s;
+    position: absolute !important;
+    z-index: 3 !important;
+}
+
+.show{
+    display: block;
+}
+
+.button-pr{
+    cursor: pointer;
+    margin-right: 2px;
+    border: 1px solid #e7e5e5;
+    padding: 13px;
+}
+.thumnails{
+    border-bottom: 3px solid #0b7dda;
+}
+
+.thumnails .content-pr{
+    position: absolute;
 }
 .title-category a{
     color: #0b7dda ;
