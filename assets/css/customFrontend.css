@@ -95,7 +95,7 @@ body{
     border-radius: 5px;
     border: 1px solid gainsboro;
     background-color: transparent;
-
+    
 }
 .btn-card{
     border: none !important;
@@ -116,7 +116,7 @@ body{
     font-weight: 500;
     padding: 12px 16px;
     text-decoration: none;
-
+    
     display: block;
     margin: 8px 0;
     border-radius: 3px;
@@ -184,7 +184,7 @@ input:hover,
     font-weight: bold;
 }
 .box-category{
-    border: 2px solid #44a4d7;
+    border: 2px solid #44a4d7 ;
 }
 .category-product .head-title{
     text-transform: uppercase;
@@ -220,9 +220,9 @@ input:hover,
     display: flex;
 }
 .price-products .abondon-products-price{
-text-decoration: line-through;
-font-weight: 500;
-font-size: 14px;
+    text-decoration: line-through;
+    font-weight: 500;
+    font-size: 14px;
 }
 form.example input[type=text] {
     padding: 8px;
@@ -363,11 +363,11 @@ form.example::after {
     z-index: 3 !important;
 }
 .img-news img{
-height: 100px;
+    height: 100px;
 }
 .post-news .text-news .title-post{
-color: #0b7dda;
-font-weight: bold;
+    color: #0b7dda;
+    font-weight: bold;
 }
 .author-post{
     font-size: 12px;
@@ -379,9 +379,9 @@ font-weight: bold;
     margin-bottom: 2px;
 }
 .content-post p1{
-color: #ff7f0b;
-font-size:13px ;
-cursor: pointer;
+    color: #ff7f0b;
+    font-size:13px ;
+    cursor: pointer;
 }
 .content-post a:hover{
     text-decoration: none;
@@ -431,6 +431,212 @@ cursor: pointer;
 .product-show img {
     width: 140px;
     height: 140px;
+}
+.title-post-news-detils{
+    color: #44a4d7;
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+.text-post-detail-bold{
+    font-weight: bold;
+}
+
+.radio-toolbar input[type="radio"] {
+    display: none;
+}
+
+/* .radio-cart input[type="radio"] {
+    display: block;
+}
+*/
+.radio-toolbar label {
+    display: inline-block;
+    background-color: #ddd;
+    padding: .4rem 1.7rem;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(238, 237, 237);
+    border-radius: 2px;
+    margin-bottom: 3px;
+}
+.radio-toolbar label:hover {
+    color:#ff7f0b ;
+    border: 1px solid #ff9500;
+}
+.radio-toolbar input[type="radio"]:checked+label {
+    color:#ff7f0b ;
+    border: 1px solid #ff7f0b;
+}
+
+.btn-default:disabled, .btn-default:focus, .btn-default:hover {
+    background-color: #ff7f0b !important;
+    color: white;
+}
+
+.number-spinner {
+    max-width: 150px;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    display: table;
+}
+.number-spinner  input {
+    height: 40px;
+    max-height: 40px;
+    line-height: 40px;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    border: none;
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    
+}
+.number-spinner input {
+    border: 1px solid #e2e2e2;
+}
+
+
+.number-spinner  .ns-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: table-cell;
+    cursor: pointer;
+}
+.number-spinner  .ns-btn a {
+    height: 40px;
+    min-height: 40px;
+    width: 40px;
+    padding: 0;
+    max-width: 40px;
+    line-height: 40px;
+    border-radius: 0;
+    border: none;
+    text-align: center;
+    position: relative;
+    background: white;
+    border: 1px solid #e2e2e2;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.number-spinner  .ns-btn a:hover{
+    background-color: #ff7f0b;
+    color: white;
+}
+.icon-minus:after {
+    content: "\002212";
+    font-size: 25px;
+    line-height: 38px;
+    font-weight: bold;
+}
+.icon-plus:after {
+    content: "\00002B";
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.btn-cart{
+    padding: 10px;
+    background-color: #0b7dda;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 200px;
+}
+.btn-gradient16 {
+    padding: 10px 5px;
+    border: none;
+    border: 1px solid #fe8c00;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 200px;
+    background-color: white;
+    margin-left: 10px !important;
+}
+
+#change_address a{
+color: black;
+}
+#change_address a:hover{
+    text-decoration: none;
+}
+.form-radio-first{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: #fffefe;
+    color: white;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;     
+    margin-right: 7px;
+    outline: none;
+    border: 1px solid #f09819;
+ }
+ .form-radio-first:checked::before{
+    position: absolute;
+    font: 13px/1 'Open Sans', sans-serif;
+    left: 11px;
+    top: 7px;
+    content: '\02143';
+    transform: rotate(40deg);
+ }
+ 
+ .form-radio-first:hover{
+    background-color: #f7f7f7;
+ }
+ 
+ .form-radio-first:checked{
+    background-color: #f09819;
+ }
+ .btn-btn-cart {
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #ff7f0b;
+    padding: 4px 6px;
+}
+.btn-btn-cart i{
+color: #ff7f0b;
+}
+icon-view-details a{
+color: #0b7dda;
+
+}
+.icon-view-details{
+    padding-left: 25px;
+}
+
+.btn-pay{
+    padding: 10px;
+    background-color: #ff7f0b;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+}
+.form-paying{
+    font-size: 13px;
 }
 .title-product-show{
     height: 97px;

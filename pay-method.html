@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Azzara Bootstrap 4 Admin Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <meta charset="utf-8">
+    <link rel="icon" href="assets/img/logo_without_text.png" class="img-fluid" type="image/x-icon" />
+    
+    <!-- Fonts and icons -->
+    <script src="https://kit.fontawesome.com/ac2db3b359.js" crossorigin="anonymous"></script>
+    <!-- Slide -->
+    <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="assets/css/customFrontend.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo-brand d-lg-block d-none">
+                <a href="#"> <img class="img-fluid" src="assets/img/pool-cover-banner-1024x267.jpg" style="width:100%" alt="Chania"></a>
+            </div>
+            <div class="menu">
+                <div class="container list-menu">
+                    <a href="#"><img class="img-fluid" src="assets/img/logo-babycare.PNG" alt="Chania"></a>
+                    <div class="d-lg-block d-none">
+                        <ul>
+                            <li><a href="#">trang chủ</a></li>
+                            <li><a href="#">giới thiệu</a></li>
+                            <li><a href="#">sản phẩm</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="#">liên hệ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="dathang-nutsave">
+                        <p>(04) 6672332</p>
+                        <p>8:00AM-19:00PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="main-body row">
+                    <div class="address-user-detail row pt-4" style="width:100%">
+                        <div class="col-3 text-center" style="color: #0b7dda;">
+                            <i class="fas fa-cart-plus pr-1" aria-hidden="true"></i> <b> Giỏ hàng của quý khách</b>
+                        </div>
+                        <div class="col-5 text-center">
+                            <h4><b>Thanh Toán Đơn Hàng</b> </h4>
+                            <p>Cảm ơn quý khách đã lựa chọn sản phẩm của chúng tôi</p>
+                        </div>
+                    </div>
+                    <div class="row" style="width:100%; background-color:#b1e4ff; color: #0c6bb9; padding: 10px 0; font-weight: bold; ">
+                        <div class="col-6">
+                            Quý khách vui lòng cung cấp thông tin mua hàng
+                        </div>
+                        <div class="col-6 text-left">
+                            <a href="#"><i>Đăng nhập</i> </a>   
+                        </div>
+                    </div>
+                    <div class="row pt-4 px-2 my-4" style="width:100%;">
+                        <div class="col-12 col-lg-3" style="color: #f09819; font-size: 16px;">
+                            <i class="mr-1 fas fa-map-marker-alt"></i>
+                            Địa chỉ nhận hàng
+                        </div>
+                        <div class="col-12 col-lg-9 pt-lg-0 pt-3" id="change_address">
+                            <a class="btn-gradient16" href=""><i class="mr-1 fas fa-plus"></i>Thêm địa chỉ mới </a>
+                            <a class="btn-gradient16" href=""><i class="mr-1 fas fa-plus"></i>Thiết lập địa chỉ </a>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="radio" name="demo2" value="two" id="radio-two" class="form-radio-first" checked=""><label for="radio-two"> <b> Nguyễn Minh Đức (+84) 978485015</b> D4, Đại học Hà Nội, Km9 Nguyễn Trãi, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Hà Nội </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="demo2" value="two" id="radio-two" class="form-radio-first"><label for="radio-two">  <b> Phạm Văn Hưng (+84) 978485015</b >D4, Đại học Hà Nội, Km9 Nguyễn Trãi, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Hà Nội</label>
+                            </div>
+                        </div>
+                        
+                        <div class="private-information my-4" style="width:100%">
+                            <div class="row" >
+                                <div class="px-0 col-lg-12 col-12 pl-0">
+                                    <div class="row">
+                                        <div class="text-right col-lg-2 col-3" style=" margin-top: 20px;">
+                                            Họ và tên *
+                                        </div>
+                                        
+                                        <div class="col-lg-5 col-7 px-0">
+                                            <form action="/action_page.php" class="was-validated">
+                                                <div class="form-group">   
+                                                    <input type="text" class="form-control" id="uname" placeholder="VD: Nguyễn Văn A" name="uname" required="">
+                                                    <div class="valid-feedback">Hợp lệ</div>
+                                                    <div class="invalid-feedback">Đây là trường bắt buộc</div>    
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="text-right col-lg-2 col-3" style="  margin-top: 20px;">
+                                            Điện thoại *
+                                        </div>
+                                        <div class="col-lg-5 col-7 px-0">
+                                            <form action="/action_page.php" class="was-validated">
+                                                <div class="form-group">                   
+                                                    <input type="text" class="form-control" id="uname" placeholder="VD: 0978485015" name="uname" required="">
+                                                    <div class="valid-feedback">Hợp lệ</div>
+                                                    <div class="invalid-feedback">Đây là trường bắt buộc</div>  
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="text-right col-lg-2 col-3" style="  margin-top: 20px;">
+                                            Email *
+                                        </div>
+                                        <div class="col-lg-5 col-7 px-0">
+                                            <form action="/action_page.php" class="was-validated">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="uname" placeholder="VD: ducdudu@gmail..." name="uname" required="">
+                                                    <div class="valid-feedback">Hợp lệ</div>
+                                                    <div class="invalid-feedback">Đây là trường bắt buộc</div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="text-right col-lg-2 col-3" style="margin-top: 20px; ">
+                                            Tỉnh / TP *
+                                        </div>
+                                        <div class="col-lg-5 col-7 px-0">
+                                            <form action="/action_page.php" class="was-validated">
+                                                <div class="form-group">
+                                                    <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px; ">
+                                                        <option value="left" selected="">Tỉnh/Thành phố</option>
+                                                        <option value="right">Hà Nội</option>
+                                                        <option value="center">Phú Thọ</option>
+                                                        <option value="center">Vĩnh Phúc</option>
+                                                    </select>   
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="text-right col-lg-2 col-3" style="margin-top: 20px;">
+                                            Quận / Huyện *
+                                        </div>
+                                        <div class="col-lg-5 col-7 px-0">
+                                            <form action="/action_page.php" class="was-validated">
+                                                <div class="form-group">
+                                                    <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px;  ">
+                                                        <option value="left" selected="">Quận/Huyện</option>
+                                                        <option value="right">Hà Nội</option>
+                                                        <option value="center">Phú Thọ</option>
+                                                        <option value="center">Vĩnh Phúc</option>
+                                                    </select>   
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="text-right col-lg-2 col-3" style="margin-top: 20px;">
+                                            Phường / Xã *
+                                        </div>
+                                        <div class="col-lg-5 col-7 px-0">
+                                            <form action="/action_page.php" class="was-validated">
+                                                <div class="form-group">
+                                                    <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px; ">
+                                                        <option value="left" selected="">Phường/Xã</option>
+                                                        <option value="right">Hà Nội</option>
+                                                        <option value="center">Phú Thọ</option>
+                                                        <option value="center">Vĩnh Yên</option>
+                                                    </select>   
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="text-right col-lg-2 col-3" style="margin-top: 20px;">
+                                            Địa chỉ chi tiết *
+                                        </div>
+                                        <div class="col-lg-5 col-7 px-0">
+                                            <form action="/action_page.php" class="was-validated">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                                                    
+                                                    <div class="invalid-feedback">Đây là trường bắt buộc</div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="px-0 col-md-12">
+                            <div class="card">
+                                <div class="pl-3 card-header">
+                                    <ul class="nav nav-pills nav-secondary" id="pills-tab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active show" id="pills-12-tab" data-toggle="pill" href="#pills-12" role="tab" aria-controls="pills-12" aria-selected="true">Thanh Toán Khi Nhận Hàng</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-31-tab" data-toggle="pill" href="#pills-31" aria-selected="false">Chuyển khoản</a>
+                                            
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="px-2 card-body">
+                                    <div class="tab-content mt-2 mb-3" id="pills-tabContent">
+                                        <div class="tab-pane fade active show" id="pills-12" role="tabpanel" aria-labelledby="pills-12-tab">
+                                            <!--Carousel Wrapper-->
+                                            <div class="owl-carousel owl-theme owl-loaded owl-drag"> 
+                                                <div class="owl-stage-outer">
+                                                    <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 478px;">
+                                                        <div class="owl-item active" style="width: 700.8px; margin-right: 10px;">
+                                                            <div class="item">
+                                                                <p>Nhân Viên VanChuyenMy sẽ đến nhận thanh toán trước tại địa chỉ quý khách yêu cầu, hình thức này chỉ áp dụng cho Tp.Hà Nội và Hà Nam.
+                                                                    
+                                                                    Phí thu tiền tại nhà: 30,000 đ
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="owl-item active" style="width: 800px; margin-right: 10px;">
+                                                            <div class="item">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-nav disabled"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-31" role="tabpanel" aria-labelledby="pills-31-tab">
+                                            <div class="owl-carousel owl-theme owl-loaded owl-drag owl-hidden">
+                                                <div class="owl-stage-outer">
+                                                    <div class="owl-stage"></div>
+                                                </div>
+                                                <div class="owl-nav disabled">Tài khoản ngân hàng</div><div class="owl-dots disabled">
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- logo -->
+                    <div class="logo row my-5">
+                        <div class="col-md-2 col-6">
+                            <img src="assets/img/56227ede1b558_thumb900.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <img src="assets/img/baby-logo_23-2147993851.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <img src="assets/img/56227ede1b558_thumb900.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <img src="assets/img/baby-logo_23-2147993851.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <img src="assets/img/56227ede1b558_thumb900.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <img src="assets/img/baby-logo_23-2147993851.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="category-footer row pb-5">
+                        <div class="list-cate-footer col-md-2 col-6">
+                            <h6><b>BÉ ĂN - BÉ UỐNG</b></h6>
+                            <a href="#">Sữa bột</a>
+                            <a href="#">Bình sữa, phụ kiện</a>
+                            <a href="#">Đồ dùng ăn uống</a>
+                            <a href="#">Ăn dặm</a>
+                        </div>
+                        <div class="list-cate-footer col-md-2 col-6">
+                            <h6><b>BÉ ĂN - BÉ UỐNG</b></h6>
+                            <a href="#">Sữa bột</a>
+                            <a href="#">Bình sữa, phụ kiện</a>
+                            <a href="#">Đồ dùng ăn uống</a>
+                            <a href="#">Ăn dặm</a>
+                        </div>
+                        <div class="list-cate-footer col-md-2 col-6">
+                            <h6><b>BÉ ĂN - BÉ UỐNG</b></h6>
+                            <a href="#">Sữa bột</a>
+                            <a href="#">Bình sữa, phụ kiện</a>
+                            <a href="#">Đồ dùng ăn uống</a>
+                            <a href="#">Ăn dặm</a>
+                        </div>
+                        <div class="list-cate-footer col-md-2 col-6">
+                            <h6><b>BÉ ĂN - BÉ UỐNG</b></h6>
+                            <a href="#">Sữa bột</a>
+                            <a href="#">Bình sữa, phụ kiện</a>
+                            <a href="#">Đồ dùng ăn uống</a>
+                            <a href="#">Ăn dặm</a>
+                        </div>
+                        <div class="list-cate-footer col-md-2 col-6">
+                            <h6><b>BÉ ĂN - BÉ UỐNG</b></h6>
+                            <a href="#">Sữa bột</a>
+                            <a href="#">Bình sữa, phụ kiện</a>
+                            <a href="#">Đồ dùng ăn uống</a>
+                            <a href="#">Ăn dặm</a>
+                        </div>
+                        <div class="list-cate-footer col-md-2 col-6">
+                            <h6><b>BÉ ĂN - BÉ UỐNG</b></h6>
+                            <a href="#">Sữa bột</a>
+                            <a href="#">Bình sữa, phụ kiện</a>
+                            <a href="#">Đồ dùng ăn uống</a>
+                            <a href="#">Ăn dặm</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="container">
+                        <div class="info-footer row">
+                            <div class="col-md-4 col-12 info-details">
+                                <p>
+                                    <h6><b> LIÊN HỆ VỚI CHÚNG TÔI</b></h6>
+                                </p>
+                                <p><i class="fas fa-map-marker-alt"></i> Tòa nhà Hanoi Group - 442 Đội Cấn - Ba Đình - Hà Nội</p>
+                                <p><i class="fas fa-phone-square-alt"></i> (04) 6678329 653 - (04) 543829 439</p>
+                                <p><i class="fas fa-globe-americas"></i> Trực 8h00 -20h00 từ thứ 2 đến thứ 6</p>
+                            </div>
+                            <div class="col-md-2 col-12 personal-info">
+                                <p>
+                                    <h6><b>THÔNG TIN</b></h6>
+                                </p>
+                                <a href="#">Tài khoản của tôi</a>
+                                <a href="#">Sản phẩm yêu thích</a>
+                                <a href="#">Lịch sử mua hàng</a>
+                                <a href="#">Sử dụng thông tin</a>
+                            </div>
+                            <div class="col-md-2 col-12 personal-info">
+                                <p>
+                                    <h6><b>HỖ TRỢ</b></h6>
+                                </p>
+                                <a href="#">Tài khoản của tôi</a>
+                                <a href="#">Sản phẩm yêu thích</a>
+                                <a href="#">Lịch sử mua hàng</a>
+                                <a href="#">Sử dụng thông tin</a>
+                            </div>
+                            <div class="col-md-2 col-12 personal-info">
+                                <p>
+                                    <h6><b>CHÍNH SÁCH</b></h6>
+                                </p>
+                                <a href="#">Tài khoản của tôi</a>
+                                <a href="#">Sản phẩm yêu thích</a>
+                                <a href="#">Lịch sử mua hàng</a>
+                                <a href="#">Sử dụng thông tin</a>
+                            </div>
+                            <div class="col-md-2 col-12 personal-info">
+                                <p>
+                                    <h6><b>LIÊN KẾT</b></h6>
+                                </p>
+                                <a href="#">Tài khoản của tôi</a>
+                                <a href="#">Sản phẩm yêu thích</a>
+                                <a href="#">Lịch sử mua hàng</a>
+                                <a href="#">Sử dụng thông tin</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--   Core JS Files   -->
+        <script src="assets/js/core/jquery.3.2.1.min.js"></script>
+        <script src="assets/js/core/popper.min.js"></script>
+        <script src="assets/js/core/bootstrap.min.js"></script>
+        <script src="assets/js/core/1.js"></script>
+        <script>var numberSpinner = (function() {
+            $('.number-spinner>.ns-btn>a').click(function() {
+                var btn = $(this),
+                oldValue = btn.closest('.number-spinner').find('input').val().trim(),
+                newVal = 0;
+                
+                if (btn.attr('data-dir') === 'up') {
+                    newVal = parseInt(oldValue) + 1;
+                } else {
+                    if (oldValue > 1) {
+                        newVal = parseInt(oldValue) - 1;
+                    } else {
+                        newVal = 1;
+                    }
+                }
+                btn.closest('.number-spinner').find('input').val(newVal);
+            });
+            $('.number-spinner>input').keypress(function(evt) {
+                evt = (evt) ? evt : window.event;
+                var charCode = (evt.which) ? evt.which : evt.keyCode;
+                if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                    return false;
+                }
+                return true;
+            });
+        })();</script>
+    </body>
+    
+    </html>
