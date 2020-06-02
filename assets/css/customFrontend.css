@@ -612,11 +612,10 @@ color: black;
     border-radius: 50%;
     cursor: pointer;
     background-color: white;
-    border: 1px solid #ff7f0b;
-    padding: 4px 6px;
+    border: none;
 }
 .btn-btn-cart i{
-color: #ff7f0b;
+color: #0b7dda;
 }
 icon-view-details a{
 color: #0b7dda;
