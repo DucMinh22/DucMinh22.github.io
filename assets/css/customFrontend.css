@@ -640,12 +640,27 @@ color: #0b7dda;
 .title-product-show{
     height: 97px;
 }
-
+.price-products{
+    display: flex;
+   margin-left: 20px;
+}
 .curent-price-product{
     color: red;
 }
 .abondon-price-product{
     text-decoration: line-through;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.rating-star{
+margin-left: 40px;
+
+}
+#star{
+    font-size: 10px;
+}
+.rating-star .checked{
+    color: #ff9500;
 }
 
 .list-cate-footer a{
