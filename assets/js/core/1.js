@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(){
     var contentpr = document.getElementsByClassName('content-pr');
     var btncard = document.querySelector('.icon-card-user');
     var dropdowncontent = document.querySelector('.content-card-user');
-  
+    
     for(i = 0; i < buttonpr.length; i++){
         buttonpr[i].onclick = function(){
             var nd = this.getAttribute('data-mk');
@@ -17,18 +17,17 @@ document.addEventListener("DOMContentLoaded", function(){
             phantushow.classList.toggle('show');
         }
     }
-    btncard.onclick = function(){
-       
-        dropdowncontent.classList.toggle('show');
-
-    }
     buttoncategory.onclick = function(){
         
         listcate.classList.toggle('list-cate');
     }
-   
+    btncard.onclick = function(){
+        
+        dropdowncontent.classList.toggle('show');
+        
+    }
+    
 })
-
 
 // document.addEventListener("DOMContentLoaded", function(){
 //     //    truy cập đến phần tử lấy ra mảng
