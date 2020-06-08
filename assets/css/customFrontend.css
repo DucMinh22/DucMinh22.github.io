@@ -183,9 +183,7 @@ input:hover,
     margin-bottom: 1px;
     font-weight: bold;
 }
-.box-category{
-    border: 2px solid #44a4d7 ;
-}
+
 .category-product .head-title{
     text-transform: uppercase;
     background-color: #44a4d7;
@@ -353,14 +351,21 @@ form.example::after {
     overflow: auto;
     white-space: nowrap;
 }
+
+button:focus {
+    outline: none;
+}
 .content-pr{
     display: none;
 }
 .list-cate{
     display: none;
     transition: 0.4s;
-    position: absolute !important;
-    z-index: 3 !important;
+    position: absolute;
+    z-index: 3;
+    background-color: white;
+    width: 88%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .img-news img{
     height: 100px;

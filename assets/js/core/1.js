@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", function(){
     var buttoncategory = document.querySelector('.head-title');
     var listcate = document.querySelector('.list-cate');
-    var buttonpr = document.getElementsByClassName('button-pr');
+    var buttonpr = document.getElementsByClassName('button-pr');   // vì lấy nhiều nên bắt buộc phải dùng class
     var contentpr = document.getElementsByClassName('content-pr');
     var btncard = document.querySelector('.icon-card-user');
     var dropdowncontent = document.querySelector('.content-card-user');
-    
+    var active = document.querySelector('.active');
+  
     for(i = 0; i < buttonpr.length; i++){
         buttonpr[i].onclick = function(){
             var nd = this.getAttribute('data-mk');
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     buttoncategory.onclick = function(){
         
-        listcate.classList.toggle('list-cate');
+        listcate.classList.toggle('show');
     }
     btncard.onclick = function(){
         
