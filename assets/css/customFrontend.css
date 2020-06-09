@@ -184,6 +184,10 @@ input:hover,
     font-weight: bold;
 }
 
+.navbar-payment{
+    display: flex;
+     background-color:#b1e4ff; color: #0c6bb9; padding: 10px 0; font-weight: bold;
+}
 .category-product .head-title{
     text-transform: uppercase;
     background-color: #44a4d7;
@@ -657,7 +661,7 @@ color: #0b7dda;
     font-size: 15px;
     margin-left: 5px;
 }
-.rating-star{
+/* .rating-star{
 margin-left: 40px;
 
 }
@@ -666,7 +670,7 @@ margin-left: 40px;
 }
 .rating-star .checked{
     color: #ff9500;
-}
+} */
 
 .list-cate-footer a{
     display: block;
