@@ -186,7 +186,7 @@ input:hover,
 
 .navbar-payment{
     display: flex;
-     background-color:#b1e4ff; color: #0c6bb9; padding: 10px 0; font-weight: bold;
+    background-color:#b1e4ff; color: #0c6bb9; padding: 10px 0; font-weight: bold;
 }
 .category-product .head-title{
     text-transform: uppercase;
@@ -395,6 +395,18 @@ button:focus {
 .content-post a:hover{
     text-decoration: none;
 }
+#myTab li{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+    border: 1px solid #e2e2e2;
+}
+.tab-content .tab-pane{
+background-color: white;
+padding: 30px 0;
+font-weight: bold;
+color: #f09819;
+}
 .show{
     display: block;
 }
@@ -578,7 +590,7 @@ button:focus {
 }
 
 #change_address a{
-color: black;
+    color: black;
 }
 #change_address a:hover{
     text-decoration: none;
@@ -600,35 +612,35 @@ color: black;
     margin-right: 7px;
     outline: none;
     border: 1px solid #f09819;
- }
- .form-radio-first:checked::before{
+}
+.form-radio-first:checked::before{
     position: absolute;
     font: 13px/1 'Open Sans', sans-serif;
     left: 11px;
     top: 7px;
     content: '\02143';
     transform: rotate(40deg);
- }
- 
- .form-radio-first:hover{
+}
+
+.form-radio-first:hover{
     background-color: #f7f7f7;
- }
- 
- .form-radio-first:checked{
+}
+
+.form-radio-first:checked{
     background-color: #f09819;
- }
- .btn-btn-cart {
+}
+.btn-btn-cart {
     border-radius: 50%;
     cursor: pointer;
     background-color: white;
     border: none;
 }
 .btn-btn-cart i{
-color: #0b7dda;
+    color: #0b7dda;
 }
 icon-view-details a{
-color: #0b7dda;
-
+    color: #0b7dda;
+    
 }
 .icon-view-details{
     padding-left: 25px;
@@ -651,7 +663,7 @@ color: #0b7dda;
 }
 .price-products{
     display: flex;
-   margin-left: 20px;
+    margin-left: 20px;
 }
 .curent-price-product{
     color: red;
@@ -662,8 +674,8 @@ color: #0b7dda;
     margin-left: 5px;
 }
 /* .rating-star{
-margin-left: 40px;
-
+    margin-left: 40px;
+    
 }
 #star{
     font-size: 10px;
