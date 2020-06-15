@@ -471,6 +471,15 @@ color: #f09819;
     display: block;
 }
 */
+.tab-content .tab-pane {
+    background-color: white;
+    padding: 30px 0;
+    font-weight: normal;
+    color: black;
+}
+.list-group a {
+    font-weight: normal;
+}
 .radio-toolbar label {
     display: inline-block;
     background-color: #ddd;
@@ -481,6 +490,7 @@ color: #f09819;
     border-radius: 2px;
     margin-bottom: 3px;
 }
+
 .radio-toolbar label:hover {
     color:#ff7f0b ;
     border: 1px solid #ff9500;

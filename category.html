@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Azzara Bootstrap 4 Admin Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <meta charset="utf-8">
+    <link rel="icon" href="assets/img/logo_without_text.png" class="img-fluid" type="image/x-icon" />
+    
+    <!-- Fonts and icons -->
+    <script src="https://kit.fontawesome.com/ac2db3b359.js" crossorigin="anonymous"></script>
+    <!-- Slide -->
+    <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="assets/css/customFrontend.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo-brand d-lg-block d-none">
+                <a href="#"> <img class="img-fluid" src="assets/img/pool-cover-banner-1024x267.jpg" style="width:100%" alt="Chania"></a>
+            </div>
+            <div class="menu">
+                <div class="container list-menu">
+                    <a href="#"><img class="img-fluid" src="assets/img/logo-babycare.PNG" alt="Chania"></a>
+                    <div class="d-lg-block d-none">
+                        <ul>
+                            <li><a href="#">trang chủ</a></li>
+                            <li><a href="#">giới thiệu</a></li>
+                            <li><a href="#">sản phẩm</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="#">liên hệ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="dathang-nutsave">
+                        <p>(04) 6672332</p>
+                        <p>8:00AM-19:00PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="main-body row">
+                    <div class="col-md-9 col-12">
+                        <div class="category-product row">
+                            <div class="col-md-4 col-12">
+                                <div class="box-category my-4">
+                                    <div class="head-title text-center py-2">
+                                        <i class="fas fa-align-justify pr-3"></i> Danh mục sản phẩm
+                                    </div>
+                                    <div class="list-cate">
+                                        <div class="detail-cate row pt-2 ">
+                                            <div class="col-3 px-0 pl-2 text-center"><i class="fas fa-utensils"></i></div>
+                                            <div class="col-9 pl-0">
+                                                <p><b>Bé ăn - Bé uống</b></p>
+                                                <p2>Sữa bột, bỉm sữa, phụ kiện, bột cháo đỏ</p2>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="detail-cate row ">
+                                            <div class="col-3 px-0 pl-2 text-center"><i class="fas fa-utensils"></i></div>
+                                            <div class="col-9 pl-0">
+                                                <p><b>Bé ăn - Bé uống</b></p>
+                                                <p2>Sữa bột, bỉm sữa, phụ kiện, bột cháo đỏ</p2>
+                                            </div>
+                                        </div>
+                                        <div class="detail-cate row pt-2">
+                                            <div class="col-3 px-0 pl-2 text-center"><i class="fas fa-utensils"></i></div>
+                                            <div class="col-9 pl-0">
+                                                <p><b>Bé ăn - Bé uống</b></p>
+                                                <p2>Sữa bột, bỉm sữa, phụ kiện, bột cháo đỏ</p2>
+                                            </div>
+                                        </div>
+                                        <div class="detail-cate row pt-2">
+                                            <div class="col-3 px-0 pl-2 text-center"><i class="fas fa-utensils"></i></div>
+                                            <div class="col-9 pl-0">
+                                                <p><b>Bé ăn - Bé uống</b></p>
+                                                <p2>Sữa bột, bỉm sữa, phụ kiện, bột cháo đỏ</p2>
+                                            </div>
+                                        </div>
+                                        <div class="detail-cate row pt-2">
+                                            <div class="col-3 px-0 pl-2 text-center"><i class="fas fa-utensils"></i></div>
+                                            <div class="col-9 pl-0">
+                                                <p><b>Bé ăn - Bé uống</b></p>
+                                                <p2>Sữa bột, bỉm sữa, phụ kiện, bột cháo đỏ</p2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-8 col-12 my-4">
+                                <form class="example" action="/action_page.php" style="margin:auto;">
+                                    <input type="text" placeholder="Nhập nội dung tìm kiếm" name="search2">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="px-0 col-md-12">
+                            <div class="card-header" style="margin: 0px">
+                                <ul class="nav nav-pills nav-secondary" id="pills-tab" role="tablist">
+                                    
+                                    <li class="nav-item">
+                                        
+                                        <a class="nav-link active" id="pills-popular-tab" data-toggle="pill" href="#pills-popular" role="tab" aria-controls="pills-popular" aria-selected="true">Phổ Biến</a>
+                                        
+                                    </li>
+                                    <li class="nav-item">
+                                        
+                                        <a class="nav-link" id="pills-newest-tab" data-toggle="pill" href="#pills-newest" role="tab" aria-controls="pills-newest" aria-selected="false">Mới Nhất</a>
+                                        
+                                    </li>
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link" id="pills-topsale-tab" data-toggle="pill" href="#pills-topsale" role="tab" aria-controls="pills-topsale" aria-selected="false">Bán Chạy</a>
+                                    </li> -->
+                                    <form action="" style="display: flex;">
+                                        <li class="nav-item">
+                                            <select class="form-control input-fixed" id="range-price" style="margin-top: 5px; width: 200px;">
+                                                <option value="left" selected="">Giá</option>
+                                                <option value="right">Giá: Thấp đến cao</option>
+                                                <option value="center">Giá: Cao đến thấp</option>
+                                            </select>
+                                        </li>
+                                        <li class="nav-item">
+                                            <select class="form-control input-fixed" id="range-price" style="margin-top: 5px; width: 200px;">
+                                                <option value="left" selected="">Khoảng giá</option>
+                                                <option value="right">0-200.000đ</option>
+                                                <option value="center">200.000-500.000đ</option>
+                                                <option value="center">500.000-1.000.000đ</option>
+                                                <option value="center">&gt;1.000.000đ</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <button type="button" class="ml-3 my-1 btn btn-primary">Lọc</button>
+                                        </li>
+                                    </form>
+                                </ul>
+                            </div>
+                            
+                            
+                            <div class="tab-content mt-2 mb-3" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-popular" role="tabpanel" aria-labelledby="pills-popular-tab">
+                                    
+                                    <!--PHỔ BIẾN TT.NAM-->
+                                    <div class="row">
+                                        <div class="col-3 d-none d-lg-block px-0">
+                                            <div class="list-group">
+                                                <a href="#" class="list-group-item list-group-item-action"><b><i class="fas fa-align-left" style="margin-right:10px;"></i>Tất Cả Các Danh Mục</b></a>
+                                                <a href="#" class="list-group-item list-group-item-action" style="color: #f09819;"><i class="fas fa-caret-right" style="margin: 5px 5px 0px 0px; color: #f09819;"></i><b>Thời Trang Nữ</b></a>
+                                                <a href="#" class="list-group-item list-group-item-action">Áo, váy nữ</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Ví, túi sách</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Đồng Hồ</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Đồ lót</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Đồ đi bơi. Đồ đi biển</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Vòng tay</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Giày dép</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Nón</a>
+                                                <a href="#" class="list-group-item list-group-item-action" style="color: #f09819;"><i class="fas fa-caret-right" style="margin: 5px 5px 0px 0px; color: #f09819;"></i><b>Dich Vụ Khuyến Mãi</b></a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check" style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Mua nhiều giảm giá</a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check" style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Đang giảm giá</a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check" style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Miễn phí vận chuyển</a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check" style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Rẻ vô địch</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <!--for computer-->
+                                            <div class="col ">
+                                                <div class="row">
+                                                    <div class="px-2 col-lg-12 col-6">
+                                                        <div class="product-show row">
+                                                            <div class="col-md-3 col-6 pb-4 text-center">
+                                                                <a href="products-detail.html"><img src="assets/img/pck-kids.jpg" alt=""></a> 
+                                                                <div class="title-product-show text-center pt-4">
+                                                                    Sữa bột dinh dưỡng Aptamil Đức
+                                                                </div>
+                                                                <div class="price-products">
+                                                                    <div class="curent-price-product ">
+                                                                        <h6><b>765.000đ</b></h6>
+                                                                    </div>
+                                                                    <div class="abondon-price-product">
+                                                                        775.000đ
+                                                                    </div>
+                                                                </div>
+                                                                <button type="button" class="cf-buy">THÊM VÀO GIỎ HÀNG</button>
+                                                                
+                                                            </div>
+                                                            <div class="col-md-3 col-6 pb-4 text-center">
+                                                                <a href="products-detail.html"><img src="assets/img/4b697dabfb32e8ca23360ecf69fcd97a.jpg" alt=""></a> 
+                                                                <div class="title-product-show text-center pt-4">
+                                                                    Sữa bột dinh dưỡng Aptamil Đức
+                                                                </div>
+                                                                <div class="curent-price-product text-center">
+                                                                    <h6><b>765.000đ</b></h6>
+                                                                </div>
+                                                                <div class="abondon-price-product text-center">
+                                                                    775.000đ
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-6 pb-4 text-center">
+                                                                <a href="products-detail.html"><img src="assets/img/4b697dabfb32e8ca23360ecf69fcd97a.jpg" alt=""></a> 
+                                                                <div class="title-product-show text-center pt-4">
+                                                                    Sữa bột dinh dưỡng Aptamil Đức
+                                                                </div>
+                                                                <div class="curent-price-product text-center">
+                                                                    <h6><b>765.000đ</b></h6>
+                                                                </div>
+                                                                <div class="abondon-price-product text-center">
+                                                                    775.000đ
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-6 pb-4 text-center">
+                                                                <a href="products-detail.html"><img src="assets/img/pck-kids.jpg" alt=""></a> 
+                                                                <div class="title-product-show text-center pt-4">
+                                                                    Sữa bột dinh dưỡng Aptamil Đức
+                                                                </div>
+                                                                <div class="curent-price-product text-center">
+                                                                    <h6><b>765.000đ</b></h6>
+                                                                </div>
+                                                                <div class="abondon-price-product text-center">
+                                                                    775.000đ
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                                <div class="row">
+                                                    <div class="px-2 col-lg-12 col-6">
+                                                        <div class="product-show row">
+                                                            <div class="col-md-3 col-6 pb-4 text-center">
+                                                                <a href="products-detail.html"><img src="assets/img/pck-kids.jpg" alt=""></a> 
+                                                                <div class="title-product-show text-center pt-4">
+                                                                    Sữa bột dinh dưỡng Aptamil Đức
+                                                                </div>
+                                                                <div class="price-products">
+                                                                    <div class="curent-price-product ">
+                                                                        <h6><b>765.000đ</b></h6>
+                                                                    </div>
+                                                                    <div class="abondon-price-product">
+                                                                        775.000đ
+                                                                    </div>
+                                                                </div>
+                                                                <button type="button" class="cf-buy">THÊM VÀO GIỎ HÀNG</button>
+                                                                
+                                                            </div>
+                                                            <div class="col-md-3 col-6 pb-4 text-center">
+                                                                <a href="products-detail.html"><img src="assets/img/4b697dabfb32e8ca23360ecf69fcd97a.jpg" alt=""></a> 
+                                                                <div class="title-product-show text-center pt-4">
+                                                                    Sữa bột dinh dưỡng Aptamil Đức
+                                                                </div>
+                                                                <div class="curent-price-product text-center">
+                                                                    <h6><b>765.000đ</b></h6>
+                                                                </div>
+                                                                <div class="abondon-price-product text-center">
+                                                                    775.000đ
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-6 pb-4 text-center">
+                                                                <a href="products-detail.html"><img src="assets/img/4b697dabfb32e8ca23360ecf69fcd97a.jpg" alt=""></a> 
+                                                                <div class="title-product-show text-center pt-4">
+                                                                    Sữa bột dinh dưỡng Aptamil Đức
+                                                                </div>
+                                                                <div class="curent-price-product text-center">
+                                                                    <h6><b>765.000đ</b></h6>
+                                                                </div>
+                                                                <div class="abondon-price-product text-center">
+                                                                    775.000đ
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-6 pb-4 text-center">
+                                                                <a href="products-detail.html"><img src="assets/img/pck-kids.jpg" alt=""></a> 
+                                                                <div class="title-product-show text-center pt-4">
+                                                                    Sữa bột dinh dưỡng Aptamil Đức
+                                                                </div>
+                                                                <div class="curent-price-product text-center">
+                                                                    <h6><b>765.000đ</b></h6>
+                                                                </div>
+                                                                <div class="abondon-price-product text-center">
+                                                                    775.000đ
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                            <!--end for computer-->
+                                            <!--for MOBILE PHONE-->
+                                            <!-- <div class="col-sm-12 d-block d-lg-none">
+                                                <div class="scroll-menu">
+                                                    <div class="card" style="width:250px;">   
+                                                        <img class="img-fluid" style="height: 150px;" src="assets/img/noodle-machine.png" alt="Chania">
+                                                        <div class="container">
+                                                            <div class="pt-3" style="width:100%; height: 40px; ">
+                                                                <a  class="card-title" style="color: black; " href="productpage.html"><h4><b>Dụng cụ làm bún mì tươi...</b></h4></a>
+                                                            </div>
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px;">
+                                                                <h3 class="card-text" style="color: #f09819;"><b>150.000đ</b></h3>
+                                                            </div>
+                                                            <div class="text-left">
+                                                                <h5 class="card-text" style="width:100%; height: 20px; text-decoration: line-through;"></h5>
+                                                            </div>
+                                                            <div class="text-left rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4" style="color: #f09819;"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card" style="width:250px;">   
+                                                        <img class="img-fluid" style="height: 150px;" src="assets/img/face-machine.png" alt="Chania">
+                                                        <div class="container">
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px; ">
+                                                                <a  class="card-title" style="color: black;" href="productpage.html"><h4><b>Máy rửa mặt 5In1</b></h4></a>
+                                                            </div>
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px;">
+                                                                <h3 class="card-text" style="color: #f09819;"><b>75.000đ</b></h3>
+                                                            </div>
+                                                            <div class="text-left">
+                                                                <h5 class="card-text" style="width:100%; height: 20px; text-decoration: line-through;">79.000đ</h5>
+                                                            </div>
+                                                            <div class="text-left rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4" style="color: #f09819;"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="card" style="width:250px;">   
+                                                        <img class="img-fluid" style="height: 150px;" src="assets/img/banla.jpg" alt="Chania">
+                                                        <div class="container">
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px; ">
+                                                                <a  class="card-title" style="color: black;" href="productpage.html"><h4><b>Bàn là mini</b></h4></a>
+                                                            </div>
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px;">
+                                                                <h3 class="card-text" style="color: #f09819;"><b>189.000đ</b></h3>
+                                                            </div>
+                                                            <div class="text-left">
+                                                                <h5 class="card-text" style="width:100%; height: 20px; text-decoration: line-through;">199.000đ</h5>
+                                                            </div>
+                                                            <div class="text-left rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4" style="color: #f09819;"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card" style="width:250px;">   
+                                                        <img class="img-fluid" style="height: 150px;" src="assets/img/flur-machine.png" alt="Chania">
+                                                        <div class="container">
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px; ">
+                                                                <a  class="card-title" style="color: black;" href="productpage.html"><h4><b>Máy cạo lông mặt và toàn...</b></h4></a>
+                                                            </div>
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px;">
+                                                                <h3 class="card-text" style="color: #f09819;"><b>109.000đ</b></h3>
+                                                            </div>
+                                                            <div class="text-left">
+                                                                <h5 class="card-text" style="width:100%; height: 20px; text-decoration: line-through;"></h5>
+                                                            </div>
+                                                            <div class="text-left rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4" style="color: #f09819;"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card" style="width:250px;">   
+                                                        <img class="img-fluid" style="height: 150px;" src="assets/img/toy.png" alt="Chania">
+                                                        <div class="container">
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px; ">
+                                                                <a  class="card-title" style="color: black;" href="productpage.html"><h4><b>10 bộ hình con dấu cho bé </b></h4></a>
+                                                            </div>
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px;">
+                                                                <h3 class="card-text" style="color: #f09819;"><b>55.000đ</b></h3>
+                                                            </div>
+                                                            <div class="text-left">
+                                                                <h5 class="card-text" style="width:100%; height: 20px; text-decoration: line-through;"></h5>
+                                                            </div>
+                                                            <div class="text-left rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4" style="color: #f09819;"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card" style="width:250px;">   
+                                                        <img class="img-fluid" style="height: 150px;" src="assets/img/baby-supported.png" alt="Chania">
+                                                        <div class="container">
+                                                            <div class="pt-3" style="width:100%; height: 40px; ">
+                                                                <a  class="text-left card-title" style="color: black;" href="productpage.html"><h4><b>Ghế tập ngồi cho bé</b></h4></a>
+                                                            </div>
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px;">
+                                                                <h3 class="card-text" style="color: #f09819;"><b>230.000đ</b></h3>
+                                                            </div>
+                                                            <div class="text-left">
+                                                                <h5 class="card-text" style="width:100%; height: 20px; text-decoration: line-through;"></h5>
+                                                            </div>
+                                                            <div class="text-left rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4" style="color: #f09819;"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div> -->
+                                            <!--for End MOBILE PHONE-->
+                                            
+                                            <!-- page trasition -->
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-2"></div>  
+                                                    <div class="col-4">
+                                                        <nav aria-label="Page navigation example">
+                                                            <ul class="pagination">
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                                        <span aria-hidden="true">«</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#" aria-label="Next">
+                                                                        <span aria-hidden="true">»</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--End THỜI TRANG NAM-->
+                                
+                                <!-- Mới nhất -->
+                                <div class="tab-pane fade" id="pills-newest" role="tabpanel" aria-labelledby="pills-newest-tab">
+                                    <div class="row">
+                                        <div class="col-3 d-lg-block d-none">
+                                            <div class="list-group">
+                                                <a href="#" class="list-group-item list-group-item-action"><b><i class="fas fa-align-left" style="margin-right:10px;"></i>Tất Cả Các Danh Mục</b></a>
+                                                <a href="#" class="list-group-item list-group-item-action" style="color: #f09819;"><i class="fas fa-caret-right" style="margin: 5px 5px 0px 0px; color: #f09819;"></i><b>Thời Trang Nữ</b></a>
+                                                <a href="#" class="list-group-item list-group-item-action">Áo, váy nữ</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Ví, túi sách</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Đồng Hồ</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Đồ lót</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Đồ đi bơi. Đồ đi biển</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Vòng tay</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Giày dép</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Nón</a>
+                                                <a href="#" class="list-group-item list-group-item-action" style="color: #f09819;"><i class="fas fa-caret-right" style="margin: 5px 5px 0px 0px; color: #f09819;"></i><b>Dich Vụ Khuyến Mãi</b></a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check" style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Mua nhiều giảm giá</a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check" style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Đang giảm giá</a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check" style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Miễn phí vận chuyển</a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check" style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Rẻ vô địch</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9 col-12">
+                                            <!--for computer-->
+                                            <div class="col ">
+                                                <div class="row">
+                                                    <div class="px-2 col-lg-12 col-6">
+                                                        <div class="product-show row">
+                                                            <div class="col-md-3 col-6 pb-4 text-center">
+                                                                <a href="products-detail.html"><img src="assets/img/pck-kids.jpg" alt=""></a> 
+                                                                <div class="title-product-show text-center pt-4">
+                                                                    Sữa bột dinh dưỡng Aptamil Đức
+                                                                </div>
+                                                                <div class="price-products">
+                                                                    <div class="curent-price-product ">
+                                                                        <h6><b>765.000đ</b></h6>
+                                                                    </div>
+                                                                    <div class="abondon-price-product">
+                                                                        775.000đ
+                                                                    </div>
+                                                                </div>
+                                                                <button type="button" class="cf-buy">THÊM VÀO GIỎ HÀNG</button>
+                                                                
+                                                            </div>
+                                                            <div class="col-md-3 col-6 pb-4 text-center">
+                                                                <a href="products-detail.html"><img src="assets/img/4b697dabfb32e8ca23360ecf69fcd97a.jpg" alt=""></a> 
+                                                                <div class="title-product-show text-center pt-4">
+                                                                    Sữa bột dinh dưỡng Aptamil Đức
+                                                                </div>
+                                                                <div class="curent-price-product text-center">
+                                                                    <h6><b>765.000đ</b></h6>
+                                                                </div>
+                                                                <div class="abondon-price-product text-center">
+                                                                    775.000đ
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-6 pb-4 text-center">
+                                                                <a href="products-detail.html"><img src="assets/img/4b697dabfb32e8ca23360ecf69fcd97a.jpg" alt=""></a> 
+                                                                <div class="title-product-show text-center pt-4">
+                                                                    Sữa bột dinh dưỡng Aptamil Đức
+                                                                </div>
+                                                                <div class="curent-price-product text-center">
+                                                                    <h6><b>765.000đ</b></h6>
+                                                                </div>
+                                                                <div class="abondon-price-product text-center">
+                                                                    775.000đ
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-6 pb-4 text-center">
+                                                                <a href="products-detail.html"><img src="assets/img/pck-kids.jpg" alt=""></a> 
+                                                                <div class="title-product-show text-center pt-4">
+                                                                    Sữa bột dinh dưỡng Aptamil Đức
+                                                                </div>
+                                                                <div class="curent-price-product text-center">
+                                                                    <h6><b>765.000đ</b></h6>
+                                                                </div>
+                                                                <div class="abondon-price-product text-center">
+                                                                    775.000đ
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                                <div class="row">
+                                                    <div class="px-2 col-lg-12 col-6">
+                                                        <div class="product-show row">
+                                                            <div class="col-md-3 col-6 pb-4 text-center">
+                                                                <a href="products-detail.html"><img src="assets/img/pck-kids.jpg" alt=""></a> 
+                                                                <div class="title-product-show text-center pt-4">
+                                                                    Sữa bột dinh dưỡng Aptamil Đức
+                                                                </div>
+                                                                <div class="price-products">
+                                                                    <div class="curent-price-product ">
+                                                                        <h6><b>765.000đ</b></h6>
+                                                                    </div>
+                                                                    <div class="abondon-price-product">
+                                                                        775.000đ
+                                                                    </div>
+                                                                </div>
+                                                                <button type="button" class="cf-buy">THÊM VÀO GIỎ HÀNG</button>
+                                                                
+                                                            </div>
+                                                            <div class="col-md-3 col-6 pb-4 text-center">
+                                                                <a href="products-detail.html"><img src="assets/img/4b697dabfb32e8ca23360ecf69fcd97a.jpg" alt=""></a> 
+                                                                <div class="title-product-show text-center pt-4">
+                                                                    Sữa bột dinh dưỡng Aptamil Đức
+                                                                </div>
+                                                                <div class="curent-price-product text-center">
+                                                                    <h6><b>765.000đ</b></h6>
+                                                                </div>
+                                                                <div class="abondon-price-product text-center">
+                                                                    775.000đ
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-6 pb-4 text-center">
+                                                                <a href="products-detail.html"><img src="assets/img/4b697dabfb32e8ca23360ecf69fcd97a.jpg" alt=""></a> 
+                                                                <div class="title-product-show text-center pt-4">
+                                                                    Sữa bột dinh dưỡng Aptamil Đức
+                                                                </div>
+                                                                <div class="curent-price-product text-center">
+                                                                    <h6><b>765.000đ</b></h6>
+                                                                </div>
+                                                                <div class="abondon-price-product text-center">
+                                                                    775.000đ
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-6 pb-4 text-center">
+                                                                <a href="products-detail.html"><img src="assets/img/pck-kids.jpg" alt=""></a> 
+                                                                <div class="title-product-show text-center pt-4">
+                                                                    Sữa bột dinh dưỡng Aptamil Đức
+                                                                </div>
+                                                                <div class="curent-price-product text-center">
+                                                                    <h6><b>765.000đ</b></h6>
+                                                                </div>
+                                                                <div class="abondon-price-product text-center">
+                                                                    775.000đ
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                            <!--end for computer-->
+                                            <!--for MOBILE PHONE-->
+                                            <!-- <div class="col-sm-12 d-block d-lg-none">
+                                                <div class="scroll-menu">
+                                                    <div class="card" style="width:250px;">   
+                                                        <img class="img-fluid" style="height: 150px;" src="assets/img/noodle-machine.png" alt="Chania">
+                                                        <div class="container">
+                                                            <div class="pt-3" style="width:100%; height: 40px; ">
+                                                                <a  class="card-title" style="color: black; " href="productpage.html"><h4><b>Dụng cụ làm bún mì tươi...</b></h4></a>
+                                                            </div>
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px;">
+                                                                <h3 class="card-text" style="color: #f09819;"><b>150.000đ</b></h3>
+                                                            </div>
+                                                            <div class="text-left">
+                                                                <h5 class="card-text" style="width:100%; height: 20px; text-decoration: line-through;"></h5>
+                                                            </div>
+                                                            <div class="text-left rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4" style="color: #f09819;"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card" style="width:250px;">   
+                                                        <img class="img-fluid" style="height: 150px;" src="assets/img/face-machine.png" alt="Chania">
+                                                        <div class="container">
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px; ">
+                                                                <a  class="card-title" style="color: black;" href="productpage.html"><h4><b>Máy rửa mặt 5In1</b></h4></a>
+                                                            </div>
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px;">
+                                                                <h3 class="card-text" style="color: #f09819;"><b>75.000đ</b></h3>
+                                                            </div>
+                                                            <div class="text-left">
+                                                                <h5 class="card-text" style="width:100%; height: 20px; text-decoration: line-through;">79.000đ</h5>
+                                                            </div>
+                                                            <div class="text-left rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4" style="color: #f09819;"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="card" style="width:250px;">   
+                                                        <img class="img-fluid" style="height: 150px;" src="assets/img/banla.jpg" alt="Chania">
+                                                        <div class="container">
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px; ">
+                                                                <a  class="card-title" style="color: black;" href="productpage.html"><h4><b>Bàn là mini</b></h4></a>
+                                                            </div>
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px;">
+                                                                <h3 class="card-text" style="color: #f09819;"><b>189.000đ</b></h3>
+                                                            </div>
+                                                            <div class="text-left">
+                                                                <h5 class="card-text" style="width:100%; height: 20px; text-decoration: line-through;">199.000đ</h5>
+                                                            </div>
+                                                            <div class="text-left rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4" style="color: #f09819;"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card" style="width:250px;">   
+                                                        <img class="img-fluid" style="height: 150px;" src="assets/img/flur-machine.png" alt="Chania">
+                                                        <div class="container">
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px; ">
+                                                                <a  class="card-title" style="color: black;" href="productpage.html"><h4><b>Máy cạo lông mặt và toàn...</b></h4></a>
+                                                            </div>
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px;">
+                                                                <h3 class="card-text" style="color: #f09819;"><b>109.000đ</b></h3>
+                                                            </div>
+                                                            <div class="text-left">
+                                                                <h5 class="card-text" style="width:100%; height: 20px; text-decoration: line-through;"></h5>
+                                                            </div>
+                                                            <div class="text-left rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4" style="color: #f09819;"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card" style="width:250px;">   
+                                                        <img class="img-fluid" style="height: 150px;" src="assets/img/toy.png" alt="Chania">
+                                                        <div class="container">
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px; ">
+                                                                <a  class="card-title" style="color: black;" href="productpage.html"><h4><b>10 bộ hình con dấu cho bé </b></h4></a>
+                                                            </div>
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px;">
+                                                                <h3 class="card-text" style="color: #f09819;"><b>55.000đ</b></h3>
+                                                            </div>
+                                                            <div class="text-left">
+                                                                <h5 class="card-text" style="width:100%; height: 20px; text-decoration: line-through;"></h5>
+                                                            </div>
+                                                            <div class="text-left rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4" style="color: #f09819;"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card" style="width:250px;">   
+                                                        <img class="img-fluid" style="height: 150px;" src="assets/img/baby-supported.png" alt="Chania">
+                                                        <div class="container">
+                                                            <div class="pt-3" style="width:100%; height: 40px; ">
+                                                                <a  class="text-left card-title" style="color: black;" href="productpage.html"><h4><b>Ghế tập ngồi cho bé</b></h4></a>
+                                                            </div>
+                                                            <div class="text-left pt-3" style="width:100%; height: 40px;">
+                                                                <h3 class="card-text" style="color: #f09819;"><b>230.000đ</b></h3>
+                                                            </div>
+                                                            <div class="text-left">
+                                                                <h5 class="card-text" style="width:100%; height: 20px; text-decoration: line-through;"></h5>
+                                                            </div>
+                                                            <div class="text-left rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                                <span class="fa fa-star unchecked" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4" style="color: #f09819;"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div> -->
+                                            <!--for End MOBILE PHONE-->
+                                            
+                                            <!-- page trasition -->
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-2"></div>  
+                                                    <div class="col-4">
+                                                        <nav aria-label="Page navigation example">
+                                                            <ul class="pagination">
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                                        <span aria-hidden="true">«</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#" aria-label="Next">
+                                                                        <span aria-hidden="true">»</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Mới nhất -->
+                                
+                                
+                                
+                                <!--Bán chạy-->
+                                <!-- <div class="tab-pane fade" id="pills-topsale" role="tabpanel" aria-labelledby="pills-topsale-tab">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="list-group" id="text-hidden-category">
+                                                <a href="#" class="list-group-item list-group-item-action"><b><i class="fas fa-align-left" style="margin-right:10px;"></i>Tất Cả Các Danh Mục</b></a>
+                                                <a href="#" class="list-group-item list-group-item-action" style="color: #f09819;"><i class="fas fa-caret-right" style="margin: 5px 5px 0px 0px; color: #f09819;"></i><b>Thời Trang Nữ</b></a>
+                                                <a href="#" class="list-group-item list-group-item-action">Áo, váy nữ</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Ví, túi sách</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Đồng Hồ</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Đồ lót</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Đồ đi bơi. Đồ đi biển</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Vòng tay</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Giày dép</a>
+                                                <a href="#" class="list-group-item list-group-item-action">Nón</a>
+                                                <a href="#" class="list-group-item list-group-item-action" style="color: #f09819;"><i class="fas fa-caret-right" style="margin: 5px 5px 0px 0px; color: #f09819;"></i><b>Dich Vụ Khuyến Mãi</b></a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check"  style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Mua nhiều giảm giá</a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check"  style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Đang giảm giá</a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check"  style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Miễn phí vận chuyển</a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-check"  style="margin: 3px 5px 0px 0px; color: #f09819;"></i>Rẻ vô địch</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="row" >
+                                                <div class="px-2 col-lg-3" >
+                                                    <div class="card-product">  
+                                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/gia-kep-đt.png" alt="Chania"></a>
+                                                        <div class="col">
+                                                            <div class="pt-3"   id="title-card" style="height: 55px;">
+                                                                <a  class="card-title" style="height: 50px;"  href="productpage.html"><h4>Giá đỡ điện thoại cao cấp sony 7502</h4></a>
+                                                            </div>
+                                                            <div class="text-left" id="common-cost" >
+                                                                <div class="col">
+                                                                    <div class="row">
+                                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
+                                                                        
+                                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3" id="icon-view-details">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="px-2 col-lg-3"> 
+                                                    <div class="card-product">  
+                                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/bacnoi.png" alt="Chania"></a>
+                                                        <div class="col">
+                                                            <div class="pt-3"   id="title-card" style="height: 55px;">
+                                                                <a  class="card-title" style="height: 50px;" href="productpage.html"><h4>Bộ tay bắt nồi cao cấp</h4></a>
+                                                            </div>
+                                                            <div class="text-left" id="common-cost">
+                                                                <div class="col">
+                                                                    <div class="row">
+                                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
+                                                                        
+                                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3" id="icon-view-details">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="px-2 col-lg-3">
+                                                    <div class="card-product">  
+                                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/box-store.png" alt="Chania"></a>
+                                                        <div class="col">
+                                                            <div class="pt-3"   id="title-card" style="height: 55px;">
+                                                                <a  class="card-title" style="height: 50px;"  href="productpage.html"><h4>Hộp đựng đồng hồ</h4></a>
+                                                            </div>
+                                                            <div class="text-left" id="common-cost">
+                                                                <div class="col">
+                                                                    <div class="row">
+                                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
+                                                                        
+                                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3" id="icon-view-details">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="px-2 col-lg-3">
+                                                    <div class="card-product">  
+                                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/ke-de-giay.png" alt="Chania"></a>
+                                                        <div class="col">
+                                                            <div class="pt-3"   id="title-card" style="height: 55px;">
+                                                                <a  class="card-title" style="height: 50px;" href="productpage.html"><h4>Kệ đệ giày cao cấp</h4></a>
+                                                            </div>
+                                                            <div class="text-left" id="common-cost">
+                                                                <div class="col">
+                                                                    <div class="row">
+                                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
+                                                                        
+                                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3" id="icon-view-details">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="row" >
+                                                <div class="px-2 col-lg-3" >
+                                                    <div class="card-product">  
+                                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/gia-kep-đt.png" alt="Chania"></a>
+                                                        <div class="col">
+                                                            <div class="pt-3"   id="title-card" style="height: 55px;">
+                                                                <a  class="card-title" style="height: 50px;"  href="productpage.html"><h4>Giá đỡ điện thoại cao cấp sony 7502</h4></a>
+                                                            </div>
+                                                            <div class="text-left" id="common-cost" >
+                                                                <div class="col">
+                                                                    <div class="row">
+                                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
+                                                                        
+                                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3" id="icon-view-details">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="px-2 col-lg-3"> 
+                                                    <div class="card-product">  
+                                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/bacnoi.png" alt="Chania"></a>
+                                                        <div class="col">
+                                                            <div class="pt-3"   id="title-card" style="height: 55px;">
+                                                                <a  class="card-title" style="height: 50px;" href="productpage.html"><h4>Bộ tay bắt nồi cao cấp</h4></a>
+                                                            </div>
+                                                            <div class="text-left" id="common-cost">
+                                                                <div class="col">
+                                                                    <div class="row">
+                                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
+                                                                        
+                                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3" id="icon-view-details">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="px-2 col-lg-3">
+                                                    <div class="card-product">  
+                                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/box-store.png" alt="Chania"></a>
+                                                        <div class="col">
+                                                            <div class="pt-3"   id="title-card" style="height: 55px;">
+                                                                <a  class="card-title" style="height: 50px;"  href="productpage.html"><h4>Hộp đựng đồng hồ</h4></a>
+                                                            </div>
+                                                            <div class="text-left" id="common-cost">
+                                                                <div class="col">
+                                                                    <div class="row">
+                                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
+                                                                        
+                                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3" id="icon-view-details">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="px-2 col-lg-3">
+                                                    <div class="card-product">  
+                                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/ke-de-giay.png" alt="Chania"></a>
+                                                        <div class="col">
+                                                            <div class="pt-3"   id="title-card" style="height: 55px;">
+                                                                <a  class="card-title" style="height: 50px;" href="productpage.html"><h4>Kệ đệ giày cao cấp</h4></a>
+                                                            </div>
+                                                            <div class="text-left" id="common-cost">
+                                                                <div class="col">
+                                                                    <div class="row">
+                                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
+                                                                        
+                                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3" id="icon-view-details">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="row" >
+                                                <div class="px-2 col-lg-3" >
+                                                    <div class="card-product">  
+                                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/gia-kep-đt.png" alt="Chania"></a>
+                                                        <div class="col">
+                                                            <div class="pt-3"   id="title-card" style="height: 55px;">
+                                                                <a  class="card-title" style="height: 50px;"  href="productpage.html"><h4>Giá đỡ điện thoại cao cấp sony 7502</h4></a>
+                                                            </div>
+                                                            <div class="text-left" id="common-cost" >
+                                                                <div class="col">
+                                                                    <div class="row">
+                                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
+                                                                        
+                                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3" id="icon-view-details">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="px-2 col-lg-3"> 
+                                                    <div class="card-product">  
+                                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/bacnoi.png" alt="Chania"></a>
+                                                        <div class="col">
+                                                            <div class="pt-3"   id="title-card" style="height: 55px;">
+                                                                <a  class="card-title" style="height: 50px;" href="productpage.html"><h4>Bộ tay bắt nồi cao cấp</h4></a>
+                                                            </div>
+                                                            <div class="text-left" id="common-cost">
+                                                                <div class="col">
+                                                                    <div class="row">
+                                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
+                                                                        
+                                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3" id="icon-view-details">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="px-2 col-lg-3">
+                                                    <div class="card-product">  
+                                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/box-store.png" alt="Chania"></a>
+                                                        <div class="col">
+                                                            <div class="pt-3"   id="title-card" style="height: 55px;">
+                                                                <a  class="card-title" style="height: 50px;"  href="productpage.html"><h4>Hộp đựng đồng hồ</h4></a>
+                                                            </div>
+                                                            <div class="text-left" id="common-cost">
+                                                                <div class="col">
+                                                                    <div class="row">
+                                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
+                                                                        
+                                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3" id="icon-view-details">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="px-2 col-lg-3">
+                                                    <div class="card-product">  
+                                                        <a href="productpage.html"> <img class="img-fluid" style="height: 210px;" src="assets/img/ke-de-giay.png" alt="Chania"></a>
+                                                        <div class="col">
+                                                            <div class="pt-3"   id="title-card" style="height: 55px;">
+                                                                <a  class="card-title" style="height: 50px;" href="productpage.html"><h4>Kệ đệ giày cao cấp</h4></a>
+                                                            </div>
+                                                            <div class="text-left" id="common-cost">
+                                                                <div class="col">
+                                                                    <div class="row">
+                                                                        <p class="main-cost" ><b>70.000.000đ</b></p>
+                                                                        
+                                                                        <p class="pt-1" id="abondon-text-cost">280.000đ</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="rating-star pb-2">
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star checked" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                                <span class="fa fa-star" id="star"></span>
+                                                            </div>
+                                                            <div class="row pb-3" id="icon-view-details">
+                                                                <a href="productpage.html"> <div class="col" style="color: blue;">Xem chi tiết</div></a>
+                                                                
+                                                                <a href="productpage.html"><div class="ml-4"><i class="fas fa-cart-plus"></i></div></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <!-- page trasition -->
+                                            <!-- <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-4"></div>  
+                                                    <div class="col-4">
+                                                        <nav aria-label="Page navigation example">
+                                                            <ul class="pagination">
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                                        <span aria-hidden="true">&laquo;</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#" aria-label="Next">
+                                                                        <span aria-hidden="true">&raquo;</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                    <div class="col-4"></div>
+                                                </div>
+                                            </div> -->
+                                            <!-- </div>
+                                            </div> -->
+                                            <!-- </div>    -->
+                                            <!--end bán chạy--> 
+                                        </div>  
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-3 d-lg-block d-none">
+                                    <div class="info-address my-4">
+                                        <div class="notice text-center row">
+                                            <div class="user-account">
+                                                
+                                                <div class="dropdown">
+                                                    <button class="dropbtn">
+                                                        <i class="fas fa-user pr-1"></i> Tài khoản
+                                                        <i class="fas fa-sort-down pl-2"></i>
+                                                    </button>
+                                                    <div class="dropdown-content">
+                                                        <a href="#">Đăng nhập</a>
+                                                        <a href="#">Tạo tài khoản</a>
+                                                        <a href="#" class="fb btn">
+                                                            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                                                        </a>
+                                                        <a href="#" class="google btn">
+                                                            <i class="fa fa-google fa-fw"></i> Login with Google+
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="px-3"><b>|</b></div>
+                                            <div class="user-card">
+                                                <div class="card-dropdown">
+                                                    <button class="icon-card-user">
+                                                        <i class="fas fa-cart-plus pr-1"></i> Giỏ hàng
+                                                        <i class="fas fa-sort-down pl-2"></i>
+                                                    </button>
+                                                    <div class="content-card-user">
+                                                        <div class="pb-3" style="color: #44a4d7;">
+                                                            <b>Sản phẩm được thêm vào giỏ hàng</b> 
+                                                        </div>
+                                                        <table class="table table-borderless">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">
+                                                                        <img src="assets/img/babycare stroller Sk-19-1000x1000.jpg" style="width: 80px; height: 80px;" alt="" class="img-fluid">
+                                                                    </th>
+                                                                    <th scope="col" class="info-card">
+                                                                        Đẩy xe cho bé sơ sinh...
+                                                                        <span style="color: #ff7f0b;">450.000đ</span>
+                                                                    </th>
+                                                                    <th scope="col">
+                                                                        <button type="submit" class="my-2 btn-btn-delete">
+                                                                            <i class="mr-1 fas fa-trash-alt"></i> Xóa
+                                                                        </button>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">
+                                                                        <img src="assets/img/babycare stroller Sk-19-1000x1000.jpg" style="width: 80px; height: 80px;" alt="" class="img-fluid">
+                                                                    </th>
+                                                                    <th scope="col" class="info-card">
+                                                                        Đẩy xe cho bé sơ sinh...
+                                                                        <span style="color: #ff7f0b;">450.000đ</span>
+                                                                    </th>
+                                                                    <th scope="col" style="width: 30%;">
+                                                                        <button type="submit" class="my-2 btn-btn-delete">
+                                                                            <i class="mr-1 fas fa-trash-alt"></i> Xóa
+                                                                        </button>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                        </table>
+                                                        <div class="button-card">
+                                                            <button type="submit" class="my-2 btn-card">
+                                                                <a href="card-user.html"> Xem giỏ hàng</a> 
+                                                            </button>
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="support-contact">
+                                            <div class="contact my-3 py-3">
+                                                <div class="shop-adress row">
+                                                    <div class="col-3 pr-0 text-center ">
+                                                        <i class="fas fa-map-marked-alt"></i>
+                                                    </div>
+                                                    <div class="col-9 pl-0 text-info">
+                                                        <p class="bold-text"><b>địa chỉ cửa hàng</b></p>
+                                                        <p1>443, Đội Cấn, Đống Đa Hà Nội</p1>
+                                                        <p1>442, Đội Cấn, Đống Đa Hà Nội</p1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="contact my-3 py-3">
+                                                <div class="shop-adress row">
+                                                    <div class="col-3 pr-0 text-center ">
+                                                        <i class="fas fa-map-marked-alt"></i>
+                                                    </div>
+                                                    <div class="col-9 pl-0 text-info">
+                                                        <p class="bold-text"><b>địa chỉ cửa hàng</b></p>
+                                                        <p1>442, Đội Cấn, Đống Đa Hà Nội</p1>
+                                                        <p1>442, Đội Cấn, Đống Đa Hà Nội</p1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="contact my-3 py-3">
+                                                <div class="shop-adress row">
+                                                    <div class="col-3 pr-0 text-center ">
+                                                        <i class="fas fa-map-marked-alt"></i>
+                                                    </div>
+                                                    <div class="col-9 pl-0 text-info">
+                                                        <p class="bold-text"><b>địa chỉ cửa hàng</b></p>
+                                                        <p1>442, Đội Cấn, Đống Đa Hà Nội</p1>
+                                                        <p1>442, Đội Cấn, Đống Đa Hà Nội</p1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="feedback">
+                                        <img src="assets/img/arashmil.jpg" alt="" class="rounded-circle">
+                                        <p><i>"BabyCare là sản phẩm phân phối chính hãng..."</i></p>
+                                        <p style="color: #ff7f0b;"><b>Anh Nam</b></p>
+                                        <p>Thanh Ba - Phú Thọ</p>
+                                    </div>
+                                    <div class="news my-3">
+                                        <div class="title-news py-2 pl-4 mb-3">
+                                            <h6 style="margin-bottom: 0;"><b>TIN TỨC</b></h6>
+                                        </div>
+                                        <div class="col">
+                                            <div class="box-news row py-3 ">
+                                                <div class="col-4">
+                                                    <img src="assets/img/15fb5ddf48ce92d5109334693786a818.jpg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="col-8 text-box-news">
+                                                    <a href="news.html">Mách mẹ 4 kỹ năng chọn sữa thông minh</a>
+                                                </div>
+                                            </div>
+                                            <div class="box-news row py-3">
+                                                <div class="col-4">
+                                                    <img src="assets/img/15fb5ddf48ce92d5109334693786a818.jpg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="col-8 text-box-news">
+                                                    <a href="news.html">Mách mẹ 4 kỹ năng chọn sữa thông minh</a>
+                                                </div>
+                                            </div>
+                                            <div class="box-news row py-3">
+                                                <div class="col-4">
+                                                    <img src="assets/img/15fb5ddf48ce92d5109334693786a818.jpg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="col-8 text-box-news">
+                                                    <a href="news.html">Mách mẹ 4 kỹ năng chọn sữa thông minh</a>
+                                                </div>
+                                            </div>
+                                            <div class="box-news row py-3">
+                                                <div class="col-4">
+                                                    <img src="assets/img/15fb5ddf48ce92d5109334693786a818.jpg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="col-8 text-box-news">
+                                                    <a href="news.html">Mách mẹ 4 kỹ năng chọn sữa thông minh</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hot-product">
+                                        <div class="title-right py-2 pl-4">
+                                            <h6 style="margin-bottom: 0;"><b>SẢN PHẨM HOT</b></h6>
+                                        </div>
+                                        <div class="product-info row">
+                                            <div class="col-5 pr-0">
+                                                <a href="#"><img src="assets/img/product-img.PNG" alt=""></a>
+                                            </div>
+                                            <div class="col-7 pl-0 pt-1 text-center text-product">
+                                                <p><b>Củi gỗ Jpan</b></p>
+                                                <p class="current-price">2.350.000đ</p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-4">
+                                        <img src="assets/img/pngtree-big-sale-banner-with-megaphone-and-speech-bubble-png-image_4945616.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- logo -->
+                            <div class="logo row my-5">
+                                <div class="col-md-2 col-6">
+                                    <img src="assets/img/56227ede1b558_thumb900.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <img src="assets/img/baby-logo_23-2147993851.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <img src="assets/img/56227ede1b558_thumb900.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <img src="assets/img/baby-logo_23-2147993851.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <img src="assets/img/56227ede1b558_thumb900.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <img src="assets/img/baby-logo_23-2147993851.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="category-footer row pb-5">
+                                <div class="list-cate-footer col-md-2 col-6">
+                                    <h6><b>BÉ ĂN - BÉ UỐNG</b></h6>
+                                    <a href="#">Sữa bột</a>
+                                    <a href="#">Bình sữa, phụ kiện</a>
+                                    <a href="#">Đồ dùng ăn uống</a>
+                                    <a href="#">Ăn dặm</a>
+                                </div>
+                                <div class="list-cate-footer col-md-2 col-6">
+                                    <h6><b>BÉ ĂN - BÉ UỐNG</b></h6>
+                                    <a href="#">Sữa bột</a>
+                                    <a href="#">Bình sữa, phụ kiện</a>
+                                    <a href="#">Đồ dùng ăn uống</a>
+                                    <a href="#">Ăn dặm</a>
+                                </div>
+                                <div class="list-cate-footer col-md-2 col-6">
+                                    <h6><b>BÉ ĂN - BÉ UỐNG</b></h6>
+                                    <a href="#">Sữa bột</a>
+                                    <a href="#">Bình sữa, phụ kiện</a>
+                                    <a href="#">Đồ dùng ăn uống</a>
+                                    <a href="#">Ăn dặm</a>
+                                </div>
+                                <div class="list-cate-footer col-md-2 col-6">
+                                    <h6><b>BÉ ĂN - BÉ UỐNG</b></h6>
+                                    <a href="#">Sữa bột</a>
+                                    <a href="#">Bình sữa, phụ kiện</a>
+                                    <a href="#">Đồ dùng ăn uống</a>
+                                    <a href="#">Ăn dặm</a>
+                                </div>
+                                <div class="list-cate-footer col-md-2 col-6">
+                                    <h6><b>BÉ ĂN - BÉ UỐNG</b></h6>
+                                    <a href="#">Sữa bột</a>
+                                    <a href="#">Bình sữa, phụ kiện</a>
+                                    <a href="#">Đồ dùng ăn uống</a>
+                                    <a href="#">Ăn dặm</a>
+                                </div>
+                                <div class="list-cate-footer col-md-2 col-6">
+                                    <h6><b>BÉ ĂN - BÉ UỐNG</b></h6>
+                                    <a href="#">Sữa bột</a>
+                                    <a href="#">Bình sữa, phụ kiện</a>
+                                    <a href="#">Đồ dùng ăn uống</a>
+                                    <a href="#">Ăn dặm</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="container">
+                                <div class="info-footer row">
+                                    <div class="col-md-4 col-12 info-details">
+                                        <p>
+                                            <h6><b> LIÊN HỆ VỚI CHÚNG TÔI</b></h6>
+                                        </p>
+                                        <p><i class="fas fa-map-marker-alt"></i> Tòa nhà Hanoi Group - 442 Đội Cấn - Ba Đình - Hà Nội</p>
+                                        <p><i class="fas fa-phone-square-alt"></i> (04) 6678329 653 - (04) 543829 439</p>
+                                        <p><i class="fas fa-globe-americas"></i> Trực 8h00 -20h00 từ thứ 2 đến thứ 6</p>
+                                    </div>
+                                    <div class="col-md-2 col-12 personal-info">
+                                        <p>
+                                            <h6><b>THÔNG TIN</b></h6>
+                                        </p>
+                                        <a href="#">Tài khoản của tôi</a>
+                                        <a href="#">Sản phẩm yêu thích</a>
+                                        <a href="#">Lịch sử mua hàng</a>
+                                        <a href="#">Sử dụng thông tin</a>
+                                    </div>
+                                    <div class="col-md-2 col-12 personal-info">
+                                        <p>
+                                            <h6><b>HỖ TRỢ</b></h6>
+                                        </p>
+                                        <a href="#">Tài khoản của tôi</a>
+                                        <a href="#">Sản phẩm yêu thích</a>
+                                        <a href="#">Lịch sử mua hàng</a>
+                                        <a href="#">Sử dụng thông tin</a>
+                                    </div>
+                                    <div class="col-md-2 col-12 personal-info">
+                                        <p>
+                                            <h6><b>CHÍNH SÁCH</b></h6>
+                                        </p>
+                                        <a href="#">Tài khoản của tôi</a>
+                                        <a href="#">Sản phẩm yêu thích</a>
+                                        <a href="#">Lịch sử mua hàng</a>
+                                        <a href="#">Sử dụng thông tin</a>
+                                    </div>
+                                    <div class="col-md-2 col-12 personal-info">
+                                        <p>
+                                            <h6><b>LIÊN KẾT</b></h6>
+                                        </p>
+                                        <a href="#">Tài khoản của tôi</a>
+                                        <a href="#">Sản phẩm yêu thích</a>
+                                        <a href="#">Lịch sử mua hàng</a>
+                                        <a href="#">Sử dụng thông tin</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--   Core JS Files   -->
+                <script src="assets/js/core/jquery.3.2.1.min.js"></script>
+                <script src="assets/js/core/popper.min.js"></script>
+                <script src="assets/js/core/bootstrap.min.js"></script>
+                <script src="assets/js/core/1.js"></script>
+            </body>
+            
+            </html>
