@@ -13,9 +13,14 @@ body{
 
 .list-menu ul{
     display: flex;
-    padding-left: 83px;
+    padding-left: 115px;
 }
-
+.btn-abondon{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
 .list-menu ul li{
     list-style: none;
     text-transform: uppercase;
