@@ -51,7 +51,7 @@
             <div class="container">
                 <div class="main-body row">
                     <div class="col-md-12 col-12">
-                        <div class="category-product row px-0 col-md-9 col-12">
+                        <div class="category-product row col-md-9 col-12 px-0">
                             <div class="col-md-4 col-12">
                                 <div class="box-category my-4">
                                     <div class="head-title text-center py-2">
@@ -106,6 +106,7 @@
                                 
                             </div>
                         </div>
+                        
                         <div class="main-body-content">
                             <div class="row py-2 mt-2 px-4" id="background-infor">
                                 <img src="assets/img/arashmil.jpg" class="rounded-circle" alt="Cinque Terre" width="125px" height="" > 
@@ -115,177 +116,204 @@
                                 </div>
                             </div>
                             <div class="row">
-                                
+                    
                                 <!-- left category -->
                                 <div class=" py-4 col-3 d-lg-block d-none">
                                     
                                     <div class="list-group" id="text-hidden-category">
                                         <a href="#" class="list-group-item list-group-item-action"><b><i class="fas fa-user" style="margin-right:10px;"></i>Thông tin tài khoản của quý khách</b></a>
-                                        <a href="user_profile.html" class="list-group-item list-group-item-action" ><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Thông tin cá nhân</a>
-                                        <a href="cart_history.html" class="list-group-item list-group-item-action"><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Lịch sử đơn hàng</a>
+                                        <a href="user-details.html" class="list-group-item list-group-item-action" ><i class="fas fa-circle" style="margin-right: 3px;margin-top: 7px; font-size: 6px;"></i>Thông tin cá nhân</a>
                                     </div>
                                     
                                 </div>
                                 
-                                <div class="card col-lg-9 col-12 mt-4">
-                                    <div class="row no-gutters">
+                                <div class="card col-lg-9 col-12 mt-4" style="height: 72%">
+                                    <div class="row no-gutters" >
                                         <div class="px-2 pt-3 col-md-12" >
-                                            <h3 style="border-left: 3px solid #f09819; padding-left:5px;"><b>Thông tin cá nhân </b></h3>
+                                            <h5 style="border-left: 3px solid #f09819; padding-left:5px;"><b>Lịch sử đơn hàng </b></h5>
                                             <hr width=100%>
                                             <!-- <img src="assets/img/tick.png" class="card-img" alt="..." style="padding:10px; width: 70px; height:70px;" > -->
                                         </div>
                                         <div class="col-12">
                                             <div class="private-information">
-                                                <div class="row">
-                                                    <div class="px-0 col-12 pl-0">
-                                                        <div class="row">
-                                                            <div class="text-right col-lg-3 col-4" style=" margin-top: 20px;">
-                                                                Họ và tên *
-                                                            </div>
-                                                            
-                                                            <div class="col-lg-6 col-7 px-0">
-                                                                <form action="/action_page.php" class="was-validated">
-                                                                    <div class="form-group">   
-                                                                        <input type="text" class="form-control" id="uname" placeholder="VD: Nguyễn Văn A" name="uname" required>
-                                                                    </div>
-                                                                </form>
-                                                            </div>
+                                                <div class="row py-2">
+                                                    <div class="col-lg-4 col-12 pr-0 pb-2 pb-lg">
+                                                        <div class="form-group py-0">
+                                                            <select class="form-control input-square" id="squareSelect">
+                                                                <option>Trạng thái đơn hàng</option>
+                                                                <option>Chờ kiểm duyệt</option>
+                                                                <option>Đã kiểm duyệt</option>
+                                                                <option>Đang giao hàng</option>
+                                                                <option>Hàng đã giao</option>
+                                                                <option>Hủy</option>
+                                                            </select>
                                                         </div>
-                                                        <div class="row">
-                                                            <div class="text-right col-lg-3 col-4" style="  margin-top: 20px;">
-                                                                Điện thoại *
-                                                            </div>
-                                                            <div class="col-lg-6 col-7 px-0">
-                                                                <form action="/action_page.php" class="was-validated">
-                                                                    <div class="form-group">                   
-                                                                        <input type="text" class="form-control" id="uname" placeholder="VD: 0978485015" name="uname" required>
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="text-right col-lg-3 col-4" style="  margin-top: 20px;">
-                                                                Email *
-                                                            </div>
-                                                            <div class="col-lg-6 col-7 px-0">
-                                                                <form action="/action_page.php" class="was-validated">
-                                                                    <div class="form-group">
-                                                                        <input type="text" class="form-control" id="uname" placeholder="VD: ducdudu@gmail..." name="uname" required>
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row py-2">
-                                                            <div class="text-right pt-1 col-lg-3 col-4" style="">
-                                                                Ngày sinh * 
-                                                            </div>
-                                                            <div class="col-lg-9 col-7">
-                                                                <div class="row pl-2">
-                                                                    <input id="datepicker" placeholder="dd-mm-yyyy" width="300" />
-                                                                    <p class="pl-3 pt-2" style="color: rgb(187, 187, 187); margin-bottom: 2px;"><i>Cập nhập thông tin ngày sinh để nhận được nhiều ưu đãi </i></p>
-                                                                </div>
-                                                            </div>
-                                                            <script>
-                                                                $('#datepicker').datepicker({ format: 'dd-mm-yyyy' });
-                                                            </script>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="text-right col-lg-3 col-4" style="  margin-top: 20px;">
-                                                                Giới tính *
-                                                            </div>
-                                                            <div class="col-lg-6 col-7 px-0 pt-3 pb-2 pl-3">
-                                                                <label class="form-radio-label">
-                                                                    <input class="form-radio-input" type="radio" name="optionsRadios" value=""  checked="">
-                                                                    <span class="form-radio-sign">Nam</span>
-                                                                </label>
-                                                                <label class="form-radio-label ml-3">
-                                                                    <input class="form-radio-input" type="radio" name="optionsRadios" value="">
-                                                                    <span class="form-radio-sign">Nữ</span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="row">
-                                                            <div class="text-right col-lg-3 col-4" style="margin-top: 20px; ">
-                                                                Tỉnh / TP *
-                                                            </div>
-                                                            <div class="col-lg-6 col-7 px-0">
-                                                                <form action="/action_page.php" class="was-validated">
-                                                                    <div class="form-group">
-                                                                        <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px; " >
-                                                                            <option value="left" selected="">Tỉnh/Thành phố</option>
-                                                                            <option value="right" >Hà Nội</option>
-                                                                            <option value="center">Phú Thọ</option>
-                                                                            <option value="center">Vĩnh Phúc</option>
-                                                                        </select>   
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="text-right col-lg-3 col-4" style="margin-top: 20px;" >
-                                                                Quận / Huyện *
-                                                            </div>
-                                                            <div class="col-lg-6 col-7 px-0">
-                                                                <form action="/action_page.php" class="was-validated">
-                                                                    <div class="form-group">
-                                                                        <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px;  " >
-                                                                            <option value="left" selected="">Quận/Huyện</option>
-                                                                            <option value="right" >Hà Nội</option>
-                                                                            <option value="center">Phú Thọ</option>
-                                                                            <option value="center">Vĩnh Phúc</option>
-                                                                        </select>   
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="text-right col-lg-3 col-4" style="margin-top: 20px;">
-                                                                Phường / Xã *
-                                                            </div>
-                                                            <div class="col-lg-6 col-7 px-0">
-                                                                <form action="/action_page.php" class="was-validated">
-                                                                    <div class="form-group">
-                                                                        <select class="form-control input-fixed" id="notify_placement_align" style="margin-top: 5px; " >
-                                                                            <option value="left" selected="">Phường/Xã</option>
-                                                                            <option value="right" >Hà Nội</option>
-                                                                            <option value="center">Phú Thọ</option>
-                                                                            <option value="center">Vĩnh Phúc</option>
-                                                                        </select>   
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="text-right col-lg-3 col-4" style="margin-top: 20px;">
-                                                                Địa chỉ chi tiết *
-                                                            </div>
-                                                            <div class="col-lg-6 col-7 px-0">
-                                                                <form action="/action_page.php" class="was-validated">
-                                                                    <div class="form-group">
-                                                                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                                                                        
-                                                                        <div class="invalid-feedback">Đây là trường bắt buộc</div>
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                    </div>    
+                                                    </div>
+                                                    <div class="col-lg-3 col-6 px-0 pl-4 pb-lg">
+                                                        <input id="datepicker" width="165" placeholder="Từ ngày..." />
+                                                    </div>
+                                                    <script>
+                                                        $('#datepicker').datepicker({
+                                                            uiLibrary: 'bootstrap4'
+                                                        });
+                                                    </script>
+                                                    <div class="col-lg-3 col-6 px-0">
+                                                        <input id="datepicker2" width="165" placeholder="Đến ngày..."  />
+                                                    </div>
+                                                    <script>
+                                                        $('#datepicker2').datepicker({
+                                                            uiLibrary: 'bootstrap4'
+                                                        });
+                                                    </script>
+                                                    <div class="col-lg-2 mt-lg-0 mt-2">
+                                                        <a href="checkout.html"> <button type="button" class="btn-gradient17" style="width: 200x; margin-left:60px;">Tìm kiếm</button> </a>
+                                                    </div>
                                                 </div>
-                                                <!-- button -->
-                                                <div class="py-3 col-md-12 text-center" id="multiple-button">
-                                                    <a href="checkout.html"> <button type="button" class="btn-gradient18" style="width: 200x; margin-left:60px;">Nhập lại</button> </a>
-                                                    <a href="checkout.html"> <button type="button" class="btn-gradient17" style="width: 200x; margin-left:60px;">Xác nhận</button> </a>
+                                                <div>
+                                                    <div class="table-responsive d-lg-block d-none">
+                                                        <table class="table table-hover">
+                                                            <thead> 
+                                                                <tr>
+                                                                    <th scope="col">Mã đơn hàng</th>
+                                                                    <th scope="col">Khuyến mãi</th>
+                                                                    <th scope="col">Tổng tiền đơn hàng</th>
+                                                                    <th scope="col">Trạng thái</th>
+                                                                    <th scope="col">Ngày tạo</th>
+                                                                    <th scope="col"></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row" id="number-code">AM161019-283509</th>
+                                                                    <td id="text-discount">không</td>
+                                                                    <td id="total-cost">0đ</td>
+                                                                    <td style="color: rgb(211, 0, 0);">Đã bị hủy</td>
+                                                                    <td id="date">
+                                                                        <p>16-10-2019</p>
+                                                                        <p>13:27:14</p>
+                                                                    </td>
+                                                                    <td><a href="order-details.html">Xem</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row" id="number-code">AM031019-279421</th>
+                                                                    <td id="text-discount">không</td>
+                                                                    <td id="total-cost">298.000đ</td>
+                                                                    <td style="color: rgb(5, 170, 5);">Đã kiểm duyệt-Chờ thanh toán </td>
+                                                                    <td id="date">
+                                                                        <p>03-10-2019</p>
+                                                                        <p>13:27:14</p>
+                                                                    </td>
+                                                                    <td><a href="order-details.html">Xem</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row"id="number-code" >AM031019-279421</th>
+                                                                    <td id="text-discount">không</td>
+                                                                    <td id="total-cost">298.000đ</td>
+                                                                    <td style="color: rgb(5, 170, 5);">Đã kiểm duyệt - Chờ thanh toán </td>
+                                                                    <td id="date">
+                                                                        <p>03-10-2019</p>
+                                                                        <p>13:27:14</p>
+                                                                    </td>
+                                                                    <td><a href="order-details.html">Xem</a></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
-                                                <!-- end button -->
                                             </div>
                                         </div>
+                                        <!-- for Mobile -->
+                                        <div class="col-12 d-lg-none d-block" >
+                                            <div class="card py-3 px-2">
+                                                <div class="row pb-2 mx-1" style="border-bottom: 1px solid rgb(230, 230, 230);">
+                                                    <div class="col-6 text-left">
+                                                        <b>Mã đơn hàng</b>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <button type="button" class="btn-btn-delete">Xem</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2 mx-1" style="border-bottom: 1px solid rgb(230, 230, 230);">
+                                                    <div class="col-6 text-left">
+                                                        AMM110398
+                                                    </div>
+                                                    <div class="col-6 text-right" id="category-title">
+                                                        <p>10-11-2019</p>
+                                                        <p>09:02:47</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2 mx-1" style="border-bottom: 1px solid rgb(230, 230, 230);">
+                                                    <div class="col-6 text-left">
+                                                        Tổng chi phí
+                                                    </div>
+                                                    <div class="col-6 text-right" id="category-title">
+                                                        <p style="color: #f09819;"><b>289.000đ</b></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card py-3 px-2">
+                                                <div class="row pb-2 mx-1" style="border-bottom: 1px solid rgb(230, 230, 230);">
+                                                    <div class="col-6 text-left">
+                                                        <b>Mã đơn hàng</b>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <button type="button" class="btn-btn-delete">Xem</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2 mx-1" style="border-bottom: 1px solid rgb(230, 230, 230);">
+                                                    <div class="col-6 text-left">
+                                                        AMM110398
+                                                    </div>
+                                                    <div class="col-6 text-right" id="category-title">
+                                                        <p>10-11-2019</p>
+                                                        <p>09:02:47</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2 mx-1" style="border-bottom: 1px solid rgb(230, 230, 230);">
+                                                    <div class="col-6 text-left">
+                                                        Tổng chi phí
+                                                    </div>
+                                                    <div class="col-6 text-right" id="category-title">
+                                                        <p style="color: #f09819;"><b>289.000đ</b></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card py-3 px-2">
+                                                <div class="row pb-2 mx-1" style="border-bottom: 1px solid rgb(230, 230, 230);">
+                                                    <div class="col-6 text-left">
+                                                        <b>Mã đơn hàng</b>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <button type="button" class="btn-btn-delete">Xem</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2 mx-1" style="border-bottom: 1px solid rgb(230, 230, 230);">
+                                                    <div class="col-6 text-left">
+                                                        AMM110398
+                                                    </div>
+                                                    <div class="col-6 text-right" id="category-title">
+                                                        <p>10-11-2019</p>
+                                                        <p>09:02:47</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2 mx-1" style="border-bottom: 1px solid rgb(230, 230, 230);">
+                                                    <div class="col-6 text-left">
+                                                        Tổng chi phí
+                                                    </div>
+                                                    <div class="col-6 text-right" id="category-title">
+                                                        <p style="color: #f09819;"><b>289.000đ</b></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End for Mobile -->
+                                        
                                     </div>
                                 </div>
-                            </div>  
+                            </div> 
                         </div>
                     </div>
-               
+                  
                 </div>
                 <!-- logo -->
                 <div class="logo row my-5">

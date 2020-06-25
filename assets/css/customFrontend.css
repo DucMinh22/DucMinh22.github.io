@@ -21,6 +21,28 @@ body{
     padding: 10px;
     cursor: pointer;
 }
+.btn-gradient17{
+    background: #1e99fd;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px !important;
+}
+.btn-gradient18{
+    border: 2px solid #1e99fd !important;
+    background-color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: black;
+    margin-left: 10px !important;
+}
+#background-infor{
+    background-color: rgb(241, 247, 255);
+}
 .list-menu ul li{
     list-style: none;
     text-transform: uppercase;
