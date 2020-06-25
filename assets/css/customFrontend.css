@@ -21,28 +21,6 @@ body{
     padding: 10px;
     cursor: pointer;
 }
-.btn-gradient17{
-    background: #1e99fd;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    color: white;
-    margin-left: 10px !important;
-}
-.btn-gradient18{
-    border: 2px solid #1e99fd !important;
-    background-color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    color: black;
-    margin-left: 10px !important;
-}
-#background-infor{
-    background-color: rgb(241, 247, 255);
-}
 .list-menu ul li{
     list-style: none;
     text-transform: uppercase;
@@ -625,6 +603,40 @@ color: #f09819;
     background-color: white;
     margin-left: 10px !important;
 }
+
+
+ .btn-gradient17{
+    background: #fe8c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px 15px ;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    width: 123px;
+    margin-left: 30px !important;
+    
+ }
+ .btn-gradient17:hover{
+    opacity: 0.8;
+ }
+
+ .btn-gradient18 {
+    background: #fe8c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px 15px ;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    width: 123px;
+    
+ }
+ .btn-gradient18:hover{
+    opacity: 0.8;
+ }
 
 #change_address a{
     color: black;
