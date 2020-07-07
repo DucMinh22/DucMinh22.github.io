@@ -1,0 +1,33 @@
+[
+    {
+        "id" : 1,
+        "name" : "Duc",
+        "Tele" : "0863573262",
+        "Permission" : 1
+    }, 
+    {
+        "id" : 2,
+        "name" : "Manh",
+        "Tele" : "0863573262",
+        "Permission" : 2
+    }
+    , 
+    {
+        "id" : 3,
+        "name" : "Thang",
+        "Tele" : "0863573262",
+        "Permission" : 3
+    },
+    {
+        "id" : 4,
+        "name" : "Hung",
+        "Tele" : "0863573262",
+        "Permission" : 4
+    },
+    {
+        "id" : 5,
+        "name" : "Tung",
+        "Tele" : "0863573262",
+        "Permission" : 5
+    }
+]
