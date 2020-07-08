@@ -2,32 +2,41 @@
     {
         "id" : 1,
         "name" : "Duc",
-        "Tele" : "0863573262",
-        "Permission" : 1
+        "surname" : "Minh",
+        "birthYear" : 1997,
+        "birthPlace" : "Hanoi"
     }, 
     {
-        "id" : 2,
-        "name" : "Manh",
-        "Tele" : "0863573262",
-        "Permission" : 2
+        
+        "id" : 1,
+        "name" : "Tung",
+        "surname" : "Quang",
+        "birthYear" : 1997,
+        "birthPlace" : "Hanoi"
     }
     , 
     {
-        "id" : 3,
-        "name" : "Thang",
-        "Tele" : "0863573262",
-        "Permission" : 3
-    },
-    {
-        "id" : 4,
+        
+        "id" : 1,
         "name" : "Hung",
-        "Tele" : "0863573262",
-        "Permission" : 4
+        "surname" : "Thanh",
+        "birthYear" : 1997,
+        "birthPlace" : "Hanoi"
     },
     {
-        "id" : 5,
-        "name" : "Tung",
-        "Tele" : "0863573262",
-        "Permission" : 5
+        
+        "id" : 1,
+        "name" : "Phuong",
+        "surname" : "Duy",
+        "birthYear" : 1997,
+        "birthPlace" : "ngoc"
+    },
+    {
+        
+        "id" : 1,
+        "name" : "Son",
+        "surname" : "0863573262",
+        "birthYear" : 1997,
+        "birthPlace" : "Hanoi"
     }
 ]

@@ -24,6 +24,7 @@ class App extends Component {
     
     this.state = {
       DisplayForm : true,
+      data : DataUser,
       persons: []
     }
   }
@@ -42,17 +43,32 @@ class App extends Component {
    this.setState({DisplayForm: ! this.state.DisplayForm});          
 }
 
+  GetUserData = (name, username, email) =>{
+       
+      var item = {};
+      item.id = "";
+      item.name = name;
+      item.username = username;
+      item.email = email;
+      var items = this.state.data;
+      items.push(item);
+      this.setState({
+        data: items
+      });
+      console.log(items);
+
+   
+  }
+
   render() {
     return (
         <div className="container">
         <Search Connect = {() => this.ChangeStatus() } DisplayForm = {this.state.DisplayForm} />
-        <ul>
-            { this.state.persons.map(person => <li> {person.id}, {person.name}, {person.username }</li>)}
-          </ul>
+       
         <div className="row">
-        <Table/>
+        <Table dataUserProps= {this.state.data} dataUpdate= {this.state.persons}/>
         
-        <AddData DisplayForm = {this.state.DisplayForm} />
+        <AddData add= {(name, username, email) => this.GetUserData(name, username, email) } DisplayForm = {this.state.DisplayForm} />
         </div>
       
       

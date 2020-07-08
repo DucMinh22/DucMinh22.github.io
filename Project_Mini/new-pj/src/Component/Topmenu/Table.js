@@ -7,6 +7,14 @@ class Table extends Component {
     //       <TableDataRow userName={value.name} key={key} stt = {key}  tell={value.Tele} permission={value.Permission} />
     //     ) )
     
+    // mappinguserdata = () => this.props.dataUserProps.map((value,key) => (
+    // <TableDataRow userName = {value.name} surName = {value.surname} Year={value.birthYear} place={value.birthPlace} stt= {key}/>
+    // ) )
+
+     mappingUserUpdate = () => this.props.dataUpdate.map((value,key) => (
+        <TableDataRow userName = {value.name} surName = {value.username} Year={value.email} place={value.name} stt= {key}/>
+        ) )
+    
 
     render() {
         return (
@@ -23,7 +31,7 @@ class Table extends Component {
                 </tr>
                 </thead>
                 <tbody>
-                <TableDataRow/>
+              {this.mappingUserUpdate()} 
                 
                
                 </tbody>
