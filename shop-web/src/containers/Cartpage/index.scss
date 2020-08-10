@@ -1,0 +1,94 @@
+@import '../../utils/Color.scss';
+
+.cartPage {
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .cartList {
+        &__item {
+            padding: 12px 24px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #f3f3f3;
+
+            .itemImg {
+                width: 200px;
+                height: 100%;
+                cursor: pointer;
+            }
+
+            .info {
+                &__content {
+
+                    .name,
+                    .category,
+                    .price,
+                    .quantity__text {
+                        font-weight: 600;
+                    }
+
+                    .quantity {
+                        .changefield {
+                            display: flex;
+                            align-items: center;
+
+                            .quantity__text {
+                                margin-right: 50px;
+                            }
+
+                            .quantity__btn {
+                                margin-left: 20px;
+                                cursor: pointer;
+                                color: #1890ff;
+                            }
+                        }
+                    }
+                }
+
+                .more {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    z-index: 3;
+
+                    button {
+                        margin: 0 10px;
+                    }
+                }
+            }
+
+            .delete {
+                border: none;
+                outline: none;
+                color: $primaryGreen;
+            }
+
+        }
+    }
+
+    .payment {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .total {
+                font-weight: 900;
+            }
+        }
+    }
+
+    .delivery {
+        margin-top: 50px;
+
+        &__head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+    }
+}

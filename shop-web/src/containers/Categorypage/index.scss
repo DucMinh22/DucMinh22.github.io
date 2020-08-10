@@ -1,0 +1,66 @@
+@import '../../utils/Color.scss';
+
+@mixin item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: $primaryBlack;
+    cursor: pointer;
+}
+
+.category {
+    .menu {
+        background-color: $primaryWhite;
+        text-align: center;
+
+        &__title {
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &__item {
+            @include item();
+
+            &:hover,
+            &-active {
+                @include item();
+
+                background-color: $primaryGreen;
+                color: $primaryWhite;
+            }
+        }
+    }
+
+    .contentWrapper {
+        .optionField {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: $primaryWhite;
+
+            &__item {
+                margin: 0 24px;
+            }
+        }
+
+        .mainContent {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+            background-color: $primaryWhite;
+
+            &__item {
+                padding: 10px;
+            }
+        }
+
+        .loadMoreField {
+            background-color: $primaryWhite;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

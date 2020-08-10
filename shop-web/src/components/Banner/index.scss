@@ -1,0 +1,17 @@
+.img-banner {
+  align-items: center;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  .background {
+    background-color: #00000042;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "homepage": {
+    "computer": "Máy Tính",
+    "viewMore": "Xem thêm",
+    "clothing": "Quần Áo",
+    "shoes": "Giày Dép"
+  },
+  "categorypage": {
+    "title": "Loại",
+    "price": "Giá",
+    "createAt": "Ngày tạo",
+    "increment": "Tăng",
+    "decrement": "Giảm",
+    "more": "Thêm"
+  },
+  "search": "Tìm Kiếm",
+  "searchPlaceholder": "Nhập từ khóa tìm kiếm",
+  "categories": {
+    "Computers": "Máy Tính",
+    "Clothing": "Quần Áo",
+    "Books": "Sách",
+    "Grocery": "Tạp hóa",
+    "Shoes": "Giày",
+    "Automotive": "Tự động",
+    "Music": "Âm nhạc",
+    "Kids": "Trẻ em",
+    "Tools": "Vật dụng",
+    "Health": "Sức khỏe",
+    "Sports": "Thể thao",
+    "Electronics": "Điện Gia Dụng",
+    "Games": "Trò chơi",
+    "Garden": "Làm vườn"
+  },
+  "cartpage": {
+    "yourCart": "Giỏ hàng",
+    "removeAll": "Xóa Tất Cả Sản Phẩm",
+    "totalProducts": "Tổng số sản phầm trong giỏ hàng của bạn",
+    "noProducts": "Bạn không có sản phẩm nào trong giỏ hàng",
+    "payment": "Thanh Toán",
+    "total": "Tổng",
+    "purchaseAll": "Thanh Toán Toàn Bộ",
+    "delivery": "Vận Chuyển",
+    "confirmPurchase": "Xác Nhận Giao Dịch",
+    "table": {
+      "number": "STT",
+      "productName": "Tên Sản Phẩm",
+      "productCategory": "Loại Sản Phẩm",
+      "quantity": "Số Lượng",
+      "status": "Trạng Thái"
+    },
+    "cartItem": {
+      "name": "Tên",
+      "category": "Loại",
+      "price": "Giá",
+      "quantity": "Số Lượng",
+      "change": "Thay Đổi"
+    },
+    "comfirmModal": {
+      "title": "Xác nhận",
+      "content": "Bạn muốn xác nhận đã thanh toán?",
+      "cancel": "Hủy bỏ",
+      "confirm": "Xác nhận"
+    }
+  },
+  "warehousepage": {
+    "title": "Kho hàng",
+    "add": "Thêm mới",
+    "table": {
+      "number": "Số",
+      "productName": "Tên Sản Phẩm",
+      "productCategory": "Loại Sản Phẩm",
+      "supplier": "Nhà Cung Cấp",
+      "price": "Giá",
+      "quantity": "Số Lượng",
+      "date": "Ngày Tạo",
+      "description": "Mô Tả"
+    },
+    "modal": {
+      "ok": "Tạo mới",
+      "cancel": "Hủy bỏ",
+      "title": "Tạo mới sản phẩm"
+    }
+  },
+  "billpage": {
+    "title": "Danh sách hóa đơn",
+    "table": {
+      "billCode": "Mã Hóa Đơn",
+      "createdAt": "Ngày Tạo",
+      "user": "Người Mua",
+      "bills": "Số Lượng Sp",
+      "status": "Tình Trạng",
+      "action": "Thao Tác",
+      "customer": "Khách Hàng"
+    }
+  },
+  "billDetailPage": {
+    "title": "Thông tin chi tiết hóa đơn",
+    "user": "Người mua",
+    "total": "Tổng",
+    "update": "Thay đổi",
+    "table": {
+      "number": "Số",
+      "productName": "Tên Sản Phẩm",
+      "productCategory": "Loại Sản Phẩm",
+      "price": "Giá",
+      "quantity": "Số Lượng",
+      "date": "Ngày Tạo"
+    },
+    "select": {
+      "inCart": "Trong giỏ hàng",
+      "shipping": "Đang vẫn chuyển",
+      "done": "Hoàn Thành"
+    }
+  },
+  "warehouseDetail": {
+    "title": "Thay đổi thông tin sản phẩm trong kho",
+    "input": {
+      "productName": "Tên Sản Phẩm",
+      "productCategory": "Loại Sản Phẩm",
+      "supplier": "Nhà Cung Cấp",
+      "price": "Giá",
+      "quantity": "Số Lượng",
+      "description": "Mô Tả",
+      "update": "Thay đổi"
+    }
+  },
+  "signIn": "Đăng Nhập",
+  "signUp": "Đăng Ký",
+  "signOut": "Đăng Xuất",
+  "login": "Đăng nhập",
+  "username": "Tên tài khoản",
+  "password": "Mật khẩu",
+  "detailpage": {
+    "addToCart": "Thêm Vào Giỏ Hàng",
+    "relatedProducts": "Sản Phẩm Liên Quan"
+  },
+  "menu": {
+    "home": "Trang Chủ",
+    "category": "Phân Loại",
+    "cart": "Giỏ Hàng",
+    "login": "Đăng Nhập",
+    "warehouse": "Kho"
+  },
+  "searchpage": {
+    "key": "Kết quả tìm kiếm",
+    "products": "Sản phẩm"
+  }
+}
